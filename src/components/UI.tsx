@@ -55,18 +55,19 @@ export function Footer({ farie = false }: { farie?: boolean }) {
 }
 
 export function Shell({ children, farie = false, english = false }: { children: ReactNode; farie?: boolean; english?: boolean }) {
-  return <div className={farie ? "farie" : ""}><Header farie={farie} english={english}/><main id="main">{children}</main><Footer farie={farie}/></div>;
+  return <div lang={english ? "en" : "it"} className={farie ? "farie" : ""}><Header farie={farie} english={english}/><main id="main">{children}</main><Footer farie={farie}/></div>;
 }
 
-export function Card({ stay }: { stay: Stay }) {
+export function Card({ stay, english = false }: { stay: Stay; english?: boolean }) {
+  const url = (english ? "/en/alloggi/" : "/it/alloggi/") + stay.slug;
   return <article className="card">
-    <Link href={"/it/alloggi/" + stay.slug} aria-label={"Scopri " + stay.name}>
+    <Link href={url} aria-label={"Scopri " + stay.name}>
       {/* Immagine temporanea del sito esistente */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img className="card-photo" src={stay.photo} alt={stay.name + " a " + stay.village} loading="lazy"/>
     </Link>
-    <div className="card-body"><div className="eyebrow">{stay.village} · {stay.kind}</div><h3><Link href={"/it/alloggi/" + stay.slug}>{stay.name}</Link></h3>
-      <div className="card-meta"><span>{stay.capacity ? "Fino a " + stay.capacity + " ospiti" : "Scheda della struttura"}</span><Link href={"/it/alloggi/" + stay.slug}>Scopri ↗</Link></div>
+    <div className="card-body"><div className="eyebrow">{stay.village} · {stay.kind}</div><h3><Link href={url}>{stay.name}</Link></h3>
+      <div className="card-meta"><span>{stay.capacity ? (english ? "Up to " + stay.capacity + " guests" : "Fino a " + stay.capacity + " ospiti") : (english ? "Property details" : "Scheda della struttura")}</span><Link href={url}>{english ? "Details ↗" : "Scopri ↗"}</Link></div>
     </div>
   </article>;
 }

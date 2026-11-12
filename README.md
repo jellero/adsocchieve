@@ -17,3 +17,6 @@ Node.js 20.9+ richiesto.
 
 ## SEO
 URL storici preservati dove possibile, metadati dedicati, sitemap, robots, dati strutturati LodgingBusiness e tracciamento clic di prenotazione predisposto. Non pubblicare sul dominio attuale senza piano di migrazione e redirect.
+
+## Verifiche inventario necessarie
+Le capienze di Casa Vanda Genziana e Casa Vanda Bucaneve non coincidono tra le schede pubbliche e Slope; sono omesse finché non confermate. Controllare inoltre le immagini provvisorie associate alle singole case. Per la versione inglese completare la revisione linguistica e il mapping degli URL storici.

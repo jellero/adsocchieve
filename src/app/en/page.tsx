@@ -21,7 +21,7 @@ export default function EnglishHome() { return <Shell english>
     </div>
   </section>
   <section className="section"><div className="container"><div className="section-head"><div><span className="eyebrow">Col Gentile</span><h2>Find your home in Carnia.</h2></div><p>Choose from houses and apartments across different villages. All prices and availability are confirmed on the official booking platform.</p></div>
-    <div className="cards">{[stays[0],stays[2],stays[8]].map((stay)=><Card key={stay.slug} stay={stay}/>)}</div>
+    <div className="cards">{[stays[0],stays[2],stays[8]].map((stay)=><Card key={stay.slug} stay={stay} english/>)}</div>
     <p style={{marginTop:30}}><Link href="/en/alloggi" className="text-link">All accommodation ↗</Link></p>
   </div></section>
   <section className="cta"><div className="container"><h2>Plan your stay in Carnia.</h2><p>Browse the accommodation and check available dates online.</p><BookingLink href={SLOPE} placement="homepage_en_bottom" className="button light">Check dates ↗</BookingLink></div></section>
