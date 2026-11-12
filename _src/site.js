@@ -126,4 +126,42 @@
     start.addEventListener("click", () => boot(current));
     thumbs.forEach((t, k) => t.addEventListener("click", () => boot(k)));
   });
+  /* form contatti: AJAX senza reload, reset soltanto su risposta positiva */
+  $$("[data-ajax-contact]").forEach((form) => {
+    const status = $("[data-form-status]", form);
+    const button = $("[data-form-submit]", form);
+    if (!status || !button) return;
+    const setStatus = (message, type) => {
+      status.hidden = false;
+      status.className = "contact-result " + (type === "success" ? "is-success" : type === "error" ? "is-error" : "");
+      status.textContent = message;
+      if (type !== "sending") status.focus({ preventScroll: true });
+    };
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity() || button.disabled) return;
+      button.disabled = true;
+      form.setAttribute("aria-busy", "true");
+      setStatus("Invio in corso…", "sending");
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+          credentials: "same-origin"
+        });
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok || data.success !== true) {
+          throw new Error(typeof data.message === "string" ? data.message : "Invio non riuscito. Riprova più tardi.");
+        }
+        form.reset();
+        setStatus(data.message || "Messaggio inviato correttamente.", "success");
+      } catch (error) {
+        setStatus(error instanceof Error ? error.message : "Errore di connessione. Riprova.", "error");
+      } finally {
+        button.disabled = false;
+        form.removeAttribute("aria-busy");
+      }
+    });
+  });
 })();
