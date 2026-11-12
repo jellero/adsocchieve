@@ -824,19 +824,16 @@ def build_farie():
 
 
 def welora(view, sid=None, title=None, note=True):
-    """Widget servizi Welora. sid preseleziona il servizio: il widget legge
-    welora_services_service_id dall'indirizzo della pagina."""
+    """Widget servizi Welora: senza intestazione (logo e nome sono già nella pagina),
+    con il servizio della pagina preselezionato e i colori del sito (variabili --welora-*)."""
     W = data.WELORA
     if not W["live"]:
         return ""
-    pre = ""
-    if sid:
-        pre = ("<script>(function(){var u=new URL(location.href),k='welora_services_service_id';"
-               f"if(!u.searchParams.has(k)){{u.searchParams.set(k,'{sid}');history.replaceState(history.state,'',u);}}}})();</script>")
+    svc = f' data-service="{sid}"' if sid else ""
     head = f'<h2 class="book-title">{title}</h2>' if title else ""
     foot = (f'<p class="book-note">Conferma immediata via email · pagamento in struttura · '
             f'preferisci parlarci? <a href="tel:{SITE["phone_href"]}">{SITE["phone"]}</a> · <a href="mailto:{SITE["email"]}">{SITE["email"]}</a></p>') if note else ""
-    return (f'<div class="book rv" id="prenota">{head}{pre}<div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}"></div>{foot}</div>'
+    return (f'<div class="book rv" id="prenota">{head}<div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}" data-branding="none"{svc}></div>{foot}</div>'
             f'<script src="{W["base"]}/assets/js/booking-widget.js?v={W["script_v"]}" defer></script>')
 
 

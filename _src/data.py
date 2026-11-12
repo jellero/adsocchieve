@@ -236,7 +236,7 @@ FARIE = dict(
 # Servizi benessere: dati dalla configurazione Welora della struttura (novembre 2026).
 # "live" va messo a True solo quando in Welora il widget servizi è attivo, i servizi sono
 # pubblicati e il dominio del sito è autorizzato: allora il sito mostra la prenotazione online.
-WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261021-6", live=True,
+WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261112-1", live=True,
               results="/it/prenota-servizi")
 
 SERVICES = [
