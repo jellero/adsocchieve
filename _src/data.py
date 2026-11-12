@@ -175,7 +175,7 @@ EXPS = {
             dict(n="Lumiei · Colonia di Nonta", t="Da Nonta, la frazione più piccola, parte una camminata tranquilla sul greto quasi sempre asciutto del Lumiei. Uscendo verso Mediis, un tratturo a sinistra porta alla colonia dove negli anni '30 e '40 passavano l'estate tanti ragazzini. Si arriva a Balòt, dove nel dopoguerra c'erano una falegnameria, un mulino, una sala da ballo e il cinema, e poi all'area sportiva con campo da calcio e giochi per bambini. Verso Socchieve, sulla riva opposta, si incontrano le fortificazioni; vicino al Puart das boras si svolta a sinistra e lungo l'alveo si torna al punto di partenza.", map="cartina%2011.jpg", via=["nonta", "priuso", "socchieve"]),
         ],
         note="Le descrizioni dei percorsi provengono dal sito turistico del Comune di Socchieve. Sentieri, mulattiere e tratturi vanno percorsi con attenzione, salvo variazioni intervenute nel frattempo. La natura che osserverete è anche vostra amica: rispettatela."),
-    "cicloturismo": dict(n="Cicloturismo", hero="PanoramicaFeltrone2.jpg",
+    "cicloturismo": dict(n="Cicloturismo", hero="PanoramicaFeltrone1.jpg",
         title="Cicloturismo in Carnia: MTB a Mediis e anello del Passo Rest",
         desc="Dalla pista MTB di Mediis all'anello del Passo Rest (101 km, 2055 m): itinerari in bici da strada e mountain bike con base a Socchieve, vicino a Zoncolan e Crostis.",
         lead="Salite leggendarie, sterrati tecnici e strade poco trafficate: la Carnia è il paradiso delle due ruote.",
@@ -232,3 +232,33 @@ FARIE = dict(
     rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "dalle 08:00 alle 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "ammessi su richiesta, può esserci un supplemento"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
     near=[("Terme di Arta", "25 km"), ("Foro Romano di Zuglio", "23 km"), ("Sauris", "18 km"), ("Aeroporto di Trieste", "105 km")],
 )
+
+# Servizi benessere: dati dalla configurazione Welora della struttura (novembre 2026).
+# "live" va messo a True solo quando in Welora il widget servizi è attivo, i servizi sono
+# pubblicati e il dominio del sito è autorizzato: allora il sito mostra la prenotazione online.
+WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261021-6", live=False,
+              results="/it/prenota-servizi")
+
+SERVICES = [
+    dict(id="bagno-di-bosco", n="Bagno di bosco", hero="PanoramaViaso3.jpg",
+         title="Bagno di bosco in Carnia (Shinrin-yoku) con guida a Socchieve",
+         desc="Bagno di foresta (Shinrin-yoku) nei boschi di Socchieve, in Carnia, con Petra: circa 2 ore di immersione lenta nella natura, gruppi fino a 6 persone, 15 € a persona.",
+         lead="Shinrin-yoku, o forest bathing: un'immersione lenta e sensoriale nei boschi della Carnia per rigenerare corpo e mente.",
+         text=["Il bagno di bosco, conosciuto in giapponese come Shinrin-yoku e in inglese come forest bathing, è una pratica di benessere basata sull'immersione lenta, consapevole e sensoriale nel bosco, per rigenerare il corpo e la mente.",
+               "Con Petra si cammina e ci si ferma nei boschi intorno ai borghi di Socchieve: un'esperienza per rallentare, staccare dalla fretta e risvegliare i sensi attraverso il contatto profondo con la natura. Si sta insieme circa due ore, in piccoli gruppi."],
+         facts=[("2 ore", "circa, insieme"), ("15 €", "a persona"), ("6", "persone al massimo"), ("Mediis", "ritrovo alla reception")],
+         meeting="Reception Albergo Diffuso Col Gentile, Via Roma 20, Mediis di Socchieve",
+         bring=[("Vestiti a strati", "comodi e traspiranti, adatti all'aperto"), ("Giacca impermeabile o antivento", "per i cambi di meteo"), ("Scarpe da trekking o da ginnastica", "per camminare sicuri sul terreno del bosco"), ("Borraccia d'acqua", "per restare idratati"), ("Telo o piccolo tappetino impermeabile", "per sedersi o sdraiarsi a terra"), ("Repellente per insetti", "se vuoi"), ("Uno snack leggero", ""), ("Taccuino e penna", "facoltativi, per annotare pensieri e sensazioni")],
+         note="Per vivere appieno il bagno di bosco il cellulare resta in modalità silenziosa o aereo durante la pratica: avvisa chi deve sapere che sarai irraggiungibile per un paio d'ore.",
+         price=15, unit="a persona", guide="Petra"),
+    dict(id="sauna", n="Sauna", hero=None,
+         title="Sauna a Socchieve, in Carnia · Albergo Diffuso Col Gentile",
+         desc="Sauna per il tuo gruppo all'Albergo Diffuso di Socchieve, in Carnia: 50 € l'ora per tutta la prenotazione, da 1 ora in su, dopo una giornata sui sentieri.",
+         lead="Il calore secco dopo una giornata sui sentieri, per l'ora che scegli.",
+         text=["Dopo un'escursione, una giornata in bici o sulle piste di Forni di Sopra, la sauna è il modo migliore per sciogliere i muscoli e rallentare.",
+               "Si prenota a ore per tutto il gruppo: il prezzo è unico per la prenotazione, non a persona. Minimo un'ora, poi scegli tu quanto restare."],
+         facts=[("50 €", "all'ora, per il gruppo"), ("1 ora", "minimo"), ("1 ora prima", "anticipo minimo per prenotare"), ("Socchieve", "Albergo Diffuso")],
+         price=50, unit="all'ora, prezzo complessivo"),
+]
+
+FAQ.insert(6, ("Ci sono sauna e attività benessere?", "Sì: la sauna si prenota a ore per tutto il gruppo (50 € l'ora, minimo 1 ora) e il bagno di bosco (Shinrin-yoku) con Petra dura circa due ore, per gruppi fino a 6 persone a 15 € a persona, con ritrovo alla reception di Mediis."))

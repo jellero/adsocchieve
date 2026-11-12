@@ -120,7 +120,7 @@ def asset_ver(p):
 
 
 NAV = [("alloggi", "/it/alloggi/", "Le case"), ("borghi", "/it/territorio#borghi", "I borghi"),
-       ("esperienze", "/it/territorio#esperienze", "Esperienze"), ("contatti", "/it/contact", "Contatti"),
+       ("esperienze", "/it/territorio#esperienze", "Esperienze"), ("benessere", "/it/benessere", "Benessere"), ("contatti", "/it/contact", "Contatti"),
        ("farie", "/la-farie", "La Farie")]
 
 ICONS = """<svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -181,7 +181,7 @@ def footer():
       </div>
       <div><h4>Le case</h4>{case}<a href="/it/alloggi/">Tutte le case →</a></div>
       <div><h4>I borghi</h4>{borghi}</div>
-      <div><h4>Esperienze</h4>{exps}<a href="/it/territorio">Il territorio</a><a href="/it/contact">Contatti e come arrivare</a><a href="/la-farie">La Farie</a></div>
+      <div><h4>Esperienze</h4>{exps}<a href="/it/benessere">Benessere: sauna e bagno di bosco</a><a href="/it/territorio">Il territorio</a><a href="/it/contact">Contatti e come arrivare</a><a href="/la-farie">La Farie</a></div>
     </div>
     <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · P.I. {SITE['vat']}</span><span><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a></span></div>
   </div>
@@ -601,6 +601,14 @@ def build_home():
       </div>
     </section>
 
+    <section class="sec" id="benessere" style="background:var(--bone)">
+      <div class="wrap">
+        <div class="sec-head"><div><span class="eyebrow rv">Benessere</span><h2 class="rv d1">Sauna e <em>bagno di bosco.</em></h2></div>
+        <p class="rv d2">Il calore della sauna dopo i sentieri e lo Shinrin-yoku con Petra nei boschi di Socchieve.</p></div>
+        <div class="bento">{"".join(svc_card(s) for s in data.SERVICES)}</div>
+      </div>
+    </section>
+
     <section class="sec loc" id="dove">
       <div class="wrap">
         <div class="sec-head"><div><span class="eyebrow rv">Dov'è Socchieve</span><h2 class="rv d1">Al centro della Carnia, <em>vicino a tutto.</em></h2></div>
@@ -808,6 +816,125 @@ def build_farie():
          images=[abs_img(g) for g in F["g"] if g in PH])
 
 
+def welora(view):
+    W = data.WELORA
+    if not W["live"]:
+        return ""
+    return f'<div class="welora-box rv"><div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}"></div></div><script src="{W["base"]}/assets/js/booking-widget.js?v={W["script_v"]}" defer></script>'
+
+
+def svc_aside(s=None):
+    name = s["n"] if s else "Benessere"
+    subj = e("Prenotazione " + name)
+    live = data.WELORA["live"]
+    online = f'<a class="btn btn-primary" href="{data.WELORA["results"]}">Prenota online {I("arrow")}</a>' if live else ""
+    price = f'<p style="margin-top:16px;color:var(--bone);font:400 30px/1 var(--serif)">{s["price"]} € <span style="font:500 14px var(--sans);color:var(--sage)">{s["unit"]}</span></p>' if s else ""
+    intro = "Scegli giorno, orario e numero di persone: la conferma arriva via email." if live else "Scrivici o chiamaci con giorno, orario e numero di persone: ti confermiamo la disponibilità."
+    mail_cls = "btn-ghost" if online else "btn-primary"
+    return f"""<aside class="aside rv">
+      <h2 style="font-size:30px;line-height:1.1;margin:0">{e(name)}</h2>
+      {price}
+      <p>{intro}</p>
+      {online}
+      <a class="btn {mail_cls}" href="mailto:{SITE['email']}?subject={subj}">Prenota via email {I('arrow')}</a>
+      <a class="btn btn-ghost" href="tel:{SITE['phone_href']}">{SITE['phone']}</a>
+      <p style="margin-top:16px;font-size:13px">Il pagamento si salda in struttura.</p>
+    </aside>"""
+
+
+def svc_card(s):
+    img = pic(s["hero"], s["n"], "(max-width:640px) 100vw, 50vw") if s["hero"] else ""
+    cls = "tile big" if s["hero"] else "tile green"
+    unit = s["unit"].split(",")[0]
+    return (f'<a class="{cls} rv" href="/it/{s["id"]}" style="grid-column:span 2">{img}<span class="num">{s["price"]} € · {unit}</span>'
+            f'<h3>{e(s["n"])}</h3><p>{e(s["lead"])}</p><span class="link">Scopri e prenota {I("arrow")}</span></a>')
+
+
+def service_ld(s):
+    ld = {"@context": "https://schema.org", "@type": "Service", "@id": U + f"/it/{s['id']}#service", "name": s["n"], "serviceType": "Benessere",
+          "description": " ".join(s["text"]), "url": U + f"/it/{s['id']}", "provider": {"@id": LODGING_ID}, "areaServed": "Carnia",
+          "offers": {"@type": "Offer", "price": f"{s['price']:.2f}", "priceCurrency": "EUR", "description": s["unit"], "url": U + f"/it/{s['id']}"}}
+    if s["hero"]:
+        ld["image"] = abs_img(s["hero"])
+    return ld
+
+
+def build_services():
+    S = data.SERVICES
+    for s in S:
+        crumbs = [("Home", "/"), ("Benessere", "/it/benessere"), (s["n"], f"/it/{s['id']}")]
+        facts = "".join(f"<div><b>{a}</b><span>{b}</span></div>" for a, b in s["facts"])
+        bring = ""
+        if s.get("bring"):
+            rows = "".join(f"<div><b>{e(a)}</b><span>{e(b)}</span></div>" for a, b in s["bring"])
+            note = f'<p class="cin" style="margin-top:18px">{e(s["note"])}</p>' if s.get("note") else ""
+            bring = f'<div class="rv"><span class="eyebrow">Cosa portare</span><h2>Come prepararsi</h2><div class="routes">{rows}</div>{note}</div>'
+        meet = ""
+        if s.get("meeting"):
+            meet = f'<div class="rv"><span class="eyebrow">Ritrovo</span><h2>Dove ci si incontra</h2><p>{e(s["meeting"])}. <a class="link" href="/it/contact">Come arrivare {I("arrow")}</a></p></div>'
+        if s["hero"]:
+            hero_html = hero(s["hero"], s["n"] + " a Socchieve, Carnia", crumbs, e(s["n"]), sub=e(s["lead"]))
+        else:
+            hero_html = (f'<section class="ph ph-plain"><div class="wrap"><nav class="crumbs" aria-label="Percorso"><a href="/">Home</a><span>/</span>'
+                         f'<a href="/it/benessere">Benessere</a><span>/</span><b>{e(s["n"])}</b></nav><h1>{e(s["n"])}</h1><p class="lead">{e(s["lead"])}</p></div></section>')
+        paras = "".join(f'<p class="prose-first">{e(p)}</p>' if i == 0 else f"<p>{e(p)}</p>" for i, p in enumerate(s["text"]))
+        minis = ""
+        for x in S:
+            if x["id"] == s["id"]:
+                continue
+            ph = pic(x["hero"], x["n"], "(max-width:640px) 70vw, 25vw") if x["hero"] else ""
+            minis += f'<a class="mini" href="/it/{x["id"]}">{ph}<div><b>{x["n"]}</b><span>{x["price"]} € {x["unit"].split(",")[0]}</span></div></a>'
+        minis += f'<a class="mini" href="/it/trekking">{pic(EXPS["trekking"]["hero"], "Trekking", "(max-width:640px) 70vw, 25vw")}<div><b>Trekking</b><span>4 sentieri dai borghi</span></div></a>'
+        minis += mini_stay(STAY["casa-vanda"])
+        body = f"""{hero_html}
+<section class="d-body"><div class="wrap d-grid">
+  <div class="d-main">
+    <div class="rv"><span class="eyebrow">Benessere a Socchieve · Carnia</span><h2>{ {"bagno-di-bosco": "Cos'è il bagno di bosco", "sauna": "Come funziona la sauna"}.get(s["id"], "Come funziona") }</h2>{paras}</div>
+    <div class="facts rv">{facts}</div>
+    {welora("search")}
+    {meet}
+    {bring}
+  </div>
+  {svc_aside(s)}
+</div></section>
+<section class="related"><div class="wrap"><span class="eyebrow">Benessere e natura</span><h2>Abbina al soggiorno</h2><div class="mini-rail">{minis}</div></div></section>"""
+        page(f"/it/{s['id']}", s["title"], s["desc"], body, active="benessere", image=s["hero"] or "PanoramaNonta1.jpg",
+             preload=preload_for(s["hero"]) if s["hero"] else None, ld=[service_ld(s), crumbs_ld(crumbs)],
+             images=[abs_img(s["hero"])] if s["hero"] else [])
+
+    crumbs = [("Home", "/"), ("Benessere", "/it/benessere")]
+    cards = "".join(svc_card(s) for s in S)
+    body = f"""{hero("PanoramaNonta1.jpg", "Prati al tramonto a Nonta, Socchieve", crumbs, "Benessere <em>in Carnia</em>", sub="Sauna e bagno di bosco all'Albergo Diffuso di Socchieve: il modo giusto per chiudere una giornata in montagna.")}
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><div><span class="eyebrow rv">I servizi</span><h2 class="rv d1">Rallenta, <em>respira.</em></h2></div><p class="rv d2">Prezzi chiari, pagamento in struttura. Scrivici per sapere se si possono prenotare anche senza soggiornare da noi.</p></div>
+  <div class="bento">{cards}</div>
+  {welora("search")}
+</div></section>"""
+    items = {"@context": "https://schema.org", "@type": "ItemList", "name": "Benessere all'Albergo Diffuso Socchieve", "itemListElement": [
+        {"@type": "ListItem", "position": i + 1, "url": U + f"/it/{s['id']}", "name": s["n"]} for i, s in enumerate(S)]}
+    page("/it/benessere", "Benessere in Carnia: sauna e bagno di bosco a Socchieve",
+         "Sauna (50 € l'ora per il gruppo) e bagno di bosco Shinrin-yoku con guida (15 € a persona) all'Albergo Diffuso di Socchieve, in Carnia. Prenota direttamente.",
+         body, active="benessere", image="PanoramaNonta1.jpg", preload=preload_for("PanoramaNonta1.jpg"),
+         ld=[items, crumbs_ld(crumbs)] + [service_ld(s) for s in S], images=[abs_img("PanoramaNonta1.jpg")])
+
+    W = data.WELORA
+    crumbs = [("Home", "/"), ("Benessere", "/it/benessere"), ("Prenota servizi", W["results"])]
+    if W["live"]:
+        inner = welora("results")
+    else:
+        inner = (f'<p style="max-width:620px;color:var(--muted);font-size:17px">La prenotazione online sarà disponibile a breve. Nel frattempo scrivici a '
+                 f'<a class="link" href="mailto:{SITE["email"]}?subject=Prenotazione%20servizi">{SITE["email"]}</a> o chiama il '
+                 f'<a class="link" href="tel:{SITE["phone_href"]}">{SITE["phone"]}</a>.</p>')
+    body = f"""<section class="d-body" style="padding-top:140px"><div class="wrap">
+  <nav class="crumbs" aria-label="Percorso" style="color:var(--muted)"><a href="/">Home</a><span>/</span><a href="/it/benessere">Benessere</a><span>/</span><b>Prenota servizi</b></nav>
+  <h1 style="font-size:clamp(40px,6vw,80px);line-height:1;margin:10px 0 28px">Prenota <em>sauna e bagno di bosco</em></h1>
+  {inner}
+</div></section>"""
+    page(W["results"], "Prenota sauna e bagno di bosco · Albergo Diffuso Socchieve",
+         "Prenota online sauna e bagno di bosco all'Albergo Diffuso di Socchieve, in Carnia.", body, active="benessere", solid=True,
+         noindex=not W["live"], ld=[crumbs_ld(crumbs)])
+
+
 def build_legal():
     privacy = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
   <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Privacy</h1>
@@ -885,7 +1012,7 @@ def main():
     for s in STAYS: build_stay(s)
     for v in VILLAGES: build_village(v)
     for k, x in EXPS.items(): build_exp(k, x)
-    build_territorio(); build_contact(); build_farie(); build_legal()
+    build_territorio(); build_contact(); build_farie(); build_services(); build_legal()
     build_meta(); build_icons()
     print(f"OK: {len(PAGES)} pagine indicizzabili, sitemap.xml, robots.txt, _redirects")
     if MISSING:

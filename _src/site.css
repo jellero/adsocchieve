@@ -492,3 +492,8 @@ section[id]{scroll-margin-top:60px}
 #farie .routes div{grid-template-columns:150px 1fr}
 @media (max-width:640px){#farie .routes div{grid-template-columns:1fr}}
 #farie .hero::after{background:linear-gradient(180deg,rgba(43,28,20,.55) 0%,rgba(43,28,20,.15) 30%,rgba(43,28,20,.55) 55%,rgba(30,18,12,.92) 100%)}
+
+.ph-plain{min-height:62svh;background:radial-gradient(120% 90% at 20% 100%,#7a3d1f 0%,#3b1e10 45%,#16241e 100%)}
+.ph-plain::after{display:none}
+.welora-box{margin-top:8px;padding:20px;border-radius:var(--r);background:var(--bone)}
+.tile .num{font:600 13px var(--sans);letter-spacing:.04em}
