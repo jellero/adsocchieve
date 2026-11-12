@@ -1,5 +1,11 @@
 {
- "panos": {},
+ "panos": {
+  "casa%20dal%20m%20iedi%20camera%20letti%20a%20castello-5000-2500.jpg": {
+   "slug": "casa-dal-m-iedi-camera-letti-a-castello-5000-2500",
+   "src": "/img/360/casa-dal-m-iedi-camera-letti-a-castello-5000-2500.jpg",
+   "thumb": "/img/360/casa-dal-m-iedi-camera-letti-a-castello-5000-2500-thumb.webp"
+  }
+ },
  "photos": {
   "Ampezzo%20Museo.jpg": {
    "h": 800,
@@ -1441,6 +1447,26 @@
    "h": 1334,
    "slug": "q30a9850",
    "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "cartina%208.jpg": {
+   "h": 1787,
+   "slug": "cartina-8",
+   "w": 2400,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "cartina%209.jpg": {
+   "h": 1787,
+   "slug": "cartina-9",
+   "w": 2400,
    "widths": [
     480,
     960,

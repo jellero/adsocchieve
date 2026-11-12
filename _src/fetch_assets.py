@@ -57,9 +57,21 @@ def download(name):
         return name, dest
     base = name.split("?")[0]
     urls = (name,) if name.startswith("http") else ()
-    if not urls and OLD_DOWN:
-        return name, None
-    for url in urls or (OLD + base, OLD + "styles/slide/public/" + base, OLD + "styles/portfolio/public/" + base):
+    cands = (OLD + base, OLD + "styles/slide/public/" + base, OLD + "styles/portfolio/public/" + base)
+    wb = "https://web.archive.org/web/2025id_/"
+    archive = tuple(wb + c for c in cands) + tuple(wb + c.replace("://", "://www.") for c in cands)
+    if not urls:
+        urls = (archive if OLD_DOWN else cands + archive)
+    import subprocess
+    for url in urls:
+        if "web.archive.org" in url:
+            tmp = dest.with_suffix(".part")
+            r = subprocess.run(["curl", "-s", "-L", "-f", "--ssl-no-revoke", "--retry", "2", "--max-time", "120", "-o", str(tmp), "-w", "%{content_type}", url], capture_output=True, text=True)
+            if r.returncode == 0 and r.stdout.startswith("image") and tmp.exists() and tmp.stat().st_size > 1000:
+                tmp.replace(dest)
+                return name, dest
+            tmp.unlink(missing_ok=True)
+            continue
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=20) as r:
                 if r.status == 200 and r.headers.get_content_type().startswith("image"):
