@@ -1,7 +1,7 @@
 """Genera il sito statico. Uso:  python _src/build.py
 Legge _src/data.py e _src/images.json (creato da fetch_assets.py) e scrive le pagine HTML
 agli stessi URL del vecchio sito, più sitemap.xml, robots.txt e asset."""
-import datetime, hashlib, html, json, shutil, sys
+import datetime, hashlib, html, json, re, shutil, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -99,6 +99,19 @@ def address(street, locality=None):
 
 
 LODGING_ID = U + "/#lodging"
+
+
+def relativize(doc, depth):
+    """Percorsi relativi: il sito funziona sia nella radice del dominio sia in una
+    sottocartella (es. GitHub Pages /adsocchieve/)."""
+    pre = "../" * depth
+    doc = re.sub(r'((?:href|src|imagesrcset|srcset)=")/(?!/)', lambda m: m.group(1) + pre, doc)
+    doc = re.sub(r'(,\s*)/(img/)', lambda m: m.group(1) + pre + m.group(2), doc)
+    doc = doc.replace('"/img/', '"' + pre + 'img/')
+    return doc.replace('href=""', 'href="./"')
+
+
+BASE_404 = """<script>(function(){var p=location.pathname.split('/')[1];var b=(/github[.]io$/.test(location.hostname)&&p)?'/'+p+'/':'/';document.write('<base href="'+b+'">');})();</script>"""
 
 
 # ---------------------------------------------------------------- layout
@@ -224,6 +237,9 @@ def page(path, title, desc, body, *, active="", image=None, ld=(), solid=False, 
         out = ROOT / path.strip("/") / "index.html"
     else:
         out = ROOT / (path.strip("/") + ".html")
+    if path == "/404":
+        doc = doc.replace('<meta charset="utf-8">', '<meta charset="utf-8">\n' + BASE_404, 1)
+    doc = relativize(doc, len(out.relative_to(ROOT).parts) - 1)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(doc, encoding="utf-8", newline="\n")
     if not noindex:
@@ -815,7 +831,7 @@ def build_legal():
     page("/404", "Pagina non trovata · Albergo Diffuso Socchieve", "La pagina richiesta non esiste.", err, solid=True, noindex=True)
     # vecchia home /it -> /
     (ROOT / "it").mkdir(exist_ok=True)
-    (ROOT / "it" / "index.html").write_text(f'<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Albergo Diffuso Socchieve</title><link rel="canonical" href="{U}/"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=/"></head><body><a href="/">Vai alla home</a></body></html>\n', encoding="utf-8")
+    (ROOT / "it" / "index.html").write_text(f'<!doctype html><html lang="it"><head><meta charset="utf-8"><title>Albergo Diffuso Socchieve</title><link rel="canonical" href="{U}/"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=../"></head><body><a href="../">Vai alla home</a></body></html>\n', encoding="utf-8")
 
 
 # ---------------------------------------------------------------- file di servizio
@@ -827,8 +843,8 @@ def build_meta():
         urls.append(f"<url><loc>{U}{path}</loc><lastmod>{TODAY}</lastmod><priority>{prio}</priority>{im}</url>")
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + "\n".join(urls) + "\n</urlset>\n", encoding="utf-8")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /_src/\n\nSitemap: {U}/sitemap.xml\n", encoding="utf-8")
-    (ROOT / "site.webmanifest").write_text(json.dumps({"name": SITE["name"], "short_name": "Col Gentile", "start_url": "/", "display": "standalone", "background_color": "#fbf8f2", "theme_color": "#16241e",
-        "icons": [{"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False), encoding="utf-8")
+    (ROOT / "site.webmanifest").write_text(json.dumps({"name": SITE["name"], "short_name": "Col Gentile", "start_url": "./", "display": "standalone", "background_color": "#fbf8f2", "theme_color": "#16241e",
+        "icons": [{"src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}]}, ensure_ascii=False), encoding="utf-8")
     # redirect 301 dalle vecchie pagine EN/FR (Netlify / Cloudflare Pages) finché non esistono le traduzioni
     m = {"": "/", "/accomodation": "/it/alloggi/", "/logement": "/it/alloggi/", "/territory": "/it/territorio", "/territoire": "/it/territorio",
          "/visit-carnia": "/it/visita-la-carnia", "/visiter-la-carnia": "/it/visita-la-carnia", "/cycle-touring": "/it/cicloturismo", "/cyclisme": "/it/cicloturismo",
@@ -861,7 +877,7 @@ def build_icons():
 def main():
     global CSS_V, JS_V
     (ROOT / "assets").mkdir(exist_ok=True)
-    css = (SRC / "fonts.css").read_text(encoding="utf-8") + "\n" + (SRC / "site.css").read_text(encoding="utf-8")
+    css = (SRC / "fonts.css").read_text(encoding="utf-8").replace("url(/assets/fonts/", "url(fonts/") + "\n" + (SRC / "site.css").read_text(encoding="utf-8")
     (ROOT / "assets" / "site.css").write_text(css, encoding="utf-8")
     shutil.copy(SRC / "site.js", ROOT / "assets" / "site.js")
     CSS_V, JS_V = asset_ver(ROOT / "assets" / "site.css"), asset_ver(ROOT / "assets" / "site.js")
