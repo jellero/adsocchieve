@@ -40,6 +40,9 @@ def collect():
         photos |= {v["card"], *v["hero"]}
         og.add(v["hero"][0])
     photos |= set(data.FARIE["g"]); og.add(data.FARIE["g"][0])
+    for sv in data.SERVICES:
+        if sv["hero"]:
+            photos.add(sv["hero"]); og.add(sv["hero"])
     for e in data.EXPS.values():
         photos.add(e["hero"]); og.add(e["hero"])
         photos |= {r["map"] for r in e.get("routes", []) if r.get("map")}
@@ -52,6 +55,9 @@ OLD_DOWN = False
 
 def download(name):
     global OLD_DOWN
+    if name.startswith("foto/"):
+        local = ROOT / "_src" / name
+        return name, (local if local.exists() else None)
     dest = CACHE / slug(name)
     if dest.exists() and dest.stat().st_size > 0:
         return name, dest

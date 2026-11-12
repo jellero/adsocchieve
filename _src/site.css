@@ -8,7 +8,7 @@
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h1,h2,h3,h4,p{margin:0}
@@ -497,3 +497,6 @@ section[id]{scroll-margin-top:60px}
 .ph-plain::after{display:none}
 .welora-box{margin-top:8px;padding:20px;border-radius:var(--r);background:var(--bone)}
 .tile .num{font:600 13px var(--sans);letter-spacing:.04em}
+.mini{display:flex;flex-direction:column}
+.mini-ph{aspect-ratio:4/3;background:radial-gradient(120% 90% at 20% 100%,#7a3d1f 0%,#3b1e10 45%,#16241e 100%);display:grid;place-items:center;color:#f0d3ad;font:300 italic 34px var(--serif)}
+.mini-rail{align-items:start}

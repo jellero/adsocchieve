@@ -499,7 +499,7 @@ def build_exp(k, x):
     {aside("Parti da Socchieve")}
   </div>
 </section>
-<section class="related"><div class="wrap"><span class="eyebrow">Cosa fare a Socchieve</span><h2>Altre esperienze</h2><div class="mini-rail">{"".join(f'<a class="mini" href="{exp_url(kk)}">{pic(xx["hero"], xx["n"], "(max-width:640px) 70vw, 25vw")}<div><b>{xx["n"]}</b><span>{e(xx["lead"].split(":")[0].split(",")[0])}</span></div></a>' for kk, xx in others)}{mini_stay(STAY["casa-vanda"])}</div></div></section>"""
+<section class="related"><div class="wrap"><span class="eyebrow">Cosa fare a Socchieve</span><h2>Altre esperienze</h2><div class="mini-rail">{"".join(f'<a class="mini" href="{exp_url(kk)}">{pic(xx["hero"], xx["n"], "(max-width:640px) 70vw, 25vw")}<div><b>{xx["n"]}</b><span>{e(xx["lead"].split(":")[0].split(",")[0])}</span></div></a>' for kk, xx in others)}<a class="mini" href="/it/benessere">{pic("PanoramaNonta1.jpg", "Benessere a Socchieve", "(max-width:640px) 70vw, 25vw")}<div><b>Benessere</b><span>Sauna e bagno di bosco</span></div></a></div></div></section>"""
     if x.get("routes"):
         ld = {"@context": "https://schema.org", "@type": "TouristTrip", "name": f"{x['n']} a Socchieve", "description": x["desc"], "url": U + exp_url(k),
               "touristType": ["Escursionisti" if k == "trekking" else "Ciclisti"],
@@ -882,10 +882,11 @@ def build_services():
         for x in S:
             if x["id"] == s["id"]:
                 continue
-            ph = pic(x["hero"], x["n"], "(max-width:640px) 70vw, 25vw") if x["hero"] else ""
+            ph = pic(x["hero"], x["n"], "(max-width:640px) 70vw, 25vw") if x["hero"] else f'<div class="mini-ph">{e(x["n"])}</div>'
             minis += f'<a class="mini" href="/it/{x["id"]}">{ph}<div><b>{x["n"]}</b><span>{x["price"]} € {x["unit"].split(",")[0]}</span></div></a>'
-        minis += f'<a class="mini" href="/it/trekking">{pic(EXPS["trekking"]["hero"], "Trekking", "(max-width:640px) 70vw, 25vw")}<div><b>Trekking</b><span>4 sentieri dai borghi</span></div></a>'
-        minis += mini_stay(STAY["casa-vanda"])
+        for k in ("trekking", "cicloturismo", "visita-la-carnia"):
+            x = EXPS[k]
+            minis += f'<a class="mini" href="{exp_url(k)}">{pic(x["hero"], x["n"], "(max-width:640px) 70vw, 25vw")}<div><b>{x["n"]}</b><span>{e(clip(x["lead"], 60))}</span></div></a>'
         body = f"""{hero_html}
 <section class="d-body"><div class="wrap d-grid">
   <div class="d-main">
@@ -897,7 +898,7 @@ def build_services():
   </div>
   {svc_aside(s)}
 </div></section>
-<section class="related"><div class="wrap"><span class="eyebrow">Benessere e natura</span><h2>Abbina al soggiorno</h2><div class="mini-rail">{minis}</div></div></section>"""
+<section class="related"><div class="wrap"><span class="eyebrow">Benessere e natura</span><h2>Da abbinare</h2><div class="mini-rail">{minis}</div></div></section>"""
         page(f"/it/{s['id']}", s["title"], s["desc"], body, active="benessere", image=s["hero"] or "PanoramaNonta1.jpg",
              preload=preload_for(s["hero"]) if s["hero"] else None, ld=[service_ld(s), crumbs_ld(crumbs)],
              images=[abs_img(s["hero"])] if s["hero"] else [])

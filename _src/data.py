@@ -251,7 +251,7 @@ SERVICES = [
          bring=[("Vestiti a strati", "comodi e traspiranti, adatti all'aperto"), ("Giacca impermeabile o antivento", "per i cambi di meteo"), ("Scarpe da trekking o da ginnastica", "per camminare sicuri sul terreno del bosco"), ("Borraccia d'acqua", "per restare idratati"), ("Telo o piccolo tappetino impermeabile", "per sedersi o sdraiarsi a terra"), ("Repellente per insetti", "se vuoi"), ("Uno snack leggero", ""), ("Taccuino e penna", "facoltativi, per annotare pensieri e sensazioni")],
          note="Per vivere appieno il bagno di bosco il cellulare resta in modalità silenziosa o aereo durante la pratica: avvisa chi deve sapere che sarai irraggiungibile per un paio d'ore.",
          price=15, unit="a persona", guide="Petra"),
-    dict(id="sauna", n="Sauna", hero=None,
+    dict(id="sauna", n="Sauna", hero=("foto/sauna.jpg" if (__import__("pathlib").Path(__file__).parent / "foto" / "sauna.jpg").exists() else None),
          title="Sauna a Socchieve, in Carnia · Albergo Diffuso Col Gentile",
          desc="Sauna per il tuo gruppo all'Albergo Diffuso di Socchieve, in Carnia: 50 € l'ora per tutta la prenotazione, da 1 ora in su, dopo una giornata sui sentieri.",
          lead="Il calore secco dopo una giornata sui sentieri, per l'ora che scegli.",
