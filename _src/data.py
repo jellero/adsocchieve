@@ -230,6 +230,13 @@ FARIE = dict(
            "Da oggi La Farie è gestita direttamente dall'Albergo Diffuso Socchieve “Col Gentile”: stessa casa, stessa quiete, con la reception di Mediis a due passi per informazioni, consigli su sentieri e itinerari e per qualsiasi necessità durante il soggiorno."],
     am=["Colazione italiana o à la carte", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazza o balcone", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
     rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "dalle 08:00 alle 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "ammessi su richiesta, può esserci un supplemento"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
+    # Camere e piani tariffari dalla configurazione Welora di La Farie (struttura 8)
+    rooms=[("Campanula", "Camera matrimoniale con bagno e terrazza", 2), ("Salvia", "Camera matrimoniale con terrazzo", 2),
+           ("Tarassacco", "Camera matrimoniale con bagno", 2), ("Centaurea", "Camera matrimoniale con bagno", 4),
+           ("Stella Alpina", "Appartamento con camera matrimoniale e divano letto singolo", 3)],
+    plans=["Soggiorno", "Soggiorno con colazione"],
+    cancel="Cancellazione gratuita dal portale fino a 7 giorni prima dell'arrivo, entro le 18:00.",
+    welora=dict(slug="la-farie", live=False, results="/la-farie-prenota"),
     near=[("Terme di Arta", "25 km"), ("Foro Romano di Zuglio", "23 km"), ("Sauris", "18 km"), ("Aeroporto di Trieste", "105 km")],
 )
 

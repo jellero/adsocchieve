@@ -653,3 +653,10 @@ section[id]{scroll-margin-top:60px}
   --welora-focus:var(--larch);
   --welora-shadow:0 20px 50px -30px rgba(22,36,30,.25);
 }
+
+.rooms{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.room{padding:22px;border-radius:16px;background:rgba(181,96,60,.07);border:1px solid rgba(181,96,60,.18)}
+.room b{display:block;font:400 26px/1.1 var(--serif);font-style:italic}
+.room span{display:block;margin-top:8px;font-size:15px;color:var(--fa-muted)}
+.room small{display:block;margin-top:12px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--fa-clay)}
+#farie [data-welora-booking]{--welora-accent:var(--fa-clay);--welora-accent-hover:#9a4f30;--welora-text:var(--fa-ink);--welora-surface-muted:var(--fa-bg)}
