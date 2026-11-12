@@ -954,6 +954,24 @@ def build_legal():
   <p>Il sito di prenotazione Slope, raggiungibile dai pulsanti “Prenota”, e la mappa di OpenStreetMap nella pagina contatti hanno le proprie informative. Per domande scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>
 </div></section>"""
     page("/cookies", "Cookie · Albergo Diffuso Socchieve", "Informativa cookie del sito dell'Albergo Diffuso Socchieve Col Gentile.", cookies, solid=True)
+    terms = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
+  <span class="eyebrow">Benessere</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione dei servizi</h1>
+  <p>Valgono per le prenotazioni di sauna e bagno di bosco fatte online, via email o per telefono presso {SITE['legal']}, {SITE['street']}, {SITE['locality']}, {SITE['zip']} Socchieve (UD), P.I. {SITE['vat']}.</p>
+  <h2>Prezzi</h2>
+  <p>I prezzi sono in euro. Il prezzo mostrato al momento della prenotazione è quello definitivo: per il bagno di bosco è a persona, per la sauna è all'ora per tutto il gruppo.</p>
+  <h2>Pagamento</h2>
+  <p>La prenotazione online non prevede pagamenti: il servizio si salda direttamente in struttura.</p>
+  <h2>Conferma</h2>
+  <p>Dopo la prenotazione ricevi un'email di conferma con data, orario e numero di partecipanti. Il numero di partecipanti non può superare la capienza indicata per il servizio.</p>
+  <h2>Modifiche e cancellazioni</h2>
+  <p>Per cambiare orario, numero di persone o per cancellare, scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a> o chiama il <a href="tel:{SITE['phone_href']}">{SITE['phone']}</a> il prima possibile: modifiche e cancellazioni vanno concordate con la struttura.</p>
+  <h2>Bagno di bosco</h2>
+  <p>È un'attività all'aperto su sentieri e terreno boschivo: servono abbigliamento e calzature adatte, come indicato nella pagina del servizio.</p>
+  <h2>Dati personali</h2>
+  <p>I dati della prenotazione sono trattati come descritto nell'<a href="/privacy">informativa privacy</a>.</p>
+</div></section>"""
+    page("/condizioni-servizi", "Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve",
+         "Condizioni per prenotare sauna e bagno di bosco all'Albergo Diffuso Socchieve: prezzi, pagamento in struttura, modifiche e cancellazioni.", terms, solid=True)
     err = f"""<section class="err"><div><span class="eyebrow">Errore 404</span><h1>Pagina <em>non trovata.</em></h1><p style="margin:20px auto 30px;max-width:460px;color:var(--muted)">Forse la pagina è stata spostata con il nuovo sito. Ecco da dove ripartire:</p>
   <div class="row" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-dark" href="/it/alloggi/">Le case</a><a class="btn btn-primary" href="/">Home</a></div></div></section>"""
     page("/404", "Pagina non trovata · Albergo Diffuso Socchieve", "La pagina richiesta non esiste.", err, solid=True, noindex=True)
