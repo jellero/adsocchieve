@@ -5,8 +5,11 @@
 ## Come aprire
 Scarica il file index.html e aprilo nel browser con doppio clic. La demo è responsive e include HTML, CSS e JavaScript nello stesso file.
 
+## Design
+Restyling completo: hero a tutto schermo, tipografia Fraunces + Inter Tight (Google Fonts), palette bosco/larice, header trasparente che diventa vetro allo scroll, animazioni di comparsa (disattivate con `prefers-reduced-motion`), menu mobile a schermo intero.
+
 ## Due identità
-- Col Gentile: homepage, catalogo di sei alloggi dimostrativi, filtri per località e ospiti, link al booking Slope.
+- Col Gentile: hero, spiegazione dell'albergo diffuso, catalogo delle 13 residenze del sito storico con foto originali e filtri per borgo e posti letto, carosello degli 8 borghi, esperienze (trekking, bici, arte, Carnia), come arrivare con mappa OpenStreetMap, link al booking Slope.
 - La Farie: navigazione e identità grafica distinte. Seleziona "La Farie" nel menu: la demo mostra la seconda homepage senza richiedere un secondo file.
 - I due percorsi commerciali restano separati.
 - La Farie non è ancora prenotabile nella scheda Booking.com pubblica: la demo lo indica e non inventa disponibilità.

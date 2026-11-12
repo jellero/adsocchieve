@@ -1,207 +1,724 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#19382e">
-  <meta name="description" content="Scopri dove dormire in Carnia: case e appartamenti dell'Albergo Diffuso Socchieve Col Gentile e la dimora La Farie a Lungis. Due identità, un territorio.">
-  <title>Albergo Diffuso Socchieve | Dormire in Carnia · Col Gentile e La Farie</title>
-  <style>
-    :root{--green:#214538;--green2:#122d25;--copper:#bc865f;--paper:#fbf9f4;--warm:#f1ede4;--ink:#25352f;--muted:#65746b;--line:#deded4;--radius:12px}
-    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.65 system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper)}
-    a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,select{font:inherit}button,a,select,summary{touch-action:manipulation}a:focus-visible,button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
-    h1,h2,h3,p{margin:0}h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}h1{font-size:clamp(46px,6.7vw,88px);line-height:1.05;letter-spacing:-.042em}h2{font-size:clamp(34px,4vw,54px);line-height:1.14;letter-spacing:-.035em}h3{font-size:28px;line-height:1.2;letter-spacing:-.025em}p{line-height:1.75}
-    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}.section{padding:92px 0}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:750;color:#527763}.eyebrow.light{color:#e0c8a9}.muted{color:var(--muted)}.mini{font-size:13px}.label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
-    .button{min-height:49px;border:0;border-radius:4px;display:inline-flex;gap:13px;align-items:center;justify-content:center;padding:14px 25px;background:var(--green);color:#fff;font-weight:700;font-size:14px;cursor:pointer;transition:background .2s,transform .2s}.button:hover{background:#142c22;transform:translateY(-1px)}.button.light{background:#fff;color:var(--green)}.button.outline{border:1px solid #ffffffba;background:#ffffff13;color:#fff}.button.small{min-height:42px;padding:10px 18px;font-size:13px}.text-link{font-size:14px;font-weight:750;padding-bottom:4px;border-bottom:1px solid currentColor;display:inline-block}.text-link:hover{color:var(--copper)}
-    .site-header{position:relative;z-index:20;background:#fffefaf5;border-bottom:1px solid #e9e8df}.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;flex-direction:column;gap:3px;white-space:nowrap}.brand strong{font:500 26px/1.1 Georgia,serif;letter-spacing:.11em;color:var(--green)}.brand span{font-size:10px;letter-spacing:.15em;text-transform:uppercase;font-weight:750;color:#6f8175}.nav-links{display:flex;align-items:center;gap:23px;font-size:13px;font-weight:650}.nav-links a:hover{color:#a16d4b}.nav-cta{display:flex;align-items:center;gap:9px}.mobile-nav{display:none;position:relative}.mobile-nav summary{list-style:none;cursor:pointer;padding:8px 13px;border:1px solid var(--line);border-radius:5px;font-size:21px}.mobile-nav summary::-webkit-details-marker{display:none}.mobile-items{position:absolute;right:0;top:53px;width:245px;padding:12px;background:#fff;box-shadow:0 22px 38px #182c2826;border-radius:6px;display:flex;flex-direction:column}.mobile-items a{padding:11px 9px;border-bottom:1px solid var(--line)}
-    .hero{isolation:isolate;position:relative;display:flex;align-items:center;min-height:660px;background:#304a3d;color:#fff}.hero img.hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}.hero::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,rgba(9,35,26,.92),rgba(14,44,33,.72) 48%,rgba(14,44,33,.11))}.hero-inner{padding:110px 0}.hero h1{max-width:760px;margin:15px 0 24px}.hero p{max-width:555px;font-size:17px;line-height:1.8;color:#f4f4e9}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero-micro{display:flex;gap:24px;flex-wrap:wrap;margin-top:57px;font-size:13px;color:#eeeddf}.hero-micro span::before{content:"✦";color:#d3b392;margin-right:9px}
-    .booking-panel{margin-top:-39px;position:relative;z-index:4;border-radius:8px;background:#fff;box-shadow:0 15px 35px #102e221c;padding:22px 29px;display:flex;align-items:center;justify-content:space-between;gap:20px}.booking-panel strong{font-size:17px;display:block;margin-bottom:3px}.booking-panel p{font-size:13px;color:var(--muted)}
-    .section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:33px}.section-head h2{max-width:590px;margin-top:13px}.section-head p{max-width:450px;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:23px}.stay{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;box-shadow:0 2px 12px #00000005;transition:transform .2s,box-shadow .2s}.stay:hover{transform:translateY(-3px);box-shadow:0 15px 35px #122e221c}.stay img{height:240px;width:100%;object-fit:cover;background:#e6e5df}.stay-content{padding:22px}.stay h3{margin:8px 0 19px}.stay-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:15px;gap:10px;font-size:13px}.stay-foot a{font-weight:750;color:var(--green)}.stay.hide{display:none}
-    .filters{display:flex;align-items:end;gap:15px;flex-wrap:wrap;padding:21px;background:#fff;border:1px solid var(--line);border-radius:9px;margin-bottom:20px}.filters label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:750}.filters select{min-height:44px;min-width:210px;border:1px solid #c4cfc7;background:#fff;color:var(--ink);border-radius:4px;padding:9px 13px}.filters .count{margin-left:auto;font-size:13px;font-weight:700;padding-bottom:11px}.filter-note{font-size:12px;color:var(--muted);margin-top:13px}.no-result{display:none;padding:24px;background:#fff}
-    .story{background:#f0eee7}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}.story img,.farie-image{width:100%;height:470px;object-fit:cover;border-radius:8px}.story .copy h2,.farie-callout h2{margin:14px 0 19px}.story .copy p{color:var(--muted)}.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:27px 0}.benefits div{border-top:1px solid #c2d0c4;padding-top:14px;font-size:13px;font-weight:650}.benefits b{display:block;font-size:24px;margin-bottom:7px}
-    .farie-callout{background:#303a34;color:#fff}.farie-callout .eyebrow{color:#d2af90}.farie-callout p{color:#e4e0d6;margin:0 0 27px}.farie-callout .farie-image{border-radius:2px}
-    .topics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.topic{min-height:305px;position:relative;isolation:isolate;display:flex;align-items:end;padding:25px;color:#fff;overflow:hidden;border-radius:7px;background:#2c4b3c}.topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .4s}.topic::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#102821e0,#10282117);z-index:-1}.topic:hover img{transform:scale(1.04)}.topic strong{font:27px Georgia,serif}
-    .cta{padding:80px 0;text-align:center;background:var(--green);color:#fff}.cta h2{margin:15px 0}.cta p{max-width:580px;margin:0 auto 29px;color:#dfebe4}.footer{padding-top:60px;background:#162e25;color:#fff}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;padding-bottom:45px}.footer h3{font-size:24px;margin-bottom:14px}.footer h4{font-size:14px;margin:0 0 12px}.footer p,.footer a{color:#cad9ce;font-size:13px}.footer a{display:block;margin:9px 0}.footer-bottom{border-top:1px solid #ffffff30;padding:17px 0;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#b4c8bb}
-    [hidden]{display:none!important}
-    #farie-view{--green:#3c413a;--green2:#242b27;--warm:#f3efe9;--paper:#f7f3ee;--copper:#ab835f;--ink:#33372f;background:var(--paper);color:var(--ink)}
-    #farie-view .site-header{background:#faf8f4}#farie-view .brand strong{font:400 30px Georgia,serif;letter-spacing:.2em;color:#343d34}#farie-view .hero{background:#37372f;min-height:650px}#farie-view .hero::after{background:linear-gradient(90deg,#222a24eb,#222a24b8 55%,#222a2430)}#farie-view .hero h1{font-style:italic;max-width:800px}
-    #farie-view .farie-block{padding:95px 0}#farie-view .farie-intro{text-align:center;max-width:850px;margin:auto}#farie-view .farie-intro p{font:clamp(23px,2.9vw,37px)/1.55 Georgia,serif;margin-top:20px}#farie-view .farie-story{background:#f0eae2}#farie-view .farie-booking{background:#efebe4;border-left:4px solid #aa8462;padding:23px;font-size:14px;margin-top:22px;color:#584f42}#farie-view .footer{background:#292d29}#farie-view .footer h3{font-style:italic}
-    .demo-bar{background:#dbe4d9;color:#254433;text-align:center;font-size:11px;letter-spacing:.02em;padding:7px 16px}.demo-bar b{font-weight:800}
-    @media(max-width:1050px){.nav-links{gap:13px}.nav{gap:12px}.cards{gap:16px}}
-    @media(max-width:920px){.nav-links{display:none}.mobile-nav{display:block}.two-col{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:repeat(2,1fr)}.story img,.farie-image{height:360px}.hero{min-height:610px}.footer-grid{gap:20px}}
-    @media(max-width:650px){.wrap{width:calc(100% - 34px)}.section{padding:60px 0}.nav{min-height:72px}.brand strong{font-size:20px}.brand span{font-size:8px}.button.small{padding:9px 10px;font-size:12px;min-height:37px}.hero{min-height:650px;align-items:end}.hero-inner{padding:84px 0 92px}.hero h1{font-size:clamp(42px,11vw,62px)}.hero p{font-size:15px}.hero-buttons .button{flex:1 1 100%}.hero-micro{margin-top:27px;gap:11px 15px;font-size:11px}.booking-panel{flex-direction:column;align-items:stretch;padding:20px}.booking-panel .button{width:100%}.section-head{display:block}.section-head p{margin-top:14px}.cards,.topics,.footer-grid{grid-template-columns:1fr}.stay img{height:240px}.filters{flex-direction:column;align-items:stretch}.filters select{width:100%}.filters .count{margin:0;padding:0}.topic{min-height:245px}.story img,.farie-image{height:300px}.benefits{gap:8px}.benefits div{font-size:11px}.footer-bottom{flex-direction:column}.cta{padding:60px 0}#farie-view .hero{min-height:650px}#farie-view .farie-block{padding:65px 0}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#16241e">
+<meta name="description" content="Albergo Diffuso Socchieve Col Gentile: case e appartamenti nei borghi della Carnia, alla porta delle Dolomiti Friulane. E La Farie, dimora a Lungis.">
+<title>Albergo Diffuso Socchieve · Col Gentile — Dormire in Carnia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#16241e;--forest-2:#1f3329;--moss:#3d5a45;--sage:#a9b8a0;
+  --bone:#f5f0e6;--paper:#fbf8f2;--sand:#e9e1d1;--larch:#c4874a;--larch-2:#a86c33;
+  --ink:#1b2620;--muted:#5f6b62;--line:rgba(27,38,32,.12);
+  --serif:"Fraunces",Georgia,serif;--sans:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:20px;--ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3,h4,p{margin:0}
+h1,h2,h3{font-family:var(--serif);font-weight:350;letter-spacing:-.025em;font-variation-settings:"opsz" 144}
+em{font-style:italic;font-weight:300}
+:focus-visible{outline:2px solid var(--larch);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1280px,100% - 2*clamp(16px,4vw,48px));margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--moss)}
+.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
+.on-dark .eyebrow,.eyebrow.light{color:#e2c39d}
+[hidden]{display:none!important}
+section[id]{scroll-margin-top:60px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.01em;transition:transform .35s var(--ease),background .3s,color .3s,box-shadow .3s;white-space:nowrap}
+.btn svg{width:18px;height:18px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translate(3px,-3px)}
+.btn-primary{background:var(--larch);color:#fff;box-shadow:0 10px 30px -10px rgba(196,135,74,.7)}
+.btn-primary:hover{background:var(--larch-2);transform:translateY(-2px)}
+.btn-light{background:var(--bone);color:var(--forest)}
+.btn-light:hover{background:#fff;transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff;backdrop-filter:blur(8px);background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-dark{background:var(--forest);color:var(--bone)}
+.btn-dark:hover{background:var(--moss);transform:translateY(-2px)}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px;transition:color .2s,gap .3s var(--ease)}
+.link:hover{color:var(--larch);gap:12px}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,box-shadow .4s,color .4s,transform .4s var(--ease);color:#fff}
+.hdr .bar{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+.hdr.solid{background:rgba(251,248,242,.86);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.hdr.solid .bar{height:70px}
+.logo{display:flex;align-items:center;gap:12px;line-height:1}
+.logo-mark{width:40px;height:40px;flex:none}
+.logo b{display:block;font:400 22px/1 var(--serif);letter-spacing:.01em}
+.logo small{display:block;margin-top:5px;font:600 9.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.menu{display:flex;align-items:center;gap:34px;font-size:14.5px;font-weight:500}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.menu a:hover::after{transform:scaleX(1);transform-origin:left}
+.hdr-cta{display:flex;align-items:center;gap:10px}
+.hdr .btn{min-height:44px;padding:0 20px;font-size:14px}
+.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid currentColor;place-items:center}
+.burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor;transition:transform .3s}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.drawer{position:fixed;inset:0;z-index:60;background:var(--forest);color:var(--bone);padding:24px clamp(16px,4vw,48px);display:flex;flex-direction:column;transform:translateY(-100%);transition:transform .6s var(--ease);visibility:hidden}
+.drawer.open{transform:none;visibility:visible}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;height:60px}
+.drawer nav{margin-top:6vh;display:flex;flex-direction:column}
+.drawer nav a{font:300 clamp(34px,9vw,54px)/1.25 var(--serif);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0}
+.drawer .btn{margin-top:auto;justify-content:center}
+.close{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);font-size:22px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
+@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.05) 30%,rgba(10,20,15,.15) 55%,rgba(10,20,15,.82) 100%)}
+.hero-in{padding:0 0 clamp(36px,7vh,72px);width:100%}
+.hero h1{font-size:clamp(48px,9vw,138px);line-height:.94;letter-spacing:-.045em;max-width:12ch;margin:22px 0 0}
+.hero h1 em{color:#f0d3ad}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:40px;flex-wrap:wrap}
+.hero-row p{max-width:440px;font-size:18px;line-height:1.6;color:rgba(255,255,255,.88)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:28px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);font-size:13px;letter-spacing:.04em;color:rgba(255,255,255,.78);flex-wrap:wrap}
+.hero-meta b{color:#fff;font-weight:600}
+.scroll-cue{position:absolute;right:clamp(16px,4vw,48px);top:50%;writing-mode:vertical-rl;font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.7;display:flex;align-items:center;gap:14px}
+.scroll-cue::after{content:"";width:1px;height:70px;background:linear-gradient(#fff,transparent);animation:cue 2.2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* marquee */
+.marquee{background:var(--forest);color:var(--bone);overflow:hidden;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+.marquee-track{display:flex;gap:48px;width:max-content;animation:mq 40s linear infinite}
+.marquee span{font:300 italic clamp(22px,2.6vw,34px)/1 var(--serif);white-space:nowrap;display:flex;align-items:center;gap:48px}
+.marquee span::after{content:"✳";font-style:normal;font-size:.6em;color:var(--larch)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sections */
+.sec{padding:clamp(80px,12vw,160px) 0}
+.sec-head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
+.sec-head h2{font-size:clamp(40px,5.6vw,80px);line-height:1;margin-top:20px;max-width:14ch}
+.sec-head p{max-width:400px;color:var(--muted);font-size:17px}
+
+/* intro */
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,7vw,110px);align-items:center}
+.statement{font:300 clamp(30px,3.6vw,52px)/1.18 var(--serif);letter-spacing:-.02em;margin-top:26px}
+.statement em{color:var(--larch-2)}
+.intro-copy{margin-top:30px;color:var(--muted);font-size:17px;max-width:56ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--line)}
+.stats div{padding:22px 18px 0 0}
+.stats b{display:block;font:300 clamp(40px,4.4vw,60px)/1 var(--serif);color:var(--forest)}
+.stats span{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
+.intro-media{position:relative;aspect-ratio:4/5}
+.intro-media img{position:absolute;object-fit:cover;border-radius:var(--r)}
+.intro-media .a{inset:0 18% 14% 0;width:82%;height:86%}
+.intro-media .b{right:0;bottom:0;width:48%;height:44%;border:8px solid var(--paper);border-radius:calc(var(--r) + 4px)}
+.badge{position:absolute;left:-22px;bottom:22%;background:var(--larch);color:#fff;width:124px;height:124px;border-radius:50%;display:grid;place-items:center;text-align:center;font:500 12px/1.25 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:14px;animation:spin 30s linear infinite}
+.badge svg{position:absolute;inset:0;width:100%;height:100%}
+.badge i{font:italic 400 30px/1 var(--serif);text-transform:none;letter-spacing:0;animation:spin 30s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* stays */
+.stays{background:var(--bone)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:36px}
+.chip{height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:500;background:transparent;transition:all .25s}
+.chip:hover{border-color:var(--forest)}
+.chip[aria-pressed="true"]{background:var(--forest);color:var(--bone);border-color:var(--forest)}
+.filters .sep{width:1px;height:26px;background:var(--line);margin:0 8px}
+.filters .count{margin-left:auto;font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,28px)}
+.card{position:relative;display:flex;flex-direction:column;background:var(--paper);border-radius:var(--r);overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(22,36,30,.35)}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card:hover .card-img img{transform:scale(1.07)}
+.tag{position:absolute;top:14px;left:14px;padding:7px 12px;border-radius:999px;background:rgba(251,248,242,.92);backdrop-filter:blur(6px);font-size:12px;font-weight:600;color:var(--forest)}
+.card-body{padding:22px 24px 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex:1}
+.card h3{font-size:27px;line-height:1.1}
+.card .where{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;color:var(--muted)}
+.card .where svg{width:14px;height:14px}
+.arrow{flex:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .35s var(--ease)}
+.arrow svg{width:18px;height:18px}
+.card:hover .arrow{background:var(--larch);border-color:var(--larch);color:#fff;transform:rotate(45deg)}
+.card.feature{grid-column:span 2;flex-direction:row}
+.card.feature .card-img{aspect-ratio:auto;flex:1.4}
+.card.feature .card-body{flex:1;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:32px}
+.card.feature h3{font-size:clamp(32px,3vw,44px)}
+.card.feature p{color:var(--muted);margin-top:14px;font-size:15px}
+.card.out{display:none}
+.empty{display:none;padding:40px;text-align:center;color:var(--muted);background:var(--paper);border-radius:var(--r)}
+.book-strip{margin-top:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 32px;border-radius:var(--r);background:var(--forest);color:var(--bone);flex-wrap:wrap}
+.book-strip strong{font:400 26px/1.2 var(--serif)}
+.book-strip p{color:var(--sage);font-size:14px;margin-top:4px}
+
+/* villages */
+.villages{background:var(--forest);color:var(--bone);overflow:hidden}
+.villages .sec-head p{color:var(--sage)}
+.rail-ctrl{display:flex;gap:10px}
+.rail-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;transition:background .3s}
+.rail-ctrl button:hover{background:rgba(255,255,255,.1)}
+.rail-ctrl svg{width:20px;height:20px}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 max(clamp(16px,4vw,48px),(100vw - 1280px)/2) 10px;scroll-padding:0 max(clamp(16px,4vw,48px),(100vw - 1280px)/2)}
+.rail::-webkit-scrollbar{display:none}
+.village{flex:0 0 clamp(250px,26vw,340px);scroll-snap-align:start;position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
+.village img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
+.village::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 40%,rgba(10,20,15,.85))}
+.village:hover img{transform:scale(1.08)}
+.village small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e2c39d}
+.village strong{font:400 36px/1 var(--serif);margin-top:8px;display:flex;justify-content:space-between;align-items:center}
+.village strong svg{width:22px;height:22px;opacity:0;transform:translate(-8px,8px);transition:all .4s var(--ease)}
+.village:hover strong svg{opacity:1;transform:none}
+
+/* experiences */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(260px,auto);gap:clamp(14px,1.6vw,22px)}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;isolation:isolate;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;min-height:260px}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--ease)}
+.tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.05),rgba(10,20,15,.78))}
+.tile:hover img{transform:scale(1.06)}
+.tile h3{font-size:clamp(28px,2.6vw,40px);line-height:1.05}
+.tile p{margin-top:12px;color:rgba(255,255,255,.85);font-size:15px;max-width:42ch}
+.tile .link{margin-top:20px;align-self:flex-start;font-size:14px}
+.tile.big{grid-column:span 2;grid-row:span 2}
+.tile.wide{grid-column:span 2}
+.tile.plain{background:var(--sand);color:var(--ink)}
+.tile.plain::after{display:none}
+.tile.plain p{color:var(--muted)}
+.tile.green{background:var(--moss)}
+.tile.green::after{display:none}
+.tile .num{position:absolute;top:26px;right:28px;font:300 italic 18px var(--serif);opacity:.7}
+
+/* location */
+.loc{background:var(--bone)}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.loc h2{font-size:clamp(40px,5vw,72px);line-height:1;margin:20px 0 26px}
+.loc p{color:var(--muted);font-size:17px}
+.routes{margin:34px 0;display:grid;gap:0;border-top:1px solid var(--line)}
+.routes div{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:15px}
+.routes b{font-weight:600}
+.routes span{color:var(--muted)}
+.mapcard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:var(--forest)}
+.mapcard iframe{width:100%;height:100%;border:0;filter:grayscale(.6) contrast(1.05) sepia(.15)}
+.mapcard .pin{position:absolute;left:20px;bottom:20px;right:20px;background:var(--paper);border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
+.mapcard .pin b{display:block;font:400 20px/1.2 var(--serif)}
+.mapcard .pin span{font-size:13px;color:var(--muted)}
+
+/* farie teaser */
+.farie-teaser{position:relative;color:#fff;overflow:hidden;isolation:isolate;padding:clamp(100px,14vw,200px) 0}
+.farie-teaser>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.farie-teaser::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(43,28,20,.9),rgba(43,28,20,.55) 55%,rgba(43,28,20,.15))}
+.farie-teaser h2{font-size:clamp(52px,8vw,120px);line-height:.95;margin:22px 0 26px;font-style:italic;font-weight:300}
+.farie-teaser p{max-width:460px;color:rgba(255,255,255,.85);font-size:18px;margin-bottom:34px}
+
+/* cta + footer */
+.cta{padding:clamp(90px,12vw,170px) 0;text-align:center;background:var(--paper)}
+.cta h2{font-size:clamp(48px,8vw,124px);line-height:.95;letter-spacing:-.045em;max-width:13ch;margin:24px auto 30px}
+.cta h2 em{color:var(--larch-2)}
+.cta p{max-width:520px;margin:0 auto 38px;color:var(--muted);font-size:17px}
+.cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.foot{background:var(--forest);color:var(--bone);padding:clamp(64px,8vw,100px) 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px}
+.foot h4{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:20px}
+.foot a,.foot p{display:block;color:rgba(245,240,230,.82);font-size:15px;margin:0 0 10px;transition:color .2s}
+.foot a:hover{color:#fff}
+.foot .big{font:300 clamp(34px,3.6vw,48px)/1.05 var(--serif);color:var(--bone);margin:22px 0 18px;max-width:12ch}
+.foot-bottom{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:20px;font-size:13px;color:rgba(245,240,230,.55);flex-wrap:wrap}
+.foot-bottom a{display:inline;font-size:13px;margin:0 0 0 18px;color:inherit}
+.partners{display:flex;gap:14px;align-items:center;margin-top:24px}
+.partners img{height:46px;width:auto;border-radius:6px;background:#fff;padding:4px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(32px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ===== LA FARIE ===== */
+#farie{--fa-bg:#f4ede4;--fa-ink:#2b1c14;--fa-clay:#b5603c;--fa-muted:#7a6a5d;background:var(--fa-bg);color:var(--fa-ink);min-height:100vh}
+#farie .hdr.solid{background:rgba(244,237,228,.88);color:var(--fa-ink)}
+#farie .logo b{font-style:italic;font-weight:300;font-size:26px}
+#farie .btn-primary{background:var(--fa-clay);box-shadow:0 10px 30px -10px rgba(181,96,60,.7)}
+#farie .hero::after{background:linear-gradient(180deg,rgba(43,28,20,.5),rgba(43,28,20,.1) 35%,rgba(43,28,20,.85))}
+#farie .hero h1{font-style:italic;font-weight:300}
+#farie .hero h1 em{font-style:normal;color:#f2c9a8}
+.fa-intro{text-align:center;max-width:960px;margin:auto}
+.fa-intro p{font:300 clamp(28px,3.6vw,50px)/1.25 var(--serif);margin-top:28px;letter-spacing:-.02em}
+.fa-intro p em{color:var(--fa-clay)}
+.fa-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.fa-split img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px var(--r) var(--r)}
+.fa-split h2{font-size:clamp(40px,5vw,72px);line-height:1;margin:20px 0 24px}
+.fa-split p{color:var(--fa-muted);font-size:17px}
+#farie .eyebrow{color:var(--fa-clay)}
+.notice{margin-top:32px;padding:22px 24px;border-radius:16px;background:rgba(181,96,60,.08);border:1px solid rgba(181,96,60,.25);font-size:15px}
+.notice b{display:block;margin-bottom:6px}
+.notice p{font-size:14px;margin-bottom:14px}
+.fa-cta{background:var(--fa-ink);color:var(--fa-bg);text-align:center;padding:clamp(90px,12vw,160px) 0}
+.fa-cta h2{font-size:clamp(44px,6vw,96px);line-height:1;margin:22px auto 30px;max-width:14ch}
+#farie .foot{background:#20150f}
+
+/* responsive */
+@media (max-width:1080px){
+  .menu{display:none}.burger{display:grid}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .card.feature{grid-column:span 2}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .intro-grid,.loc-grid,.fa-split{grid-template-columns:1fr}
+  .intro-media{max-width:520px}
+  .sec-head{grid-template-columns:1fr}
+  .scroll-cue{display:none}
+  .fa-split img{aspect-ratio:1/1}
+}
+@media (max-width:640px){
+  .hdr .bar{height:68px}
+  .hdr-cta .btn{display:none}
+  .logo b{font-size:19px}.logo small{font-size:8.5px}.logo-mark{width:34px;height:34px}
+  .hero h1{font-size:clamp(46px,14vw,72px)}
+  .hero-row p{font-size:16px}
+  .hero-actions{width:100%}.hero-actions .btn{flex:1;justify-content:center}
+  .hero-meta{gap:10px 20px;margin-top:30px;font-size:12px}
+  .grid{grid-template-columns:1fr}
+  .card.feature{grid-column:auto;flex-direction:column}
+  .card.feature .card-img{aspect-ratio:4/3}
+  .card.feature .card-body{padding:22px 24px 24px}
+  .filters .sep{display:none}.filters .count{width:100%;margin:6px 0 0}
+  .bento{grid-template-columns:1fr}
+  .tile.big,.tile.wide{grid-column:auto;grid-row:auto}
+  .tile.big{min-height:420px}
+  .stats div{padding-right:8px}
+  .badge{width:96px;height:96px;left:-6px;font-size:10px}
+  .routes div{grid-template-columns:1fr;gap:4px}
+  .foot-grid{grid-template-columns:1fr}
+  .book-strip{padding:24px}.book-strip .btn{width:100%;justify-content:center}
+  .foot-bottom a{margin:0 18px 0 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
 </head>
 <body>
-<div class="demo-bar"><b>DEMO HTML</b> · Nessun framework · Foto e dati da validare prima della pubblicazione</div>
 
-<div id="col-view">
-  <header class="site-header">
-    <div class="wrap nav">
-      <a href="#home" class="brand" aria-label="Col Gentile, torna all'inizio"><strong>COL GENTILE</strong><span>Albergo Diffuso Socchieve</span></a>
-      <nav class="nav-links" aria-label="Navigazione Col Gentile">
-        <a href="#alloggi">Gli alloggi</a><a href="#esperienza">L'albergo diffuso</a><a href="#territorio">Il territorio</a><a href="#contatti">Contatti</a><a href="#la-farie" data-show="farie">La Farie ↗</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M6 28 15 15l5 7 4-5 10 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M17 28v-5h6v5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+</svg>
+
+<!-- ================= COL GENTILE ================= -->
+<div id="col">
+  <header class="hdr" data-hdr>
+    <div class="wrap bar">
+      <a href="#top" class="logo" aria-label="Col Gentile, torna all'inizio">
+        <svg class="logo-mark"><use href="#i-mark"/></svg>
+        <span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span>
+      </a>
+      <nav class="menu" aria-label="Principale">
+        <a href="#alloggi">Le case</a>
+        <a href="#borghi">I borghi</a>
+        <a href="#esperienze">Esperienze</a>
+        <a href="#dove">Dove siamo</a>
+        <a href="#la-farie">La Farie</a>
       </nav>
-      <div class="nav-cta">
-        <a class="button small" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener noreferrer">Prenota ↗</a>
-        <details class="mobile-nav"><summary aria-label="Apri menu">☰</summary><nav class="mobile-items"><a href="#alloggi">Gli alloggi</a><a href="#esperienza">Albergo diffuso</a><a href="#territorio">Territorio</a><a href="#contatti">Contatti</a><a href="#la-farie" data-show="farie">La Farie ↗</a></nav></details>
+      <div class="hdr-cta">
+        <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota <svg><use href="#i-arrow"/></svg></a>
+        <button class="burger" aria-label="Apri menu" data-open><span></span></button>
       </div>
     </div>
   </header>
-  <main>
-    <section class="hero" id="home">
-      <img class="hero-image" src="https://www.albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Casa Vanda, residenza tradizionale dell'Albergo Diffuso Socchieve" fetchpriority="high">
-      <div class="wrap hero-inner">
-        <div class="eyebrow light">Socchieve · Carnia · Friuli Venezia Giulia</div>
-        <h1>In Carnia, la tua casa è dentro il borgo.</h1>
-        <p>Case e appartamenti autentici tra i borghi di Socchieve. Scegli dove soggiornare, scopri la montagna e prenota il tuo prossimo viaggio.</p>
-        <div class="hero-buttons"><a class="button light" href="#alloggi">Scopri le case ↗</a><a class="button outline" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener noreferrer">Verifica disponibilità ↗</a></div>
-        <div class="hero-micro"><span>Appartamenti nei borghi</span><span>Natura e montagna</span><span>Accoglienza locale</span></div>
+
+  <div class="drawer" data-drawer aria-hidden="true">
+    <div class="drawer-top"><span class="logo"><svg class="logo-mark"><use href="#i-mark"/></svg><span><b>Col Gentile</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
+    <nav><a href="#alloggi">Le case</a><a href="#borghi">I borghi</a><a href="#esperienze">Esperienze</a><a href="#dove">Dove siamo</a><a href="#la-farie">La Farie</a></nav>
+    <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media"><img src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Strada sterrata tra i prati verso le montagne della Carnia" fetchpriority="high"></div>
+      <div class="wrap hero-in">
+        <span class="eyebrow light">Socchieve · Carnia · Porta delle Dolomiti</span>
+        <h1>Vivi la Carnia <em>da paesano.</em></h1>
+        <div class="hero-row">
+          <p>Case vere nei borghi di montagna, con i servizi di un albergo. Sentieri fuori dalla porta, silenzio, legno e pietra.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#alloggi">Scopri le case</a>
+          </div>
+        </div>
+        <div class="hero-meta"><span><b>13</b> residenze</span><span><b>8</b> borghi</span><span>Dolomiti Friulane · <b>Patrimonio UNESCO</b></span></div>
       </div>
+      <span class="scroll-cue" aria-hidden="true">Scorri</span>
     </section>
-    <div class="wrap booking-panel">
-      <div><strong>Il tuo prossimo soggiorno in Carnia</strong><p>Prezzi e date aggiornati sul sistema ufficiale di prenotazione Col Gentile.</p></div>
-      <a class="button" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener noreferrer">Controlla date e disponibilità ↗</a>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span>
+        <span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span>
+      </div>
     </div>
-    <section class="section" id="alloggi">
+
+    <section class="sec" id="albergo-diffuso">
+      <div class="wrap intro-grid">
+        <div>
+          <span class="eyebrow rv">Cos'è un albergo diffuso</span>
+          <p class="statement rv d1">Non un hotel con tante stanze. <em>Un paese intero</em> che ti apre le sue case.</p>
+          <p class="intro-copy rv d2">L'albergo diffuso offre i servizi di una struttura alberghiera dentro un territorio abitato. Dormi in una casa del borgo, prendi il caffè con chi ci vive, esci a piedi sui sentieri. Turista e paesano, nello stesso viaggio.</p>
+          <div class="stats rv d3">
+            <div><b>13</b><span>case e appartamenti</span></div>
+            <div><b>8</b><span>borghi del comune</span></div>
+            <div><b>2–16+</b><span>posti letto per casa</span></div>
+          </div>
+        </div>
+        <div class="intro-media rv d2">
+          <img class="a" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide2Socchieve.jpg" alt="Albero e panchina in un prato di montagna">
+          <img class="b" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Casa Vanda a Viaso, facciata in pietra con ballatoi in legno">
+          <div class="badge" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="8.6" letter-spacing="2.2" fill="#fff" font-family="Inter Tight" font-weight="600"><textPath href="#circ">OSPITI DELLA NATURA · OSPITI DELLA NATURA ·</textPath></text></svg>
+            <i>Carnia</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec stays" id="alloggi">
       <div class="wrap">
-        <div class="section-head"><div><div class="eyebrow">Dove dormire in Carnia</div><h2>Trova la tua casa nel borgo.</h2></div><p>Dal soggiorno in coppia alla vacanza in famiglia o in gruppo: esplora le residenze Col Gentile e scegli la località da cui partire.</p></div>
-        <div class="filters" role="search" aria-label="Filtra gli alloggi">
-          <label for="village">Località<select id="village"><option value="all">Tutti i borghi</option><option value="Feltrone">Feltrone</option><option value="Viaso">Viaso</option><option value="Lungis">Lungis</option><option value="Mediis">Mediis</option><option value="Priuso">Priuso</option></select></label>
-          <label for="guests">Ospiti<select id="guests"><option value="0">Qualsiasi numero</option><option value="2">2 o più</option><option value="4">4 o più</option><option value="6">6 o più</option><option value="8">8 o più</option></select></label>
-          <span class="count" id="count" aria-live="polite">6 alloggi</span>
+        <div class="sec-head">
+          <div><span class="eyebrow rv">Le residenze</span><h2 class="rv d1">Scegli la tua <em>casa nel borgo.</em></h2></div>
+          <p class="rv d2">Dal nido per due alla casa per tutta la compagnia. Filtra per borgo o per numero di posti letto.</p>
         </div>
-        <div class="cards" id="stays">
-          <article class="stay" data-village="Feltrone" data-guests="9"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/CasaPradin-esterno_0.jpg" alt="Facciata e balconi in legno di Casa Pradin"><div class="stay-content"><div class="eyebrow">Feltrone · Casa vacanza</div><h3>Casa Pradin</h3><div class="stay-foot"><span>Fino a 9 ospiti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/casa-pradin">Scopri l'alloggio ↗</a></div></div></article>
-          <article class="stay" data-village="Viaso" data-guests="unknown"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Facciata in pietra e ballatoi di Casa Vanda"><div class="stay-content"><div class="eyebrow">Viaso · Residenza diffusa</div><h3>Casa Vanda</h3><div class="stay-foot"><span>Più appartamenti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/casa-vanda">Scopri l'alloggio ↗</a></div></div></article>
-          <article class="stay" data-village="Lungis" data-guests="5"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/ErnRosuline2-terrazzo_1.jpg" alt="Terrazza in legno e panorama da Ernesto da Rosuline 2"><div class="stay-content"><div class="eyebrow">Lungis · Appartamento</div><h3>Ernesto da Rosuline 2</h3><div class="stay-foot"><span>Fino a 5 ospiti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/ernesto-da-rosuline-2">Scopri l'alloggio ↗</a></div></div></article>
-          <article class="stay" data-village="Feltrone" data-guests="5"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/CasaPradin-esterno_0.jpg" alt="Architettura tradizionale di Feltrone, immagine provvisoria"><div class="stay-content"><div class="eyebrow">Feltrone · Casa vacanza</div><h3>Casa Rovedo</h3><div class="stay-foot"><span>Fino a 5 ospiti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/casa-rovedo">Scopri l'alloggio ↗</a></div></div></article>
-          <article class="stay" data-village="Mediis" data-guests="8"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Architettura tradizionale di Socchieve, immagine provvisoria"><div class="stay-content"><div class="eyebrow">Mediis · Appartamento</div><h3>Casa dal Miedi</h3><div class="stay-foot"><span>Fino a 8 ospiti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/casa-dal-miedi">Scopri l'alloggio ↗</a></div></div></article>
-          <article class="stay" data-village="Priuso" data-guests="4"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/casa%20ernesto_3.jpg" alt="Edificio tradizionale del territorio, immagine provvisoria"><div class="stay-content"><div class="eyebrow">Priuso · Appartamento</div><h3>Ai Pascoli</h3><div class="stay-foot"><span>Fino a 4 ospiti</span><a target="_blank" rel="noopener noreferrer" href="https://www.albergodiffusosocchieve.it/it/alloggi/ai-pascoli">Scopri l'alloggio ↗</a></div></div></article>
+
+        <div class="filters rv" role="group" aria-label="Filtra le residenze">
+          <button class="chip" data-f="borgo" data-v="all" aria-pressed="true">Tutti i borghi</button>
+          <button class="chip" data-f="borgo" data-v="Viaso" aria-pressed="false">Viaso</button>
+          <button class="chip" data-f="borgo" data-v="Lungis" aria-pressed="false">Lungis</button>
+          <button class="chip" data-f="borgo" data-v="Feltrone" aria-pressed="false">Feltrone</button>
+          <button class="chip" data-f="borgo" data-v="Mediis" aria-pressed="false">Mediis</button>
+          <span class="sep"></span>
+          <button class="chip" data-f="size" data-v="all" aria-pressed="true">Ogni capienza</button>
+          <button class="chip" data-f="size" data-v="s" aria-pressed="false">2–8 posti</button>
+          <button class="chip" data-f="size" data-v="m" aria-pressed="false">9–16 posti</button>
+          <button class="chip" data-f="size" data-v="l" aria-pressed="false">Oltre 16</button>
+          <span class="count" aria-live="polite" data-count></span>
         </div>
-        <div class="no-result" id="empty">Nessun alloggio corrisponde ai filtri selezionati. Prova una località o una capienza diversa.</div>
-        <p class="filter-note">Le capienze non confermate sono escluse dal filtro ospiti. Disponibilità e prezzi effettivi sono sempre verificati su Slope. Alcune immagini delle schede sono provvisorie.</p>
-        <p style="margin-top:29px"><a class="text-link" href="https://www.albergodiffusosocchieve.it/it/alloggi" target="_blank" rel="noopener noreferrer">Vedi il catalogo completo attuale ↗</a></p>
-      </div>
-    </section>
-    <section class="section story" id="esperienza">
-      <div class="wrap two-col">
-        <img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Paesaggio del borgo di Lungis tra le montagne della Carnia">
-        <div class="copy"><div class="eyebrow">Un modo diverso di soggiornare</div><h2>Non una stanza qualsiasi. Una casa da vivere.</h2><p>Nell'albergo diffuso si soggiorna nelle case del paese, con il ritmo e il carattere dei borghi della Carnia. Un punto di partenza per passeggiare, esplorare e sentirsi parte del territorio.</p><div class="benefits"><div><b>⌂</b>Borghi autentici</div><div><b>♧</b>Paesaggi e natura</div><div><b>♡</b>Libertà del soggiorno</div></div><a href="#alloggi" class="text-link">Scegli la tua casa ↗</a></div>
-      </div>
-    </section>
-    <section class="section farie-callout">
-      <div class="wrap two-col">
-        <div><div class="eyebrow">Due identità · Un territorio</div><h2>La Farie.<br>Un'altra atmosfera.</h2><p>Una dimora a Lungis con il proprio carattere e una proposta di ospitalità distinta. Scopri La Farie senza confonderla con gli appartamenti Col Gentile.</p><a href="#la-farie" data-show="farie" class="button light">Entra nel mondo La Farie ↗</a></div>
-        <img class="farie-image" loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Panorama di Lungis, immagine provvisoria in attesa di fotografie La Farie">
-      </div>
-    </section>
-    <section class="section" id="territorio">
-      <div class="wrap"><div class="section-head"><div><div class="eyebrow">La Carnia tutto l'anno</div><h2>Il soggiorno è solo l'inizio.</h2></div><p>Escursioni, ciclismo e borghi: idee per vivere il territorio e organizzare una vacanza a Socchieve.</p></div>
-        <div class="topics">
-          <a class="topic" href="https://www.albergodiffusosocchieve.it/it/trekking" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Montagne della Carnia"><strong>Trekking ↗</strong></a>
-          <a class="topic" href="https://www.albergodiffusosocchieve.it/it/cicloturismo" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/ErnRosuline2-terrazzo_1.jpg" alt="Panorama dai ballatoi di Lungis"><strong>Cicloturismo ↗</strong></a>
-          <a class="topic" href="https://www.albergodiffusosocchieve.it/it/territorio" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Architettura del borgo di Viaso"><strong>Borghi e cultura ↗</strong></a>
+
+        <div class="grid" data-grid></div>
+        <div class="empty" data-empty>Nessuna casa con questi filtri. Prova un altro borgo o un'altra capienza.</div>
+
+        <div class="book-strip rv">
+          <div><strong>Date, prezzi e disponibilità in tempo reale</strong><p>Prenoti direttamente sul sistema ufficiale Col Gentile.</p></div>
+          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
-    <section class="cta"><div class="wrap"><div class="eyebrow light">Col Gentile · Socchieve</div><h2>La tua prossima vacanza in Carnia.</h2><p>Scegli il tuo periodo e verifica disponibilità e condizioni direttamente sul sistema ufficiale di prenotazione.</p><a class="button light" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener noreferrer">Verifica disponibilità ↗</a></div></section>
+
+    <section class="sec villages on-dark" id="borghi">
+      <div class="wrap sec-head">
+        <div><span class="eyebrow rv">Socchieve e i suoi paesi</span><h2 class="rv d1">Otto borghi, <em>un'unica valle.</em></h2></div>
+        <div class="rail-ctrl"><button data-rail="-1" aria-label="Borghi precedenti"><svg><use href="#i-left"/></svg></button><button data-rail="1" aria-label="Borghi successivi"><svg><use href="#i-right"/></svg></button></div>
+      </div>
+      <div class="rail" data-railbox></div>
+    </section>
+
+    <section class="sec" id="esperienze">
+      <div class="wrap">
+        <div class="sec-head">
+          <div><span class="eyebrow rv">Cosa fare a Socchieve</span><h2 class="rv d1">Prenditi <em>il tempo.</em></h2></div>
+          <p class="rv d2">Passeggiate ed escursioni, cibo sano, natura incontaminata. Si parte direttamente dalle nostre residenze.</p>
+        </div>
+        <div class="bento">
+          <a class="tile big rv" href="https://albergodiffusosocchieve.it/it/trekking" target="_blank" rel="noopener">
+            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Sentiero tra prati e boschi">
+            <span class="num">01</span>
+            <h3>Trekking</h3>
+            <p>Dalla passeggiata attorno ai paesi ai percorsi più impegnativi per camminatori esperti. Fuori dalla porta, una rete fitta di sentieri.</p>
+            <span class="link">Scopri i percorsi <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="tile green rv d1" href="https://albergodiffusosocchieve.it/it/cicloturismo" target="_blank" rel="noopener">
+            <span class="num">02</span>
+            <h3>Cicloturismo</h3>
+            <p>Itinerari in bici selezionati per partire dalle residenze.</p>
+            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="tile rv d2" href="https://albergodiffusosocchieve.it/it/arte-e-cultura" target="_blank" rel="noopener">
+            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide3Socchieve.jpg" alt="Antica meridiana dipinta su un muro in pietra">
+            <span class="num">03</span>
+            <h3>Arte e cultura</h3>
+            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
+          </a>
+          <a class="tile wide plain rv d1" href="https://albergodiffusosocchieve.it/it/visita-la-carnia" target="_blank" rel="noopener">
+            <span class="num">04</span>
+            <h3>Visita la Carnia</h3>
+            <p>Non solo Socchieve: la Carnia è un puzzle di meraviglie che aspetta solo di ricomporsi davanti ai tuoi occhi.</p>
+            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec loc" id="dove">
+      <div class="wrap loc-grid">
+        <div>
+          <span class="eyebrow rv">Dov'è Socchieve</span>
+          <h2 class="rv d1">Tra le Dolomiti Friulane <em>e le Pesarine.</em></h2>
+          <p class="rv d2">Nell'Alto Friuli, in Carnia, lungo la valle che unisce Villa Santina a Forni di Sotto.</p>
+          <div class="routes rv d3">
+            <div><b>Da Tolmezzo</b><span>Uscita A23 Carnia, poi SS52 verso Forni</span></div>
+            <div><b>Dal Cadore</b><span>SS52 da Forni di Sopra</span></div>
+            <div><b>Da Tramonti</b><span>SS552 del Monte Rest</span></div>
+            <div><b>Dalla Val d'Arzino</b><span>Strada comunale di Preone</span></div>
+          </div>
+          <a class="link rv" href="https://www.google.com/maps/search/?api=1&query=Via+Roma+20+Mediis+Socchieve" target="_blank" rel="noopener">Indicazioni stradali <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="mapcard rv d2">
+          <iframe title="Mappa di Socchieve" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=12.70%2C46.33%2C12.93%2C46.45&layer=mapnik&marker=46.395%2C12.83"></iframe>
+          <div class="pin"><div><b>Reception · Mediis</b><span>Via Roma 20, Socchieve (UD)</span></div><a class="arrow" href="tel:+390433819934" aria-label="Chiama"><svg><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="farie-teaser" id="farie-teaser">
+      <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/styles/portfolio/public/LungisCartolina.jpg?itok=MIWMVY69" alt="Il borgo di Lungis">
+      <div class="wrap">
+        <span class="eyebrow light rv">Un'altra atmosfera · Lungis</span>
+        <h2 class="rv d1">La Farie.</h2>
+        <p class="rv d2">Una dimora nel borgo di Lungis, con un carattere tutto suo e un'ospitalità distinta da Col Gentile.</p>
+        <a class="btn btn-light rv d3" href="#la-farie">Entra in La Farie <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <span class="eyebrow rv">Una vacanza diversa</span>
+        <h2 class="rv d1">La montagna, <em>tra le persone.</em></h2>
+        <p class="rv d2">Lasciati affascinare dal vivere in montagna tra la gente e la natura della Carnia.</p>
+        <div class="row rv d3">
+          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota il soggiorno <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-dark" href="mailto:info@albergodiffusosocchieve.it">Scrivici</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer" id="contatti"><div class="wrap footer-grid">
-    <div><h3>Col Gentile</h3><p>Albergo Diffuso Socchieve<br>Case e appartamenti nei borghi della Carnia.</p></div>
-    <div><h4>Esplora</h4><a href="#alloggi">Gli alloggi</a><a href="#esperienza">Albergo diffuso</a><a href="#territorio">Il territorio</a><a href="#la-farie" data-show="farie">La Farie</a></div>
-    <div><h4>Contatti</h4><a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a><a href="tel:+390433819934">+39 0433 819934</a><p>Via Roma 20, Mediis · Socchieve (UD)</p></div>
-  </div><div class="wrap footer-bottom"><span>Albergo Diffuso Socchieve · Col Gentile</span><span>Demo progettuale · Non sostituisce il sito in produzione</span></div></footer>
+
+  <footer class="foot" id="contatti">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a href="#top" class="logo" style="color:var(--bone)"><svg class="logo-mark"><use href="#i-mark"/></svg><span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span></a>
+          <p class="big">La porta delle Dolomiti.</p>
+          <div class="partners">
+            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/logoborghi%20autentici%20d%27Italia.jpg" alt="Borghi Autentici d'Italia">
+          </div>
+        </div>
+        <div><h4>Esplora</h4><a href="#alloggi">Le case</a><a href="#borghi">I borghi</a><a href="#esperienze">Esperienze</a><a href="#dove">Dove siamo</a><a href="#la-farie">La Farie</a></div>
+        <div><h4>Territorio</h4><a href="https://albergodiffusosocchieve.it/it/trekking" target="_blank" rel="noopener">Trekking</a><a href="https://albergodiffusosocchieve.it/it/cicloturismo" target="_blank" rel="noopener">Cicloturismo</a><a href="https://albergodiffusosocchieve.it/it/arte-e-cultura" target="_blank" rel="noopener">Arte e cultura</a><a href="http://www.comune.socchieve.ud.it/" target="_blank" rel="noopener">Comune di Socchieve</a></div>
+        <div><h4>Contatti</h4><p>Via Roma 20, Mediis<br>33020 Socchieve (UD)</p><a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a><a href="tel:+390433819934">+39 0433 819934</a><a href="tel:+393668948584">+39 366 894 8584</a></div>
+      </div>
+      <div class="foot-bottom"><span>© Albergo Diffuso Socchieve “Col Gentile” · P.I. 02790180307</span><span><a href="https://albergodiffusosocchieve.it/privacy">Privacy</a><a href="https://albergodiffusosocchieve.it/cookies">Cookie</a></span></div>
+    </div>
+  </footer>
 </div>
 
-<div id="farie-view" hidden>
-  <header class="site-header">
-    <div class="wrap nav">
-      <a class="brand" href="#la-farie" data-show="farie" aria-label="La Farie, inizio"><strong>LA FARIE</strong><span>Dimora a Lungis · Carnia</span></a>
-      <nav class="nav-links" aria-label="Navigazione La Farie"><a href="#farie-storia">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-contatti">Dove siamo</a><a href="#home" data-show="col">← Col Gentile</a></nav>
-      <div class="nav-cta"><a class="button small" href="#farie-camere">Le camere ↗</a>
-        <details class="mobile-nav"><summary aria-label="Apri menu">☰</summary><nav class="mobile-items"><a href="#farie-storia">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-contatti">Dove siamo</a><a href="#home" data-show="col">← Col Gentile</a></nav></details>
-      </div>
+<!-- ================= LA FARIE ================= -->
+<div id="farie" hidden>
+  <header class="hdr" data-hdr>
+    <div class="wrap bar">
+      <a href="#la-farie" class="logo" aria-label="La Farie, inizio"><span><b>La Farie</b><small>Dimora a Lungis · Carnia</small></span></a>
+      <nav class="menu" aria-label="La Farie"><a href="#farie-dimora">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-dove">Dove siamo</a><a href="#top">← Col Gentile</a></nav>
+      <div class="hdr-cta"><a class="btn btn-primary" href="#farie-camere">Le camere <svg><use href="#i-arrow"/></svg></a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
     </div>
   </header>
+  <div class="drawer" data-drawer aria-hidden="true" style="background:#2b1c14">
+    <div class="drawer-top"><span class="logo"><span><b style="font-style:italic">La Farie</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
+    <nav><a href="#farie-dimora">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-dove">Dove siamo</a><a href="#top">← Col Gentile</a></nav>
+  </div>
   <main>
     <section class="hero" id="la-farie">
-      <img class="hero-image" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Paesaggio del borgo di Lungis, foto territoriale provvisoria">
-      <div class="wrap hero-inner"><div class="eyebrow light">Lungis · Socchieve · Carnia</div>
-        <h1>La Farie.<br>Il tempo di ritrovarsi.</h1>
-        <p>Una dimora nel borgo di Lungis. Un'identità propria, ambienti da scoprire e un soggiorno nel paesaggio della Carnia.</p>
-        <div class="hero-buttons"><a class="button light" href="#farie-camere">Scopri le camere ↗</a><a class="button outline" href="#farie-contatti">Dove siamo ↗</a></div>
-      </div>
-    </section>
-    <section class="farie-block" id="farie-storia"><div class="wrap farie-intro"><div class="eyebrow">Ospitalità a Lungis</div><p>Una dimora con una sua storia e un carattere distinto, immersa nel paesaggio dei borghi carnici.</p></div></section>
-    <section class="section farie-story" id="farie-camere">
-      <div class="wrap two-col"><img class="farie-image" loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Lungis, fotografia di riferimento territoriale; sostituire con foto della struttura">
-        <div><div class="eyebrow">La Farie · Camere</div><h2>Un soggiorno tutto suo.</h2><p style="margin:19px 0">La Farie sarà presentata con le sue camere, servizi, fotografie, condizioni e prenotazioni indipendenti dagli appartamenti Col Gentile.</p>
-          <div class="farie-booking"><strong>Booking.com — attivazione da confermare</strong><p style="margin-top:9px">La scheda attuale non accetta prenotazioni. Per correttezza, la demo non mostra disponibilità o tariffe e non simula una prenotazione.</p><a class="text-link" target="_blank" rel="noopener noreferrer" href="https://www.booking.com/hotel/it/la-farie-socchieve-fraz-lungis.it.html">Visualizza la scheda esistente ↗</a></div>
+      <div class="hero-media"><img src="https://albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Panorama del borgo di Lungis tra le montagne"></div>
+      <div class="wrap hero-in">
+        <span class="eyebrow light">Lungis · Socchieve · Carnia</span>
+        <h1>Il tempo di <em>ritrovarsi.</em></h1>
+        <div class="hero-row">
+          <p>Una dimora nel borgo di Lungis. Ambienti da scoprire e un soggiorno immerso nel paesaggio carnico.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#farie-camere">Scopri le camere <svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#farie-dove">Dove siamo</a></div>
         </div>
       </div>
     </section>
-    <section class="section" id="farie-contatti"><div class="wrap two-col">
-      <div><div class="eyebrow">La posizione</div><h2>A Lungis, nella Carnia più autentica.</h2><p style="margin:20px 0">La Farie si trova nella frazione di Lungis, nel comune di Socchieve (UD). I contatti della nuova gestione saranno inseriti separatamente da quelli di Col Gentile.</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=La+Farie+Lungis+Socchieve" target="_blank" rel="noopener noreferrer">Visualizza sulla mappa ↗</a></div>
-      <img class="farie-image" loading="lazy" src="https://www.albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Panorama delle montagne attorno a Lungis">
-    </div></section>
-    <section class="cta"><div class="wrap"><div class="eyebrow light">Due modi di vivere la Carnia</div><h2>Scopri anche Col Gentile.</h2><p>Case e appartamenti nel territorio di Socchieve, con un percorso di prenotazione dedicato.</p><a href="#home" data-show="col" class="button light">Torna all'Albergo Diffuso ↗</a></div></section>
+    <section class="sec" id="farie-dimora">
+      <div class="wrap fa-intro">
+        <span class="eyebrow rv">Ospitalità a Lungis</span>
+        <p class="rv d1">Una casa con <em>una sua storia</em>, un carattere distinto e il silenzio dei borghi carnici tutto attorno.</p>
+      </div>
+    </section>
+    <section class="sec" id="farie-camere" style="padding-top:0">
+      <div class="wrap fa-split">
+        <img class="rv" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Q30A3509%20copia.jpg" alt="Casa in pietra a Lungis (foto provvisoria)">
+        <div>
+          <span class="eyebrow rv">Le camere</span>
+          <h2 class="rv d1">Un soggiorno <em>tutto suo.</em></h2>
+          <p class="rv d2">Camere, servizi e fotografie di La Farie saranno presentati qui, con condizioni e prenotazioni indipendenti dagli appartamenti Col Gentile.</p>
+          <div class="notice rv d3"><b>Prenotazioni in attivazione</b><p>La scheda Booking.com esiste ma non accetta ancora prenotazioni: per correttezza qui non mostriamo tariffe né disponibilità.</p><a class="link" href="https://www.booking.com/hotel/it/la-farie-socchieve-fraz-lungis.it.html" target="_blank" rel="noopener">Vedi la scheda <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec" id="farie-dove" style="padding-top:0">
+      <div class="wrap fa-split">
+        <div>
+          <span class="eyebrow rv">La posizione</span>
+          <h2 class="rv d1">A Lungis, nella <em>Carnia più vera.</em></h2>
+          <p class="rv d2" style="margin-bottom:26px">Frazione di Lungis, comune di Socchieve (UD). Contatti dedicati della nuova gestione in arrivo.</p>
+          <a class="link rv d3" href="https://www.google.com/maps/search/?api=1&query=La+Farie+Lungis+Socchieve" target="_blank" rel="noopener">Apri la mappa <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
+        </div>
+        <img class="rv d1" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/styles/portfolio/public/LungisCartolina.jpg?itok=MIWMVY69" alt="Cartolina del borgo di Lungis">
+      </div>
+    </section>
+    <section class="fa-cta">
+      <div class="wrap">
+        <span class="eyebrow light rv">Due modi di vivere la Carnia</span>
+        <h2 class="rv d1">Scopri anche <em>Col Gentile.</em></h2>
+        <a class="btn btn-light rv d2" href="#top">Torna all'albergo diffuso <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="wrap footer-grid">
-    <div><h3>La Farie</h3><p>Dimora a Lungis, Socchieve · Carnia.<br>Un'identità distinta, parte del gruppo AD.</p></div>
-    <div><h4>Navigazione</h4><a href="#farie-storia">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-contatti">La posizione</a><a data-show="col" href="#home">Col Gentile</a></div>
-    <div><h4>La nuova gestione</h4><p>Contatti dedicati e canale Booking.com in fase di verifica e attivazione.</p></div>
-  </div><div class="wrap footer-bottom"><span>La Farie · Gruppo AD</span><span>Demo progettuale · Nessuna prenotazione simulata</span></div></footer>
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Lungis, Socchieve (UD)</span><span>Contatti e prenotazioni in attivazione</span></div>
+    </div>
+  </footer>
 </div>
 
 <script>
-  (() => {
-    const col = document.getElementById("col-view");
-    const farie = document.getElementById("farie-view");
-    const village = document.getElementById("village");
-    const guests = document.getElementById("guests");
-    const cards = [...document.querySelectorAll("#stays .stay")];
-    const count = document.getElementById("count");
-    const empty = document.getElementById("empty");
+(() => {
+  const F = "https://albergodiffusosocchieve.it/sites/default/files/";
+  const P = "https://albergodiffusosocchieve.it/it/alloggi/";
+  const SIZE = { s: "2–8 posti letto", m: "9–16 posti letto", l: "Oltre 16 posti letto" };
+  const stays = [
+    { n: "Casa Vanda", b: "Viaso", s: "l", img: "Casa-Vanda-esterno.jpg", u: "casa-vanda", feature: true,
+      d: "L'intera residenza in pietra con ballatoi in legno: quattro appartamenti per famiglie numerose e gruppi." },
+    { n: "Casa Ernesto da Rosuline", b: "Lungis", s: "l", img: "Q30A3509%20copia.jpg", u: "casa-ernesto-da-rosuline" },
+    { n: "Casa Pradin", b: "Feltrone", s: "m", img: "CasaPradin-esterno_0.jpg", u: "casa-pradin" },
+    { n: "Vanda · Iris", b: "Viaso", s: "s", img: "Casa-Vanda-esterno_0_3.jpg", u: "casa-vanda-iris" },
+    { n: "Vanda · Bucaneve", b: "Viaso", s: "s", img: "Casa-Vanda-esterno_0_2.jpg", u: "casa-vanda-bucaneve" },
+    { n: "Vanda · Papavero", b: "Viaso", s: "s", img: "Casa-Vanda-esterno_0_1.jpg", u: "casa-vanda-papavero" },
+    { n: "Vanda · Genziana", b: "Viaso", s: "s", img: "Casa-Vanda-esterno_0_0.jpg", u: "casa-vanda-genziana" },
+    { n: "Ernesto da Rosuline 1", b: "Lungis", s: "s", img: "casa%20ernesto_0.jpg", u: "ernesto-da-rosuline-1" },
+    { n: "Ernesto da Rosuline 2", b: "Lungis", s: "s", img: "casa%20ernesto_3.jpg", u: "ernesto-da-rosuline-2" },
+    { n: "Ernesto da Rosuline 3", b: "Lungis", s: "s", img: "casa%20ernesto_4.jpg", u: "ernesto-da-rosuline-3" },
+    { n: "Ernesto da Rosuline Terra", b: "Lungis", s: "s", img: "casa%20ernesto_1.jpg", u: "ernesto-da-rosuline-terra-0" },
+    { n: "Casa Rovedo", b: "Feltrone", s: "s", img: "SITOOK_0.JPG", u: "casa-rovedo" },
+    { n: "Casa dal Miedi", b: "Mediis", s: "s", img: "Casa%20dal%20Miedi-%20esterno_0.jpg", u: "casa-dal-miedi" },
+  ];
+  const villages = [
+    ["Viaso", "Viaso.jpg?itok=Kf5c3eZ5", "viaso"],
+    ["Lungis", "LungisCartolina.jpg?itok=MIWMVY69", "lungis"],
+    ["Feltrone", "dilignidis%20e%20feltrone_0.jpg?itok=Qkcstbe5", "feltrone-e-dilignidis"],
+    ["Mediis", "mediis.jpg?itok=qtbeorB1", "mediis"],
+    ["Dilignidis", "CartolinaDilignidis.jpg?itok=fGNCRQBs", "dilignidis"],
+    ["Nonta", "NontaCopertina.jpg?itok=_eVu6c04", "nonta"],
+    ["Priuso", "priuso.jpg?itok=fIK3mEPX", "priuso"],
+    ["Socchieve", "Socchievecopertina_0.jpg?itok=IxDWHILk", "socchieve"],
+  ];
+  const arrow = '<svg><use href="#i-arrow"/></svg>';
+  const pin = '<svg><use href="#i-pin"/></svg>';
 
-    function filter() {
-      const place = village.value;
-      const required = Number(guests.value);
-      let visible = 0;
-      for (const card of cards) {
-        const cap = card.dataset.guests === "unknown" ? 0 : Number(card.dataset.guests);
-        const ok = (place === "all" || card.dataset.village === place) && (!required || cap >= required);
-        card.classList.toggle("hide", !ok);
-        if (ok) visible++;
-      }
-      count.textContent = visible + (visible === 1 ? " alloggio" : " alloggi");
-      empty.style.display = visible ? "none" : "block";
-    }
-    village.addEventListener("change", filter);
-    guests.addEventListener("change", filter);
+  const grid = document.querySelector("[data-grid]");
+  grid.innerHTML = stays.map((s) => `
+    <a class="card${s.feature ? " feature" : ""}" data-b="${s.b}" data-s="${s.s}" href="${P + s.u}" target="_blank" rel="noopener">
+      <div class="card-img"><img loading="lazy" src="${F + s.img}" alt="${s.n}, ${s.b}"><span class="tag">${SIZE[s.s]}</span></div>
+      <div class="card-body">
+        <div><h3>${s.n}</h3><div class="where">${pin}${s.b}</div>${s.d ? `<p>${s.d}</p>` : ""}</div>
+        <span class="arrow" aria-hidden="true">${arrow}</span>
+      </div>
+    </a>`).join("");
 
-    function activateBrand() {
-      const isFarie = window.location.hash.startsWith("#farie-") || window.location.hash === "#la-farie";
-      col.hidden = isFarie;
-      farie.hidden = !isFarie;
-      document.title = isFarie
-        ? "La Farie | Dimora a Lungis, Carnia"
-        : "Albergo Diffuso Socchieve | Dormire in Carnia";
-      if (isFarie) document.body.style.background = "#f7f3ee";
-      else document.body.style.background = "";
-      const anchor = document.getElementById(location.hash.substring(1));
-      if (anchor) requestAnimationFrame(() => anchor.scrollIntoView({block:"start"}));
-      else window.scrollTo(0, 0);
+  document.querySelector("[data-railbox]").innerHTML = villages.map(([n, img, u], i) => `
+    <a class="village" href="https://albergodiffusosocchieve.it/it/${u}" target="_blank" rel="noopener">
+      <img loading="lazy" src="${F}styles/portfolio/public/${img}" alt="Il borgo di ${n}">
+      <small>Borgo ${String(i + 1).padStart(2, "0")}</small>
+      <strong>${n}${arrow}</strong>
+    </a>`).join("");
+
+  // filters
+  const state = { borgo: "all", size: "all" };
+  const cards = [...grid.children];
+  const count = document.querySelector("[data-count]");
+  const empty = document.querySelector("[data-empty]");
+  function apply() {
+    let n = 0;
+    const filtered = state.borgo !== "all" || state.size !== "all";
+    cards.forEach((c) => {
+      const ok = (state.borgo === "all" || c.dataset.b === state.borgo) && (state.size === "all" || c.dataset.s === state.size);
+      c.classList.toggle("out", !ok);
+      if (c.classList.contains("feature")) c.style.gridColumn = filtered ? "auto" : "";
+      if (c.classList.contains("feature")) c.style.flexDirection = filtered ? "column" : "";
+      if (ok) n++;
+    });
+    count.textContent = n + (n === 1 ? " residenza" : " residenze");
+    empty.style.display = n ? "none" : "block";
+  }
+  document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
+    const f = b.dataset.f;
+    state[f] = b.dataset.v;
+    document.querySelectorAll(`.chip[data-f="${f}"]`).forEach((x) => x.setAttribute("aria-pressed", x === b));
+    apply();
+  }));
+  apply();
+
+  // rail
+  const rail = document.querySelector("[data-railbox]");
+  document.querySelectorAll("[data-rail]").forEach((b) => b.addEventListener("click", () => {
+    rail.scrollBy({ left: Number(b.dataset.rail) * rail.clientWidth * 0.8, behavior: "smooth" });
+  }));
+
+  // header + drawer
+  const onScroll = () => document.querySelectorAll("[data-hdr]").forEach((h) => h.classList.toggle("solid", scrollY > 40));
+  addEventListener("scroll", onScroll, { passive: true });
+  document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => {
+    const d = b.closest("#col, #farie").querySelector("[data-drawer]");
+    d.classList.add("open"); d.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden";
+  }));
+  const closeDrawers = () => document.querySelectorAll("[data-drawer]").forEach((d) => { d.classList.remove("open"); d.setAttribute("aria-hidden", "true"); document.body.style.overflow = ""; });
+  document.querySelectorAll("[data-close], [data-drawer] a").forEach((el) => el.addEventListener("click", closeDrawers));
+  addEventListener("keydown", (e) => e.key === "Escape" && closeDrawers());
+
+  // reveal
+  const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => {
+    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { rootMargin: "0px 0px -8% 0px" }) : null;
+  const observe = (root) => root.querySelectorAll(".rv:not(.in)").forEach((el) => io ? io.observe(el) : el.classList.add("in"));
+
+  // brand switch
+  const col = document.getElementById("col"), farie = document.getElementById("farie");
+  let current = null;
+  function route() {
+    const h = location.hash;
+    const isFarie = h === "#la-farie" || h.startsWith("#farie-");
+    const next = isFarie ? "farie" : "col";
+    if (next !== current) {
+      col.hidden = isFarie; farie.hidden = !isFarie; current = next;
+      document.title = isFarie ? "La Farie — Dimora a Lungis, Carnia" : "Albergo Diffuso Socchieve · Col Gentile — Dormire in Carnia";
+      document.querySelector('meta[name="theme-color"]').content = isFarie ? "#2b1c14" : "#16241e";
+      observe(isFarie ? farie : col);
+      const t = document.getElementById(h.slice(1));
+      if (t && h !== "#la-farie" && h !== "#top") setTimeout(() => t.scrollIntoView({ behavior: "instant", block: "start" }), 0);
+      else scrollTo({ top: 0, behavior: "instant" });
+      onScroll();
     }
-    window.addEventListener("hashchange", activateBrand);
-    document.querySelectorAll('[data-show]').forEach((a) => a.addEventListener("click", () => {
-      // La modifica dell'hash attiva l'identità corrispondente.
-      document.querySelectorAll(".mobile-nav").forEach((menu) => menu.removeAttribute("open"));
-    }));
-    activateBrand();
-    filter();
-  })();
+  }
+  addEventListener("hashchange", route);
+  route();
+})();
 </script>
 </body>
 </html>
