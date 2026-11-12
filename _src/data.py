@@ -240,7 +240,7 @@ WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261
               results="/it/prenota-servizi")
 
 SERVICES = [
-    dict(id="bagno-di-bosco", n="Bagno di bosco", hero="PanoramaViaso3.jpg",
+    dict(id="bagno-di-bosco", welora_id=2, n="Bagno di bosco", hero="PanoramaViaso3.jpg",
          title="Bagno di bosco in Carnia (Shinrin-yoku) con guida a Socchieve",
          desc="Bagno di foresta (Shinrin-yoku) nei boschi di Socchieve, in Carnia, con Petra: circa 2 ore di immersione lenta nella natura, gruppi fino a 6 persone, 15 € a persona.",
          lead="Shinrin-yoku, o forest bathing: un'immersione lenta e sensoriale nei boschi della Carnia per rigenerare corpo e mente.",
@@ -251,7 +251,7 @@ SERVICES = [
          bring=[("Vestiti a strati", "comodi e traspiranti, adatti all'aperto"), ("Giacca impermeabile o antivento", "per i cambi di meteo"), ("Scarpe da trekking o da ginnastica", "per camminare sicuri sul terreno del bosco"), ("Borraccia d'acqua", "per restare idratati"), ("Telo o piccolo tappetino impermeabile", "per sedersi o sdraiarsi a terra"), ("Repellente per insetti", "se vuoi"), ("Uno snack leggero", ""), ("Taccuino e penna", "facoltativi, per annotare pensieri e sensazioni")],
          note="Per vivere appieno il bagno di bosco il cellulare resta in modalità silenziosa o aereo durante la pratica: avvisa chi deve sapere che sarai irraggiungibile per un paio d'ore.",
          price=15, unit="a persona", guide="Petra"),
-    dict(id="sauna", n="Sauna", hero=("foto/sauna.jpg" if (__import__("pathlib").Path(__file__).parent / "foto" / "sauna.jpg").exists() else None),
+    dict(id="sauna", welora_id=3, n="Sauna", hero=("foto/sauna.jpg" if (__import__("pathlib").Path(__file__).parent / "foto" / "sauna.jpg").exists() else None),
          title="Sauna a Socchieve, in Carnia · Albergo Diffuso Col Gentile",
          desc="Sauna per il tuo gruppo all'Albergo Diffuso di Socchieve, in Carnia: 50 € l'ora per tutta la prenotazione, da 1 ora in su, dopo una giornata sui sentieri.",
          lead="Il calore secco dopo una giornata sui sentieri, per l'ora che scegli.",

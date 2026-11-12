@@ -591,8 +591,18 @@ section[id]{scroll-margin-top:60px}
 
 .ph-plain{min-height:62svh;background:radial-gradient(120% 90% at 20% 100%,#7a3d1f 0%,#3b1e10 45%,#16241e 100%)}
 .ph-plain::after{display:none}
-.welora-box{margin-top:8px;padding:20px;border-radius:var(--r);background:var(--bone)}
 .tile .num{font:600 13px var(--sans);letter-spacing:.04em}
 .mini{display:flex;flex-direction:column}
 .mini-ph{aspect-ratio:4/3;background:radial-gradient(120% 90% at 20% 100%,#7a3d1f 0%,#3b1e10 45%,#16241e 100%);display:grid;place-items:center;color:#f0d3ad;font:300 italic 34px var(--serif)}
 .mini-rail{align-items:start}
+
+.book{margin-top:clamp(36px,5vw,56px);padding-top:clamp(28px,4vw,40px);border-top:1px solid var(--line);scroll-margin-top:90px}
+.book-title{font-size:clamp(30px,3.4vw,44px);line-height:1.05;margin:0 0 20px}
+.book [data-welora-booking]{max-width:860px}
+.book-note{margin-top:14px;font-size:14px;color:var(--muted)}
+.book-note a{color:var(--ink);font-weight:600;border-bottom:1px solid currentColor}
+.svc-wrap .d-main{max-width:900px}
+.svc-seo{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);margin-top:clamp(36px,5vw,56px)}
+.svc-seo h3{font-size:clamp(24px,2.4vw,32px);line-height:1.1;margin-bottom:12px}
+.svc-seo p{color:var(--muted);font-size:16px;line-height:1.7}
+@media (max-width:640px){.svc-seo{grid-template-columns:1fr}}

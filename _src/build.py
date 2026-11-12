@@ -603,9 +603,14 @@ def build_home():
 
     <section class="sec" id="benessere" style="background:var(--bone)">
       <div class="wrap">
-        <div class="sec-head"><div><span class="eyebrow rv">Benessere</span><h2 class="rv d1">Sauna e <em>bagno di bosco.</em></h2></div>
-        <p class="rv d2">Il calore della sauna dopo i sentieri e lo Shinrin-yoku con Petra nei boschi di Socchieve.</p></div>
+        <div class="sec-head"><div><span class="eyebrow rv">Benessere in Carnia</span><h2 class="rv d1">Sauna e <em>bagno di bosco</em> a Socchieve.</h2></div>
+        <p class="rv d2">Dopo una giornata sui sentieri o in bici, la sauna scioglie i muscoli; nei boschi intorno ai borghi lo Shinrin-yoku con Petra ti insegna a rallentare. Si prenotano online, si pagano in struttura.</p></div>
         <div class="bento">{"".join(svc_card(s) for s in data.SERVICES)}</div>
+        <div class="svc-seo rv">
+          <div><h3>Sauna in Carnia</h3><p>Sauna a ore per tutto il gruppo, {data.SERVICES[1]["price"]} € l'ora a prezzo unico, da un'ora in su: il modo migliore per chiudere un'escursione, un'uscita in mountain bike o una giornata sulle piste di Forni di Sopra. <a class="link" href="/it/sauna">Prezzi e orari {I("arrow")}</a></p></div>
+          <div><h3>Bagno di bosco (Shinrin-yoku)</h3><p>Forest bathing guidato da Petra nei boschi di Socchieve: circa due ore di immersione lenta e sensoriale nella natura, gruppi fino a 6 persone, {data.SERVICES[0]["price"]} € a persona, ritrovo alla reception di Mediis. <a class="link" href="/it/bagno-di-bosco">Come funziona {I("arrow")}</a></p></div>
+        </div>
+        {welora("search", None, "Prenota il tuo momento di benessere")}
       </div>
     </section>
 
@@ -650,7 +655,7 @@ def build_home():
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     page("/", "Albergo Diffuso Socchieve · Case vacanza in Carnia e Dolomiti",
          f"Case e appartamenti vacanza nei borghi di Socchieve, in Carnia: {n_stays} alloggi da 2 a 21 posti, a 18 km da Sauris e 30 minuti dalle Dolomiti Friulane. Prenotazione diretta.",
-         body, image="Slide1Socchieve.jpg", preload=preload_for("Slide1Socchieve.jpg"), ld=[lodging_ld(), website, faq_ld],
+         body, image="Slide1Socchieve.jpg", preload=preload_for("Slide1Socchieve.jpg"), ld=[lodging_ld(), website, faq_ld] + [service_ld(x) for x in data.SERVICES],
          images=[og_img("Slide1Socchieve.jpg")] + [abs_img(s["card"]) for s in STAYS])
 
 
@@ -816,11 +821,21 @@ def build_farie():
          images=[abs_img(g) for g in F["g"] if g in PH])
 
 
-def welora(view):
+def welora(view, sid=None, title=None, note=True):
+    """Widget servizi Welora. sid preseleziona il servizio: il widget legge
+    welora_services_service_id dall'indirizzo della pagina."""
     W = data.WELORA
     if not W["live"]:
         return ""
-    return f'<div class="welora-box rv"><div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}"></div></div><script src="{W["base"]}/assets/js/booking-widget.js?v={W["script_v"]}" defer></script>'
+    pre = ""
+    if sid:
+        pre = ("<script>(function(){var u=new URL(location.href),k='welora_services_service_id';"
+               f"if(!u.searchParams.has(k)){{u.searchParams.set(k,'{sid}');history.replaceState(history.state,'',u);}}}})();</script>")
+    head = f'<h2 class="book-title">{title}</h2>' if title else ""
+    foot = (f'<p class="book-note">Conferma immediata via email · pagamento in struttura · '
+            f'preferisci parlarci? <a href="tel:{SITE["phone_href"]}">{SITE["phone"]}</a> · <a href="mailto:{SITE["email"]}">{SITE["email"]}</a></p>') if note else ""
+    return (f'<div class="book rv" id="prenota">{head}{pre}<div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}"></div>{foot}</div>'
+            f'<script src="{W["base"]}/assets/js/booking-widget.js?v={W["script_v"]}" defer></script>')
 
 
 def svc_aside(s=None):
@@ -873,10 +888,10 @@ def build_services():
         if s.get("meeting"):
             meet = f'<div class="rv"><span class="eyebrow">Ritrovo</span><h2>Dove ci si incontra</h2><p>{e(s["meeting"])}. <a class="link" href="/it/contact">Come arrivare {I("arrow")}</a></p></div>'
         if s["hero"]:
-            hero_html = hero(s["hero"], s["n"] + " a Socchieve, Carnia", crumbs, e(s["n"]), sub=e(s["lead"]))
+            hero_html = hero(s["hero"], s["n"] + " a Socchieve, Carnia", crumbs, e(s["n"]), sub=e(s["lead"]), pills=[f"{s['price']} € {s['unit'].split(',')[0]}"] + (['<a href="#prenota" style="color:inherit">Prenota online →</a>'] if data.WELORA["live"] else []))
         else:
             hero_html = (f'<section class="ph ph-plain"><div class="wrap"><nav class="crumbs" aria-label="Percorso"><a href="/">Home</a><span>/</span>'
-                         f'<a href="/it/benessere">Benessere</a><span>/</span><b>{e(s["n"])}</b></nav><h1>{e(s["n"])}</h1><p class="lead">{e(s["lead"])}</p></div></section>')
+                         f'<a href="/it/benessere">Benessere</a><span>/</span><b>{e(s["n"])}</b></nav><h1>{e(s["n"])}</h1><p class="lead">{e(s["lead"])}</p><div class="ph-meta"><span class="pill">{s["price"]} € {s["unit"].split(",")[0]}</span>{'<span class="pill"><a href="#prenota" style="color:inherit">Prenota online →</a></span>' if data.WELORA["live"] else ""}</div></div></section>')
         paras = "".join(f'<p class="prose-first">{e(p)}</p>' if i == 0 else f"<p>{e(p)}</p>" for i, p in enumerate(s["text"]))
         minis = ""
         for x in S:
@@ -887,17 +902,16 @@ def build_services():
         for k in ("trekking", "cicloturismo", "visita-la-carnia"):
             x = EXPS[k]
             minis += f'<a class="mini" href="{exp_url(k)}">{pic(x["hero"], x["n"], "(max-width:640px) 70vw, 25vw")}<div><b>{x["n"]}</b><span>{e(clip(x["lead"], 60))}</span></div></a>'
+        live = data.WELORA["live"]
+        h2 = {"bagno-di-bosco": "Cos'è il bagno di bosco", "sauna": "Come funziona la sauna"}.get(s["id"], "Come funziona")
+        intro = f'<div class="rv"><span class="eyebrow">Benessere a Socchieve · Carnia</span><h2>{h2}</h2>{paras}</div><div class="facts rv">{facts}</div>'
+        if live:
+            book = welora("search", s["welora_id"], f"Prenota {s['n'].lower()}")
+            main = f'<section class="d-body"><div class="wrap svc-wrap"><div class="d-main">{intro}{book}{meet}{bring}</div></div></section>'
+        else:
+            main = f'<section class="d-body"><div class="wrap d-grid"><div class="d-main">{intro}{meet}{bring}</div>{svc_aside(s)}</div></section>'
         body = f"""{hero_html}
-<section class="d-body"><div class="wrap d-grid">
-  <div class="d-main">
-    <div class="rv"><span class="eyebrow">Benessere a Socchieve · Carnia</span><h2>{ {"bagno-di-bosco": "Cos'è il bagno di bosco", "sauna": "Come funziona la sauna"}.get(s["id"], "Come funziona") }</h2>{paras}</div>
-    <div class="facts rv">{facts}</div>
-    {welora("search")}
-    {meet}
-    {bring}
-  </div>
-  {svc_aside(s)}
-</div></section>
+{main}
 <section class="related"><div class="wrap"><span class="eyebrow">Benessere e natura</span><h2>Da abbinare</h2><div class="mini-rail">{minis}</div></div></section>"""
         page(f"/it/{s['id']}", s["title"], s["desc"], body, active="benessere", image=s["hero"] or "PanoramaNonta1.jpg",
              preload=preload_for(s["hero"]) if s["hero"] else None, ld=[service_ld(s), crumbs_ld(crumbs)],
@@ -909,7 +923,7 @@ def build_services():
 <section class="sec"><div class="wrap">
   <div class="sec-head"><div><span class="eyebrow rv">I servizi</span><h2 class="rv d1">Rallenta, <em>respira.</em></h2></div><p class="rv d2">Prezzi chiari, pagamento in struttura. Scrivici per sapere se si possono prenotare anche senza soggiornare da noi.</p></div>
   <div class="bento">{cards}</div>
-  {welora("search")}
+  {welora("search", None, "Prenota sauna o bagno di bosco")}
 </div></section>"""
     items = {"@context": "https://schema.org", "@type": "ItemList", "name": "Benessere all'Albergo Diffuso Socchieve", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "url": U + f"/it/{s['id']}", "name": s["n"]} for i, s in enumerate(S)]}
