@@ -236,7 +236,7 @@ FARIE = dict(
            ("Stella Alpina", "Appartamento con camera matrimoniale e divano letto singolo", 3)],
     plans=["Soggiorno", "Soggiorno con colazione"],
     cancel="Cancellazione gratuita dal portale fino a 7 giorni prima dell'arrivo, entro le 18:00.",
-    welora=dict(slug="la-farie", live=False, results="/la-farie-prenota"),
+    welora=dict(slug="la-farie", live=True, results="/la-farie-prenota"),
     near=[("Terme di Arta", "25 km"), ("Foro Romano di Zuglio", "23 km"), ("Sauris", "18 km"), ("Aeroporto di Trieste", "105 km")],
 )
 
