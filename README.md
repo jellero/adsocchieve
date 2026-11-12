@@ -1,25 +1,43 @@
-# adsocchieve — demo HTML statica
+# Albergo Diffuso Socchieve · sito statico
 
-**Nessun Node.js, npm, Next.js, server o processo di build richiesto.**
+Sito statico ottimizzato per la SEO, generato da un piccolo script Python. Le pagine HTML
+risultanti sono nel repository e si pubblicano su qualsiasi hosting statico
+(GitHub Pages, Netlify, Cloudflare Pages, un server Apache/Nginx).
 
-## Come aprire
-Scarica il file index.html e aprilo nel browser con doppio clic. La demo è responsive e include HTML, CSS e JavaScript nello stesso file.
+## Struttura
 
-## Design
-Restyling completo: hero a tutto schermo, tipografia Fraunces + Inter Tight (Google Fonts), palette bosco/larice, header trasparente che diventa vetro allo scroll, animazioni di comparsa (disattivate con `prefers-reduced-motion`), menu mobile a schermo intero.
+| Percorso | Cosa contiene |
+|---|---|
+| `_src/data.py` | **Tutti i contenuti**: case, borghi, esperienze, FAQ, distanze, contatti |
+| `_src/site.css`, `_src/site.js` | Stile e comportamento (filtri, galleria, tour 360°, menu) |
+| `_src/build.py` | Genera le pagine HTML, `sitemap.xml`, `robots.txt`, `_redirects`, icone |
+| `_src/fetch_assets.py` | Scarica le foto dal vecchio sito, le ottimizza in WebP e scarica i font |
+| `_src/serve.py` | Anteprima locale con URL senza `.html`, come sull'hosting |
+| `index.html`, `it/…`, `img/`, `assets/` | **Sito generato**: da pubblicare così com'è |
 
-## Due identità
-- Col Gentile: hero, spiegazione dell'albergo diffuso, catalogo delle 13 residenze del sito storico con foto originali e filtri per borgo e posti letto, carosello degli 8 borghi, esperienze (trekking, bici, arte, Carnia), come arrivare con mappa OpenStreetMap, link al booking Slope.
-- La Farie: navigazione e identità grafica distinte. Seleziona "La Farie" nel menu: la demo mostra la seconda homepage senza richiedere un secondo file.
-- I due percorsi commerciali restano separati.
-- La Farie non è ancora prenotabile nella scheda Booking.com pubblica: la demo lo indica e non inventa disponibilità.
+## Modificare un testo o aggiungere una casa
 
-## Importante
-La demo utilizza immagini pubblicate sul sito attuale e fotografie provvisorie come segnaposto; alcune immagini non sono delle specifiche case presenti nella scheda e vanno sostituite. Foto, diritti, CIN, capienze, descrizioni, traduzioni, prezzi, contatti, identità e privacy vanno verificati prima della messa online.
+```bash
+python _src/fetch_assets.py   # solo se hai aggiunto foto nuove (serve Pillow)
+python _src/build.py
+python _src/serve.py          # anteprima su http://localhost:8000
+```
 
-I dati del catalogo non sono completi: questa è una **demo del layout e del percorso di conversione**, non una migrazione finita. I link alle schede portano al sito attuale, e quelli di prenotazione Col Gentile al motore Slope.
+## SEO: cosa è già fatto
 
-## Pubblicazione futura
-Per una release statica vera, separare le pagine con URL indicizzabili e gestire redirect dalle pagine storiche: l'uso degli hash nella demo serve solo a mostrare le due esperienze in un file. Aggiungere file ottimizzati locali, sitemap, metadati per pagina, hreflang e tracciamento GA4 prima del lancio.
+- **Stessi URL del vecchio sito** (`/it/alloggi/casa-vanda`, `/it/viaso`, `/it/trekking`…): il posizionamento attuale non si perde e non servono redirect.
+- Pagina dedicata per ognuna delle 14 case, degli 8 borghi e delle 4 esperienze, con `title`, `meta description`, canonical e Open Graph unici.
+- Dati strutturati schema.org: `LodgingBusiness`, `House`/`Apartment` (posti letto, camere, servizi, animali, CIN), `TouristDestination`, `TouristTrip`, `FAQPage`, `BreadcrumbList`.
+- `sitemap.xml` con le immagini, `robots.txt`, pagina 404, favicon e manifest.
+- Foto in WebP ottimizzate con `srcset`, dimensioni esplicite (niente salti di layout), hero precaricata, font in locale (anche per il GDPR), nessun JavaScript necessario per leggere i contenuti.
+- Tour virtuali 360° di Casa Vanda, Casa Ernesto da Rosuline e Casa dal Miedi (Pannellum, caricato solo al clic).
+- `_redirects` (Netlify/Cloudflare Pages) che porta le vecchie pagine `/en/…` e `/fr/…` alle pagine italiane finché non ci sono le traduzioni.
 
-La cronologia Git conserva l'esperimento Next.js precedente, ma il branch principale contiene ora solo la demo HTML statica e questo README.
+## Da fare prima della messa online
+
+1. **Pubblicare sul dominio `albergodiffusosocchieve.it`** (senza www, come oggi) e far puntare `www` con redirect 301.
+2. **Google Search Console**: verificare il dominio e inviare `https://albergodiffusosocchieve.it/sitemap.xml`.
+3. **Profilo dell'attività su Google** (Google Business Profile): stesso nome, indirizzo e telefono del sito, foto, link al sito e al booking. È la leva più forte per le ricerche “dove dormire in Carnia”.
+4. Far verificare i testi di **privacy e cookie**.
+5. Verificare i dati: posti letto di Casa Ernesto da Rosuline (21 sulla casa intera, 17 sommando le unità), “animali ammessi” (dedotto dall'icona del vecchio sito), CIN di Casa Ai Pascoli (mancante).
+6. **Traduzioni EN/DE/FR**: il vecchio sito aveva inglese e francese; il tedesco è il mercato estero principale della Carnia.

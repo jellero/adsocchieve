@@ -3,452 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Albergo Diffuso Socchieve · Case vacanza in Carnia e Dolomiti</title>
+<meta name="description" content="Case e appartamenti vacanza nei borghi di Socchieve, in Carnia: 14 alloggi da 2 a 21 posti, a 18 km da Sauris e 30 minuti dalle Dolomiti Friulane. Prenotazione diretta.">
+<link rel="canonical" href="https://albergodiffusosocchieve.it/">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#16241e">
-<meta name="description" content="Albergo Diffuso Socchieve Col Gentile: case e appartamenti nei borghi della Carnia, alla porta delle Dolomiti Friulane. E La Farie, dimora a Lungis.">
-<title>Albergo Diffuso Socchieve · Col Gentile — Dormire in Carnia</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --forest:#16241e;--forest-2:#1f3329;--moss:#3d5a45;--sage:#a9b8a0;
-  --bone:#f5f0e6;--paper:#fbf8f2;--sand:#e9e1d1;--larch:#c4874a;--larch-2:#a86c33;
-  --ink:#1b2620;--muted:#5f6b62;--line:rgba(27,38,32,.12);
-  --serif:"Fraunces",Georgia,serif;--sans:"Inter Tight",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --r:20px;--ease:cubic-bezier(.2,.7,.2,1);
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{display:block;max-width:100%}
-a{color:inherit;text-decoration:none}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-h1,h2,h3,h4,p{margin:0}
-h1,h2,h3{font-family:var(--serif);font-weight:350;letter-spacing:-.025em;font-variation-settings:"opsz" 144}
-em{font-style:italic;font-weight:300}
-:focus-visible{outline:2px solid var(--larch);outline-offset:3px;border-radius:4px}
-.wrap{width:min(1280px,100% - 2*clamp(16px,4vw,48px));margin-inline:auto}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--moss)}
-.eyebrow::before{content:"";width:22px;height:1px;background:currentColor}
-.on-dark .eyebrow,.eyebrow.light{color:#e2c39d}
-[hidden]{display:none!important}
-section[id]{scroll-margin-top:60px}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Albergo Diffuso Socchieve">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Albergo Diffuso Socchieve · Case vacanza in Carnia e Dolomiti">
+<meta property="og:description" content="Case e appartamenti vacanza nei borghi di Socchieve, in Carnia: 14 alloggi da 2 a 21 posti, a 18 km da Sauris e 30 minuti dalle Dolomiti Friulane. Prenotazione diretta.">
+<meta property="og:url" content="https://albergodiffusosocchieve.it/">
+<meta property="og:image" content="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="IT-UD"><meta name="geo.placename" content="Socchieve">
+<meta name="geo.position" content="46.40358;12.82309"><meta name="ICBM" content="46.40358, 12.82309">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-tight-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-/* buttons */
-.btn{display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.01em;transition:transform .35s var(--ease),background .3s,color .3s,box-shadow .3s;white-space:nowrap}
-.btn svg{width:18px;height:18px;transition:transform .35s var(--ease)}
-.btn:hover svg{transform:translate(3px,-3px)}
-.btn-primary{background:var(--larch);color:#fff;box-shadow:0 10px 30px -10px rgba(196,135,74,.7)}
-.btn-primary:hover{background:var(--larch-2);transform:translateY(-2px)}
-.btn-light{background:var(--bone);color:var(--forest)}
-.btn-light:hover{background:#fff;transform:translateY(-2px)}
-.btn-ghost{border:1px solid rgba(255,255,255,.45);color:#fff;backdrop-filter:blur(8px);background:rgba(255,255,255,.06)}
-.btn-ghost:hover{background:rgba(255,255,255,.16)}
-.btn-dark{background:var(--forest);color:var(--bone)}
-.btn-dark:hover{background:var(--moss);transform:translateY(-2px)}
-.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;border-bottom:1px solid currentColor;padding-bottom:3px;transition:color .2s,gap .3s var(--ease)}
-.link:hover{color:var(--larch);gap:12px}
-.link svg{width:16px;height:16px;flex:none}
-
-/* header */
-.hdr{position:fixed;inset:0 0 auto;z-index:50;transition:background .4s,box-shadow .4s,color .4s,transform .4s var(--ease);color:#fff}
-.hdr .bar{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
-.hdr.solid{background:rgba(251,248,242,.86);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--ink);box-shadow:0 1px 0 var(--line)}
-.hdr.solid .bar{height:70px}
-.logo{display:flex;align-items:center;gap:12px;line-height:1}
-.logo-mark{width:40px;height:40px;flex:none}
-.logo b{display:block;font:400 22px/1 var(--serif);letter-spacing:.01em}
-.logo small{display:block;margin-top:5px;font:600 9.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;opacity:.7}
-.menu{display:flex;align-items:center;gap:34px;font-size:14.5px;font-weight:500}
-.menu a{position:relative;padding:6px 0}
-.menu a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
-.menu a:hover::after{transform:scaleX(1);transform-origin:left}
-.hdr-cta{display:flex;align-items:center;gap:10px}
-.hdr .btn{min-height:44px;padding:0 20px;font-size:14px}
-.burger{display:none;width:44px;height:44px;border-radius:50%;border:1px solid currentColor;place-items:center}
-.burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative}
-.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor;transition:transform .3s}
-.burger span::before{top:-5px}.burger span::after{top:5px}
-.drawer{position:fixed;inset:0;z-index:60;background:var(--forest);color:var(--bone);padding:24px clamp(16px,4vw,48px);display:flex;flex-direction:column;transform:translateY(-100%);transition:transform .6s var(--ease);visibility:hidden}
-.drawer.open{transform:none;visibility:visible}
-.drawer-top{display:flex;justify-content:space-between;align-items:center;height:60px}
-.drawer nav{margin-top:6vh;display:flex;flex-direction:column}
-.drawer nav a{font:300 clamp(34px,9vw,54px)/1.25 var(--serif);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 0}
-.drawer .btn{margin-top:auto;justify-content:center}
-.close{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.4);font-size:22px}
-
-/* hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;isolation:isolate}
-.hero-media{position:absolute;inset:0;z-index:-2}
-.hero-media img{width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
-@keyframes kb{from{transform:scale(1.14)}to{transform:scale(1)}}
-.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.05) 30%,rgba(10,20,15,.15) 55%,rgba(10,20,15,.82) 100%)}
-.hero-in{padding:0 0 clamp(36px,7vh,72px)}
-.hero h1{font-size:clamp(48px,9vw,138px);line-height:.94;letter-spacing:-.045em;max-width:12ch;margin:22px 0 0}
-.hero h1 em{color:#f0d3ad}
-.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:40px;flex-wrap:wrap}
-.hero-row p{max-width:440px;font-size:18px;line-height:1.6;color:rgba(255,255,255,.88)}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:28px;margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);font-size:13px;letter-spacing:.04em;color:rgba(255,255,255,.78);flex-wrap:wrap}
-.hero-meta b{color:#fff;font-weight:600}
-.scroll-cue{position:absolute;right:clamp(16px,4vw,48px);top:50%;writing-mode:vertical-rl;font-size:11px;letter-spacing:.3em;text-transform:uppercase;opacity:.7;display:flex;align-items:center;gap:14px}
-.scroll-cue::after{content:"";width:1px;height:70px;background:linear-gradient(#fff,transparent);animation:cue 2.2s infinite}
-@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-
-/* marquee */
-.marquee{background:var(--forest);color:var(--bone);overflow:hidden;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.marquee-track{display:flex;gap:48px;width:max-content;animation:mq 40s linear infinite}
-.marquee span{font:300 italic clamp(22px,2.6vw,34px)/1 var(--serif);white-space:nowrap;display:flex;align-items:center;gap:48px}
-.marquee span::after{content:"✳";font-style:normal;font-size:.6em;color:var(--larch)}
-@keyframes mq{to{transform:translateX(-50%)}}
-
-/* sections */
-.sec{padding:clamp(80px,12vw,160px) 0}
-.sec-head{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:clamp(40px,5vw,64px)}
-.sec-head h2{font-size:clamp(40px,5.6vw,80px);line-height:1;margin-top:20px;max-width:14ch}
-.sec-head p{max-width:400px;color:var(--muted);font-size:17px}
-
-/* intro */
-.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,7vw,110px);align-items:center}
-.statement{font:300 clamp(30px,3.6vw,52px)/1.18 var(--serif);letter-spacing:-.02em;margin-top:26px}
-.statement em{color:var(--larch-2)}
-.intro-copy{margin-top:30px;color:var(--muted);font-size:17px;max-width:56ch}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--line)}
-.stats div{padding:22px 18px 0 0}
-.stats b{display:block;font:300 clamp(40px,4.4vw,60px)/1 var(--serif);color:var(--forest)}
-.stats span{display:block;margin-top:10px;font-size:13px;color:var(--muted)}
-.intro-media{position:relative;aspect-ratio:4/5}
-.intro-media img{position:absolute;object-fit:cover;border-radius:var(--r)}
-.intro-media .a{inset:0 18% 14% 0;width:82%;height:86%}
-.intro-media .b{right:0;bottom:0;width:48%;height:44%;border:8px solid var(--paper);border-radius:calc(var(--r) + 4px)}
-.badge{position:absolute;left:-22px;bottom:22%;background:var(--larch);color:#fff;width:124px;height:124px;border-radius:50%;display:grid;place-items:center;text-align:center;font:500 12px/1.25 var(--sans);letter-spacing:.06em;text-transform:uppercase;padding:14px;animation:spin 30s linear infinite}
-.badge svg{position:absolute;inset:0;width:100%;height:100%}
-.badge i{font:italic 400 30px/1 var(--serif);text-transform:none;letter-spacing:0;animation:spin 30s linear infinite reverse}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* stays */
-.stays{background:var(--bone)}
-.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:36px}
-.chip{height:42px;padding:0 18px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:500;background:transparent;transition:all .25s}
-.chip:hover{border-color:var(--forest)}
-.chip[aria-pressed="true"]{background:var(--forest);color:var(--bone);border-color:var(--forest)}
-.filters .sep{width:1px;height:26px;background:var(--line);margin:0 8px}
-.filters .count{margin-left:auto;font-size:14px;color:var(--muted)}
-.count-m{display:none}
-.swipe-hint{display:none;align-items:center;gap:8px;margin:-8px 0 0;font-size:13px;color:var(--muted)}
-.swipe-hint svg{width:16px;height:16px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,28px)}
-.card{position:relative;display:flex;flex-direction:column;background:var(--paper);border-radius:var(--r);overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(22,36,30,.35)}
-.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
-.card-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
-.card:hover .card-img img{transform:scale(1.07)}
-.tag{position:absolute;top:14px;left:14px;padding:7px 12px;border-radius:999px;background:rgba(251,248,242,.92);backdrop-filter:blur(6px);font-size:12px;font-weight:600;color:var(--forest)}
-.card-body{padding:22px 24px 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex:1}
-.card h3{font-size:27px;line-height:1.1}
-.card .where{display:flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;color:var(--muted)}
-.card .where svg{width:14px;height:14px}
-.arrow{flex:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:all .35s var(--ease)}
-.arrow svg{width:18px;height:18px}
-.card:hover .arrow{background:var(--larch);border-color:var(--larch);color:#fff;transform:rotate(45deg)}
-.card.feature{grid-column:span 2;flex-direction:row}
-.card.feature .card-img{aspect-ratio:auto;flex:1.4}
-.card.feature .card-body{flex:1;flex-direction:column;align-items:flex-start;justify-content:space-between;padding:32px}
-.card.feature h3{font-size:clamp(32px,3vw,44px)}
-.card.feature p{color:var(--muted);margin-top:14px;font-size:15px}
-.card.out{display:none}
-.empty{display:none;padding:40px;text-align:center;color:var(--muted);background:var(--paper);border-radius:var(--r)}
-.book-strip{margin-top:48px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 32px;border-radius:var(--r);background:var(--forest);color:var(--bone);flex-wrap:wrap}
-.book-strip strong{font:400 26px/1.2 var(--serif)}
-.book-strip p{color:var(--sage);font-size:14px;margin-top:4px}
-
-/* villages */
-.villages{background:var(--forest);color:var(--bone);overflow:hidden}
-.villages .sec-head p{color:var(--sage)}
-.rail-ctrl{display:flex;gap:10px}
-.rail-ctrl button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;transition:background .3s}
-.rail-ctrl button:hover{background:rgba(255,255,255,.1)}
-.rail-ctrl svg{width:20px;height:20px}
-.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 max(clamp(16px,4vw,48px),(100vw - 1280px)/2) 10px;scroll-padding:0 max(clamp(16px,4vw,48px),(100vw - 1280px)/2)}
-.rail::-webkit-scrollbar{display:none}
-.village{flex:0 0 clamp(250px,26vw,340px);scroll-snap-align:start;position:relative;aspect-ratio:3/4;border-radius:var(--r);overflow:hidden;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;padding:24px}
-.village img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease)}
-.village::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 40%,rgba(10,20,15,.85))}
-.village:hover img{transform:scale(1.08)}
-.village small{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#e2c39d}
-.village strong{font:400 36px/1 var(--serif);margin-top:8px;display:flex;justify-content:space-between;align-items:center}
-.village strong svg{width:22px;height:22px;opacity:0;transform:translate(-8px,8px);transition:all .4s var(--ease)}
-.village:hover strong svg{opacity:1;transform:none}
-
-/* experiences */
-.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:minmax(260px,auto);gap:clamp(14px,1.6vw,22px)}
-.tile{position:relative;border-radius:var(--r);overflow:hidden;isolation:isolate;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;min-height:260px}
-.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.4s var(--ease)}
-.tile::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.05),rgba(10,20,15,.78))}
-.tile:hover img{transform:scale(1.06)}
-.tile h3{font-size:clamp(28px,2.6vw,40px);line-height:1.05}
-.tile p{margin-top:12px;color:rgba(255,255,255,.85);font-size:15px;max-width:42ch}
-.tile .link{margin-top:20px;align-self:flex-start;font-size:14px}
-.tile.big{grid-column:span 2;grid-row:span 2}
-.tile.wide{grid-column:span 2}
-.tile.plain{background:var(--sand);color:var(--ink)}
-.tile.plain::after{display:none}
-.tile.plain p{color:var(--muted)}
-.tile.green{background:var(--moss)}
-.tile.green::after{display:none}
-.tile .num{position:absolute;top:26px;right:28px;font:300 italic 18px var(--serif);opacity:.7}
-
-/* location */
-.loc{background:var(--bone)}
-.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
-.loc h2{font-size:clamp(40px,5vw,72px);line-height:1;margin:20px 0 26px}
-.loc p{color:var(--muted);font-size:17px}
-.routes{margin:34px 0;display:grid;gap:0;border-top:1px solid var(--line)}
-.routes div{display:grid;grid-template-columns:140px 1fr;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);font-size:15px}
-.routes b{font-weight:600}
-.routes span{color:var(--muted)}
-.mapcard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1/1;background:var(--forest)}
-.mapcard iframe{width:100%;height:100%;border:0;filter:grayscale(.6) contrast(1.05) sepia(.15)}
-.mapcard .pin{position:absolute;left:20px;bottom:20px;right:20px;background:var(--paper);border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 20px 40px -20px rgba(0,0,0,.4)}
-.mapcard .pin b{display:block;font:400 20px/1.2 var(--serif)}
-.mapcard .pin span{font-size:13px;color:var(--muted)}
-
-/* farie teaser */
-.farie-teaser{position:relative;color:#fff;overflow:hidden;isolation:isolate;padding:clamp(100px,14vw,200px) 0}
-.farie-teaser>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.farie-teaser::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(43,28,20,.9),rgba(43,28,20,.55) 55%,rgba(43,28,20,.15))}
-.farie-teaser h2{font-size:clamp(52px,8vw,120px);line-height:.95;margin:22px 0 26px;font-style:italic;font-weight:300}
-.farie-teaser p{max-width:460px;color:rgba(255,255,255,.85);font-size:18px;margin-bottom:34px}
-
-/* cta + footer */
-.cta{padding:clamp(90px,12vw,170px) 0;text-align:center;background:var(--paper)}
-.cta h2{font-size:clamp(48px,8vw,124px);line-height:.95;letter-spacing:-.045em;max-width:13ch;margin:24px auto 30px}
-.cta h2 em{color:var(--larch-2)}
-.cta p{max-width:520px;margin:0 auto 38px;color:var(--muted);font-size:17px}
-.cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.foot{background:var(--forest);color:var(--bone);padding:clamp(64px,8vw,100px) 0 28px}
-.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px}
-.foot h4{font:600 12px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--sage);margin-bottom:20px}
-.foot a,.foot p{display:block;color:rgba(245,240,230,.82);font-size:15px;margin:0 0 10px;transition:color .2s}
-.foot a:hover{color:#fff}
-.foot .big{font:300 clamp(34px,3.6vw,48px)/1.05 var(--serif);color:var(--bone);margin:22px 0 18px;max-width:12ch}
-.foot-bottom{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:20px;font-size:13px;color:rgba(245,240,230,.55);flex-wrap:wrap}
-.foot-bottom a{display:inline;font-size:13px;margin:0 0 0 18px;color:inherit}
-.partners{display:flex;gap:14px;align-items:center;margin-top:24px}
-.partners img{height:46px;width:auto;border-radius:6px;background:#fff;padding:4px}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(32px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
-
-/* ===== LA FARIE ===== */
-#farie{--fa-bg:#f4ede4;--fa-ink:#2b1c14;--fa-clay:#b5603c;--fa-muted:#7a6a5d;background:var(--fa-bg);color:var(--fa-ink);min-height:100vh}
-#farie .hdr.solid{background:rgba(244,237,228,.88);color:var(--fa-ink)}
-#farie .logo b{font-style:italic;font-weight:300;font-size:26px}
-#farie .btn-primary{background:var(--fa-clay);box-shadow:0 10px 30px -10px rgba(181,96,60,.7)}
-#farie .hero::after{background:linear-gradient(180deg,rgba(43,28,20,.5),rgba(43,28,20,.1) 35%,rgba(43,28,20,.85))}
-#farie .hero h1{font-style:italic;font-weight:300}
-#farie .hero h1 em{font-style:normal;color:#f2c9a8}
-.fa-intro{text-align:center;max-width:960px;margin:auto}
-.fa-intro p{font:300 clamp(28px,3.6vw,50px)/1.25 var(--serif);margin-top:28px;letter-spacing:-.02em}
-.fa-intro p em{color:var(--fa-clay)}
-.fa-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
-.fa-split img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:200px 200px var(--r) var(--r)}
-.fa-split h2{font-size:clamp(40px,5vw,72px);line-height:1;margin:20px 0 24px}
-.fa-split p{color:var(--fa-muted);font-size:17px}
-#farie .eyebrow{color:var(--fa-clay)}
-.notice{margin-top:32px;padding:22px 24px;border-radius:16px;background:rgba(181,96,60,.08);border:1px solid rgba(181,96,60,.25);font-size:15px}
-.notice b{display:block;margin-bottom:6px}
-.notice p{font-size:14px;margin-bottom:14px}
-.fa-cta{background:var(--fa-ink);color:var(--fa-bg);text-align:center;padding:clamp(90px,12vw,160px) 0}
-.fa-cta h2{font-size:clamp(44px,6vw,96px);line-height:1;margin:22px auto 30px;max-width:14ch}
-#farie .foot{background:#20150f}
-
-/* ===== PAGINE INTERNE ===== */
-.ph{position:relative;min-height:78svh;display:flex;align-items:flex-end;color:#fff;isolation:isolate;overflow:hidden}
-.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;animation:kb 18s ease-out both}
-.ph::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.55),rgba(10,20,15,.05) 35%,rgba(10,20,15,.82))}
-.ph .wrap{padding-bottom:clamp(32px,6vh,64px)}
-.crumbs{display:flex;gap:8px;align-items:center;font-size:13px;color:rgba(255,255,255,.75);margin-bottom:18px;flex-wrap:wrap}
-.crumbs a:hover{color:#fff}
-.crumbs span{opacity:.5}
-.ph h1{font-size:clamp(44px,7.5vw,112px);line-height:.95;letter-spacing:-.04em;max-width:14ch}
-.ph h1 em{color:#f0d3ad}
-.ph .lead{margin-top:20px;max-width:560px;font-size:18px;color:rgba(255,255,255,.88)}
-.ph-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.pill{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);font-size:13px;font-weight:500}
-.pill svg{width:15px;height:15px}
-.d-body{padding:clamp(56px,8vw,110px) 0}
-.d-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(40px,6vw,90px);align-items:start}
-.d-main>*+*{margin-top:clamp(44px,5vw,64px)}
-.d-main h2{font-size:clamp(32px,3.4vw,48px);line-height:1.05;margin:14px 0 20px}
-.d-main p{color:var(--muted);font-size:17px;line-height:1.75;max-width:68ch}
-.d-main p+p{margin-top:16px}
-.prose-first::first-letter{font:400 4.2em/.8 var(--serif);float:left;margin:.08em .1em 0 0;color:var(--larch-2)}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--bone)}
-.facts div{padding:22px 20px;border-right:1px solid var(--line)}
-.facts div:last-child{border-right:0}
-.facts b{display:block;font:300 clamp(30px,3vw,42px)/1 var(--serif);color:var(--forest)}
-.facts span{display:block;margin-top:8px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
-.amen{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-.amen li{list-style:none;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--bone);font-size:14px;font-weight:500}
-.amen li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--larch)}
-.amen{padding:0;margin:0}
-.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:180px;gap:10px}
-.gal button{position:relative;overflow:hidden;border-radius:14px;background:var(--sand);padding:0}
-.gal button:first-child{grid-column:span 2;grid-row:span 2}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
-.gal button:hover img{transform:scale(1.06)}
-.gal .more{position:absolute;inset:0;display:grid;place-items:center;background:rgba(22,36,30,.6);color:#fff;font:400 26px var(--serif)}
-.aside{position:sticky;top:96px;background:var(--forest);color:var(--bone);border-radius:var(--r);padding:30px}
-.aside h3{font-size:30px;line-height:1.1}
-.aside p{color:var(--sage);font-size:14px;margin-top:10px}
-.aside .btn{width:100%;justify-content:center;margin-top:12px}
-.aside .btn:first-of-type{margin-top:24px}
-.aside .btn-ghost{border-color:rgba(255,255,255,.25)}
-.aside dl{margin:24px 0 0;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:14px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12)}
-.aside dt{color:var(--sage)}
-.aside dd{margin:0;text-align:right}
-.cin{font-size:12px;color:var(--muted);letter-spacing:.04em}
-.units{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.unit{display:flex;gap:16px;align-items:center;padding:12px;border-radius:16px;background:var(--bone);transition:background .3s}
-.unit:hover{background:var(--sand)}
-.unit img{width:96px;height:80px;object-fit:cover;border-radius:10px;flex:none}
-.unit b{font:400 21px/1.15 var(--serif);display:block}
-.unit span{font-size:13px;color:var(--muted)}
-.plan{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:16px}
-.plan img{width:100%;max-height:520px;object-fit:contain;cursor:zoom-in}
-.list2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.list2 h4{font:600 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--moss);margin-bottom:14px}
-.list2 ul{margin:0;padding:0;list-style:none}
-.list2 li{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
-.list2 li a{display:flex;justify-content:space-between;align-items:center;font-weight:600}
-.list2 li a:hover{color:var(--larch-2)}
-.list2 li svg{width:16px;height:16px}
-.route{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:30px 0;border-top:1px solid var(--line)}
-.route:last-child{border-bottom:1px solid var(--line)}
-.route .n{font:300 italic 40px/1 var(--serif);color:var(--larch-2)}
-.route h3{font-size:30px;line-height:1.1;margin-bottom:12px}
-.route .stats-inline{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-.route .stats-inline span{padding:8px 14px;border-radius:999px;background:var(--bone);font-size:13px;font-weight:600}
-.route figure{margin:20px 0 0}
-.route figure img{border-radius:14px;max-height:460px;width:100%;object-fit:cover;cursor:zoom-in;background:var(--sand)}
-.feature-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(28px,4vw,48px) 0;border-top:1px solid var(--line)}
-.feature-row img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r);cursor:zoom-in}
-.feature-row h3{font-size:clamp(28px,2.8vw,38px);line-height:1.1;margin:12px 0 14px}
-.feature-row:nth-child(even) img{order:2}
-.related{background:var(--bone);padding:clamp(64px,8vw,110px) 0}
-.related h2{font-size:clamp(34px,4vw,56px);line-height:1;margin:16px 0 34px}
-.mini-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.mini{display:block;border-radius:16px;overflow:hidden;background:var(--paper);transition:transform .4s var(--ease)}
-.mini:hover{transform:translateY(-4px)}
-.mini img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.mini div{padding:16px 18px}
-.mini b{display:block;font:400 21px/1.15 var(--serif)}
-.mini span{font-size:13px;color:var(--muted)}
-.back{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;margin-bottom:30px}
-.back svg{width:16px;height:16px}
-.back:hover{color:var(--larch-2)}
-/* lightbox */
-.lb{border:0;padding:0;margin:0;width:100vw;height:100dvh;max-width:none;max-height:none;background:rgba(8,14,11,.96);color:#fff}
-.lb::backdrop{background:rgba(8,14,11,.9)}
-.lb[open]{display:grid;grid-template-rows:auto 1fr auto}
-.lb-top{display:flex;justify-content:space-between;align-items:center;padding:16px clamp(16px,3vw,32px);font-size:14px;color:rgba(255,255,255,.7)}
-.lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 clamp(8px,6vw,90px)}
-.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;user-select:none}
-.lb-nav{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff;background:rgba(0,0,0,.3)}
-.lb-nav svg{width:22px;height:22px}
-.lb-prev{left:clamp(8px,2vw,24px)}.lb-next{right:clamp(8px,2vw,24px)}
-.lb-close{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.3);color:#fff;font-size:22px}
-.lb-thumbs{display:flex;gap:8px;overflow-x:auto;padding:14px clamp(16px,3vw,32px) 20px;scrollbar-width:none}
-.lb-thumbs button{flex:none;width:72px;height:54px;border-radius:8px;overflow:hidden;opacity:.45;padding:0;transition:opacity .2s}
-.lb-thumbs button[aria-current="true"]{opacity:1;outline:2px solid var(--larch)}
-.lb-thumbs img{width:100%;height:100%;object-fit:cover}
-
-/* responsive */
-@media (max-width:1080px){
-  .menu{display:none}.burger{display:grid}
-  .grid{grid-template-columns:repeat(2,1fr)}
-  .card.feature{grid-column:span 2}
-  .bento{grid-template-columns:repeat(2,1fr)}
-  .foot-grid{grid-template-columns:1fr 1fr}
-}
-@media (max-width:980px){
-  .d-grid{grid-template-columns:minmax(0,1fr)}
-  .aside{position:static}
-  .mini-rail{grid-template-columns:repeat(2,1fr)}
-}
-@media (max-width:820px){
-  .intro-grid,.loc-grid,.fa-split{grid-template-columns:1fr}
-  .intro-media{max-width:520px}
-  .sec-head{grid-template-columns:1fr}
-  .scroll-cue{display:none}
-  .fa-split img{aspect-ratio:1/1}
-}
-@media (max-width:640px){
-  .hdr .bar{height:68px}
-  .hdr-cta .btn{display:none}
-  .logo b{font-size:19px}.logo small{font-size:8.5px}.logo-mark{width:34px;height:34px}
-  .hero h1{font-size:clamp(46px,14vw,72px)}
-  .hero-row p{font-size:16px}
-  .hero-actions{width:100%}.hero-actions .btn{flex:1;justify-content:center}
-  .hero-meta{gap:10px 20px;margin-top:30px;font-size:12px}
-  .grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:14px;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:4px clamp(16px,4vw,48px) 18px;scroll-padding:0 clamp(16px,4vw,48px)}
-  .grid::-webkit-scrollbar{display:none}
-  .card{flex:0 0 84%;scroll-snap-align:start}
-  .card:hover{transform:none}
-  .card.feature{grid-column:auto;flex-direction:column}
-  .card.feature .card-img{aspect-ratio:4/3;flex:none}
-  .card.feature .card-body{padding:20px 22px 22px;flex-direction:row;align-items:flex-end}
-  .card.feature p{display:none}
-  .card h3,.card.feature h3{font-size:24px}
-  .card-body{padding:20px 22px 22px}
-  .swipe-hint{display:flex!important}
-  .rail-ctrl{display:none}
-  .village{flex-basis:72%}
-  .ph{min-height:72svh}
-  .ph h1{font-size:clamp(40px,12vw,64px)}
-  .ph .lead{font-size:16px}
-  .facts{grid-template-columns:repeat(2,1fr)}
-  .facts div:nth-child(2){border-right:0}
-  .facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
-  .units,.list2,.feature-row{grid-template-columns:1fr}
-  .feature-row:nth-child(even) img{order:0}
-  .route{grid-template-columns:1fr;gap:8px}
-  .route .n{font-size:30px}
-  .mini-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:0 clamp(16px,4vw,48px)}
-  .mini{flex:0 0 70%;scroll-snap-align:start}
-  .lb-nav{display:none}
-  .aside{padding:24px}
-  .hero .eyebrow{font-size:10.5px;letter-spacing:.14em}
-  .hero-in{padding-bottom:28px}
-  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:0 clamp(16px,4vw,48px) 4px;position:relative}
-  .filters::-webkit-scrollbar{display:none}
-  .chip{flex:none;height:40px;padding:0 16px}
-  .filters .count{position:absolute;display:none}
-  .count-m{display:block!important;margin:-22px 0 22px;font-size:14px;color:var(--muted)}
-  .bento{grid-template-columns:1fr}
-  .tile.big,.tile.wide{grid-column:auto;grid-row:auto}
-  .tile.big{min-height:420px}
-  .stats div{padding-right:8px}
-  .badge{width:96px;height:96px;left:10px;bottom:auto;top:10px;font-size:10px}
-  .badge i{font-size:24px}
-  .routes div{grid-template-columns:1fr;gap:4px}
-  .foot-grid{grid-template-columns:1fr}
-  .book-strip{padding:24px}.book-strip .btn{width:100%;justify-content:center}
-  .foot-bottom a{margin:0 18px 0 0}
-}
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
-  .rv{opacity:1;transform:none}
-}
-</style>
+<link rel="stylesheet" href="/assets/site.css?v=707b28ec">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LodgingBusiness","@id":"https://albergodiffusosocchieve.it/#lodging","name":"Albergo Diffuso Socchieve “Col Gentile”","alternateName":["Albergo Diffuso Socchieve","Col Gentile"],"description":"Albergo diffuso con case e appartamenti vacanza nei borghi di Socchieve, in Carnia (Friuli Venezia Giulia), alla porta delle Dolomiti Friulane.","url":"https://albergodiffusosocchieve.it/","logo":"https://albergodiffusosocchieve.it/apple-touch-icon.png","image":["https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg","https://albergodiffusosocchieve.it/img/casa-vanda-esterno-960.webp"],"telephone":"+39 0433 819934","email":"info@albergodiffusosocchieve.it","vatID":"IT02790180307","address":{"@type":"PostalAddress","streetAddress":"Via Roma 20","addressLocality":"Mediis, Socchieve","postalCode":"33020","addressRegion":"UD","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":46.40358,"longitude":12.82309},"hasMap":"https://www.google.com/maps/search/?api=1&query=46.40358,12.82309","areaServed":"Carnia","knowsLanguage":["it","en","fr"],"petsAllowed":true,"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Wi-Fi","value":true},{"@type":"LocationFeatureSpecification","name":"Parcheggio","value":true},{"@type":"LocationFeatureSpecification","name":"Giardino","value":true},{"@type":"LocationFeatureSpecification","name":"Animali ammessi","value":true}],"containsPlace":[{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-vanda#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-ernesto-da-rosuline#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-pradin#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-ai-pascoli#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-vanda-iris#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-vanda-bucaneve#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-vanda-papavero#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-vanda-genziana#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/ernesto-da-rosuline-1#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/ernesto-da-rosuline-2#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/ernesto-da-rosuline-3#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/ernesto-da-rosuline-terra-0#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-rovedo#accommodation"},{"@id":"https://albergodiffusosocchieve.it/it/alloggi/casa-dal-miedi#accommodation"}],"potentialAction":{"@type":"ReserveAction","target":"https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010"},"memberOf":{"@type":"Organization","name":"Borghi Autentici d'Italia"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://albergodiffusosocchieve.it/#website","name":"Albergo Diffuso Socchieve","url":"https://albergodiffusosocchieve.it/","inLanguage":"it-IT","publisher":{"@id":"https://albergodiffusosocchieve.it/#lodging"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Cos'è un albergo diffuso?","acceptedAnswer":{"@type":"Answer","text":"È una struttura ricettiva i cui alloggi sono distribuiti nelle case di un paese invece che in un unico edificio. All'Albergo Diffuso Socchieve “Col Gentile” dormi in case e appartamenti nei borghi della Carnia, con i servizi di un albergo e una reception unica a Mediis."}},{"@type":"Question","name":"Dove si trova Socchieve?","acceptedAnswer":{"@type":"Answer","text":"Socchieve è in Carnia, nell'Alto Friuli (provincia di Udine), tra le Dolomiti Friulane e quelle Pesarine, lungo la statale 52 che va da Tolmezzo a Forni di Sopra. Ampezzo è a 4 km, Tolmezzo a 17 km, Sauris a 18 km e Forni di Sopra a 26 km."}},{"@type":"Question","name":"Come si arriva all'albergo diffuso?","acceptedAnswer":{"@type":"Answer","text":"In auto: autostrada A23, uscita Carnia, poi SS52 verso Tolmezzo e Forni di Sopra (circa 27 km dal casello). Dal Cadore si arriva sulla SS52 da Forni di Sopra; dal Pordenonese sulla SS552 del Monte Rest da Tramonti. L'aeroporto più vicino è Trieste (circa 100 km), Udine dista 65 km."}},{"@type":"Question","name":"Quante persone possono ospitare le case?","acceptedAnswer":{"@type":"Answer","text":"Dal monolocale per due di Ernesto da Rosuline Terra agli appartamenti per 4–8 persone, fino alle case intere per gruppi: Casa Pradin (9 posti), Casa Vanda (18) e Casa Ernesto da Rosuline (21)."}},{"@type":"Question","name":"Gli animali sono ammessi?","acceptedAnswer":{"@type":"Answer","text":"Sì, in diverse case: gli appartamenti di Casa Vanda (Iris, Genziana, Bucaneve, Papavero), quelli di Casa Ernesto da Rosuline, Casa dal Miedi e Casa Ai Pascoli sono pet friendly. Segnalalo al momento della prenotazione."}},{"@type":"Question","name":"Che cosa si può fare a Socchieve?","acceptedAnswer":{"@type":"Answer","text":"Trekking sui sentieri che partono dai borghi, mountain bike sulla pista di Mediis, bici da strada sul Passo Rest, arte romanica nella Chiesa di San Martino. In mezz'ora si raggiungono Sauris, le Dolomiti Friulane patrimonio UNESCO e Forni di Sopra, d'inverno anche per sciare."}},{"@type":"Question","name":"Come si prenota?","acceptedAnswer":{"@type":"Answer","text":"Online sul sistema ufficiale Col Gentile, con disponibilità e prezzi in tempo reale, oppure scrivendo a info@albergodiffusosocchieve.it o chiamando il +39 0433 819934."}}]}</script>
 </head>
 <body>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
@@ -456,79 +37,55 @@ section[id]{scroll-margin-top:60px}
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
   <symbol id="i-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M6 28 15 15l5 7 4-5 10 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M17 28v-5h6v5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
 </svg>
-
-<!-- ================= COL GENTILE ================= -->
-<div id="col">
-  <header class="hdr" data-hdr>
-    <div class="wrap bar">
-      <a href="#top" class="logo" aria-label="Col Gentile, torna all'inizio">
-        <svg class="logo-mark"><use href="#i-mark"/></svg>
-        <span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span>
-      </a>
-      <nav class="menu" aria-label="Principale">
-        <a href="#alloggi">Le case</a>
-        <a href="#borghi">I borghi</a>
-        <a href="#esperienze">Esperienze</a>
-        <a href="#dove">Dove siamo</a>
-        <a href="#la-farie">La Farie</a>
-      </nav>
-      <div class="hdr-cta">
-        <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota <svg><use href="#i-arrow"/></svg></a>
-        <button class="burger" aria-label="Apri menu" data-open><span></span></button>
-      </div>
+<a class="skip" href="#main">Vai al contenuto</a>
+<header class="hdr" data-hdr>
+  <div class="wrap bar">
+    <a href="/" class="logo" aria-label="Albergo Diffuso Socchieve Col Gentile, home">
+      <svg class="logo-mark" aria-hidden="true"><use href="#i-mark"/></svg>
+      <span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span>
+    </a>
+    <nav class="menu" aria-label="Principale"><a href="/it/alloggi/">Le case</a><a href="/it/territorio#borghi">I borghi</a><a href="/it/territorio#esperienze">Esperienze</a><a href="/it/contact">Contatti</a><a href="/la-farie">La Farie</a></nav>
+    <div class="hdr-cta">
+      <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <button class="burger" aria-label="Apri menu" data-open><span></span></button>
     </div>
-  </header>
-
-  <div class="drawer" data-drawer aria-hidden="true">
-    <div class="drawer-top"><span class="logo"><svg class="logo-mark"><use href="#i-mark"/></svg><span><b>Col Gentile</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
-    <nav><a href="#alloggi">Le case</a><a href="#borghi">I borghi</a><a href="#esperienze">Esperienze</a><a href="#dove">Dove siamo</a><a href="#la-farie">La Farie</a></nav>
-    <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
   </div>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-media"><img src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Strada sterrata tra i prati verso le montagne della Carnia" fetchpriority="high"></div>
+</header>
+<div class="drawer" data-drawer aria-hidden="true">
+  <div class="drawer-top"><span class="logo"><svg class="logo-mark" aria-hidden="true"><use href="#i-mark"/></svg><span><b>Col Gentile</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
+  <nav aria-label="Menu mobile"><a href="/">Home</a><a href="/it/alloggi/">Le case</a><a href="/it/territorio#borghi">I borghi</a><a href="/it/territorio#esperienze">Esperienze</a><a href="/it/contact">Contatti</a><a href="/la-farie">La Farie</a></nav>
+  <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+</div>
+<main id="main">
+<section class="hero">
+      <div class="hero-media"><img src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Strada tra i prati verso le montagne della Carnia, a Socchieve" fetchpriority="high" ></div>
       <div class="wrap hero-in">
-        <span class="eyebrow light">Socchieve · Carnia · Porta delle Dolomiti</span>
-        <h1>Vivi la Carnia <em>da paesano.</em></h1>
+        <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">Albergo diffuso a Socchieve · Carnia</span>Vivi la Carnia <em>da paesano.</em></h1>
         <div class="hero-row">
-          <p>Case vere nei borghi di montagna, con i servizi di un albergo. Sentieri fuori dalla porta, silenzio, legno e pietra.</p>
+          <p>Case e appartamenti vacanza nei borghi di Socchieve, con i servizi di un albergo. A 18 km da Sauris e mezz'ora dalle Dolomiti Friulane.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
-            <a class="btn btn-ghost" href="#alloggi">Scopri le case</a>
+            <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="/it/alloggi/">Scopri le case</a>
           </div>
         </div>
-        <div class="hero-meta"><span><b>13</b> residenze</span><span><b>8</b> borghi</span><span>Dolomiti Friulane · <b>Patrimonio UNESCO</b></span></div>
+        <div class="hero-meta"><span><b>14</b> alloggi</span><span><b>8</b> borghi</span><span>Dolomiti Friulane · <b>Patrimonio UNESCO</b></span></div>
       </div>
       <span class="scroll-cue" aria-hidden="true">Scorri</span>
     </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span>
-        <span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span>
-      </div>
-    </div>
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span><span>Viaso</span><span>Lungis</span><span>Feltrone</span><span>Mediis</span><span>Dilignidis</span><span>Nonta</span><span>Priuso</span><span>Socchieve</span></div></div>
 
     <section class="sec" id="albergo-diffuso">
       <div class="wrap intro-grid">
         <div>
           <span class="eyebrow rv">Cos'è un albergo diffuso</span>
-          <p class="statement rv d1">Non un hotel con tante stanze. <em>Un paese intero</em> che ti apre le sue case.</p>
-          <p class="intro-copy rv d2">L'albergo diffuso offre i servizi di una struttura alberghiera dentro un territorio abitato. Dormi in una casa del borgo, prendi il caffè con chi ci vive, esci a piedi sui sentieri. Turista e paesano, nello stesso viaggio.</p>
-          <div class="stats rv d3">
-            <div><b>13</b><span>case e appartamenti</span></div>
-            <div><b>8</b><span>borghi del comune</span></div>
-            <div><b>2–16+</b><span>posti letto per casa</span></div>
-          </div>
+          <h2 class="statement rv d1">Non un hotel con tante stanze. <em>Un paese intero</em> che ti apre le sue case.</h2>
+          <p class="intro-copy rv d2">L'albergo diffuso offre i servizi di una struttura alberghiera dentro un territorio abitato. A Socchieve dormi in una casa vera del borgo, prendi il caffè con chi ci vive ed esci a piedi sui sentieri della Carnia. Turista e paesano, nello stesso viaggio.</p>
+          <div class="stats rv d3"><div><b>14</b><span>case e appartamenti</span></div><div><b>8</b><span>borghi del comune</span></div><div><b>2–21</b><span>posti letto per casa</span></div></div>
         </div>
         <div class="intro-media rv d2">
-          <img class="a" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide2Socchieve.jpg" alt="Albero e panchina in un prato di montagna">
-          <img class="b" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Casa Vanda a Viaso, facciata in pietra con ballatoi in legno">
-          <div class="badge" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="8.6" fill="#fff" font-family="Inter Tight, sans-serif" font-weight="600"><textPath href="#circ" textLength="236" lengthAdjust="spacing">OSPITI DELLA NATURA · OSPITI DELLA NATURA · </textPath></text></svg>
-            <i>Carnia</i>
-          </div>
+          <img class="a" src="https://albergodiffusosocchieve.it/sites/default/files/Slide2Socchieve.jpg" alt="Albero e panchina in un prato di montagna a Socchieve" loading="lazy" decoding="async" >
+          <img class="b" src="/img/casa-vanda-esterno-960.webp" srcset="/img/casa-vanda-esterno-480.webp 480w, /img/casa-vanda-esterno-960.webp 960w" sizes="(max-width:820px) 40vw, 20vw" width="960" height="640" alt="Casa Vanda a Viaso, villa settecentesca con ballatoi in legno" loading="lazy" decoding="async" >
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="8.6" fill="#fff" font-family="Inter Tight, sans-serif" font-weight="600"><textPath href="#circ" textLength="236" lengthAdjust="spacing">OSPITI DELLA NATURA · OSPITI DELLA NATURA · </textPath></text></svg><i>Carnia</i></div>
         </div>
       </div>
     </section>
@@ -536,16 +93,11 @@ section[id]{scroll-margin-top:60px}
     <section class="sec stays" id="alloggi">
       <div class="wrap">
         <div class="sec-head">
-          <div><span class="eyebrow rv">Le residenze</span><h2 class="rv d1">Scegli la tua <em>casa nel borgo.</em></h2></div>
-          <p class="rv d2">Dal nido per due alla casa per tutta la compagnia. Filtra per borgo o per numero di posti letto.</p>
+          <div><span class="eyebrow rv">Dove dormire in Carnia</span><h2 class="rv d1">Scegli la tua <em>casa nel borgo.</em></h2></div>
+          <p class="rv d2">Dal monolocale per due alla villa per gruppi fino a 21 persone. Filtra per borgo o per numero di posti letto.</p>
         </div>
-
         <div class="filters rv" role="group" aria-label="Filtra le residenze">
-          <button class="chip" data-f="borgo" data-v="all" aria-pressed="true">Tutti i borghi</button>
-          <button class="chip" data-f="borgo" data-v="Viaso" aria-pressed="false">Viaso</button>
-          <button class="chip" data-f="borgo" data-v="Lungis" aria-pressed="false">Lungis</button>
-          <button class="chip" data-f="borgo" data-v="Feltrone" aria-pressed="false">Feltrone</button>
-          <button class="chip" data-f="borgo" data-v="Mediis" aria-pressed="false">Mediis</button>
+          <button class="chip" data-f="borgo" data-v="all" aria-pressed="true">Tutti i borghi</button><button class="chip" data-f="borgo" data-v="Viaso" aria-pressed="false">Viaso</button><button class="chip" data-f="borgo" data-v="Lungis" aria-pressed="false">Lungis</button><button class="chip" data-f="borgo" data-v="Feltrone" aria-pressed="false">Feltrone</button><button class="chip" data-f="borgo" data-v="Mediis" aria-pressed="false">Mediis</button><button class="chip" data-f="borgo" data-v="Priuso" aria-pressed="false">Priuso</button>
           <span class="sep"></span>
           <button class="chip" data-f="size" data-v="all" aria-pressed="true">Ogni capienza</button>
           <button class="chip" data-f="size" data-v="s" aria-pressed="false">2–8 posti</button>
@@ -553,15 +105,97 @@ section[id]{scroll-margin-top:60px}
           <button class="chip" data-f="size" data-v="l" aria-pressed="false">Oltre 16</button>
           <span class="count" aria-live="polite" data-count></span>
         </div>
-
         <p class="count-m" data-count-m aria-hidden="true"></p>
-        <div class="grid" data-grid></div>
-        <p class="swipe-hint" aria-hidden="true">Scorri per vedere tutte le case <svg><use href="#i-right"/></svg></p>
+        <div class="grid" data-grid><a class="card feature" data-b="Viaso" data-s="l" href="/it/alloggi/casa-vanda">
+      <div class="card-img"><img src="/img/casa-vanda-esterno-960.webp" srcset="/img/casa-vanda-esterno-480.webp 480w, /img/casa-vanda-esterno-960.webp 960w" sizes="(max-width:640px) 84vw, 60vw" width="960" height="640" alt="Casa Vanda, villa storica a Viaso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 18 ospiti</span><span class="badge360">360°</span></div>
+      <div class="card-body">
+        <div><h3>Casa Vanda</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Viaso · Villa storica</div><p>L&#x27;intera villa settecentesca di Viaso, in pietra con ballatoi in legno: quattro appartamenti per famiglie numerose e gruppi fino a 18 persone.</p></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Lungis" data-s="l" href="/it/alloggi/casa-ernesto-da-rosuline">
+      <div class="card-img"><img src="/img/q30a3509-copia-960.webp" srcset="/img/q30a3509-copia-480.webp 480w, /img/q30a3509-copia-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Ernesto da Rosuline, casa per gruppi a Lungis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 21 ospiti</span><span class="badge360">360°</span></div>
+      <div class="card-body">
+        <div><h3>Casa Ernesto da Rosuline</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Lungis · Casa per gruppi</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Feltrone" data-s="m" href="/it/alloggi/casa-pradin">
+      <div class="card-img"><img src="/img/casapradin-esterno-0-960.webp" srcset="/img/casapradin-esterno-0-480.webp 480w, /img/casapradin-esterno-0-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Pradin, casa vacanze a Feltrone, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 9 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Pradin</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Feltrone · Casa vacanze</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Priuso" data-s="s" href="/it/alloggi/casa-ai-pascoli">
+      <div class="card-img"><img src="/img/fg5-0527-960.webp" srcset="/img/fg5-0527-480.webp 480w, /img/fg5-0527-960.webp 960w, /img/fg5-0527-1600.webp 1600w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="1600" height="1067" alt="Casa Ai Pascoli, appartamento a Priuso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 4 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Ai Pascoli</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Priuso · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Viaso" data-s="s" href="/it/alloggi/casa-vanda-iris">
+      <div class="card-img"><img src="/img/casa-vanda-esterno-0-3-960.webp" srcset="/img/casa-vanda-esterno-0-3-480.webp 480w, /img/casa-vanda-esterno-0-3-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Vanda Iris, appartamento a Viaso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 6 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Vanda Iris</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Viaso · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Viaso" data-s="s" href="/it/alloggi/casa-vanda-bucaneve">
+      <div class="card-img"><img src="/img/casa-vanda-esterno-0-2-960.webp" srcset="/img/casa-vanda-esterno-0-2-480.webp 480w, /img/casa-vanda-esterno-0-2-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Vanda Bucaneve, appartamento a Viaso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 4 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Vanda Bucaneve</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Viaso · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Viaso" data-s="s" href="/it/alloggi/casa-vanda-papavero">
+      <div class="card-img"><img src="/img/casa-vanda-esterno-0-1-960.webp" srcset="/img/casa-vanda-esterno-0-1-480.webp 480w, /img/casa-vanda-esterno-0-1-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Vanda Papavero, appartamento a Viaso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 4 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Vanda Papavero</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Viaso · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Viaso" data-s="s" href="/it/alloggi/casa-vanda-genziana">
+      <div class="card-img"><img src="/img/casa-vanda-esterno-0-0-960.webp" srcset="/img/casa-vanda-esterno-0-0-480.webp 480w, /img/casa-vanda-esterno-0-0-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="640" alt="Casa Vanda Genziana, appartamento a Viaso, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 5 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Vanda Genziana</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Viaso · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Lungis" data-s="s" href="/it/alloggi/ernesto-da-rosuline-1">
+      <div class="card-img"><img src="https://albergodiffusosocchieve.it/sites/default/files/casa%20ernesto_0.jpg" alt="Ernesto da Rosuline 1, appartamento a Lungis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 5 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Ernesto da Rosuline 1</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Lungis · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Lungis" data-s="s" href="/it/alloggi/ernesto-da-rosuline-2">
+      <div class="card-img"><img src="https://albergodiffusosocchieve.it/sites/default/files/casa%20ernesto_3.jpg" alt="Ernesto da Rosuline 2, appartamento a Lungis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 5 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Ernesto da Rosuline 2</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Lungis · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Lungis" data-s="s" href="/it/alloggi/ernesto-da-rosuline-3">
+      <div class="card-img"><img src="https://albergodiffusosocchieve.it/sites/default/files/casa%20ernesto_4.jpg" alt="Ernesto da Rosuline 3, appartamento a Lungis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 5 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Ernesto da Rosuline 3</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Lungis · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Lungis" data-s="s" href="/it/alloggi/ernesto-da-rosuline-terra-0">
+      <div class="card-img"><img src="https://albergodiffusosocchieve.it/sites/default/files/casa%20ernesto_1.jpg" alt="Ernesto da Rosuline Terra, monolocale a Lungis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 2 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Ernesto da Rosuline Terra</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Lungis · Monolocale</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Feltrone" data-s="s" href="/it/alloggi/casa-rovedo">
+      <div class="card-img"><img src="https://albergodiffusosocchieve.it/sites/default/files/SITOOK_0.JPG" alt="Casa Rovedo, casa con giardino a Feltrone, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 5 ospiti</span></div>
+      <div class="card-body">
+        <div><h3>Casa Rovedo</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Feltrone · Casa con giardino</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a><a class="card" data-b="Mediis" data-s="s" href="/it/alloggi/casa-dal-miedi">
+      <div class="card-img"><img src="/img/casa-dal-miedi-esterno-0-960.webp" srcset="/img/casa-dal-miedi-esterno-0-480.webp 480w, /img/casa-dal-miedi-esterno-0-960.webp 960w" sizes="(max-width:640px) 84vw, (max-width:1080px) 50vw, 33vw" width="960" height="641" alt="Casa dal Miedi, appartamento a Mediis, Carnia" loading="lazy" decoding="async" ><span class="tag">Fino a 8 ospiti</span><span class="badge360">360°</span></div>
+      <div class="card-body">
+        <div><h3>Casa dal Miedi</h3><div class="where"><svg aria-hidden="true"><use href="#i-pin"/></svg>Mediis · Appartamento</div></div>
+        <span class="arrow" aria-hidden="true"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </div>
+    </a></div>
+        <p class="swipe-hint" aria-hidden="true">Scorri per vedere tutte le case <svg aria-hidden="true"><use href="#i-right"/></svg></p>
         <div class="empty" data-empty>Nessuna casa con questi filtri. Prova un altro borgo o un'altra capienza.</div>
-
         <div class="book-strip rv">
-          <div><strong>Date, prezzi e disponibilità in tempo reale</strong><p>Prenoti direttamente sul sistema ufficiale Col Gentile.</p></div>
-          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg><use href="#i-arrow"/></svg></a>
+          <div><strong>Date, prezzi e disponibilità in tempo reale</strong><p>Prenoti direttamente sul sistema ufficiale Col Gentile, senza intermediari.</p></div>
+          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Verifica disponibilità <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
@@ -571,73 +205,47 @@ section[id]{scroll-margin-top:60px}
         <div><span class="eyebrow rv">Socchieve e i suoi paesi</span><h2 class="rv d1">Otto borghi, <em>un'unica valle.</em></h2></div>
         <div class="rail-ctrl"><button data-rail="-1" aria-label="Borghi precedenti"><svg><use href="#i-left"/></svg></button><button data-rail="1" aria-label="Borghi successivi"><svg><use href="#i-right"/></svg></button></div>
       </div>
-      <div class="rail" data-railbox></div>
+      <div class="rail" data-railbox><a class="village" href="/it/viaso"><img src="https://albergodiffusosocchieve.it/sites/default/files/Viaso.jpg" alt="Il borgo di Viaso" loading="lazy" decoding="async" ><small>527 m s.l.m.</small><strong>Viaso<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/lungis"><img src="/img/lungiscartolina-480.webp" srcset="/img/lungiscartolina-480.webp 480w" sizes="(max-width:640px) 72vw, 340px" width="480" height="320" alt="Il borgo di Lungis" loading="lazy" decoding="async" ><small>554 m s.l.m.</small><strong>Lungis<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/feltrone-e-dilignidis"><img src="https://albergodiffusosocchieve.it/sites/default/files/dilignidis%20e%20feltrone_0.jpg" alt="Il borgo di Feltrone" loading="lazy" decoding="async" ><small>769 m s.l.m.</small><strong>Feltrone<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/mediis"><img src="https://albergodiffusosocchieve.it/sites/default/files/mediis.jpg" alt="Il borgo di Mediis" loading="lazy" decoding="async" ><small>486 m s.l.m.</small><strong>Mediis<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/dilignidis"><img src="/img/cartolinadilignidis-480.webp" srcset="/img/cartolinadilignidis-480.webp 480w" sizes="(max-width:640px) 72vw, 340px" width="480" height="342" alt="Il borgo di Dilignidis" loading="lazy" decoding="async" ><small>Socchieve</small><strong>Dilignidis<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/nonta"><img src="/img/nontacopertina-480.webp" srcset="/img/nontacopertina-480.webp 480w" sizes="(max-width:640px) 72vw, 340px" width="480" height="319" alt="Il borgo di Nonta" loading="lazy" decoding="async" ><small>449 m s.l.m.</small><strong>Nonta<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/priuso"><img src="https://albergodiffusosocchieve.it/sites/default/files/priuso.jpg" alt="Il borgo di Priuso" loading="lazy" decoding="async" ><small>550 m s.l.m.</small><strong>Priuso<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a><a class="village" href="/it/socchieve"><img src="https://albergodiffusosocchieve.it/sites/default/files/Socchievecopertina_0.jpg" alt="Il borgo di Socchieve" loading="lazy" decoding="async" ><small>412 m s.l.m.</small><strong>Socchieve<svg aria-hidden="true"><use href="#i-arrow"/></svg></strong></a></div>
     </section>
 
     <section class="sec" id="esperienze">
       <div class="wrap">
         <div class="sec-head">
           <div><span class="eyebrow rv">Cosa fare a Socchieve</span><h2 class="rv d1">Prenditi <em>il tempo.</em></h2></div>
-          <p class="rv d2">Passeggiate ed escursioni, cibo sano, natura incontaminata. Si parte direttamente dalle nostre residenze.</p>
+          <p class="rv d2">Passeggiate ed escursioni, bici, arte romanica e i grandi classici della Carnia. Si parte direttamente dalle nostre case.</p>
         </div>
         <div class="bento">
-          <a class="tile big rv" href="#esperienza/trekking">
-            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Sentiero tra prati e boschi">
-            <span class="num">01</span>
-            <h3>Trekking</h3>
-            <p>Dalla passeggiata attorno ai paesi ai percorsi più impegnativi per camminatori esperti. Fuori dalla porta, una rete fitta di sentieri.</p>
-            <span class="link">Scopri i percorsi <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
-          </a>
-          <a class="tile green rv d1" href="#esperienza/cicloturismo">
-            <span class="num">02</span>
-            <h3>Cicloturismo</h3>
-            <p>Itinerari in bici selezionati per partire dalle residenze.</p>
-            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
-          </a>
-          <a class="tile rv d2" href="#esperienza/arte-e-cultura">
-            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide3Socchieve.jpg" alt="Antica meridiana dipinta su un muro in pietra">
-            <span class="num">03</span>
-            <h3>Arte e cultura</h3>
-            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
-          </a>
-          <a class="tile wide plain rv d1" href="#esperienza/visita-la-carnia">
-            <span class="num">04</span>
-            <h3>Visita la Carnia</h3>
-            <p>Non solo Socchieve: la Carnia è un puzzle di meraviglie che aspetta solo di ricomporsi davanti ai tuoi occhi.</p>
-            <span class="link">Approfondisci <svg width="16" height="16"><use href="#i-arrow"/></svg></span>
-          </a>
+          <a class="tile big rv" href="/it/trekking"><img src="https://albergodiffusosocchieve.it/sites/default/files/Slide1Socchieve.jpg" alt="Sentiero tra prati e boschi in Carnia" loading="lazy" decoding="async" ><span class="num">01</span><h3>Trekking</h3><p>Quattro anelli che partono dai borghi e la traversata del Col Gentile sul sentiero CAI 235.</p><span class="link">Scopri i percorsi <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="tile green rv d1" href="/it/cicloturismo"><span class="num">02</span><h3>Cicloturismo</h3><p>La pista MTB di Mediis e l'anello del Passo Rest, con lo Zoncolan a 24 km.</p><span class="link">Approfondisci <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="tile rv d2" href="/it/arte-e-cultura"><img src="https://albergodiffusosocchieve.it/sites/default/files/Slide3Socchieve.jpg" alt="Antica meridiana dipinta su un muro in pietra a Socchieve" loading="lazy" decoding="async" ><span class="num">03</span><h3>Arte e cultura</h3><span class="link">Approfondisci <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="tile wide plain rv d1" href="/it/visita-la-carnia"><span class="num">04</span><h3>Visita la Carnia</h3><p>Sauris e il suo prosciutto, la Forra del Lumiei, Forni di Sopra e la Val Pesarina: tutto a meno di un'ora.</p><span class="link">Approfondisci <svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
         </div>
       </div>
     </section>
 
     <section class="sec loc" id="dove">
-      <div class="wrap loc-grid">
-        <div>
-          <span class="eyebrow rv">Dov'è Socchieve</span>
-          <h2 class="rv d1">Tra le Dolomiti Friulane <em>e le Pesarine.</em></h2>
-          <p class="rv d2">Nell'Alto Friuli, in Carnia, lungo la valle che unisce Villa Santina a Forni di Sotto.</p>
-          <div class="routes rv d3">
-            <div><b>Da Tolmezzo</b><span>Uscita A23 Carnia, poi SS52 verso Forni</span></div>
-            <div><b>Dal Cadore</b><span>SS52 da Forni di Sopra</span></div>
-            <div><b>Da Tramonti</b><span>SS552 del Monte Rest</span></div>
-            <div><b>Dalla Val d'Arzino</b><span>Strada comunale di Preone</span></div>
-          </div>
-          <a class="link rv" href="https://www.google.com/maps/search/?api=1&query=Via+Roma+20+Mediis+Socchieve" target="_blank" rel="noopener">Indicazioni stradali <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="mapcard rv d2">
-          <iframe title="Mappa di Socchieve" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=12.70%2C46.33%2C12.93%2C46.45&layer=mapnik&marker=46.395%2C12.83"></iframe>
-          <div class="pin"><div><b>Reception · Mediis</b><span>Via Roma 20, Socchieve (UD)</span></div><a class="arrow" href="tel:+390433819934" aria-label="Chiama"><svg><use href="#i-arrow"/></svg></a></div>
-        </div>
+      <div class="wrap">
+        <div class="sec-head"><div><span class="eyebrow rv">Dov'è Socchieve</span><h2 class="rv d1">Al centro della Carnia, <em>vicino a tutto.</em></h2></div>
+        <p class="rv d2">Tra le Dolomiti Friulane e le Pesarine, lungo la SS52 che unisce Tolmezzo a Forni di Sopra. Distanze in auto dalla reception di Mediis.</p></div>
+        <ul class="dist rv"><li><b>Ampezzo</b><span>4 km · circa 5 min</span></li><li><b>Tolmezzo</b><span>17 km · circa 25 min</span></li><li><b>Sauris e il suo lago</b><span>18 km · circa 25 min</span></li><li><b>Forni di Sopra</b><span>26 km · circa 35 min</span></li><li><b>Val Pesarina (Pesariis)</b><span>25 km · circa 40 min</span></li><li><b>Monte Zoncolan</b><span>24 km · circa 50 min</span></li><li><b>Casello A23 Carnia</b><span>27 km · circa 35 min</span></li><li><b>Udine</b><span>65 km · circa 1 h 10</span></li><li><b>Aeroporto di Trieste</b><span>103 km · circa 1 h 35</span></li><li><b>Lignano Sabbiadoro</b><span>127 km · circa 2 h 05</span></li></ul>
+        <p style="margin-top:28px" class="rv"><a class="link" href="/it/contact">Come arrivare e contatti <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
       </div>
     </section>
 
-    <section class="farie-teaser" id="farie-teaser">
-      <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/styles/portfolio/public/LungisCartolina.jpg?itok=MIWMVY69" alt="Il borgo di Lungis">
+    <section class="farie-teaser">
+      <img src="/img/lungiscartolina-480.webp" srcset="/img/lungiscartolina-480.webp 480w" sizes="100vw" width="480" height="320" alt="Il borgo di Lungis" loading="lazy" decoding="async" >
       <div class="wrap">
-        <span class="eyebrow light rv">Un'altra atmosfera · Lungis</span>
+        <span class="eyebrow light rv">Bed &amp; Breakfast a Lungis · 9,8/10 su Booking.com</span>
         <h2 class="rv d1">La Farie.</h2>
-        <p class="rv d2">Una dimora nel borgo di Lungis, con un carattere tutto suo e un'ospitalità distinta da Col Gentile.</p>
-        <a class="btn btn-light rv d3" href="#la-farie">Entra in La Farie <svg><use href="#i-arrow"/></svg></a>
+        <p class="rv d2">Una casa carnica ristrutturata, la colazione che gli ospiti non dimenticano e l'accoglienza di Cecilia ed Eros: 133 recensioni, voto 9,8.</p>
+        <a class="btn btn-light rv d3" href="/la-farie">Scopri La Farie <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="sec" id="domande">
+      <div class="wrap">
+        <div class="sec-head"><div><span class="eyebrow rv">Domande frequenti</span><h2 class="rv d1">Prima di <em>partire.</em></h2></div></div>
+        <div class="faq rv"><details><summary>Cos&#x27;è un albergo diffuso?</summary><p>È una struttura ricettiva i cui alloggi sono distribuiti nelle case di un paese invece che in un unico edificio. All&#x27;Albergo Diffuso Socchieve “Col Gentile” dormi in case e appartamenti nei borghi della Carnia, con i servizi di un albergo e una reception unica a Mediis.</p></details><details><summary>Dove si trova Socchieve?</summary><p>Socchieve è in Carnia, nell&#x27;Alto Friuli (provincia di Udine), tra le Dolomiti Friulane e quelle Pesarine, lungo la statale 52 che va da Tolmezzo a Forni di Sopra. Ampezzo è a 4 km, Tolmezzo a 17 km, Sauris a 18 km e Forni di Sopra a 26 km.</p></details><details><summary>Come si arriva all&#x27;albergo diffuso?</summary><p>In auto: autostrada A23, uscita Carnia, poi SS52 verso Tolmezzo e Forni di Sopra (circa 27 km dal casello). Dal Cadore si arriva sulla SS52 da Forni di Sopra; dal Pordenonese sulla SS552 del Monte Rest da Tramonti. L&#x27;aeroporto più vicino è Trieste (circa 100 km), Udine dista 65 km.</p></details><details><summary>Quante persone possono ospitare le case?</summary><p>Dal monolocale per due di Ernesto da Rosuline Terra agli appartamenti per 4–8 persone, fino alle case intere per gruppi: Casa Pradin (9 posti), Casa Vanda (18) e Casa Ernesto da Rosuline (21).</p></details><details><summary>Gli animali sono ammessi?</summary><p>Sì, in diverse case: gli appartamenti di Casa Vanda (Iris, Genziana, Bucaneve, Papavero), quelli di Casa Ernesto da Rosuline, Casa dal Miedi e Casa Ai Pascoli sono pet friendly. Segnalalo al momento della prenotazione.</p></details><details><summary>Che cosa si può fare a Socchieve?</summary><p>Trekking sui sentieri che partono dai borghi, mountain bike sulla pista di Mediis, bici da strada sul Passo Rest, arte romanica nella Chiesa di San Martino. In mezz&#x27;ora si raggiungono Sauris, le Dolomiti Friulane patrimonio UNESCO e Forni di Sopra, d&#x27;inverno anche per sciare.</p></details><details><summary>Come si prenota?</summary><p>Online sul sistema ufficiale Col Gentile, con disponibilità e prezzi in tempo reale, oppure scrivendo a info@albergodiffusosocchieve.it o chiamando il +39 0433 819934.</p></details></div>
       </div>
     </section>
 
@@ -647,102 +255,29 @@ section[id]{scroll-margin-top:60px}
         <h2 class="rv d1">La montagna, <em>tra le persone.</em></h2>
         <p class="rv d2">Lasciati affascinare dal vivere in montagna tra la gente e la natura della Carnia.</p>
         <div class="row rv d3">
-          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota il soggiorno <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-primary" href="https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010" target="_blank" rel="noopener">Prenota il soggiorno <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <a class="btn btn-dark" href="mailto:info@albergodiffusosocchieve.it">Scrivici</a>
         </div>
       </div>
     </section>
-  </main>
-
-  <main id="page" hidden></main>
-
-  <footer class="foot" id="contatti">
-    <div class="wrap">
-      <div class="foot-grid">
-        <div>
-          <a href="#top" class="logo" style="color:var(--bone)"><svg class="logo-mark"><use href="#i-mark"/></svg><span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span></a>
-          <p class="big">La porta delle Dolomiti.</p>
-          <div class="partners">
-            <img loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/logoborghi%20autentici%20d%27Italia.jpg" alt="Borghi Autentici d'Italia">
-          </div>
-        </div>
-        <div><h4>Esplora</h4><a href="#alloggi">Le case</a><a href="#borghi">I borghi</a><a href="#esperienze">Esperienze</a><a href="#dove">Dove siamo</a><a href="#la-farie">La Farie</a></div>
-        <div><h4>Territorio</h4><a href="#esperienza/trekking">Trekking</a><a href="#esperienza/cicloturismo">Cicloturismo</a><a href="#esperienza/arte-e-cultura">Arte e cultura</a><a href="#esperienza/visita-la-carnia">Visita la Carnia</a><a href="http://www.comune.socchieve.ud.it/" target="_blank" rel="noopener">Comune di Socchieve</a></div>
-        <div><h4>Contatti</h4><p>Via Roma 20, Mediis<br>33020 Socchieve (UD)</p><a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a><a href="tel:+390433819934">+39 0433 819934</a><a href="tel:+393668948584">+39 366 894 8584</a></div>
+</main>
+<footer class="foot" id="contatti">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="/" class="logo" style="color:var(--bone)"><svg class="logo-mark" aria-hidden="true"><use href="#i-mark"/></svg><span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span></a>
+        <p class="big">La porta delle Dolomiti Friulane.</p>
+        <p>Via Roma 20, Mediis, Socchieve<br>33020 Socchieve (UD) · Friuli Venezia Giulia</p>
+        <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a><a href="tel:+390433819934">+39 0433 819934</a><a href="tel:+393668948584">+39 366 894 8584</a>
+        <div class="partners"><img src="https://albergodiffusosocchieve.it/sites/default/files/logoborghi%20autentici%20d%27Italia.jpg" alt="Borghi Autentici d&#x27;Italia" loading="lazy" decoding="async" ></div>
       </div>
-      <div class="foot-bottom"><span>© Albergo Diffuso Socchieve “Col Gentile” · P.I. 02790180307</span><span>Socchieve · Carnia · Friuli Venezia Giulia</span></div>
+      <div><h4>Le case</h4><a href="/it/alloggi/casa-vanda">Casa Vanda</a><a href="/it/alloggi/casa-ernesto-da-rosuline">Casa Ernesto da Rosuline</a><a href="/it/alloggi/casa-pradin">Casa Pradin</a><a href="/it/alloggi/casa-ai-pascoli">Casa Ai Pascoli</a><a href="/it/alloggi/casa-rovedo">Casa Rovedo</a><a href="/it/alloggi/casa-dal-miedi">Casa dal Miedi</a><a href="/it/alloggi/">Tutte le case →</a></div>
+      <div><h4>I borghi</h4><a href="/it/viaso">Viaso</a><a href="/it/lungis">Lungis</a><a href="/it/feltrone-e-dilignidis">Feltrone</a><a href="/it/mediis">Mediis</a><a href="/it/dilignidis">Dilignidis</a><a href="/it/nonta">Nonta</a><a href="/it/priuso">Priuso</a><a href="/it/socchieve">Socchieve</a></div>
+      <div><h4>Esperienze</h4><a href="/it/trekking">Trekking</a><a href="/it/cicloturismo">Cicloturismo</a><a href="/it/arte-e-cultura">Arte e cultura</a><a href="/it/visita-la-carnia">Visita la Carnia</a><a href="/it/territorio">Il territorio</a><a href="/it/contact">Contatti e come arrivare</a><a href="/la-farie">La Farie</a></div>
     </div>
-  </footer>
-</div>
-
-<!-- ================= LA FARIE ================= -->
-<div id="farie" hidden>
-  <header class="hdr" data-hdr>
-    <div class="wrap bar">
-      <a href="#la-farie" class="logo" aria-label="La Farie, inizio"><span><b>La Farie</b><small>Dimora a Lungis · Carnia</small></span></a>
-      <nav class="menu" aria-label="La Farie"><a href="#farie-dimora">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-dove">Dove siamo</a><a href="#top">← Col Gentile</a></nav>
-      <div class="hdr-cta"><a class="btn btn-primary" href="#farie-camere">Le camere <svg><use href="#i-arrow"/></svg></a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
-    </div>
-  </header>
-  <div class="drawer" data-drawer aria-hidden="true" style="background:#2b1c14">
-    <div class="drawer-top"><span class="logo"><span><b style="font-style:italic">La Farie</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
-    <nav><a href="#farie-dimora">La dimora</a><a href="#farie-camere">Le camere</a><a href="#farie-dove">Dove siamo</a><a href="#top">← Col Gentile</a></nav>
+    <div class="foot-bottom"><span>© 2026 Albergo Diffuso Socchieve “Col Gentile” · P.I. 02790180307</span><span><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a></span></div>
   </div>
-  <main>
-    <section class="hero" id="la-farie">
-      <div class="hero-media"><img src="https://albergodiffusosocchieve.it/sites/default/files/styles/slide/public/PanoramaLungis3.jpg?itok=3vbEWL7k" alt="Panorama del borgo di Lungis tra le montagne"></div>
-      <div class="wrap hero-in">
-        <span class="eyebrow light">Lungis · Socchieve · Carnia</span>
-        <h1>Il tempo di <em>ritrovarsi.</em></h1>
-        <div class="hero-row">
-          <p>Una dimora nel borgo di Lungis. Ambienti da scoprire e un soggiorno immerso nel paesaggio carnico.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#farie-camere">Scopri le camere <svg><use href="#i-arrow"/></svg></a><a class="btn btn-ghost" href="#farie-dove">Dove siamo</a></div>
-        </div>
-      </div>
-    </section>
-    <section class="sec" id="farie-dimora">
-      <div class="wrap fa-intro">
-        <span class="eyebrow rv">Ospitalità a Lungis</span>
-        <p class="rv d1">Una casa con <em>una sua storia</em>, un carattere distinto e il silenzio dei borghi carnici tutto attorno.</p>
-      </div>
-    </section>
-    <section class="sec" id="farie-camere" style="padding-top:0">
-      <div class="wrap fa-split">
-        <img class="rv" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Q30A3509%20copia.jpg" alt="Casa in pietra a Lungis (foto provvisoria)">
-        <div>
-          <span class="eyebrow rv">Le camere</span>
-          <h2 class="rv d1">Un soggiorno <em>tutto suo.</em></h2>
-          <p class="rv d2">Camere, servizi e fotografie di La Farie saranno presentati qui, con condizioni e prenotazioni indipendenti dagli appartamenti Col Gentile.</p>
-          <div class="notice rv d3"><b>Prenotazioni in attivazione</b><p>La scheda Booking.com esiste ma non accetta ancora prenotazioni: per correttezza qui non mostriamo tariffe né disponibilità.</p><a class="link" href="https://www.booking.com/hotel/it/la-farie-socchieve-fraz-lungis.it.html" target="_blank" rel="noopener">Vedi la scheda <svg width="16" height="16"><use href="#i-arrow"/></svg></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="sec" id="farie-dove" style="padding-top:0">
-      <div class="wrap fa-split">
-        <div>
-          <span class="eyebrow rv">La posizione</span>
-          <h2 class="rv d1">A Lungis, nella <em>Carnia più vera.</em></h2>
-          <p class="rv d2" style="margin-bottom:26px">Frazione di Lungis, comune di Socchieve (UD). Contatti dedicati della nuova gestione in arrivo.</p>
-          <a class="link rv d3" href="https://www.google.com/maps/search/?api=1&query=La+Farie+Lungis+Socchieve" target="_blank" rel="noopener">Apri la mappa <svg width="16" height="16"><use href="#i-arrow"/></svg></a>
-        </div>
-        <img class="rv d1" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/styles/portfolio/public/LungisCartolina.jpg?itok=MIWMVY69" alt="Cartolina del borgo di Lungis">
-      </div>
-    </section>
-    <section class="fa-cta">
-      <div class="wrap">
-        <span class="eyebrow light rv">Due modi di vivere la Carnia</span>
-        <h2 class="rv d1">Scopri anche <em>Col Gentile.</em></h2>
-        <a class="btn btn-light rv d2" href="#top">Torna all'albergo diffuso <svg><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-  </main>
-  <footer class="foot">
-    <div class="wrap">
-      <div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Lungis, Socchieve (UD)</span><span>Contatti e prenotazioni in attivazione</span></div>
-    </div>
-  </footer>
-</div>
-
+</footer>
 <dialog class="lb" data-lb aria-label="Galleria fotografica">
   <div class="lb-top"><span data-lb-count></span><button class="lb-close" data-lb-close aria-label="Chiudi galleria">×</button></div>
   <div class="lb-stage">
@@ -752,426 +287,6 @@ section[id]{scroll-margin-top:60px}
   </div>
   <div class="lb-thumbs" data-lb-thumbs></div>
 </dialog>
-
-<script>
-(() => {
-  const F = "https://albergodiffusosocchieve.it/sites/default/files/";
-  const SLOPE = "https://booking.slope.it/3460bf53-7a84-49a4-a9da-910cfd962010";
-  const img = (f) => (f.startsWith("http") ? f : F + f);
-
-  /* ---------- DATI: case ---------- */
-  const VILLA = "Villa Vanda, riconosciuta dal Comune di Socchieve come edificio di valore storico, risale alla seconda metà del Settecento: architettura tipicamente carnica, archi in pietra e ballatoi lignei (linde) da cui si apre un bellissimo panorama. Si trova a Viaso, frazione tranquilla, soleggiata e immersa nel verde, dove la vita scorre lenta con i ritmi della natura. Gli ospiti hanno a disposizione una piccola corte con giardino e posti auto riservati accanto all'ingresso.";
-  const VANDA_AM = ["Televisione", "Riscaldamento", "Posto auto", "Giardino comune", "Wi-Fi", "Pet friendly"];
-  const ERN_AM = ["TV", "Lavastoviglie", "Microonde", "Wi-Fi", "Giardino comune", "Riscaldamento", "Pet friendly"];
-  const ERN_ADDR = "Borgo Niccolò Paganini, 4";
-  const VANDA_ADDR = "Via San Giovanni, 38";
-
-  const stays = [
-    { id: "casa-vanda", n: "Casa Vanda", b: "Viaso", beds: 18, stars: "Appartamenti 4 stelle", addr: VANDA_ADDR, card: "Casa-Vanda-esterno.jpg", feature: true,
-      short: "L'intera villa settecentesca in pietra con ballatoi in legno: gli appartamenti Iris, Genziana, Bucaneve e Papavero insieme, per famiglie numerose e gruppi.",
-      text: [VILLA, "Prenotando l'intera residenza si hanno a disposizione tutti gli appartamenti della villa, ciascuno arredato con cura attorno a un colore che gli dà il nome."],
-      am: VANDA_AM, units: ["casa-vanda-iris", "casa-vanda-genziana", "casa-vanda-bucaneve", "casa-vanda-papavero"],
-      g: ["Casa-Vanda-esterno_0.jpg", "Casa-Vanda-portico.jpg", "CasaVanda-Genziana-salotto.jpg", "CasaVanda-Genziana-cucina.jpg", "CasaVanda-Genziana-matrimoniale.jpg", "CasaVanda-Genziana-singola.jpg", "CasaVanda-Papavero-salotto.jpg", "CasaVanda-Papavero-salotto-terrazza.jpg", "CasaVanda-Papavero-cucina.jpg", "CasaVanda-Papavero-matrimoniale.jpg", "CasaVanda-Bucaneve-cucina.jpg", "CasaVanda-Bucaneve-matrimoniale.jpg", "IMG-20240509-WA0006.jpeg", "IMG-20240509-WA0007.jpg", "IMG-20240509-WA0011.jpg", "IMG-20240509-WA0012.jpg", "IMG-20240509-WA0013.jpg", "CasaVanda-Genziana-bagno.jpg", "CasaVanda-Papavero-bagno.jpg", "CasaVanda-Bucaneve-bagno.jpg", "SAM_101_0095.jpg", "SAM_101_0088.jpg"] },
-    { id: "casa-ernesto-da-rosuline", n: "Casa Ernesto da Rosuline", b: "Lungis", beds: 21, stars: "Appartamenti 3 stelle", addr: ERN_ADDR, card: "Q30A3509%20copia.jpg",
-      short: "Tutta la casa di Lungis con le sue quattro unità, per gruppi numerosi.",
-      text: ["La casa di Lungis riunisce quattro unità abitative arredate in maniera sobria e funzionale, dal monolocale al piano terra agli appartamenti con terrazzo ai piani superiori. Prenotandola intera è ideale per gruppi numerosi, famiglie allargate e associazioni."],
-      am: ERN_AM, units: ["ernesto-da-rosuline-terra", "ernesto-da-rosuline-1", "ernesto-da-rosuline-2", "ernesto-da-rosuline-3"],
-      g: ["casa%20ernesto.jpg", "Q30A9844.jpg", "Q30A9845.jpg", "Q30A9850.jpg", "Q30A9852.jpg", "ErnRosuline2-cucina.jpg", "Q30A9856.jpg", "Q30A9859.jpg", "Q30A9866.jpg", "Q30A9893.jpg", "ErnRosuline2-terrazzo.jpg", "ErnRosuline3-cucina.jpg", "Q30A9920.jpg", "Q30A9899.jpg", "Q30A9908.jpg", "ErnRosuline4-vista.jpg", "ErnRosuline4-cucina.jpg", "Q30A9980.jpg", "Q30A9921.jpg", "Q30A9926.jpg", "Q30A9954.jpg", "ErnRosuline-bagno.jpg"] },
-    { id: "casa-pradin", n: "Casa Pradin", b: "Feltrone", beds: 9, stars: "Casa 3 stelle", addr: "Via Col Gentile, 8", card: "CasaPradin-esterno_0.jpg", cin: "IT030110A1GDIE8AKW",
-      text: ["Casa Pradin si trova a Feltrone, la frazione più alta di Socchieve, poco sotto la chiesetta del paese. Un tempo era l'osteria del borgo: oggi è uno stabile ristrutturato su tre piani, con terrazze in legno a ogni piano (comunicanti tra primo e secondo) e un portico ombreggiato al piano terra.", "L'unità è composta da quattro camere matrimoniali, un soggiorno abitabile con cucina e un bagno, arredati in modo sobrio e funzionale. Perfetta per gruppi e famiglie numerose."],
-      g: ["CasaPradin-esterno.jpg", "CasaPradin-portico.jpg", "CasaPradin-salapranzo.jpg", "CasaPradin-salotto.jpg", "CasaPradin-matrimoniale1.jpg", "CasaPradin-matrimoniale2.jpg", "CasaPradin-doppia.jpg", "CasaPradin-doppia2.jpg", "CasaPradin-terrazzo.jpg", "CasaPradin-vista.jpg", "CasaPradin-scale-esterne.jpg", "CasaPradin-bagno.jpg"] },
-    { id: "casa-vanda-iris", n: "Vanda · Iris", b: "Viaso", beds: 6, stars: "Appartamento 3 stelle", addr: VANDA_ADDR, card: "Casa-Vanda-esterno_0_3.jpg", cin: "IT030110A17XXDKLY9", parent: "casa-vanda",
-      text: ["Iris ha una camera matrimoniale con letto singolo aggiunto, una camera doppia con letti singoli e accesso al balcone e una camera singola. L'ampia cucina è fatta per i momenti conviviali; il soggiorno si apre sulla terrazza in legno, con un tocco di rosso nella biancheria e nelle tende. TV in tutte le camere.", VILLA],
-      am: VANDA_AM, g: ["FG5_8412__.jpg", "FG5_8426_.jpg", "FG5_8450_.jpg", "FG5_8489_.jpg", "FG5_8495.jpg", "FG5_8522_.jpg", "FG5_8535_.jpg", "FG5_8547_.jpg", "FG5_8560_.jpg", "FG5_8565.jpg", "FG5_8479_.jpg", "FG5_8481.jpg"] },
-    { id: "casa-vanda-bucaneve", n: "Vanda · Bucaneve", b: "Viaso", beds: 4, stars: "Appartamento 4 stelle", addr: VANDA_ADDR, card: "Casa-Vanda-esterno_0_2.jpg", cin: "IT030110A1VMEPFPI7", parent: "casa-vanda",
-      text: ["Bucaneve ha una camera, un bagno e un ampio soggiorno abitabile con cucina da cui si esce sulla grande terrazza in legno. Verde e bianco legano gli arredi e danno all'appartamento una freschezza tutta primaverile.", VILLA],
-      am: VANDA_AM, g: ["CasaVanda-Bucaneve-cucina_0.jpg", "CasaVanda-Bucaneve-matrimoniale_0.jpg", "IMG-20240509-WA0013_0.jpg", "CasaVanda-Bucaneve-bagno_0.jpg"] },
-    { id: "casa-vanda-papavero", n: "Vanda · Papavero", b: "Viaso", beds: 4, stars: "Appartamento 4 stelle", addr: VANDA_ADDR, card: "Casa-Vanda-esterno_0_1.jpg", cin: "IT030110A1YUHRC6JJ", parent: "casa-vanda",
-      text: ["Papavero ha una camera, un bagno, una cucina e un ampio soggiorno abitabile che si apre sulla terrazza in legno. Il rosso della biancheria e delle tende regala una gioiosa sensazione d'estate.", VILLA],
-      am: VANDA_AM, g: ["CasaVanda-Papavero-salotto-terrazza_0.jpg", "CasaVanda-Papavero-matrimoniale_0.jpg", "Casa-Vanda-portico_0.jpg", "CasaVanda-Papavero-bagno_0.jpg"] },
-    { id: "casa-vanda-genziana", n: "Vanda · Genziana", b: "Viaso", beds: 5, stars: "Appartamento 4 stelle", addr: VANDA_ADDR, card: "Casa-Vanda-esterno_0_0.jpg", cin: "IT030110A1F58PGPCB", parent: "casa-vanda",
-      text: ["Genziana ha due camere, un bagno, una cucina con tavolo da pranzo e un ampio soggiorno abitabile con accesso alla terrazza in legno. Blu e grigio distribuiti sugli arredi danno una sensazione di accoglienza familiare.", VILLA],
-      am: VANDA_AM, g: ["CasaVanda-Genziana-salotto_0.jpg", "CasaVanda-Genziana-cucina_0.jpg", "CasaVanda-Genziana-matrimoniale_0.jpg", "CasaVanda-Genziana-singola_0.jpg", "Casa-Vanda-portico%20%281%29.jpg", "CasaVanda-Genziana-bagno_0.jpg"] },
-    { id: "ernesto-da-rosuline-1", n: "Ernesto da Rosuline 1", b: "Lungis", beds: 5, stars: "Appartamento 3 stelle", addr: ERN_ADDR, card: "casa%20ernesto_0.jpg", cin: "IT030110A1P6YRWW2W", parent: "casa-ernesto-da-rosuline",
-      text: ["Al primo piano: due camere, un soggiorno abitabile con angolo cottura, il bagno e un ampio terrazzo. Arredato in maniera sobria e funzionale."],
-      am: ERN_AM, plan: "ErnestodaRosuline%20piantina%20primo.JPG", g: ["ErnRosuline2-cucina_0.jpg", "Q30A9856_0.jpg", "Q30A9859_0.jpg", "Q30A9866_0.jpg", "Q30A9893_0.jpg", "ErnRosuline2-terrazzo_0.jpg"] },
-    { id: "ernesto-da-rosuline-2", n: "Ernesto da Rosuline 2", b: "Lungis", beds: 5, stars: "Appartamento 3 stelle", addr: ERN_ADDR, card: "casa%20ernesto_3.jpg", cin: "IT030110A1RUAB9VI5", parent: "casa-ernesto-da-rosuline",
-      text: ["Al secondo piano: una camera, un soggiorno con angolo cottura, il bagno e un ampio terrazzo panoramico. Arredato in maniera sobria e funzionale."],
-      am: ERN_AM, plan: "ErnestodaRosuline%20piantina%20secondo.JPG", g: ["ErnRosuline2-terrazzo_1.jpg", "ErnRosuline3-cucina_0.jpg", "Q30A9920_0.jpg", "Q30A9899_0.jpg"] },
-    { id: "ernesto-da-rosuline-3", n: "Ernesto da Rosuline 3", b: "Lungis", beds: 5, stars: "Appartamento 3 stelle", addr: ERN_ADDR, card: "casa%20ernesto_4.jpg", cin: "IT030110A1REP5JFBA", parent: "casa-ernesto-da-rosuline",
-      text: ["All'ultimo piano: una camera, una camera aperta, un soggiorno abitabile con angolo cottura e il bagno, con vista sui tetti del borgo. Arredato in maniera sobria e funzionale."],
-      am: ERN_AM, plan: "ErnestodaRosuline%20piantina%20terzo.JPG", g: ["ErnRosuline4-vista_0.jpg", "ErnRosuline4-cucina_0.jpg", "Q30A9921_0.jpg", "Q30A9954_0.jpg", "Q30A9980_0.jpg"] },
-    { id: "ernesto-da-rosuline-terra", n: "Ernesto da Rosuline Terra", b: "Lungis", beds: 2, stars: "Appartamento 3 stelle", addr: ERN_ADDR, card: "casa%20ernesto_1.jpg", cin: "IT030110A1VVKJWGJG", parent: "casa-ernesto-da-rosuline",
-      text: ["Al piano terra, un monolocale per due: un unico ambiente con angolo cottura e bagno, arredato in maniera sobria e funzionale, con accesso al giardino comune."],
-      am: ERN_AM, plan: "ErnestodaRosuline%20piantina%20terra.JPG", g: ["Q30A9845_0.jpg", "Q30A9850_0.jpg", "Q30A9852_0.jpg", "ErnRosuline-bagno_0.jpg"] },
-    { id: "casa-rovedo", n: "Casa Rovedo", b: "Feltrone", beds: 5, stars: "Casa 3 stelle", addr: "Via Col Gentile, 20/02", card: "SITOOK_0.JPG", cin: "IT030110A1DP63JJDN",
-      text: ["Casa Rovedo si trova a Feltrone, la frazione più alta di Socchieve, al termine di un antico caseggiato. Ristrutturata di recente, si sviluppa su tre piani ed è adagiata su un ampio giardino privato; ogni piano ha la sua terrazza affacciata sulla valle.", "Due camere, una cucina e un bagno, arredati in modo sobrio e funzionale. Alla proprietà si accede da due ingressi diversi."],
-      g: ["SITOOK.JPG", "CasaRovedo-giardino.jpg", "CasaRovedo-terrazzo-2p.jpg", "CasaRovedo-cucina.jpg", "CasaRovedo-matrimoniale.jpg", "CasaRovedo-matrimoniale2.jpg", "CasaRovedo-doppia.jpg", "CasaRovedo-doppia2.jpg", "CasaRovedo-bagno.jpg"] },
-    { id: "casa-dal-miedi", n: "Casa dal Miedi", b: "Mediis", beds: 8, stars: "Appartamento 3 stelle", addr: "Via Roma 22/1", card: "Casa%20dal%20Miedi-%20esterno_0.jpg", cin: "IT030110A1C8FJEG48",
-      text: ["Al primo piano di uno stabile di recente costruzione, accanto al municipio di Mediis e sopra la farmacia del paese: comodo per avere tutto a portata di mano.", "Due camere, un soggiorno con angolo cottura, il bagno e un ampio terrazzo con vista sulla valle."],
-      am: ["Wi-Fi", "Pet friendly"],
-      g: ["Casa%20dal%20Miedi-%20esterno.jpg", "CasadalMIedi-terrazzo.jpg", "CasadalMiedi-vista.jpg", "Q30A9745.jpg", "Q30A9752.jpg", "Q30A9756.jpg", "Q30A9767.jpg", "Q30A9770.jpg", "Q30A9777.jpg", "Q30A9784.jpg", "Q30A9787.jpg", "Q30A9790.jpg", "Q30A9794.jpg", "Q30A9803.jpg", "Q30A9808.jpg", "Q30A9812.jpg", "Q30A9816.jpg", "Q30A9820.jpg", "Q30A9824.jpg", "CasadalMiedi-singola.jpg", "Q30A9833.jpg", "Q30A9837.jpg"] },
-  ];
-  stays.forEach((s) => (s.s = s.beds <= 8 ? "s" : s.beds <= 16 ? "m" : "l"));
-  const stayById = Object.fromEntries(stays.map((s) => [s.id, s]));
-
-  /* ---------- DATI: borghi ---------- */
-  const villages = [
-    { id: "viaso", n: "Viaso", card: "styles/portfolio/public/Viaso.jpg?itok=Kf5c3eZ5", hero: ["styles/slide/public/PanoramaViaso1.jpg", "styles/slide/public/PanoramaViaso2.jpg", "styles/slide/public/PanoramaViaso3.jpg"],
-      f: { ab: "67", q: "527", se: "3", lo: "1" },
-      t: "Viaso sorge all'incrocio dei sentieri che uniscono le frazioni del comune e sorprende per la sua capacità di restare nascosto pur essendo vicinissimo a Socchieve. È attraversato dal percorso di mountain bike e, con il ristorante La Baita, è un porto sicuro per chi ama il turismo enogastronomico.",
-      locali: ["La Baita"], sentieri: ["Anello delle Frazioni", "Anello di Fondas", "Flamias"] },
-    { id: "lungis", n: "Lungis", card: "styles/portfolio/public/LungisCartolina.jpg?itok=MIWMVY69", hero: ["styles/slide/public/PanoramaLungis.jpg", "styles/slide/public/PanoramaLungis2.jpg", "styles/slide/public/PanoramaLungis3.jpg"],
-      f: { ab: "130", q: "554", se: "2", lo: "2" },
-      t: "Come la vicina Feltrone, Lungis è attraversata da numerosi sentieri, tra cui il percorso di mountain bike che congiunge tutte le frazioni del comune. Qui si trovano anche l'agriturismo In Già e il bar alimentari Al Cervo.",
-      locali: ["Agriturismo In Già", "Bar Alimentari e tabacchi Al Cervo · tel. 0433 80007"], sentieri: ["Anello delle Frazioni"] },
-    { id: "feltrone", n: "Feltrone", card: "styles/portfolio/public/dilignidis%20e%20feltrone_0.jpg?itok=Qkcstbe5", hero: ["styles/slide/public/Panoramica-feltrone-montagne.jpg", "styles/slide/public/PanoramicaFeltrone1.jpg", "styles/slide/public/PanoramicaFeltrone2.jpg"],
-      f: { ab: "32", q: "769", se: "5", lo: "a Lungis" },
-      t: "La frazione più alta del comune. Feltrone è attraversata da molti sentieri, ma il più importante è senza dubbio la via che sale al Col Gentile e prosegue fino a Prato Carnico, in Val Pesarina: il sentiero CAI 235 attraversa luoghi incontaminati di straordinaria bellezza come la Forca di Pani. Con 1350 metri di dislivello e 23 km, circa 7 ore di cammino, è adatto a camminatori allenati. Alla reception si può organizzare il rientro in pulmino.",
-      locali: ["Agriturismo In Già a Lungis (2 km)", "Bar Alimentari Al Cervo a Lungis (2 km)"], sentieri: ["Col Gentile · CAI 235", "Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"] },
-    { id: "mediis", n: "Mediis", card: "styles/portfolio/public/mediis.jpg?itok=qtbeorB1", hero: ["styles/slide/public/Mediispanoramica.jpg", "styles/slide/public/mediis_fontana3.jpg"],
-      f: { ab: "130", q: "486", se: "2", lo: "1" },
-      t: "Da Mediis parte l'omonimo circuito di mountain bike e passa il noto Anello delle Frazioni. Il paese, che un tempo contese a Socchieve il titolo di capoluogo, è centrale rispetto a quasi tutte le frazioni e domina il corso del Lumiei che si getta nel Tagliamento. Qui c'è la reception dell'albergo diffuso.",
-      locali: ["Bar alla Posta · via Roma 10 · tel. 0433 80072 · biglietteria SAF e distributore"], sentieri: ["Lumiei · Colonia di Nonta", "Anello delle Frazioni"] },
-    { id: "dilignidis", n: "Dilignidis", card: "styles/portfolio/public/CartolinaDilignidis.jpg?itok=fGNCRQBs", hero: ["styles/portfolio/public/CartolinaDilignidis.jpg?itok=fGNCRQBs"],
-      f: null,
-      t: "Vicinissima a Feltrone, Dilignidis ne condivide sentieri e servizi: è attraversata dall'Anello delle Frazioni e dal percorso di mountain bike di Mediis. Non ci sono residenze dell'albergo diffuso: le più vicine sono a Feltrone.",
-      locali: ["Agriturismo In Già a Lungis (2 km)", "Bar Alimentari Al Cervo a Lungis (2 km)"], sentieri: ["Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"], near: "Feltrone" },
-    { id: "nonta", n: "Nonta", card: "styles/portfolio/public/NontaCopertina.jpg?itok=_eVu6c04", hero: ["styles/slide/public/PanoramaNonta1.jpg", "styles/slide/public/PanoramaNonta2.jpg", "styles/slide/public/PanoramaNonta3.jpg"],
-      f: { ab: "23", q: "449", se: "1", lo: "1" },
-      t: "Nonta stupisce per essere piccola e inafferrabile, proprio come doveva esserlo il suo castello. La strada da Mediis a Socchieve riesce solo a lambirla e, anche percorrendo via San Maurizio, si ha la sensazione che il borgo resti impenetrabile: come il suo lago, c'è ma non si vede. In compenso l'Osteria di Nonta, che si dice risalga al Seicento, è celebre in tutta la zona per la cucina tipica.",
-      locali: ["Osteria di Nonta · tel. 0433 80596"], sentieri: ["Lumiei · Colonia di Nonta"] },
-    { id: "priuso", n: "Priuso", card: "styles/portfolio/public/priuso.jpg?itok=fIK3mEPX", hero: ["styles/slide/public/Priusoreception1.jpg", "styles/slide/public/Priusoreception2.jpg"],
-      f: { ab: "141", q: "550", se: "4", lo: "2" },
-      t: "Da Priuso parte la SR 552 che sale al Monte Rest e collega Socchieve con Tramonti di Sopra: una strada tortuosa e pregevole itinerario ciclistico, con pendenze medie fino alla forcella oltre i mille metri. Da lì si prosegue a piedi sul sentiero CAI 826 oppure, in bici, si scende verso Tramonti e Meduno. La zona di Caprizzi abbonda di sentieri e panorami, con il lago omonimo e, d'estate, il Rifugio Grasia con la sua cucina casalinga.",
-      locali: ["Osteria Monte Corona", "Bar con cucina e alimentari Gino · via G. Marconi 22 · tel. 0433 80009"], sentieri: ["Lumiei · Colonia di Nonta", "Monte Pelòis · Plan da Una", "Centraline", "Monte Corona · Campo"], servizi: ["Campo di calcio", "Pista di pattinaggio a rotelle", "Parco giochi"] },
-    { id: "socchieve", n: "Socchieve", card: "styles/portfolio/public/Socchievecopertina_0.jpg?itok=IxDWHILk", hero: ["styles/slide/public/PanoramaSocchieve1_0.jpg", "styles/slide/public/panoramarassegnacarnica.jpg"],
-      f: { ab: "350", q: "412", se: "2", lo: "1" },
-      t: "Il capoluogo del comune è il paese che offre più servizi, locali e risorse culturali, come la Chiesa di San Martino e la Rassegna Carnica d'estate. I suoi due sentieri si moltiplicano in strade e stradine che si allargano sulla campagna, dove si racconta che ai tempi dei Romani si coltivassero vite e ulivo.",
-      locali: ["Bar La Stella"], sentieri: ["Flamias", "Lumiei · Colonia di Nonta"] },
-  ];
-  const villById = Object.fromEntries(villages.map((v) => [v.id, v]));
-  const villByName = Object.fromEntries(villages.map((v) => [v.n, v]));
-
-  /* ---------- DATI: esperienze ---------- */
-  const exps = {
-    trekking: { n: "Trekking", hero: "Slide1Socchieve.jpg", lead: "Quattro percorsi selezionati che partono direttamente dai borghi, tra prati, mulattiere e torrenti.",
-      intro: ["Senza allontanarsi dai paesi del comune di Socchieve si possono fare camminate piacevoli e salutari, in un contesto naturale e umano di grande tranquillità. Abbiamo scelto quattro percorsi che possono cominciare dalla residenza in cui soggiornate."],
-      routes: [
-        { n: "Anello delle Frazioni", t: "Da Lungis si segue un tratto del sentiero di Nagri fino ai prati di Chialaria e alla località Frizzon; sulla strada dell'acquedotto si arriva a Feltrone. Dalla parte bassa del paese un sentiero porta a Dilignidis, oltre la quale, poco dopo la chiesa, si imbocca il ciottolato del Pecol fino a Viaso. Sulla strada asfaltata, vicino a un crocifisso, si svolta a sinistra sul sentiero Dàs Vàls ed ecco Mediis. Verso Ampezzo, al ponte sul Lumiei si gira a destra per il piccolo Borgo Siega e, risalendo il sentiero della Lungjania, si torna a Lungis.", map: "cartina%208.jpg" },
-        { n: "Anello di Fondas", t: "Da Viaso una comoda mulattiera scende al rio Dusili, costeggia i ruderi del molino di Baldo e, verso nord, si unisce alla strada asfaltata tra Feltrone ed Enemonzo. In poco tempo si raggiungono i terrazzamenti di Feltrone; verso est un comodo sentiero scende al rio Filuvigna, accanto all'omonimo casolare. Seguendo il percorso MTB n. 1 si supera una casa diroccata e con il percorso n. 2 si rientra a Viaso attraverso una vasta zona prativa.", map: "cartina%209.jpg" },
-        { n: "Flamias", t: "Da Viaso una mulattiera scende a sud fino alla statale 52 e all'abitato di Socchieve. Lungo la statale verso Enemonzo, poco prima del bivio per Preone, si svolta a sinistra su una strada bianca e poi su tracce di sentiero. Si attraversa un'abetaia e, tenendosi a sinistra, una vecchia stradina e un tratturo riportano al punto di partenza.", map: "cartina%2010.jpg" },
-        { n: "Lumiei · Colonia di Nonta", t: "Da Nonta, la frazione più piccola, parte una camminata tranquilla sul greto quasi sempre asciutto del Lumiei. Uscendo verso Mediis, un tratturo a sinistra porta alla colonia dove negli anni '30 e '40 passavano l'estate tanti ragazzini. Si arriva a Balòt, dove nel dopoguerra c'erano una falegnameria, un mulino, una sala da ballo e il cinema, e poi all'area sportiva con campo da calcio e giochi per bambini. Verso Socchieve, sulla riva opposta, si incontrano le fortificazioni; vicino al Puart das boras si svolta a sinistra e lungo l'alveo si torna al punto di partenza.", map: "cartina%2011.jpg" },
-      ],
-      note: "Le descrizioni dei percorsi provengono dal sito turistico del Comune di Socchieve. Sentieri, mulattiere e tratturi vanno percorsi con attenzione, salvo variazioni intervenute nel frattempo. La natura che osserverete è anche vostra amica: rispettatela." },
-    cicloturismo: { n: "Cicloturismo", hero: "styles/slide/public/PanoramicaFeltrone2.jpg", lead: "Salite leggendarie, sterrati tecnici e strade poco trafficate: la Carnia è il paradiso delle due ruote.",
-      intro: ["Grazie a Crostis e Zoncolan, resi celebri dal Giro d'Italia, la Carnia è conosciuta da chi ama le salite più importanti dell'arco alpino. Ma tutto il territorio è un saliscendi tra panorami mozzafiato e ambienti incontaminati, su una rete di strade asfaltate e sterrate che lascia solo l'imbarazzo della scelta. Da Socchieve vi proponiamo due itinerari, uno sterrato e uno su strada."],
-      routes: [
-        { n: "La pista MTB di Mediis", t: "Il percorso di mountain bike più conosciuto della Carnia, teatro del Trofeo Carnia MTB. Attraversa le frazioni del comune su fondo sterrato, alternando salite rapide a discese tecniche e impegnative: va affrontato con cautela, ma regala grandi soddisfazioni a chi ama lo sterrato.", map: "percorso%20MTB%20Mediis.jpg" },
-        { n: "Anello del Passo Rest", t: "Un anello che unisce l'alto pordenonese alla Carnia attraverso il Passo del Rest, percorribile in entrambe le direzioni: Socchieve, Preone e la sua valle, San Francesco, Anduins, Vito d'Asio, Clauzetto, Travesio, Meduno, Lago di Redona, Tramonti di Sotto e di Sopra, Passo di Monte Rest, Caprizzi, Priuso, Mediis e ritorno a Socchieve. Strade poco trafficate e ambienti naturali splendidi ripagano la fatica: per ciclisti esperti, almeno 5 ore.", map: "mappagirorestridotta.jpg", stats: ["101 km", "2055 m di dislivello", "Pendenza max 20%"] },
-      ],
-      more: [["Su strada", ["Giro di Carnia", "Variante Sauris del Giro di Carnia"]], ["Mountain bike", ["Passo Pura e Monte Jouf", "Monte Pezzeit"]], ["Per esperti", ["Crostis e Zoncolan", "Carnia Classic Granfondo"]]] },
-    "arte-e-cultura": { n: "Arte e cultura", hero: "Slide3Socchieve.jpg", lead: "Chiese romaniche, affreschi e una rassegna che ogni estate racconta la Carnia attraverso le mani dei suoi artigiani.",
-      intro: ["Il comune di Socchieve custodisce alcune delle perle artistiche più interessanti della Carnia, come la Chiesa di San Martino e la Pieve di Castoia. Ma non c'è solo il patrimonio \"immobile\": qui si tiene la rassegna d'Arte, Cultura e Lavoro più importante della Carnia, con artigiani e artisti carnici e friulani che con le loro opere raccontano una terra che sa parlare con le mani forse più che con le parole."],
-      items: [
-        { n: "Chiesa di San Martino", img: "Chiesa-San-Martino.jpg", t: ["Al centro del paese, con le spalle al colle di Castoia, la chiesetta di San Martino è una delle costruzioni sacre più tipicamente carniche: portico d'ingresso, campanile a vela, volta a capriate e copertura in coppi.", "Nella sagrestia e nel basamento dell'absidiola sono emersi resti di affreschi romanici di ottima qualità (Cristo in mandorla con i simboli degli Evangelisti, frammenti di teste d'Apostoli, decorazioni) che testimoniano l'antichità dell'edificio."] },
-        { n: "Rassegna Carnica Arte Cultura Lavoro", img: "Quadri-rassegna.jpg", t: ["Organizzata dal Comitato Gianfrancesco da Tolmezzo, la rassegna estiva dà spazio alla cultura, all'arte e al lavoro che il territorio carnico e friulano sa esprimere: un'occasione d'incontro e confronto per tenere alta l'attenzione sulle cose piccole e importanti del vivere in montagna."] },
-      ] },
-    "visita-la-carnia": { n: "Visita la Carnia", hero: "styles/slide/public/Panoramica-feltrone-montagne.jpg", lead: "Otto vallate, lingue antiche, prosciutto di Sauris e Dolomiti a due passi: Socchieve è il campo base ideale.",
-      intro: ["La Carnia è un arcipelago di piccoli paesi distribuiti su quattro vallate principali che si aprono da Tolmezzo (But, Chiarsò, Degano e Tagliamento) e su quattro valli minori (Valcalda, Lumiei, Pesarina e Pontaiba). Una varietà di ambienti e culture che per chi la visita diventa un ricco giacimento di emozioni.", "Verso nord, a pochi chilometri, c'è Sauris con il suo lago, il celebre prosciuttificio Wolf, attivo dal 1862, il birrificio Zahre Beer, il Carnevale e la Festa del Prosciutto di luglio. Poco lontano le Dolomiti Friulane e la pista del Varmost, da camminare d'estate e da sciare d'inverno, e il Dolomiti Adventure Park con i suoi ponti sospesi tra gli alberi. Verso sud, dopo una sosta al Caseificio Val Tagliamento, si raggiunge Tolmezzo, capitale della Carnia, con il Museo Carnico delle Arti Popolari.", "La Carnia copre appena il 15,6% del Friuli Venezia Giulia, eppure è piena di sorprese e luoghi magici, dove si parlano diversi dialetti e lingue minoritarie: una terra da scoprire e, alla fine, da amare."],
-      items: [
-        { n: "La Forra del Lumiei", img: "Forra-Lumiei.jpg", t: ["Un canyon in cui il torrente si inabissa creando scorci spettacolari, meta di trekker esperti e appassionati di canyoning. Il sentiero, tra i più suggestivi della Carnia, collegava anticamente Ampezzo a Sauris ed è percorribile anche grazie a un ponte metallico sospeso tra acqua e pietra."] },
-        { n: "Ampezzo, Palazzo Unfer", img: "Ampezzo%20Museo.jpg", t: ["Ampezzo, orgogliosa della storia della Repubblica Libera della Carnia, ospita a Palazzo Unfer il Museo Geologico della Carnia: rocce e fossili di una delle poche zone d'Europa in cui il patrimonio paleontologico si è conservato così completo, con percorsi pensati anche per i bambini. Nello stesso palazzo, la pinacoteca di Marco Davanzo (1872–1955), che dipinse la Carnia con la luce cristallina della montagna."] },
-        { n: "Preone e la sua valle", img: "Valle%20di%20preone.jpg", t: ["A pochi chilometri da Socchieve, Preone si trova all'ingresso di una valle che sembra nascosta al mondo, tranquilla e intatta tra due montagne. Il paese stesso è una visita, e i sentieri e le cime intorno, dove sono stati trovati molti dei fossili esposti ad Ampezzo, completano il quadro."] },
-        { n: "Val Pesarina, la valle del tempo", img: "Val-Pesarina.jpg", t: ["Confinante con Socchieve lungo la cima del Col Gentile, la Val Pesarina custodisce a Pesariis il museo dell'orologeria e l'architettura tipica della montagna friulana, come i celebri stavoli di Orias."] },
-      ] },
-  };
-
-  /* ---------- helpers ---------- */
-  const I = (id, cls = "") => `<svg${cls ? ` class="${cls}"` : ""}><use href="#i-${id}"/></svg>`;
-  const SIZE = { s: "2–8 posti letto", m: "9–16 posti letto", l: "Oltre 16 posti letto" };
-  const bedsLabel = (n) => `Fino a ${n} ospiti`;
-  const staysIn = (b) => stays.filter((s) => s.b === b && !s.parent);
-
-  /* ---------- home: schede e borghi ---------- */
-  const grid = document.querySelector("[data-grid]");
-  grid.innerHTML = stays.map((s) => `
-    <a class="card${s.feature ? " feature" : ""}" data-b="${s.b}" data-s="${s.s}" href="#casa/${s.id}">
-      <div class="card-img"><img loading="lazy" src="${img(s.card)}" alt="${s.n}, ${s.b}"><span class="tag">${bedsLabel(s.beds)}</span></div>
-      <div class="card-body">
-        <div><h3>${s.n}</h3><div class="where">${I("pin")}${s.b}</div>${s.short && s.feature ? `<p>${s.short}</p>` : ""}</div>
-        <span class="arrow" aria-hidden="true">${I("arrow")}</span>
-      </div>
-    </a>`).join("");
-
-  document.querySelector("[data-railbox]").innerHTML = villages.map((v, i) => `
-    <a class="village" href="#borgo/${v.id}">
-      <img loading="lazy" src="${img(v.card)}" alt="Il borgo di ${v.n}">
-      <small>${v.f ? `${v.f.q} m s.l.m.` : "Borgo " + String(i + 1).padStart(2, "0")}</small>
-      <strong>${v.n}${I("arrow")}</strong>
-    </a>`).join("");
-
-  /* ---------- filtri ---------- */
-  const state = { borgo: "all", size: "all" };
-  const cards = [...grid.children];
-  const count = document.querySelector("[data-count]");
-  const empty = document.querySelector("[data-empty]");
-  function apply() {
-    let n = 0;
-    const filtered = state.borgo !== "all" || state.size !== "all";
-    cards.forEach((c) => {
-      const ok = (state.borgo === "all" || c.dataset.b === state.borgo) && (state.size === "all" || c.dataset.s === state.size);
-      c.classList.toggle("out", !ok);
-      if (c.classList.contains("feature")) { c.style.gridColumn = filtered ? "auto" : ""; c.style.flexDirection = filtered ? "column" : ""; }
-      if (ok) n++;
-    });
-    count.textContent = n + (n === 1 ? " residenza" : " residenze");
-    document.querySelector("[data-count-m]").textContent = count.textContent;
-    empty.style.display = n ? "none" : "block";
-    grid.scrollLeft = 0;
-  }
-  document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
-    const f = b.dataset.f;
-    state[f] = b.dataset.v;
-    document.querySelectorAll(`.chip[data-f="${f}"]`).forEach((x) => x.setAttribute("aria-pressed", x === b));
-    apply();
-  }));
-  apply();
-
-  const rail = document.querySelector("[data-railbox]");
-  document.querySelectorAll("[data-rail]").forEach((b) => b.addEventListener("click", () => {
-    rail.scrollBy({ left: Number(b.dataset.rail) * rail.clientWidth * 0.8, behavior: "smooth" });
-  }));
-
-  /* ---------- pagine interne ---------- */
-  const bookAside = (title, extra = "") => `
-    <aside class="aside rv">
-      <h3>${title}</h3>
-      <p>Date, prezzi e disponibilità in tempo reale sul sistema ufficiale di prenotazione Col Gentile.</p>
-      <a class="btn btn-primary" href="${SLOPE}" target="_blank" rel="noopener">Verifica disponibilità ${I("arrow")}</a>
-      <a class="btn btn-ghost" href="mailto:info@albergodiffusosocchieve.it?subject=${encodeURIComponent("Richiesta informazioni: " + title)}">Scrivici</a>
-      <a class="btn btn-ghost" href="tel:+390433819934">+39 0433 819934</a>
-      ${extra}
-    </aside>`;
-
-  const gallery = (list, label) => {
-    const max = 7, shown = list.slice(0, max);
-    return `<div class="gal" data-gallery='${JSON.stringify(list.map(img))}' aria-label="${label}">${shown.map((g, i) => `
-      <button data-open-lb="${i}" aria-label="Apri foto ${i + 1} di ${list.length}"><img loading="lazy" src="${img(g)}" alt="${label}, foto ${i + 1}">${i === max - 1 && list.length > max ? `<span class="more">+${list.length - max + 1}</span>` : ""}</button>`).join("")}</div>`;
-  };
-
-  const miniStay = (s) => `<a class="mini" href="#casa/${s.id}"><img loading="lazy" src="${img(s.card)}" alt="${s.n}"><div><b>${s.n}</b><span>${s.b} · ${bedsLabel(s.beds)}</span></div></a>`;
-  const miniVill = (v) => `<a class="mini" href="#borgo/${v.id}"><img loading="lazy" src="${img(v.card)}" alt="${v.n}"><div><b>${v.n}</b><span>${v.f ? v.f.q + " m s.l.m." : "Socchieve"}</span></div></a>`;
-
-  function pageStay(s) {
-    const v = villByName[s.b];
-    const parent = s.parent && stayById[s.parent];
-    const siblings = parent ? parent.units.filter((u) => u !== s.id).map((u) => stayById[u]) : [];
-    const related = (siblings.length ? siblings : stays.filter((x) => x.id !== s.id && x.b === s.b)).concat(stays.filter((x) => x.id !== s.id && x.b !== s.b && !x.parent)).slice(0, 4);
-    const cins = s.cin ? [s.cin] : (s.units || []).map((u) => stayById[u].cin);
-    return `
-      <section class="ph">
-        <img src="${img(s.g[0])}" alt="${s.n}, ${s.b}">
-        <div class="wrap">
-          <nav class="crumbs" aria-label="Percorso"><a href="#alloggi">Le case</a><span>/</span>${parent ? `<a href="#casa/${parent.id}">${parent.n}</a><span>/</span>` : ""}<b>${s.n}</b></nav>
-          <h1>${s.n}</h1>
-          <div class="ph-meta"><span class="pill">${I("pin")}${s.b}</span><span class="pill">${bedsLabel(s.beds)}</span><span class="pill">${s.stars}</span></div>
-        </div>
-      </section>
-      <section class="d-body">
-        <div class="wrap d-grid">
-          <div class="d-main">
-            <div class="rv">
-              <span class="eyebrow">La casa</span>
-              <h2>${s.short && !s.parent ? s.short.split(":")[0].replace(/\.$/, "") : "Il tuo spazio nel borgo"}</h2>
-              ${s.text.map((p, i) => `<p${i === 0 ? ' class="prose-first"' : ""}>${p}</p>`).join("")}
-            </div>
-            <div class="facts rv">
-              <div><b>${s.beds}</b><span>Posti letto</span></div>
-              <div><b>${s.stars.match(/\d/)?.[0] || "—"}★</b><span>Classificazione</span></div>
-              <div><b>${v.f ? v.f.q : "—"}</b><span>m s.l.m.</span></div>
-              <div><b>${s.units ? s.units.length : "1"}</b><span>${s.units ? "Appartamenti" : "Unità"}</span></div>
-            </div>
-            ${s.am ? `<div class="rv"><span class="eyebrow">Servizi</span><ul class="amen" style="margin-top:20px">${s.am.map((a) => `<li>${a}</li>`).join("")}</ul></div>` : ""}
-            <div class="rv"><span class="eyebrow">Foto</span><div style="margin-top:20px">${gallery(s.g, s.n)}</div></div>
-            ${s.units ? `<div class="rv"><span class="eyebrow">Gli appartamenti</span><h2>Prenota tutta la casa o un solo appartamento.</h2><div class="units">${s.units.map((u) => { const x = stayById[u]; return `<a class="unit" href="#casa/${x.id}"><img loading="lazy" src="${img(x.g[0])}" alt="${x.n}"><div><b>${x.n}</b><span>${bedsLabel(x.beds)} · ${x.stars}</span></div></a>`; }).join("")}</div></div>` : ""}
-            ${s.plan ? `<div class="rv"><span class="eyebrow">Planimetria</span><div class="plan" style="margin-top:20px" data-gallery='${JSON.stringify([img(s.plan)])}'><img loading="lazy" data-open-lb="0" src="${img(s.plan)}" alt="Planimetria di ${s.n}"></div></div>` : ""}
-            <div class="rv">
-              <span class="eyebrow">Il borgo</span>
-              <h2>${s.b}</h2>
-              <p>${v.t.split(". ").slice(0, 2).join(". ").replace(/\.?$/, ".")}</p>
-              <p style="margin-top:20px"><a class="link" href="#borgo/${v.id}">Scopri ${s.b} ${I("arrow")}</a></p>
-            </div>
-            ${cins.length ? `<p class="cin rv">CIN ${cins.join(" · ")}</p>` : ""}
-          </div>
-          ${bookAside(s.n, `<dl><dt>Indirizzo</dt><dd>${s.addr}</dd><dt>Borgo</dt><dd>${s.b}</dd><dt>Ospiti</dt><dd>fino a ${s.beds}</dd><dt>Categoria</dt><dd>${s.stars}</dd></dl>`)}
-        </div>
-      </section>
-      <section class="related"><div class="wrap"><span class="eyebrow">${siblings.length ? "Nella stessa casa" : "Potrebbero piacerti"}</span><h2>Altre case</h2><div class="mini-rail">${related.map(miniStay).join("")}</div></div></section>`;
-  }
-
-  function pageVillage(v) {
-    const here = staysIn(v.n);
-    const near = v.near ? staysIn(v.near) : [];
-    const others = villages.filter((x) => x.id !== v.id).slice(0, 4);
-    const all = villages.filter((x) => x.id !== v.id);
-    const list = (title, items, link) => items && items.length ? `<div><h4>${title}</h4><ul>${items.map((i) => `<li>${link ? link(i) : i}</li>`).join("")}</ul></div>` : "";
-    const trekNames = exps.trekking.routes.map((r) => r.n);
-    return `
-      <section class="ph">
-        <img src="${img(v.hero[0])}" alt="Panorama di ${v.n}">
-        <div class="wrap">
-          <nav class="crumbs" aria-label="Percorso"><a href="#borghi">I borghi</a><span>/</span><b>${v.n}</b></nav>
-          <h1>${v.n}</h1>
-          <div class="ph-meta">${v.f ? `<span class="pill">${v.f.q} m s.l.m.</span><span class="pill">${v.f.ab} abitanti</span>` : `<span class="pill">Frazione di Socchieve</span>`}</div>
-        </div>
-      </section>
-      <section class="d-body">
-        <div class="wrap d-grid">
-          <div class="d-main">
-            <div class="rv"><span class="eyebrow">Il borgo</span><h2>${v.n}, Carnia</h2><p class="prose-first">${v.t}</p></div>
-            ${v.f ? `<div class="facts rv"><div><b>${v.f.ab}</b><span>Abitanti</span></div><div><b>${v.f.q}</b><span>m s.l.m.</span></div><div><b>${v.f.se}</b><span>Sentieri</span></div><div><b style="${/\d/.test(v.f.lo) ? "" : "font-size:22px;line-height:1.4"}">${v.f.lo}</b><span>Locali</span></div></div>` : ""}
-            ${v.hero.length > 1 ? `<div class="rv"><span class="eyebrow">Panorami</span><div style="margin-top:20px">${gallery(v.hero, v.n)}</div></div>` : ""}
-            <div class="list2 rv">
-              ${list("Sentieri dal paese", v.sentieri, (n) => { const r = trekNames.find((t) => n.startsWith(t.split(" ·")[0])); return r ? `<a href="#esperienza/trekking">${n}${I("arrow")}</a>` : n; })}
-              ${list("Dove mangiare e bere", v.locali)}
-              ${list("Servizi in paese", v.servizi)}
-            </div>
-            ${here.length || near.length ? `<div class="rv"><span class="eyebrow">${here.length ? "Dormire a " + v.n : "Le case più vicine, a " + v.near}</span><h2>Le nostre case</h2><div class="units">${(here.length ? here : near).map((x) => `<a class="unit" href="#casa/${x.id}"><img loading="lazy" src="${img(x.card)}" alt="${x.n}"><div><b>${x.n}</b><span>${bedsLabel(x.beds)}</span></div></a>`).join("")}</div></div>` : ""}
-          </div>
-          ${bookAside("Soggiorna a " + v.n)}
-        </div>
-      </section>
-      <section class="related"><div class="wrap"><span class="eyebrow">Socchieve e i suoi paesi</span><h2>Altri borghi</h2><div class="mini-rail">${all.map(miniVill).join("")}</div></div></section>`;
-  }
-
-  function pageExp(id, e) {
-    const others = Object.entries(exps).filter(([k]) => k !== id);
-    return `
-      <section class="ph">
-        <img src="${img(e.hero)}" alt="${e.n}">
-        <div class="wrap">
-          <nav class="crumbs" aria-label="Percorso"><a href="#esperienze">Esperienze</a><span>/</span><b>${e.n}</b></nav>
-          <h1>${e.n}</h1>
-          <p class="lead">${e.lead}</p>
-        </div>
-      </section>
-      <section class="d-body">
-        <div class="wrap d-grid">
-          <div class="d-main">
-            <div class="rv">${e.intro.map((p, i) => `<p${i === 0 ? ' class="prose-first"' : ""}>${p}</p>`).join("")}</div>
-            ${e.routes ? `<div class="rv"><span class="eyebrow">Gli itinerari</span><div style="margin-top:20px">${e.routes.map((r, i) => `
-              <article class="route"><span class="n">${String(i + 1).padStart(2, "0")}</span><div>
-                <h3>${r.n}</h3><p>${r.t}</p>
-                ${r.stats ? `<div class="stats-inline">${r.stats.map((x) => `<span>${x}</span>`).join("")}</div>` : ""}
-                ${r.map ? `<figure data-gallery='${JSON.stringify([img(r.map)])}'><img loading="lazy" data-open-lb="0" src="${img(r.map)}" alt="Mappa del percorso ${r.n}"></figure>` : ""}
-              </div></article>`).join("")}</div></div>` : ""}
-            ${e.items ? `<div>${e.items.map((it) => `
-              <article class="feature-row rv" data-gallery='${JSON.stringify([img(it.img)])}'><img loading="lazy" data-open-lb="0" src="${img(it.img)}" alt="${it.n}"><div><span class="eyebrow">${e.n}</span><h3>${it.n}</h3>${it.t.map((p) => `<p>${p}</p>`).join("")}</div></article>`).join("")}</div>` : ""}
-            ${e.more ? `<div class="rv"><span class="eyebrow">Altri itinerari in zona</span><div class="list2" style="margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${e.more.map(([t, l]) => `<div><h4>${t}</h4><ul>${l.map((x) => `<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></div>` : ""}
-            ${e.note ? `<p class="cin rv">${e.note}</p>` : ""}
-          </div>
-          ${bookAside("Parti da Socchieve")}
-        </div>
-      </section>
-      <section class="related"><div class="wrap"><span class="eyebrow">Cosa fare a Socchieve</span><h2>Altre esperienze</h2><div class="mini-rail">${others.map(([k, o]) => `<a class="mini" href="#esperienza/${k}"><img loading="lazy" src="${img(o.hero)}" alt="${o.n}"><div><b>${o.n}</b><span>${o.lead.split(":")[0].split(",")[0]}</span></div></a>`).join("")}</div></div></section>`;
-  }
-
-  /* ---------- lightbox ---------- */
-  const lb = document.querySelector("[data-lb]");
-  const lbImg = lb.querySelector("[data-lb-img]");
-  const lbCount = lb.querySelector("[data-lb-count]");
-  const lbThumbs = lb.querySelector("[data-lb-thumbs]");
-  let lbList = [], lbI = 0;
-  function lbShow(i) {
-    lbI = (i + lbList.length) % lbList.length;
-    lbImg.src = lbList[lbI];
-    lbCount.textContent = `${lbI + 1} / ${lbList.length}`;
-    [...lbThumbs.children].forEach((t, k) => t.setAttribute("aria-current", k === lbI));
-    lbThumbs.children[lbI]?.scrollIntoView({ block: "nearest", inline: "center" });
-  }
-  function lbOpen(list, i) {
-    lbList = list;
-    lbThumbs.innerHTML = list.length > 1 ? list.map((s, k) => `<button data-lb-go="${k}" aria-label="Foto ${k + 1}"><img loading="lazy" src="${s}" alt=""></button>`).join("") : "";
-    lb.querySelectorAll(".lb-nav").forEach((b) => (b.style.visibility = list.length > 1 ? "" : "hidden"));
-    if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
-    lbShow(i);
-  }
-  const lbClose = () => (lb.close ? lb.close() : lb.removeAttribute("open"));
-  document.addEventListener("click", (e) => {
-    const o = e.target.closest("[data-open-lb]");
-    if (o) { const g = o.closest("[data-gallery]"); lbOpen(JSON.parse(g.dataset.gallery), Number(o.dataset.openLb)); return; }
-    const st = e.target.closest("[data-lb-step]"); if (st) return lbShow(lbI + Number(st.dataset.lbStep));
-    const go = e.target.closest("[data-lb-go]"); if (go) return lbShow(Number(go.dataset.lbGo));
-    if (e.target.closest("[data-lb-close]")) return lbClose();
-  });
-  lb.addEventListener("keydown", (e) => { if (e.key === "ArrowRight") lbShow(lbI + 1); if (e.key === "ArrowLeft") lbShow(lbI - 1); });
-  let tx = null;
-  lb.addEventListener("touchstart", (e) => (tx = e.touches[0].clientX), { passive: true });
-  lb.addEventListener("touchend", (e) => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) lbShow(lbI + (dx < 0 ? 1 : -1)); tx = null; });
-
-  /* ---------- header + drawer ---------- */
-  const onScroll = () => document.querySelectorAll("[data-hdr]").forEach((h) => h.classList.toggle("solid", scrollY > 40));
-  addEventListener("scroll", onScroll, { passive: true });
-  document.querySelectorAll("[data-open]").forEach((b) => b.addEventListener("click", () => {
-    const d = b.closest("#col, #farie").querySelector("[data-drawer]");
-    d.classList.add("open"); d.setAttribute("aria-hidden", "false"); document.body.style.overflow = "hidden";
-  }));
-  const closeDrawers = () => document.querySelectorAll("[data-drawer]").forEach((d) => { d.classList.remove("open"); d.setAttribute("aria-hidden", "true"); document.body.style.overflow = ""; });
-  document.querySelectorAll("[data-close], [data-drawer] a").forEach((el) => el.addEventListener("click", closeDrawers));
-  addEventListener("keydown", (e) => e.key === "Escape" && closeDrawers());
-
-  /* ---------- reveal ---------- */
-  const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => {
-    if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-  }), { rootMargin: "0px 0px -8% 0px" }) : null;
-  const observe = (root) => root.querySelectorAll(".rv:not(.in)").forEach((el) => io ? io.observe(el) : el.classList.add("in"));
-
-  /* ---------- router ---------- */
-  const col = document.getElementById("col"), farie = document.getElementById("farie");
-  const home = document.getElementById("top"), page = document.getElementById("page");
-  const BASE_TITLE = "Albergo Diffuso Socchieve · Col Gentile";
-  let view = null, pageKey = null, homeY = 0;
-  const jump = (y) => scrollTo({ top: y, behavior: "instant" });
-
-  function route() {
-    const h = decodeURIComponent(location.hash);
-    const m = h.match(/^#(casa|borgo|esperienza)\/([\w-]+)$/);
-    const isFarie = h === "#la-farie" || h.startsWith("#farie-");
-    const prev = view;
-    if (prev === "home") homeY = scrollY;
-    let data = null;
-    if (m) data = m[1] === "casa" ? stayById[m[2]] : m[1] === "borgo" ? villById[m[2]] : exps[m[2]];
-    view = isFarie ? "farie" : data ? "page" : "home";
-
-    col.hidden = view === "farie"; farie.hidden = view !== "farie";
-    home.hidden = view !== "home"; page.hidden = view !== "page";
-    document.querySelector('meta[name="theme-color"]').content = view === "farie" ? "#2b1c14" : "#16241e";
-
-    if (view === "page") {
-      if (pageKey !== h) {
-        page.innerHTML = m[1] === "casa" ? pageStay(data) : m[1] === "borgo" ? pageVillage(data) : pageExp(m[2], data);
-        pageKey = h;
-        observe(page);
-      }
-      document.title = `${data.n} — ${BASE_TITLE}`;
-      jump(0);
-    } else if (view === "home") {
-      document.title = `${BASE_TITLE} — Dormire in Carnia`;
-      if (prev !== "home") observe(home);
-      const t = h.length > 1 && h !== "#top" ? document.getElementById(h.slice(1)) : null;
-      if (t) setTimeout(() => t.scrollIntoView({ behavior: "instant", block: "start" }), 0);
-      else if (prev === "page" && h === "") jump(homeY);
-      else if (prev !== "home" || h === "#top") jump(0);
-    } else {
-      document.title = "La Farie — Dimora a Lungis, Carnia";
-      if (prev !== "farie") { observe(farie); const t = document.getElementById(h.slice(1)); if (t && h !== "#la-farie") setTimeout(() => t.scrollIntoView({ behavior: "instant" }), 0); else jump(0); }
-    }
-    onScroll();
-  }
-  addEventListener("hashchange", route);
-  route();
-})();
-</script>
+<script src="/assets/site.js?v=7dc86ffb" defer></script>
 </body>
 </html>
