@@ -82,7 +82,7 @@ section[id]{scroll-margin-top:60px}
 .hero-media img{width:100%;height:100%;object-fit:cover;animation:kb 22s ease-out both}
 @keyframes kb{from{transform:scale(1.14)}to{transform:scale(1)}}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,20,15,.55) 0%,rgba(10,20,15,.05) 30%,rgba(10,20,15,.15) 55%,rgba(10,20,15,.82) 100%)}
-.hero-in{padding:0 0 clamp(36px,7vh,72px);width:100%}
+.hero-in{padding:0 0 clamp(36px,7vh,72px)}
 .hero h1{font-size:clamp(48px,9vw,138px);line-height:.94;letter-spacing:-.045em;max-width:12ch;margin:22px 0 0}
 .hero h1 em{color:#f0d3ad}
 .hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:40px;flex-wrap:wrap}
@@ -133,6 +133,9 @@ section[id]{scroll-margin-top:60px}
 .chip[aria-pressed="true"]{background:var(--forest);color:var(--bone);border-color:var(--forest)}
 .filters .sep{width:1px;height:26px;background:var(--line);margin:0 8px}
 .filters .count{margin-left:auto;font-size:14px;color:var(--muted)}
+.count-m{display:none}
+.swipe-hint{display:none;align-items:center;gap:8px;margin:-8px 0 0;font-size:13px;color:var(--muted)}
+.swipe-hint svg{width:16px;height:16px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2vw,28px)}
 .card{position:relative;display:flex;flex-direction:column;background:var(--paper);border-radius:var(--r);overflow:hidden;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
 .card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(22,36,30,.35)}
@@ -284,16 +287,32 @@ section[id]{scroll-margin-top:60px}
   .hero-row p{font-size:16px}
   .hero-actions{width:100%}.hero-actions .btn{flex:1;justify-content:center}
   .hero-meta{gap:10px 20px;margin-top:30px;font-size:12px}
-  .grid{grid-template-columns:1fr}
+  .grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:14px;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:4px clamp(16px,4vw,48px) 18px;scroll-padding:0 clamp(16px,4vw,48px)}
+  .grid::-webkit-scrollbar{display:none}
+  .card{flex:0 0 84%;scroll-snap-align:start}
+  .card:hover{transform:none}
   .card.feature{grid-column:auto;flex-direction:column}
-  .card.feature .card-img{aspect-ratio:4/3}
-  .card.feature .card-body{padding:22px 24px 24px}
-  .filters .sep{display:none}.filters .count{width:100%;margin:6px 0 0}
+  .card.feature .card-img{aspect-ratio:4/3;flex:none}
+  .card.feature .card-body{padding:20px 22px 22px;flex-direction:row;align-items:flex-end}
+  .card.feature p{display:none}
+  .card h3,.card.feature h3{font-size:24px}
+  .card-body{padding:20px 22px 22px}
+  .swipe-hint{display:flex!important}
+  .rail-ctrl{display:none}
+  .village{flex-basis:72%}
+  .hero .eyebrow{font-size:10.5px;letter-spacing:.14em}
+  .hero-in{padding-bottom:28px}
+  .filters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:calc(-1*clamp(16px,4vw,48px));padding:0 clamp(16px,4vw,48px) 4px;position:relative}
+  .filters::-webkit-scrollbar{display:none}
+  .chip{flex:none;height:40px;padding:0 16px}
+  .filters .count{position:absolute;display:none}
+  .count-m{display:block!important;margin:-22px 0 22px;font-size:14px;color:var(--muted)}
   .bento{grid-template-columns:1fr}
   .tile.big,.tile.wide{grid-column:auto;grid-row:auto}
   .tile.big{min-height:420px}
   .stats div{padding-right:8px}
-  .badge{width:96px;height:96px;left:-6px;font-size:10px}
+  .badge{width:96px;height:96px;left:10px;bottom:auto;top:10px;font-size:10px}
+  .badge i{font-size:24px}
   .routes div{grid-template-columns:1fr;gap:4px}
   .foot-grid{grid-template-columns:1fr}
   .book-strip{padding:24px}.book-strip .btn{width:100%;justify-content:center}
@@ -385,7 +404,7 @@ section[id]{scroll-margin-top:60px}
           <img class="a" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Slide2Socchieve.jpg" alt="Albero e panchina in un prato di montagna">
           <img class="b" loading="lazy" src="https://albergodiffusosocchieve.it/sites/default/files/Casa-Vanda-esterno.jpg" alt="Casa Vanda a Viaso, facciata in pietra con ballatoi in legno">
           <div class="badge" aria-hidden="true">
-            <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="8.6" letter-spacing="2.2" fill="#fff" font-family="Inter Tight" font-weight="600"><textPath href="#circ">OSPITI DELLA NATURA · OSPITI DELLA NATURA ·</textPath></text></svg>
+            <svg viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-38 0a38 38 0 1 1 76 0a38 38 0 1 1-76 0"/></defs><text font-size="8.6" fill="#fff" font-family="Inter Tight, sans-serif" font-weight="600"><textPath href="#circ" textLength="236" lengthAdjust="spacing">OSPITI DELLA NATURA · OSPITI DELLA NATURA · </textPath></text></svg>
             <i>Carnia</i>
           </div>
         </div>
@@ -413,7 +432,9 @@ section[id]{scroll-margin-top:60px}
           <span class="count" aria-live="polite" data-count></span>
         </div>
 
+        <p class="count-m" data-count-m aria-hidden="true"></p>
         <div class="grid" data-grid></div>
+        <p class="swipe-hint" aria-hidden="true">Scorri per vedere tutte le case <svg><use href="#i-right"/></svg></p>
         <div class="empty" data-empty>Nessuna casa con questi filtri. Prova un altro borgo o un'altra capienza.</div>
 
         <div class="book-strip rv">
@@ -665,6 +686,7 @@ section[id]{scroll-margin-top:60px}
       if (ok) n++;
     });
     count.textContent = n + (n === 1 ? " residenza" : " residenze");
+    document.querySelector("[data-count-m]").textContent = count.textContent;
     empty.style.display = n ? "none" : "block";
   }
   document.querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => {
