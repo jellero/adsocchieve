@@ -94,7 +94,7 @@ def process_photo(name, src, manifest):
     w, h = im.size
     variants = []
     for tw in WIDTHS:
-        if tw > w and variants:
+        if tw >= w and variants and variants[-1] == w:
             break
         tw = min(tw, w)
         out = IMG / f"{s}-{tw}.webp"
