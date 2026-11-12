@@ -636,9 +636,9 @@ def build_home():
     <section class="farie-teaser">
       {pic("LungisCartolina.jpg", "Il borgo di Lungis", "100vw")}
       <div class="wrap">
-        <span class="eyebrow light rv">Bed &amp; Breakfast a Lungis · {data.FARIE['rating']}/10 su Booking.com</span>
+        <span class="eyebrow light rv">Bed &amp; Breakfast a Lungis · gestito dall'Albergo Diffuso</span>
         <h2 class="rv d1">La Farie.</h2>
-        <p class="rv d2">Una casa carnica ristrutturata, la colazione che gli ospiti non dimenticano e l'accoglienza di {data.FARIE['hosts']}: {data.FARIE['reviews']} recensioni, voto {data.FARIE['rating']}.</p>
+        <p class="rv d2">Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, ora gestito direttamente dall'Albergo Diffuso Socchieve.</p>
         <a class="btn btn-light rv d3" href="/la-farie">Scopri La Farie {I('arrow')}</a>
       </div>
     </section>
@@ -757,19 +757,18 @@ def build_farie():
 <header class="hdr" data-hdr>
   <div class="wrap bar">
     <a href="/la-farie" class="logo" aria-label="La Farie, bed and breakfast a Lungis"><span><b>La Farie</b><small>Bed &amp; Breakfast · Lungis, Carnia</small></span></a>
-    <nav class="menu" aria-label="La Farie"><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-ospiti">Gli ospiti</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
+    <nav class="menu" aria-label="La Farie"><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-servizi">Servizi</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
     <div class="hdr-cta"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
   </div>
 </header>
 <div class="drawer" data-drawer aria-hidden="true" style="background:#2b1c14">
   <div class="drawer-top"><span class="logo"><span><b style="font-style:italic">La Farie</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
-  <nav><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-ospiti">Gli ospiti</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
+  <nav><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-servizi">Servizi</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
   <a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a>
 </div>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a></span></div></div></footer>
 </div>"""
-    scores = "".join(f'<div><b>{v}</b><span>{k}</span></div>' for k, v in F["scores"][:4])
     rules = "".join(f"<div><b>{k}</b><span>{v}</span></div>" for k, v in F["rules"])
     near = "".join(f"<li><b>{n}</b><span>{d}</span></li>" for n, d in F["near"])
     body = f"""<section class="hero" id="la-farie">
@@ -777,10 +776,10 @@ def build_farie():
       <div class="wrap hero-in">
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">Bed &amp; Breakfast a Lungis · Carnia</span>La Farie. <em>Sentirsi a casa.</em></h1>
         <div class="hero-row">
-          <p>Una casa tipica carnica ristrutturata, la colazione che tutti ricordano e due padroni di casa che ti fanno sentire in famiglia.</p>
+          <p>Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.</p>
           <div class="hero-actions"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-ghost" href="#farie-foto">Guarda le foto</a></div>
         </div>
-        <div class="hero-meta"><span><b>{F['rating']}</b>/10 su Booking.com</span><span><b>{F['reviews']}</b> recensioni</span><span>Colazione · Wi-Fi · <b>Parcheggio gratuito</b></span></div>
+        <div class="hero-meta"><span>Lungis · <b>554 m</b></span><span>Wi-Fi · <b>Parcheggio gratuito</b></span><span>Gestione <b>Albergo Diffuso Socchieve</b></span></div>
       </div>
     </section>
     <section class="sec" id="farie-casa"><div class="wrap fa-split">
@@ -795,13 +794,6 @@ def build_farie():
     <section class="sec" id="farie-servizi" style="padding-top:0"><div class="wrap">
       <span class="eyebrow rv">Servizi</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">Tutto quello <em>che serve.</em></h2>
       <ul class="amen rv">{"".join(f"<li>{a}</li>" for a in F['am'])}</ul>
-    </div></section>
-    <section class="fa-cta" id="farie-ospiti"><div class="wrap">
-      <span class="eyebrow light rv">Cosa dicono gli ospiti</span>
-      <h2 class="rv d1"><em>{F['rating']}</em> su {F['reviews']} recensioni.</h2>
-      <p class="rv d2" style="max-width:640px;margin:0 auto 34px;color:rgba(244,237,228,.8);font-size:18px">Su Booking.com gli ospiti premiano soprattutto l'accoglienza di {F['hosts']}, la colazione, la pulizia e la tranquillità della posizione, con la vista sulle montagne.</p>
-      <div class="facts rv" style="max-width:760px;margin:0 auto 36px;background:transparent;border-color:rgba(244,237,228,.2)">{scores}</div>
-      <a class="btn btn-light rv d3" href="{F['booking']}" target="_blank" rel="noopener">Leggi le recensioni su Booking.com {I('arrow')}</a>
     </div></section>
     <section class="sec" id="farie-info"><div class="wrap fa-split" style="align-items:start">
       <div><span class="eyebrow rv">Info utili</span><h2 class="rv d1">Prima di <em>arrivare.</em></h2>
@@ -823,10 +815,10 @@ def build_farie():
           "geo": {"@type": "GeoCoordinates", "latitude": F["geo"][0], "longitude": F["geo"][1]},
           "checkinTime": "15:00", "checkoutTime": "10:00", "petsAllowed": True, "smokingAllowed": False,
           "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": a, "value": True} for a in F["am"]],
-          "sameAs": [F["booking"]], "email": SITE["email"], "parentOrganization": {"@id": LODGING_ID}}
+          "sameAs": [F["booking"]], "email": SITE["email"], "telephone": SITE["phone"], "parentOrganization": {"@id": LODGING_ID}}
     crumbs = [("Home", "/"), ("La Farie", "/la-farie")]
     page("/la-farie", "La Farie · Bed & Breakfast a Lungis, Socchieve (Carnia)",
-         f"B&B in una casa carnica ristrutturata a Lungis, Socchieve: colazione, Wi-Fi, parcheggio gratuito, camere con terrazza. Voto {F['rating']}/10 su {F['reviews']} recensioni.",
+         "B&B in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito.",
          body, image=F["g"][0], preload=preload_for(F["g"][0]), wrapper=wrap, ld=[ld, crumbs_ld(crumbs)],
          images=[abs_img(g) for g in F["g"] if g in PH])
 
