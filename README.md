@@ -41,3 +41,13 @@ python _src/serve.py          # anteprima su http://localhost:8000
 4. Far verificare i testi di **privacy e cookie**.
 5. Verificare i dati: posti letto di Casa Ernesto da Rosuline (21 sulla casa intera, 17 sommando le unità), “animali ammessi” (dedotto dall'icona del vecchio sito), CIN di Casa Ai Pascoli (mancante).
 6. **Traduzioni EN/DE/FR**: il vecchio sito aveva inglese e francese; il tedesco è il mercato estero principale della Carnia.
+
+## Form contatti AJAX PHP
+Il modulo è presente in homepage, in `/it/contact` e in `/la-farie`. La chiamata AJAX arriva al file `/contatti.php`. Il modulo:
+- verifica i campi nel browser e in PHP, mostra uno stato visibile senza ricaricare la pagina e si svuota **solo** dopo una risposta positiva dell'endpoint;
+- separa le richieste Col Gentile / La Farie tramite il campo `brand`, con oggetto email distinto;
+- usa un honeypot e un limite di frequenza di base. Conserva i dati compilati se il server segnala errore.
+
+**Server richiesto:** hosting Apache/Nginx con PHP e invio mail correttamente configurato. GitHub Pages e l'apertura locale via `file://` non possono eseguire PHP. Testare su un server locale con `php -S localhost:8000`, preferibilmente con SMTP configurato in hosting. L'invio tramite `mail()` dipende dal servizio di posta del server; una risposta positiva significa che il server ha accettato la richiesta di consegna, non garantisce la ricezione.
+
+Per La Farie configurare la variabile di ambiente `FARIE_CONTACT_EMAIL` se la ricezione deve andare a una casella distinta; in assenza del parametro le richieste sono etichettate "La Farie" ma recapitate a `info@albergodiffusosocchieve.it`. Non pubblicare finché non sono verificati destinatari, recapiti, informativa privacy e posta in uscita.

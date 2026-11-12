@@ -188,11 +188,21 @@ def footer():
 </footer>"""
 
 
+
+def contact_form(brand="col-gentile"):
+    """Modulo AJAX: markup comune alle pagine; invio gestito da /contatti.php."""
+    if brand == "la-farie":
+        return "\n<section class=\"sec contact-section\" id=\"scrivici\" aria-labelledby=\"contact-title\">\n  <div class=\"wrap contact-grid\">\n    <div class=\"contact-intro\">\n      <span class=\"eyebrow\">La Farie · Lungis</span>\n      <h2 id=\"contact-title\">Scrivi a <em>La Farie.</em></h2>\n      <p>Il messaggio sarà identificato come richiesta per La Farie e non per gli appartamenti Col Gentile.</p>\n      <p class=\"contact-small\">I campi contrassegnati con * sono obbligatori. La richiesta non costituisce una prenotazione.</p>\n    </div>\n    <form class=\"contact-form\" data-ajax-contact action=\"/contatti.php\" method=\"post\" accept-charset=\"UTF-8\">\n      <input type=\"hidden\" name=\"brand\" value=\"la-farie\">\n      <div class=\"contact-honeypot\" aria-hidden=\"true\"><label>Lascia vuoto questo campo<input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\"></label></div>\n      <div class=\"contact-fields\">\n        <label>Nome e cognome *<input type=\"text\" name=\"nome\" autocomplete=\"name\" minlength=\"2\" maxlength=\"100\" required placeholder=\"Il tuo nome\"></label>\n        <label>Email *<input type=\"email\" name=\"email\" autocomplete=\"email\" maxlength=\"254\" required placeholder=\"nome@esempio.it\"></label>\n        <label>Telefono (facoltativo)<input type=\"tel\" name=\"telefono\" autocomplete=\"tel\" maxlength=\"40\" placeholder=\"+39 ...\"></label>\n        <label class=\"contact-wide\">Messaggio *<textarea name=\"messaggio\" rows=\"5\" minlength=\"10\" maxlength=\"5000\" required placeholder=\"Raccontaci la tua richiesta...\"></textarea></label>\n      </div>\n      <label class=\"contact-consent\"><input type=\"checkbox\" name=\"privacy\" value=\"1\" required> Ho letto l'<a href=\"/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">informativa sulla privacy</a> e acconsento al trattamento dei dati per rispondere alla mia richiesta. *</label>\n      <div class=\"contact-form-actions\"><button type=\"submit\" class=\"btn btn-primary\" data-form-submit>Invia il messaggio</button><span class=\"contact-small\">Risposta visibile qui dopo l'invio</span></div>\n      <p class=\"contact-result\" data-form-status role=\"status\" aria-live=\"polite\" aria-atomic=\"true\" tabindex=\"-1\" hidden></p>\n    </form>\n  </div>\n</section>\n"
+    return "\n<section class=\"sec contact-section\" id=\"scrivici\" aria-labelledby=\"contact-title\">\n  <div class=\"wrap contact-grid\">\n    <div class=\"contact-intro\">\n      <span class=\"eyebrow\">Col Gentile · Albergo Diffuso</span>\n      <h2 id=\"contact-title\">Richiedi informazioni <em>sul soggiorno.</em></h2>\n      <p>Per informazioni su case, periodi e soggiorni a Socchieve, inviaci un messaggio. Per la disponibilità aggiornata utilizza sempre il motore di prenotazione.</p>\n      <p class=\"contact-small\">I campi contrassegnati con * sono obbligatori. La richiesta non costituisce una prenotazione.</p>\n    </div>\n    <form class=\"contact-form\" data-ajax-contact action=\"/contatti.php\" method=\"post\" accept-charset=\"UTF-8\">\n      <input type=\"hidden\" name=\"brand\" value=\"col-gentile\">\n      <div class=\"contact-honeypot\" aria-hidden=\"true\"><label>Lascia vuoto questo campo<input type=\"text\" name=\"website\" tabindex=\"-1\" autocomplete=\"off\"></label></div>\n      <div class=\"contact-fields\">\n        <label>Nome e cognome *<input type=\"text\" name=\"nome\" autocomplete=\"name\" minlength=\"2\" maxlength=\"100\" required placeholder=\"Il tuo nome\"></label>\n        <label>Email *<input type=\"email\" name=\"email\" autocomplete=\"email\" maxlength=\"254\" required placeholder=\"nome@esempio.it\"></label>\n        <label>Telefono (facoltativo)<input type=\"tel\" name=\"telefono\" autocomplete=\"tel\" maxlength=\"40\" placeholder=\"+39 ...\"></label>\n        <label class=\"contact-wide\">Messaggio *<textarea name=\"messaggio\" rows=\"5\" minlength=\"10\" maxlength=\"5000\" required placeholder=\"Raccontaci la tua richiesta...\"></textarea></label>\n      </div>\n      <label class=\"contact-consent\"><input type=\"checkbox\" name=\"privacy\" value=\"1\" required> Ho letto l'<a href=\"/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">informativa sulla privacy</a> e acconsento al trattamento dei dati per rispondere alla mia richiesta. *</label>\n      <div class=\"contact-form-actions\"><button type=\"submit\" class=\"btn btn-primary\" data-form-submit>Invia il messaggio</button><span class=\"contact-small\">Risposta visibile qui dopo l'invio</span></div>\n      <p class=\"contact-result\" data-form-status role=\"status\" aria-live=\"polite\" aria-atomic=\"true\" tabindex=\"-1\" hidden></p>\n    </form>\n  </div>\n</section>\n"
+
+
 def page(path, title, desc, body, *, active="", image=None, ld=(), solid=False, noindex=False, images=(), preload=None, og_type="website", wrapper=None):
     canonical = U + path
     og = og_img(image) if image else og_img("Slide1Socchieve.jpg")
     head_ld = "\n".join(jsonld(x) for x in ld)
     pre = f'<link rel="preload" as="image" href="{preload[0]}" imagesrcset="{preload[1]}" imagesizes="100vw" fetchpriority="high">' if preload else ""
+    if path in ("/", "/it/contact", "/la-farie"):
+        body += contact_form("la-farie" if path == "/la-farie" else "col-gentile")
     content = wrapper(body) if wrapper else f"{header(active, solid)}\n<main id=\"main\">\n{body}\n</main>\n{footer()}"
     doc = f"""<!doctype html>
 <html lang="it">
@@ -647,7 +657,7 @@ def build_home():
         <p class="rv d2">Lasciati affascinare dal vivere in montagna tra la gente e la natura della Carnia.</p>
         <div class="row rv d3">
           <a class="btn btn-primary" href="{SITE['booking']}" target="_blank" rel="noopener">Prenota il soggiorno {I('arrow')}</a>
-          <a class="btn btn-dark" href="mailto:{SITE['email']}">Scrivici</a>
+          <a class="btn btn-dark" href="#scrivici">Scrivici</a>
         </div>
       </div>
     </section>"""
@@ -748,13 +758,13 @@ def build_farie():
   <div class="wrap bar">
     <a href="/la-farie" class="logo" aria-label="La Farie, bed and breakfast a Lungis"><span><b>La Farie</b><small>Bed &amp; Breakfast · Lungis, Carnia</small></span></a>
     <nav class="menu" aria-label="La Farie"><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-ospiti">Gli ospiti</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
-    <div class="hdr-cta"><a class="btn btn-primary" href="{mail}">Chiedi disponibilità {I('arrow')}</a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
+    <div class="hdr-cta"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
   </div>
 </header>
 <div class="drawer" data-drawer aria-hidden="true" style="background:#2b1c14">
   <div class="drawer-top"><span class="logo"><span><b style="font-style:italic">La Farie</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
   <nav><a href="#farie-casa">La casa</a><a href="#farie-foto">Foto</a><a href="#farie-ospiti">Gli ospiti</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
-  <a class="btn btn-primary" href="{mail}">Chiedi disponibilità {I('arrow')}</a>
+  <a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a>
 </div>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a></span></div></div></footer>
@@ -768,7 +778,7 @@ def build_farie():
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">Bed &amp; Breakfast a Lungis · Carnia</span>La Farie. <em>Sentirsi a casa.</em></h1>
         <div class="hero-row">
           <p>Una casa tipica carnica ristrutturata, la colazione che tutti ricordano e due padroni di casa che ti fanno sentire in famiglia.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="{mail}">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-ghost" href="#farie-foto">Guarda le foto</a></div>
+          <div class="hero-actions"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-ghost" href="#farie-foto">Guarda le foto</a></div>
         </div>
         <div class="hero-meta"><span><b>{F['rating']}</b>/10 su Booking.com</span><span><b>{F['reviews']}</b> recensioni</span><span>Colazione · Wi-Fi · <b>Parcheggio gratuito</b></span></div>
       </div>
@@ -805,7 +815,7 @@ def build_farie():
       <span class="eyebrow rv">La Farie · Lungis</span>
       <h2 class="rv d1">Il tuo B&amp;B <em>in Carnia.</em></h2>
       <p class="rv d2">Scrivici le date e il numero di ospiti: ti rispondiamo con disponibilità e prezzi.</p>
-      <div class="row rv d3"><a class="btn btn-primary" href="{mail}">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-dark" href="/">Scopri anche Col Gentile</a></div>
+      <div class="row rv d3"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-dark" href="/">Scopri anche Col Gentile</a></div>
     </div></section>"""
     ld = {"@context": "https://schema.org", "@type": "BedAndBreakfast", "@id": U + "/la-farie#bnb", "name": "La Farie",
           "description": " ".join(F["intro"]), "url": U + "/la-farie", "image": [abs_img(g) for g in F["g"][:8] if g in PH],
