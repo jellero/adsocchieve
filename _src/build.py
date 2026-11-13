@@ -165,8 +165,8 @@ def header(active, solid=False):
 </div>"""
 
 
-CREDITS = ('<div class="credits"><span>Sito realizzato da <a href="https://jdevpro.it" target="_blank" rel="noopener">jdevpro.it</a></span>'
-           '<span>Booking engine powered by <a href="https://welora.it" target="_blank" rel="noopener">Welora</a></span></div>')
+CREDITS = ('<span class="credits">Sito realizzato da <a href="https://jdevpro.it" target="_blank" rel="noopener">jdevpro.it</a> · '
+           'Booking engine powered by <a href="https://welora.it" target="_blank" rel="noopener">Welora</a></span>')
 
 
 def footer():
@@ -187,8 +187,7 @@ def footer():
       <div><h4>I borghi</h4>{borghi}</div>
       <div><h4>Esperienze</h4>{exps}<a href="/it/benessere">Benessere: sauna e bagno di bosco</a><a href="/it/territorio">Il territorio</a><a href="/it/contact">Contatti e come arrivare</a><a href="/la-farie">La Farie</a></div>
     </div>
-    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · P.I. {SITE['vat']}</span><span><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a></span></div>
-    {CREDITS}
+    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · P.I. {SITE['vat']}</span><span class="foot-links"><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a>{CREDITS}</span></div>
   </div>
 </footer>"""
 
@@ -783,7 +782,7 @@ def build_farie():
   <a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a>
 </div>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a></span></div>{CREDITS}</div></footer>
+<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a>{CREDITS}</span></div></div></footer>
 </div>"""
     rules = "".join(f"<div><b>{k}</b><span>{v}</span></div>" for k, v in F["rules"])
     near = "".join(f"<li><b>{n}</b><span>{d}</span></li>" for n, d in F["near"])

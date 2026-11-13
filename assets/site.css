@@ -660,6 +660,8 @@ section[id]{scroll-margin-top:60px}
 .room span{display:block;margin-top:8px;font-size:15px;color:var(--fa-muted)}
 .room small{display:block;margin-top:12px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--fa-clay)}
 #farie [data-welora-booking]{--welora-accent:var(--fa-clay);--welora-accent-hover:#9a4f30;--welora-text:var(--fa-ink);--welora-surface-muted:var(--fa-bg)}
-.credits{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:rgba(245,240,230,.45)}
-.credits a{display:inline;margin:0;font-size:12px;color:rgba(245,240,230,.7);border-bottom:1px solid rgba(245,240,230,.25)}
-.credits a:hover{color:#fff}
+.foot-links{display:flex;align-items:center;flex-wrap:wrap;gap:6px 18px}
+.foot-bottom .foot-links a{margin:0}
+.credits{color:rgba(245,240,230,.45)}
+.foot-bottom .credits a{display:inline;color:rgba(245,240,230,.7);border-bottom:1px solid rgba(245,240,230,.25)}
+.foot-bottom .credits a:hover{color:#fff}
