@@ -49,9 +49,9 @@ VANDA_ADDR = "Via San Giovanni 38, Viaso"
 STAYS = [
     dict(id="casa-vanda", n="Casa Vanda", b="Viaso", beds=18, stars=4, kind="House", label="Villa storica",
          addr=VANDA_ADDR, card="Casa-Vanda-esterno.jpg", feature=True,
-         short="L'intera villa settecentesca di Viaso, in pietra con ballatoi in legno: quattro appartamenti per famiglie numerose e gruppi fino a 18 persone.",
-         text=[VILLA, "Prenotando l'intera residenza si hanno a disposizione tutti gli appartamenti della villa, Iris, Genziana, Bucaneve e Papavero, ciascuno arredato con cura attorno al colore che gli dà il nome. La soluzione ideale per famiglie allargate, gruppi di amici, associazioni e ritiri."],
-         am=VANDA_AM, units=["casa-vanda-iris", "casa-vanda-genziana", "casa-vanda-bucaneve", "casa-vanda-papavero"],
+         short="L'intera villa settecentesca di Viaso, in pietra con ballatoi in legno: cinque appartamenti per famiglie numerose e gruppi fino a 18 persone.",
+         text=[VILLA, "Prenotando l'intera residenza si hanno a disposizione tutti gli appartamenti della villa, Iris, Genziana, Bucaneve, Papavero e Ortensia, ciascuno arredato con cura attorno al colore che gli dà il nome. La soluzione ideale per famiglie allargate, gruppi di amici, associazioni e ritiri."],
+         am=VANDA_AM, units=["casa-vanda-iris", "casa-vanda-genziana", "casa-vanda-bucaneve", "casa-vanda-papavero", "casa-vanda-ortensia"],
          pano=["SAM_101_0095.jpg", "SAM_101_0088.jpg"],
          g=["Casa-Vanda-esterno_0.jpg", "Casa-Vanda-portico.jpg", "CasaVanda-Genziana-salotto.jpg", "CasaVanda-Genziana-cucina.jpg", "CasaVanda-Genziana-matrimoniale.jpg", "CasaVanda-Genziana-singola.jpg", "CasaVanda-Papavero-salotto.jpg", "CasaVanda-Papavero-salotto-terrazza.jpg", "CasaVanda-Papavero-cucina.jpg", "CasaVanda-Papavero-matrimoniale.jpg", "CasaVanda-Bucaneve-cucina.jpg", "CasaVanda-Bucaneve-matrimoniale.jpg", "IMG-20240509-WA0006.jpeg", "IMG-20240509-WA0007.jpg", "IMG-20240509-WA0011.jpg", "IMG-20240509-WA0012.jpg", "IMG-20240509-WA0013.jpg", "CasaVanda-Genziana-bagno.jpg", "CasaVanda-Papavero-bagno.jpg", "CasaVanda-Bucaneve-bagno.jpg"]),
     dict(id="casa-ernesto-da-rosuline", n="Casa Ernesto da Rosuline", b="Lungis", beds=21, stars=3, kind="House", label="Casa per gruppi",
@@ -91,6 +91,14 @@ STAYS = [
          short="Due camere e un ampio soggiorno sulla terrazza in legno: appartamento 4 stelle per famiglie a Viaso.",
          text=["Genziana ha due camere, un bagno, una cucina con tavolo da pranzo e un ampio soggiorno abitabile con accesso alla terrazza in legno. Blu e grigio distribuiti sugli arredi danno una sensazione di accoglienza familiare.", VILLA],
          am=VANDA_AM, g=["CasaVanda-Genziana-salotto_0.jpg", "CasaVanda-Genziana-cucina_0.jpg", "CasaVanda-Genziana-matrimoniale_0.jpg", "CasaVanda-Genziana-singola_0.jpg", "Casa-Vanda-portico%20%281%29.jpg", "CasaVanda-Genziana-bagno_0.jpg"]),
+    dict(id="casa-vanda-ortensia", n="Casa Vanda Ortensia", b="Viaso", beds=4, stars=None, kind="Apartment", label="Appartamento",
+         addr=VANDA_ADDR, card="foto/ortensia-01.jpg", parent="casa-vanda", bedrooms=2,
+         short="Appartamento al piano terra della villa di Viaso, con cucina, salottino, una camera matrimoniale e una singola, fino a 4 ospiti.",
+         text=["Ortensia si trova al piano terra di Casa Vanda, nella tranquilla frazione di Viaso: un ambiente accogliente e confortevole per un soggiorno all'insegna del relax, immerso nell'atmosfera autentica del territorio.",
+               "Ha una cucina con zona giorno, uno spazio funzionale e piacevole dove preparare i pasti e stare in compagnia, una camera matrimoniale, una camera singola e un grazioso salottino per leggere o riposare. Le travi e la pietra originali della casa incorniciano gli ambienti, e dalla porta si esce sul cortile acciottolato con il giardino.",
+               "Per la disposizione degli spazi è ideale per coppie, piccole famiglie o chiunque voglia sentirsi a casa anche lontano da casa.", VILLA],
+         am=["Cucina", "Lavastoviglie", "Lavatrice", "Bagno privato con doccia", "Asciugacapelli", "TV", "Wi-Fi"],
+         g=["foto/ortensia-01.jpg", "foto/ortensia-02.jpg", "foto/ortensia-03.jpg", "foto/ortensia-04.jpg", "foto/ortensia-05.jpg", "foto/ortensia-06.jpg", "foto/ortensia-07.jpg", "foto/ortensia-08.jpg"]),
     dict(id="ernesto-da-rosuline-1", n="Ernesto da Rosuline 1", b="Lungis", beds=5, stars=3, kind="Apartment", label="Appartamento",
          addr=ERN_ADDR, card="casa%20ernesto_0.jpg", cin="IT030110A1P6YRWW2W", parent="casa-ernesto-da-rosuline", bedrooms=2,
          short="Appartamento al primo piano con due camere e ampio terrazzo, nel borgo di Lungis.",
@@ -243,7 +251,7 @@ FARIE = dict(
 # Servizi benessere: dati dalla configurazione Welora della struttura (novembre 2026).
 # "live" va messo a True solo quando in Welora il widget servizi è attivo, i servizi sono
 # pubblicati e il dominio del sito è autorizzato: allora il sito mostra la prenotazione online.
-WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261112-1", live=True,
+WELORA = dict(base="https://portal.welora.it", slug="servizi-5", script_v="20261113-5", live=True,
               results="/it/prenota-servizi")
 
 SERVICES = [

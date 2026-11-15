@@ -1,5 +1,105 @@
 {
  "panos": {
+  "SAM_101_0054.jpg": {
+   "slug": "sam-101-0054",
+   "src": "/img/360/sam-101-0054.jpg",
+   "thumb": "/img/360/sam-101-0054-thumb.webp"
+  },
+  "SAM_101_0056.jpg": {
+   "slug": "sam-101-0056",
+   "src": "/img/360/sam-101-0056.jpg",
+   "thumb": "/img/360/sam-101-0056-thumb.webp"
+  },
+  "SAM_101_0057.jpg": {
+   "slug": "sam-101-0057",
+   "src": "/img/360/sam-101-0057.jpg",
+   "thumb": "/img/360/sam-101-0057-thumb.webp"
+  },
+  "SAM_101_0058.jpg": {
+   "slug": "sam-101-0058",
+   "src": "/img/360/sam-101-0058.jpg",
+   "thumb": "/img/360/sam-101-0058-thumb.webp"
+  },
+  "SAM_101_0059.jpg": {
+   "slug": "sam-101-0059",
+   "src": "/img/360/sam-101-0059.jpg",
+   "thumb": "/img/360/sam-101-0059-thumb.webp"
+  },
+  "SAM_101_0060.jpg": {
+   "slug": "sam-101-0060",
+   "src": "/img/360/sam-101-0060.jpg",
+   "thumb": "/img/360/sam-101-0060-thumb.webp"
+  },
+  "SAM_101_0062.jpg": {
+   "slug": "sam-101-0062",
+   "src": "/img/360/sam-101-0062.jpg",
+   "thumb": "/img/360/sam-101-0062-thumb.webp"
+  },
+  "SAM_101_0067.jpg": {
+   "slug": "sam-101-0067",
+   "src": "/img/360/sam-101-0067.jpg",
+   "thumb": "/img/360/sam-101-0067-thumb.webp"
+  },
+  "SAM_101_0069.jpg": {
+   "slug": "sam-101-0069",
+   "src": "/img/360/sam-101-0069.jpg",
+   "thumb": "/img/360/sam-101-0069-thumb.webp"
+  },
+  "SAM_101_0072.jpg": {
+   "slug": "sam-101-0072",
+   "src": "/img/360/sam-101-0072.jpg",
+   "thumb": "/img/360/sam-101-0072-thumb.webp"
+  },
+  "SAM_101_0074.jpg": {
+   "slug": "sam-101-0074",
+   "src": "/img/360/sam-101-0074.jpg",
+   "thumb": "/img/360/sam-101-0074-thumb.webp"
+  },
+  "SAM_101_0076.jpg": {
+   "slug": "sam-101-0076",
+   "src": "/img/360/sam-101-0076.jpg",
+   "thumb": "/img/360/sam-101-0076-thumb.webp"
+  },
+  "SAM_101_0078.jpg": {
+   "slug": "sam-101-0078",
+   "src": "/img/360/sam-101-0078.jpg",
+   "thumb": "/img/360/sam-101-0078-thumb.webp"
+  },
+  "SAM_101_0079.jpg": {
+   "slug": "sam-101-0079",
+   "src": "/img/360/sam-101-0079.jpg",
+   "thumb": "/img/360/sam-101-0079-thumb.webp"
+  },
+  "SAM_101_0081.jpg": {
+   "slug": "sam-101-0081",
+   "src": "/img/360/sam-101-0081.jpg",
+   "thumb": "/img/360/sam-101-0081-thumb.webp"
+  },
+  "SAM_101_0083.jpg": {
+   "slug": "sam-101-0083",
+   "src": "/img/360/sam-101-0083.jpg",
+   "thumb": "/img/360/sam-101-0083-thumb.webp"
+  },
+  "SAM_101_0085.jpg": {
+   "slug": "sam-101-0085",
+   "src": "/img/360/sam-101-0085.jpg",
+   "thumb": "/img/360/sam-101-0085-thumb.webp"
+  },
+  "SAM_101_0086.jpg": {
+   "slug": "sam-101-0086",
+   "src": "/img/360/sam-101-0086.jpg",
+   "thumb": "/img/360/sam-101-0086-thumb.webp"
+  },
+  "SAM_101_0088.jpg": {
+   "slug": "sam-101-0088",
+   "src": "/img/360/sam-101-0088.jpg",
+   "thumb": "/img/360/sam-101-0088-thumb.webp"
+  },
+  "SAM_101_0095.jpg": {
+   "slug": "sam-101-0095",
+   "src": "/img/360/sam-101-0095.jpg",
+   "thumb": "/img/360/sam-101-0095-thumb.webp"
+  },
   "casa%20dal%20m%20iedi%20camera%20letti%20a%20castello-5000-2500.jpg": {
    "slug": "casa-dal-m-iedi-camera-letti-a-castello-5000-2500",
    "src": "/img/360/casa-dal-m-iedi-camera-letti-a-castello-5000-2500.jpg",
@@ -1538,6 +1638,353 @@
     1600
    ]
   },
+  "Q30A9850_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9850-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9852.jpg": {
+   "h": 1334,
+   "slug": "q30a9852",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9852_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9852-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9856.jpg": {
+   "h": 1334,
+   "slug": "q30a9856",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9856_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9856-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9859.jpg": {
+   "h": 1334,
+   "slug": "q30a9859",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9859_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9859-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9866.jpg": {
+   "h": 1334,
+   "slug": "q30a9866",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9866_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9866-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9893.jpg": {
+   "h": 1334,
+   "slug": "q30a9893",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9893_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9893-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9899.jpg": {
+   "h": 1334,
+   "slug": "q30a9899",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9899_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9899-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9908.jpg": {
+   "h": 1334,
+   "slug": "q30a9908",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9920.jpg": {
+   "h": 1334,
+   "slug": "q30a9920",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9920_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9920-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9921.jpg": {
+   "h": 1334,
+   "slug": "q30a9921",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9921_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9921-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9926.jpg": {
+   "h": 1334,
+   "slug": "q30a9926",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9954.jpg": {
+   "h": 1334,
+   "slug": "q30a9954",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9954_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9954-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9980.jpg": {
+   "h": 1334,
+   "slug": "q30a9980",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Q30A9980_0.jpg": {
+   "h": 1334,
+   "slug": "q30a9980-0",
+   "w": 2001,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "Quadri-rassegna.jpg": {
+   "h": 620,
+   "slug": "quadri-rassegna",
+   "w": 800,
+   "widths": [
+    480,
+    800
+   ]
+  },
+  "SITOOK.JPG": {
+   "h": 834,
+   "og": "/img/og/sitook.jpg",
+   "slug": "sitook",
+   "w": 1250,
+   "widths": [
+    480,
+    960,
+    1250
+   ]
+  },
+  "SITOOK_0.JPG": {
+   "h": 834,
+   "slug": "sitook-0",
+   "w": 1250,
+   "widths": [
+    480,
+    960,
+    1250
+   ]
+  },
+  "Slide1Socchieve.jpg": {
+   "h": 927,
+   "og": "/img/og/slide1socchieve.jpg",
+   "slug": "slide1socchieve",
+   "w": 1390,
+   "widths": [
+    480,
+    960,
+    1390
+   ]
+  },
+  "Slide2Socchieve.jpg": {
+   "h": 927,
+   "slug": "slide2socchieve",
+   "w": 1390,
+   "widths": [
+    480,
+    960,
+    1390
+   ]
+  },
+  "Slide3Socchieve.jpg": {
+   "h": 927,
+   "og": "/img/og/slide3socchieve.jpg",
+   "slug": "slide3socchieve",
+   "w": 1390,
+   "widths": [
+    480,
+    960,
+    1390
+   ]
+  },
+  "Socchievecopertina_0.jpg": {
+   "h": 518,
+   "slug": "socchievecopertina-0",
+   "w": 777,
+   "widths": [
+    480,
+    777
+   ]
+  },
+  "Val-Pesarina.jpg": {
+   "h": 400,
+   "slug": "val-pesarina",
+   "w": 600,
+   "widths": [
+    480,
+    600
+   ]
+  },
+  "Valle%20di%20preone.jpg": {
+   "h": 333,
+   "slug": "valle-di-preone",
+   "w": 444,
+   "widths": [
+    444
+   ]
+  },
+  "Viaso.jpg": {
+   "h": 405,
+   "slug": "viaso",
+   "w": 608,
+   "widths": [
+    480,
+    608
+   ]
+  },
+  "cartina%2010.jpg": {
+   "h": 1787,
+   "slug": "cartina-10",
+   "w": 2400,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "cartina%2011.jpg": {
+   "h": 1787,
+   "slug": "cartina-11",
+   "w": 2400,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
   "cartina%208.jpg": {
    "h": 1787,
    "slug": "cartina-8",
@@ -1556,6 +2003,143 @@
     480,
     960,
     1600
+   ]
+  },
+  "casa%20ernesto.jpg": {
+   "h": 1448,
+   "og": "/img/og/casa-ernesto.jpg",
+   "slug": "casa-ernesto",
+   "w": 1786,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "casa%20ernesto_0.jpg": {
+   "h": 1448,
+   "slug": "casa-ernesto-0",
+   "w": 1786,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "casa%20ernesto_1.jpg": {
+   "h": 1448,
+   "slug": "casa-ernesto-1",
+   "w": 1786,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "casa%20ernesto_3.jpg": {
+   "h": 1448,
+   "slug": "casa-ernesto-3",
+   "w": 1786,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "casa%20ernesto_4.jpg": {
+   "h": 1448,
+   "slug": "casa-ernesto-4",
+   "w": 1786,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "dilignidis%20e%20feltrone_0.jpg": {
+   "h": 405,
+   "slug": "dilignidis-e-feltrone-0",
+   "w": 608,
+   "widths": [
+    480,
+    608
+   ]
+  },
+  "foto/ortensia-01.jpg": {
+   "h": 737,
+   "og": "/img/og/foto-ortensia-01.jpg",
+   "slug": "foto-ortensia-01",
+   "w": 1600,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "foto/ortensia-02.jpg": {
+   "h": 737,
+   "slug": "foto-ortensia-02",
+   "w": 1600,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "foto/ortensia-03.jpg": {
+   "h": 737,
+   "slug": "foto-ortensia-03",
+   "w": 1600,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "foto/ortensia-04.jpg": {
+   "h": 737,
+   "slug": "foto-ortensia-04",
+   "w": 1600,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "foto/ortensia-05.jpg": {
+   "h": 1600,
+   "slug": "foto-ortensia-05",
+   "w": 738,
+   "widths": [
+    480,
+    738
+   ]
+  },
+  "foto/ortensia-06.jpg": {
+   "h": 1600,
+   "slug": "foto-ortensia-06",
+   "w": 738,
+   "widths": [
+    480,
+    738
+   ]
+  },
+  "foto/ortensia-07.jpg": {
+   "h": 1600,
+   "slug": "foto-ortensia-07",
+   "w": 737,
+   "widths": [
+    480,
+    737
+   ]
+  },
+  "foto/ortensia-08.jpg": {
+   "h": 1600,
+   "slug": "foto-ortensia-08",
+   "w": 737,
+   "widths": [
+    480,
+    737
    ]
   },
   "foto/sauna.jpg": {
@@ -1835,6 +2419,84 @@
     480,
     960,
     1200
+   ]
+  },
+  "logoborghi%20autentici%20d%27Italia.jpg": {
+   "h": 1197,
+   "slug": "logoborghi-autentici-d-italia",
+   "w": 1190,
+   "widths": [
+    480,
+    960,
+    1190
+   ]
+  },
+  "mappagirorestridotta.jpg": {
+   "h": 1699,
+   "slug": "mappagirorestridotta",
+   "w": 1200,
+   "widths": [
+    480,
+    960,
+    1200
+   ]
+  },
+  "mediis.jpg": {
+   "h": 394,
+   "slug": "mediis",
+   "w": 618,
+   "widths": [
+    480,
+    618
+   ]
+  },
+  "mediis_fontana3.jpg": {
+   "h": 600,
+   "slug": "mediis-fontana3",
+   "w": 1920,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "panoramarassegnacarnica.jpg": {
+   "h": 600,
+   "slug": "panoramarassegnacarnica",
+   "w": 1920,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "percorso%20MTB%20Mediis.jpg": {
+   "h": 720,
+   "slug": "percorso-mtb-mediis",
+   "w": 1040,
+   "widths": [
+    480,
+    960,
+    1040
+   ]
+  },
+  "piantinamarso.JPG": {
+   "h": 912,
+   "slug": "piantinamarso",
+   "w": 2412,
+   "widths": [
+    480,
+    960,
+    1600
+   ]
+  },
+  "priuso.jpg": {
+   "h": 408,
+   "slug": "priuso",
+   "w": 608,
+   "widths": [
+    480,
+    608
    ]
   }
  }

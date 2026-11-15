@@ -369,11 +369,11 @@ def build_stay(s):
     related = (related + [x for x in top_stays() if x["id"] != s["id"] and x not in related])[:4]
     cins = [s["cin"]] if s.get("cin") else [STAY[u]["cin"] for u in s.get("units", []) if STAY[u].get("cin")]
     crumbs = [("Home", "/"), ("Le case", "/it/alloggi/")] + ([(parent["n"], stay_url(parent))] if parent else []) + [(s["n"], stay_url(s))]
-    pills = [f"{I('pin')}{s['b']}, Socchieve", beds(s["beds"]), f"{s['stars']} stelle"] + (["Tour 360°"] if s.get("pano") else [])
+    pills = [f"{I('pin')}{s['b']}, Socchieve", beds(s["beds"])] + ([f"{s['stars']} stelle"] if s.get("stars") else []) + (["Tour 360°"] if s.get("pano") else [])
     units = ""
     if s.get("units"):
         units = '<div class="rv"><span class="eyebrow">Gli appartamenti</span><h2>Prenota tutta la casa o un solo appartamento</h2><div class="units">' + "".join(
-            f'<a class="unit" href="{stay_url(STAY[u])}">{pic(STAY[u]["g"][0], STAY[u]["n"], "96px")}<div><b>{e(STAY[u]["n"])}</b><span>{beds(STAY[u]["beds"])} · {STAY[u]["stars"]} stelle</span></div></a>'
+            f'<a class="unit" href="{stay_url(STAY[u])}">{pic(STAY[u]["g"][0], STAY[u]["n"], "96px")}<div><b>{e(STAY[u]["n"])}</b><span>{beds(STAY[u]["beds"])}{" · " + str(STAY[u]["stars"]) + " stelle" if STAY[u].get("stars") else ""}</span></div></a>'
             for u in s["units"]) + "</div></div>"
     plan = ""
     if s.get("plan"):
@@ -395,7 +395,7 @@ def build_stay(s):
       </div>
       <div class="facts rv">
         <div><b>{s['beds']}</b><span>Posti letto</span></div>
-        <div><b>{s['stars']}★</b><span>Classificazione</span></div>
+        <div><b>{f"{s['stars']}★" if s.get('stars') else s['label']}</b><span>{"Classificazione" if s.get('stars') else "Tipologia"}</span></div>
         <div><b>{rooms_v}</b><span>{rooms_l}</span></div>
         <div><b>{v['f']['q'] if v['f'] else '—'}</b><span>m s.l.m.</span></div>
       </div>
@@ -412,7 +412,7 @@ def build_stay(s):
       </div>
       {f'<p class="cin rv">Codice identificativo nazionale (CIN): {" · ".join(cins)}</p>' if cins else ""}
     </div>
-    {aside(s['n'], f"<dl><dt>Indirizzo</dt><dd>{e(s['addr'])}</dd><dt>Comune</dt><dd>Socchieve (UD)</dd><dt>Ospiti</dt><dd>fino a {s['beds']}</dd><dt>Categoria</dt><dd>{s['label']} {s['stars']}★</dd></dl>")}
+    {aside(s['n'], f"<dl><dt>Indirizzo</dt><dd>{e(s['addr'])}</dd><dt>Comune</dt><dd>Socchieve (UD)</dd><dt>Ospiti</dt><dd>fino a {s['beds']}</dd><dt>Categoria</dt><dd>{s['label']}{" " + str(s['stars']) + "★" if s.get('stars') else ""}</dd></dl>")}
   </div>
 </section>
 <section class="related"><div class="wrap"><span class="eyebrow">{"Nella stessa casa" if siblings else "Potrebbero piacerti"}</span><h2>Altre case dell'albergo diffuso</h2><div class="mini-rail">{"".join(mini_stay(x) for x in related)}</div></div></section>"""
@@ -432,7 +432,7 @@ def build_stay(s):
     if s.get("cin"): ld_stay["identifier"] = {"@type": "PropertyValue", "propertyID": "CIN", "value": s["cin"]}
     if s.get("units"): ld_stay["containsPlace"] = [{"@id": U + stay_url(STAY[u]) + "#accommodation"} for u in s["units"]]
     title = f"{s['n']} a {s['b']} · {s['label']} fino a {s['beds']} ospiti in Carnia"
-    desc = clip(f"{s['short']} {s['stars']} stelle, {s['b']} (Socchieve, Carnia). {len(s['g'])} foto{', tour virtuale 360°' if s.get('pano') else ''} e prenotazione diretta.", 160)
+    desc = clip(f"{s['short']} {str(s['stars']) + ' stelle, ' if s.get('stars') else ''}{s['b']} (Socchieve, Carnia). {len(s['g'])} foto{', tour virtuale 360°' if s.get('pano') else ''} e prenotazione diretta.", 160)
     page(stay_url(s), title, desc, body, active="alloggi", image=s["g"][0], og_type="place", preload=preload_for(s["g"][0]),
          ld=[ld_stay, crumbs_ld(crumbs)], images=[abs_img(g) for g in s["g"]])
 
