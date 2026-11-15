@@ -128,6 +128,7 @@ ICONS = """<svg width="0" height="0" style="position:absolute" aria-hidden="true
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
   <symbol id="i-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M6 28 15 15l5 7 4-5 10 11" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M17 28v-5h6v5" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
 </svg>"""
 
@@ -208,6 +209,15 @@ def page(path, title, desc, body, *, active="", image=None, ld=(), solid=False, 
     if path in ("/", "/it/contact", "/la-farie"):
         body += contact_form("la-farie" if path == "/la-farie" else "col-gentile")
     content = wrapper(body) if wrapper else f"{header(active, solid)}\n<main id=\"main\">\n{body}\n</main>\n{footer()}"
+    if wrapper and path == "/la-farie":
+        mb_href, mb_lbl = ("#prenota", "Prenota La Farie") if data.FARIE["welora"]["live"] else ("#scrivici", "Chiedi disponibilità")
+        mbar = f'<div class="mbar"><a class="btn btn-primary" href="{mb_href}">{mb_lbl}</a><a class="mbar-tel" href="tel:{SITE["phone_href"]}" aria-label="Chiama">{I("phone")}</a></div>'
+    elif path in ("/it/sauna", "/it/bagno-di-bosco", "/it/benessere") and data.WELORA["live"]:
+        mbar = f'<div class="mbar"><a class="btn btn-primary" href="#prenota">Prenota online</a><a class="mbar-tel" href="tel:{SITE["phone_href"]}" aria-label="Chiama">{I("phone")}</a></div>'
+    elif path in ("/404", "/la-farie-prenota", data.WELORA["results"]) or wrapper:
+        mbar = ""
+    else:
+        mbar = f'<div class="mbar"><a class="btn btn-primary" href="{SITE["booking"]}" target="_blank" rel="noopener">Verifica disponibilità</a><a class="mbar-tel" href="tel:{SITE["phone_href"]}" aria-label="Chiama">{I("phone")}</a></div>'
     doc = f"""<!doctype html>
 <html lang="it">
 <head>
@@ -240,6 +250,7 @@ def page(path, title, desc, body, *, active="", image=None, ld=(), solid=False, 
 <body>
 {ICONS}
 {content}
+{mbar}
 {LIGHTBOX}
 <script src="/assets/site.js?v={JS_V}" defer></script>
 </body>
@@ -457,7 +468,7 @@ def build_village(v):
         lo_style = "" if any(c.isdigit() for c in f["lo"]) else ' style="font-size:22px;line-height:1.4"'
         facts = f'<div class="facts rv"><div><b>{f["ab"]}</b><span>Abitanti</span></div><div><b>{f["q"]}</b><span>m s.l.m.</span></div><div><b>{f["se"]}</b><span>Sentieri</span></div><div><b{lo_style}>{f["lo"]}</b><span>Locali</span></div></div>'
     pills = [f"{v['f']['q']} m s.l.m.", f"{v['f']['ab']} abitanti"] if v["f"] else ["Frazione di Socchieve"]
-    body = f"""{hero(v['hero'][0], f"Panorama di {v['n']}, Socchieve, Carnia", crumbs, e(v['n']), sub="Frazione di Socchieve, in Carnia", pills=pills)}
+    body = f"""{hero(v['hero'][0], f"Panorama di {v['n']}, Socchieve, Carnia", crumbs, e(v['n']), sub=("Capoluogo del comune, in Carnia" if v["id"] == "socchieve" else "Frazione di Socchieve, in Carnia"), pills=pills)}
 <section class="d-body">
   <div class="wrap d-grid">
     <div class="d-main">
@@ -804,7 +815,7 @@ def build_farie():
         {"".join(f'<p class="rv d2" style="margin-top:16px">{e(p)}</p>' for p in F['intro'])}
       </div></div></section>
     <section class="sec" id="farie-foto" style="padding-top:0"><div class="wrap">
-      <span class="eyebrow rv">Foto</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{len(F['g'])} foto de <em>La Farie</em></h2>
+      <span class="eyebrow rv">Foto</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{len(F['g'])} foto di <em>La Farie</em></h2>
       <div class="rv">{gallery(F['g'], "La Farie, bed and breakfast a Lungis", max_shown=9)}</div>
     </div></section>
     <section class="sec" id="farie-camere" style="padding-top:0"><div class="wrap">
@@ -1002,7 +1013,7 @@ def build_legal():
   <h2>Dati raccolti da questo sito</h2>
   <p>Il sito non usa cookie di profilazione né strumenti di statistica e non contiene moduli di raccolta dati. I font e le immagini sono ospitati sul nostro server. Il server registra, come ogni sito web, dati tecnici di navigazione (indirizzo IP, data e ora, pagina richiesta) per motivi di sicurezza e funzionamento.</p>
   <h2>Contatti e prenotazioni</h2>
-  <p>Se ci scrivi o ci telefoni, usiamo i tuoi dati solo per risponderti e gestire il soggiorno. Le prenotazioni online avvengono sul sistema Slope, che tratta i dati secondo la propria informativa; la mappa della pagina contatti è fornita da OpenStreetMap; il tour virtuale carica la libreria Pannellum da cdnjs (Cloudflare) solo quando lo avvii.</p>
+  <p>Se ci scrivi o ci telefoni, usiamo i tuoi dati solo per risponderti e gestire il soggiorno. Le prenotazioni online delle case Col Gentile avvengono sul sistema Slope; quelle di sauna, bagno di bosco e La Farie sul sistema Welora (portal.welora.it), che ricevono i dati che inserisci nei loro moduli e li trattano per gestire la prenotazione; la mappa della pagina contatti è fornita da OpenStreetMap; il tour virtuale carica la libreria Pannellum da cdnjs (Cloudflare) solo quando lo avvii.</p>
   <h2>I tuoi diritti</h2>
   <p>Puoi chiedere in ogni momento accesso, rettifica, cancellazione o limitazione dei tuoi dati scrivendo a {SITE['email']}, e proporre reclamo al Garante per la protezione dei dati personali.</p>
 </div></section>"""
@@ -1010,7 +1021,7 @@ def build_legal():
     cookies = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
   <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Cookie</h1>
   <p>Questo sito non installa cookie di profilazione né cookie di terze parti per statistiche o pubblicità, per questo non mostra banner di consenso.</p>
-  <p>Il sito di prenotazione Slope, raggiungibile dai pulsanti “Prenota”, e la mappa di OpenStreetMap nella pagina contatti hanno le proprie informative. Per domande scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>
+  <p>I sistemi di prenotazione Slope (case Col Gentile) e Welora (sauna, bagno di bosco e La Farie, inserito nelle pagine), la mappa di OpenStreetMap nella pagina contatti hanno le proprie informative. Per domande scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>
 </div></section>"""
     page("/cookies", "Cookie · Albergo Diffuso Socchieve", "Informativa cookie del sito dell'Albergo Diffuso Socchieve Col Gentile.", cookies, solid=True)
     terms = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">

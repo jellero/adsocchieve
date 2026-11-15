@@ -687,3 +687,25 @@ section[id]{scroll-margin-top:60px}
 .book-sec .book-note{text-align:center}
 #farie .book-sec + #farie-casa{padding-top:clamp(48px,6vw,80px)}
 @media (max-width:640px){.book-sec{margin-top:-56px}#farie .hero-in{padding-bottom:88px}}
+
+/* ===== revisione visiva ===== */
+.partners img{height:64px;padding:6px}
+.mapcard .pin{bottom:34px}
+/* barra di prenotazione fissa su telefono */
+.mbar{display:none}
+@media (max-width:640px){
+  .mbar{display:flex;gap:10px;position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;padding:8px;border-radius:999px;background:rgba(22,36,30,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 40px -16px rgba(0,0,0,.5);transition:transform .35s var(--ease),opacity .35s}
+  .mbar .btn{flex:1;justify-content:center;min-height:48px}
+  .mbar-tel{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.12);color:#fff}
+  .mbar-tel svg{width:20px;height:20px}
+  body:has(.mbar){padding-bottom:84px}
+  .mbar.hide{transform:translateY(140%);opacity:0}
+  body:has(#farie) .mbar{background:rgba(43,28,20,.92)}
+  body:has(#farie) .mbar .btn-primary{background:#b5603c}
+  /* footer più compatto */
+  .foot-grid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  .foot-grid>div:first-child{grid-column:1/-1}
+  .foot-grid>div:last-child{grid-column:1/-1}
+  .foot a,.foot p{font-size:14px;margin-bottom:8px}
+}
+@media (max-width:640px){.mapcard .pin{bottom:58px}}

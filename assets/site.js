@@ -165,3 +165,16 @@
     });
   });
 })();
+
+/* barra mobile: si nasconde quando il widget o il footer sono già visibili */
+(() => {
+  const bar = document.querySelector(".mbar");
+  if (!bar || !("IntersectionObserver" in window)) return;
+  const targets = [...document.querySelectorAll("#prenota, .foot, .hero-actions, .book-strip")];
+  const seen = new Set();
+  const io = new IntersectionObserver((es) => {
+    es.forEach((e) => (e.isIntersecting ? seen.add(e.target) : seen.delete(e.target)));
+    bar.classList.toggle("hide", seen.size > 0);
+  }, { threshold: 0.15 });
+  targets.forEach((t) => io.observe(t));
+})();
