@@ -566,8 +566,8 @@ def build_home():
         <div class="hero-row">
           <p>Case e appartamenti vacanza nei borghi di Socchieve, con i servizi di un albergo. A 18 km da Sauris e mezz'ora dalle Dolomiti Friulane.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="{SITE['booking']}" target="_blank" rel="noopener">Verifica disponibilità {I('arrow')}</a>
-            <a class="btn btn-ghost" href="/it/alloggi/">Scopri le case</a>
+            <a class="btn btn-primary" href="/it/alloggi/">Scopri le case {I('arrow')}</a>
+            <a class="btn btn-ghost" href="/it/benessere">Sauna e bagno di bosco</a>
           </div>
         </div>
         <div class="hero-meta"><span><b>{n_stays}</b> alloggi</span><span><b>8</b> borghi</span><span>Dolomiti Friulane · <b>Patrimonio UNESCO</b></span></div>
