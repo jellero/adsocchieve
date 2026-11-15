@@ -709,3 +709,5 @@ section[id]{scroll-margin-top:60px}
   .foot a,.foot p{font-size:14px;margin-bottom:8px}
 }
 @media (max-width:640px){.mapcard .pin{bottom:58px}}
+/* widget servizi a tutta larghezza come La Farie */
+.book [data-welora-booking]{max-width:none}

@@ -629,7 +629,7 @@ def build_home():
     <section class="sec" id="benessere" style="background:var(--bone)">
       <div class="wrap">
         <div class="sec-head"><div><span class="eyebrow rv">Benessere in Carnia</span><h2 class="rv d1">Sauna e <em>bagno di bosco</em> a Socchieve.</h2></div>
-        <p class="rv d2">Dopo una giornata sui sentieri o in bici, la sauna scioglie i muscoli; nei boschi intorno ai borghi lo Shinrin-yoku con Petra ti insegna a rallentare. Si prenotano online, si pagano in struttura.</p></div>
+        <p class="rv d2">Dopo una giornata sui sentieri o in bici, la sauna scioglie i muscoli; nei boschi intorno ai borghi lo Shinrin-yoku con Petra ti insegna a rallentare. Si prenotano online, con conferma immediata e garanzia con carta.</p></div>
         <div class="bento">{"".join(svc_card(s) for s in data.SERVICES)}</div>
         <div class="svc-seo rv">
           <div><h3>Sauna in Carnia</h3><p>Sauna a ore per tutto il gruppo, {data.SERVICES[1]["price"]} € l'ora a prezzo unico, da un'ora in su: il modo migliore per chiudere un'escursione, un'uscita in mountain bike o una giornata sulle piste di Forni di Sopra. <a class="link" href="/it/sauna">Prezzi e orari {I("arrow")}</a></p></div>
@@ -863,7 +863,7 @@ def welora(view, sid=None, title=None, note=True):
         return ""
     svc = f' data-service="{sid}"' if sid else ""
     head = f'<h2 class="book-title">{title}</h2>' if title else ""
-    foot = (f'<p class="book-note">Conferma immediata via email · pagamento in struttura · '
+    foot = (f'<p class="book-note">Conferma immediata via email · prenotazione garantita con carta · '
             f'preferisci parlarci? <a href="tel:{SITE["phone_href"]}">{SITE["phone"]}</a> · <a href="mailto:{SITE["email"]}">{SITE["email"]}</a></p>') if note else ""
     return (f'<div class="book rv" id="prenota">{head}<div data-welora-booking data-slug="{W["slug"]}" data-mode="services" data-view="{view}" data-branding="none"{svc}></div>{foot}</div>'
             f'<script src="{W["base"]}/assets/js/booking-widget.js?v={W["script_v"]}" defer></script>')
@@ -884,7 +884,7 @@ def svc_aside(s=None):
       {online}
       <a class="btn {mail_cls}" href="mailto:{SITE['email']}?subject={subj}">Prenota via email {I('arrow')}</a>
       <a class="btn btn-ghost" href="tel:{SITE['phone_href']}">{SITE['phone']}</a>
-      <p style="margin-top:16px;font-size:13px">Il pagamento si salda in struttura.</p>
+      <p style="margin-top:16px;font-size:13px">Per la prenotazione online è richiesta una carta a garanzia.</p>
     </aside>"""
 
 
@@ -952,7 +952,7 @@ def build_services():
     cards = "".join(svc_card(s) for s in S)
     body = f"""{hero("PanoramaNonta1.jpg", "Prati al tramonto a Nonta, Socchieve", crumbs, "Benessere <em>in Carnia</em>", sub="Sauna e bagno di bosco all'Albergo Diffuso di Socchieve: il modo giusto per chiudere una giornata in montagna.")}
 <section class="sec"><div class="wrap">
-  <div class="sec-head"><div><span class="eyebrow rv">I servizi</span><h2 class="rv d1">Rallenta, <em>respira.</em></h2></div><p class="rv d2">Prezzi chiari, pagamento in struttura. Scrivici per sapere se si possono prenotare anche senza soggiornare da noi.</p></div>
+  <div class="sec-head"><div><span class="eyebrow rv">I servizi</span><h2 class="rv d1">Rallenta, <em>respira.</em></h2></div><p class="rv d2">Prezzi chiari, prenotazione online garantita con carta. Scrivici per sapere se si possono prenotare anche senza soggiornare da noi.</p></div>
   <div class="bento">{cards}</div>
   {welora("search", None, "Prenota sauna o bagno di bosco")}
 </div></section>"""
@@ -1029,8 +1029,8 @@ def build_legal():
   <p>Valgono per le prenotazioni di sauna e bagno di bosco fatte online, via email o per telefono presso {SITE['legal']}, {SITE['street']}, {SITE['locality']}, {SITE['zip']} Socchieve (UD), P.I. {SITE['vat']}.</p>
   <h2>Prezzi</h2>
   <p>I prezzi sono in euro. Il prezzo mostrato al momento della prenotazione è quello definitivo: per il bagno di bosco è a persona, per la sauna è all'ora per tutto il gruppo.</p>
-  <h2>Pagamento</h2>
-  <p>La prenotazione online non prevede pagamenti: il servizio si salda direttamente in struttura.</p>
+  <h2>Garanzia con carta</h2>
+  <p>La prenotazione online è garantita con una carta di pagamento: i dati della carta sono richiesti e gestiti in modo sicuro dal sistema di prenotazione al momento della conferma. Eventuali addebiti, ad esempio in caso di mancata presentazione o di cancellazione tardiva, sono indicati prima di confermare.</p>
   <h2>Conferma</h2>
   <p>Dopo la prenotazione ricevi un'email di conferma con data, orario e numero di partecipanti. Il numero di partecipanti non può superare la capienza indicata per il servizio.</p>
   <h2>Modifiche e cancellazioni</h2>
@@ -1041,7 +1041,7 @@ def build_legal():
   <p>I dati della prenotazione sono trattati come descritto nell'<a href="/privacy">informativa privacy</a>.</p>
 </div></section>"""
     page("/condizioni-servizi", "Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve",
-         "Condizioni per prenotare sauna e bagno di bosco all'Albergo Diffuso Socchieve: prezzi, pagamento in struttura, modifiche e cancellazioni.", terms, solid=True)
+         "Condizioni per prenotare sauna e bagno di bosco all'Albergo Diffuso Socchieve: prezzi, garanzia con carta, modifiche e cancellazioni.", terms, solid=True)
     err = f"""<section class="err"><div><span class="eyebrow">Errore 404</span><h1>Pagina <em>non trovata.</em></h1><p style="margin:20px auto 30px;max-width:460px;color:var(--muted)">Forse la pagina è stata spostata con il nuovo sito. Ecco da dove ripartire:</p>
   <div class="row" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-dark" href="/it/alloggi/">Le case</a><a class="btn btn-primary" href="/">Home</a></div></div></section>"""
     page("/404", "Pagina non trovata · Albergo Diffuso Socchieve", "La pagina richiesta non esiste.", err, solid=True, noindex=True)
