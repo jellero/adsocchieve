@@ -803,7 +803,7 @@ def build_farie():
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">Bed &amp; Breakfast a Lungis · Carnia</span>La Farie. <em>Sentirsi a casa.</em></h1>
         <div class="hero-row">
           <p>Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.</p>
-          <div class="hero-actions">{('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}<a class="btn btn-ghost" href="#farie-camere">Le camere</a></div>
+          <div class="hero-actions">{'' if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}<a class="btn btn-ghost" href="#farie-camere">Le camere</a><a class="btn btn-ghost" href="#farie-foto">Foto</a></div>
         </div>
         <div class="hero-meta"><span>Lungis · <b>554 m</b></span><span>Wi-Fi · <b>Parcheggio gratuito</b></span><span>Gestione <b>Albergo Diffuso Socchieve</b></span></div>
       </div>
