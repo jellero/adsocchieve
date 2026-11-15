@@ -773,13 +773,13 @@ def build_farie():
   <div class="wrap bar">
     <a href="/la-farie" class="logo" aria-label="La Farie, bed and breakfast a Lungis"><span><b>La Farie</b><small>Bed &amp; Breakfast · Lungis, Carnia</small></span></a>
     <nav class="menu" aria-label="La Farie"><a href="#farie-casa">La casa</a><a href="#farie-camere">Camere</a><a href="#farie-foto">Foto</a><a href="#farie-servizi">Servizi</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
-    <div class="hdr-cta"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
+    <div class="hdr-cta">{('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}<button class="burger" aria-label="Apri menu" data-open><span></span></button></div>
   </div>
 </header>
 <div class="drawer" data-drawer aria-hidden="true" style="background:#2b1c14">
   <div class="drawer-top"><span class="logo"><span><b style="font-style:italic">La Farie</b></span></span><button class="close" data-close aria-label="Chiudi menu">×</button></div>
   <nav><a href="#farie-casa">La casa</a><a href="#farie-camere">Camere</a><a href="#farie-foto">Foto</a><a href="#farie-servizi">Servizi</a><a href="#farie-info">Info utili</a><a href="/">← Col Gentile</a></nav>
-  <a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a>
+  {('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}
 </div>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a>{CREDITS}</span></div></div></footer>
@@ -792,11 +792,12 @@ def build_farie():
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">Bed &amp; Breakfast a Lungis · Carnia</span>La Farie. <em>Sentirsi a casa.</em></h1>
         <div class="hero-row">
           <p>Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.</p>
-          <div class="hero-actions"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-ghost" href="#farie-foto">Guarda le foto</a></div>
+          <div class="hero-actions">{('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}<a class="btn btn-ghost" href="#farie-camere">Le camere</a></div>
         </div>
         <div class="hero-meta"><span>Lungis · <b>554 m</b></span><span>Wi-Fi · <b>Parcheggio gratuito</b></span><span>Gestione <b>Albergo Diffuso Socchieve</b></span></div>
       </div>
     </section>
+    {f'<section class="book-sec"><div class="wrap">{welora_stays("search")}</div></section>' if data.FARIE["welora"]["live"] else ""}
     <section class="sec" id="farie-casa"><div class="wrap fa-split">
       {pic(F['g'][1], "La Farie, Lungis", "(max-width:820px) 100vw, 50vw", cls="rv")}
       <div><span class="eyebrow rv">La casa</span><h2 class="rv d1">Una casa carnica, <em>la quiete di Lungis.</em></h2>
@@ -810,7 +811,6 @@ def build_farie():
       <span class="eyebrow rv">Le camere</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">Cinque camere, <em>un appartamento.</em></h2>
       <div class="rooms rv">{"".join(f'<div class="room"><b>{e(n)}</b><span>{e(t)}</span><small>fino a {m} {"ospite" if m == 1 else "ospiti"}</small></div>' for n, t, m in F["rooms"])}</div>
       <p class="rv" style="margin-top:18px;color:var(--fa-muted)">Tariffe: {" o ".join(F["plans"]).lower()}. {e(F["cancel"])}</p>
-      {welora_stays("search", "Verifica disponibilità")}
     </div></section>
     <section class="sec" id="farie-servizi" style="padding-top:0"><div class="wrap">
       <span class="eyebrow rv">Servizi</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">Tutto quello <em>che serve.</em></h2>
@@ -827,8 +827,8 @@ def build_farie():
     <section class="cta"><div class="wrap">
       <span class="eyebrow rv">La Farie · Lungis</span>
       <h2 class="rv d1">Il tuo B&amp;B <em>in Carnia.</em></h2>
-      <p class="rv d2">Scrivici le date e il numero di ospiti: ti rispondiamo con disponibilità e prezzi.</p>
-      <div class="row rv d3"><a class="btn btn-primary" href="#scrivici">Chiedi disponibilità {I('arrow')}</a><a class="btn btn-dark" href="/">Scopri anche Col Gentile</a></div>
+      <p class="rv d2">Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.</p>
+      <div class="row rv d3">{('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}<a class="btn btn-dark" href="#scrivici">Scrivici</a><a class="btn btn-dark" href="/">Scopri anche Col Gentile</a></div>
     </div></section>"""
     ld = {"@context": "https://schema.org", "@type": "BedAndBreakfast", "@id": U + "/la-farie#bnb", "name": "La Farie",
           "description": " ".join(F["intro"]), "url": U + "/la-farie", "image": [abs_img(g) for g in F["g"][:8] if g in PH],
