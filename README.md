@@ -52,7 +52,7 @@ python _src/serve.py          # anteprima su http://localhost:8000
 ## Da fare prima della messa online
 
 1. **Pubblicare sul dominio `albergodiffusosocchieve.it`** (senza www, come oggi) e far puntare `www` con redirect 301.
-2. **Google Search Console**: verificare il dominio e inviare `https://albergodiffusosocchieve.it/sitemap.xml`.
+2. **Google Search Console**: verificare il dominio e inviare `https://www.albergodiffusosocchieve.it/sitemap.xml`.
 3. **Profilo dell'attività su Google** (Google Business Profile): stesso nome, indirizzo e telefono del sito, foto, link al sito e al booking. È la leva più forte per le ricerche “dove dormire in Carnia”.
 4. Far verificare i testi di **privacy e cookie**.
 5. Verificare i dati: posti letto di Casa Ernesto da Rosuline (21 sulla casa intera, 17 sommando le unità), “animali ammessi” (dedotto dall'icona del vecchio sito), CIN di Casa Ai Pascoli (mancante).
@@ -70,7 +70,7 @@ Per La Farie configurare la variabile di ambiente `FARIE_CONTACT_EMAIL` se la ri
 
 ## Link richiesti da Welora
 
-- Condizioni di prenotazione: `https://albergodiffusosocchieve.it/condizioni-prenotazione` (versione 1.0)
-- Informativa privacy: `https://albergodiffusosocchieve.it/privacy` (versione 1.0)
+- Condizioni di prenotazione: `https://www.albergodiffusosocchieve.it/condizioni-prenotazione` (versione 1.0)
+- Informativa privacy: `https://www.albergodiffusosocchieve.it/privacy` (versione 1.0)
 - Le condizioni riprendono le regole pubbliche del precedente sito ufficiale e quelle già presenti nel progetto per La Farie e servizi.
 - **Da completare in Welora prima di attivare l'addebito della penale:** importo/percentuale e termine della penale no-show specifica di ciascuna struttura o servizio, che non risultano definiti nelle fonti pubbliche. Pubblicare qui gli stessi valori approvati.

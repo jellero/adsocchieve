@@ -2,7 +2,7 @@
 (sites/default/files/...): fetch_assets.py le scarica, le ottimizza e le salva in /img."""
 
 SITE = {
-    "url": "https://albergodiffusosocchieve.it",
+    "url": "https://www.albergodiffusosocchieve.it",
     "name": "Albergo Diffuso Socchieve",
     "brand": "Col Gentile",
     "legal": "Albergo Diffuso Socchieve “Col Gentile”",

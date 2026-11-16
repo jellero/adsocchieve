@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /_src/
 
-Sitemap: https://albergodiffusosocchieve.it/sitemap.xml
+Sitemap: https://www.albergodiffusosocchieve.it/sitemap.xml
