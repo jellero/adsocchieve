@@ -478,9 +478,9 @@ UI = {
     "Prenota sauna o bagno di bosco": ("Book the sauna or forest bathing", "Sauna oder Waldbaden buchen"),
     "Benessere all'Albergo Diffuso Socchieve": ("Wellness at the Albergo Diffuso Socchieve", "Wellness im Albergo Diffuso Socchieve"),
     "Benessere in Carnia: sauna e bagno di bosco a Socchieve": ("Wellness in Carnia: sauna and forest bathing in Socchieve", "Wellness in Karnien: Sauna und Waldbaden in Socchieve"),
-    "Sauna (50 € l'ora per il gruppo) e bagno di bosco Shinrin-yoku con guida (15 € a persona) all'Albergo Diffuso di Socchieve, in Carnia. Prenota direttamente.": (
-        "Sauna (50 € per hour for the group) and guided Shinrin-yoku forest bathing (15 € per person) at the Albergo Diffuso in Socchieve, Carnia. Book direct.",
-        "Sauna (50 € pro Stunde für die Gruppe) und geführtes Waldbaden – Shinrin-yoku – (15 € pro Person) im Albergo Diffuso in Socchieve, Karnien. Direkt buchen."),
+    "Sauna (20 € l'ora per il gruppo) e bagno di bosco Shinrin-yoku con guida (15 € a persona) all'Albergo Diffuso di Socchieve, in Carnia. Prenota direttamente.": (
+        "Sauna (20 € per hour for the group) and guided Shinrin-yoku forest bathing (15 € per person) at the Albergo Diffuso in Socchieve, Carnia. Book direct.",
+        "Sauna (20 € pro Stunde für die Gruppe) und geführtes Waldbaden – Shinrin-yoku – (15 € pro Person) im Albergo Diffuso in Socchieve, Karnien. Direkt buchen."),
     "Prenota servizi": ("Book wellness", "Wellness buchen"),
     "La prenotazione online sarà disponibile a breve. Nel frattempo scrivici a": ("Online booking will be available soon. In the meantime, write to us at", "Die Online-Buchung ist bald verfügbar. Bis dahin schreiben Sie uns an"),
     "Prenota <em>sauna e bagno di bosco</em>": ("Book the <em>sauna and forest bathing</em>", "<em>Sauna und Waldbaden</em> buchen"),
@@ -763,7 +763,7 @@ FAQ_EN = [
     ("How many people can the houses sleep?", "From the studio for two at Ernesto da Rosuline Terra to apartments for 4–8 people, up to whole houses for groups: Casa Pradin (9 beds), Casa Vanda (18) and Casa Ernesto da Rosuline (21)."),
     ("Are pets allowed?", "Yes, in several houses: the Casa Vanda apartments (Iris, Genziana, Bucaneve, Papavero), the Casa Ernesto da Rosuline apartments, Casa dal Miedi and Casa Ai Pascoli are pet friendly. Please let us know when you book."),
     ("What is there to do in Socchieve?", "Hiking on trails that start from the villages, mountain biking on the Mediis trail, road cycling over the Passo Rest, Romanesque art in the Church of San Martino. Within half an hour you can reach Sauris, the Friulian Dolomites – a UNESCO World Heritage Site – and Forni di Sopra, also for skiing in winter."),
-    ("Is there a sauna and wellness?", "Yes: the sauna is booked by the hour for your whole group (50 € per hour, 1 hour minimum), and forest bathing (Shinrin-yoku) with Petra lasts about two hours, for groups of up to 6 at 15 € per person, meeting at the Mediis reception."),
+    ("Is there a sauna and wellness?", "Yes: the sauna is booked by the hour for your whole group (20 € per hour, 1 hour minimum), and forest bathing (Shinrin-yoku) with Petra lasts about two hours, for groups of up to 6 at 15 € per person, meeting at the Mediis reception."),
     ("How do I book?", "Online on the official Col Gentile system, with live availability and prices, or by writing to info@albergodiffusosocchieve.it or calling +39 0433 819934."),
 ]
 
@@ -774,7 +774,7 @@ FAQ_DE = [
     ("Wie viele Personen finden in den Häusern Platz?", "Vom Studio für zwei im Ernesto da Rosuline Terra über Wohnungen für 4–8 Personen bis zu ganzen Häusern für Gruppen: Casa Pradin (9 Betten), Casa Vanda (18) und Casa Ernesto da Rosuline (21)."),
     ("Sind Haustiere erlaubt?", "Ja, in mehreren Häusern: Die Wohnungen von Casa Vanda (Iris, Genziana, Bucaneve, Papavero), die von Casa Ernesto da Rosuline, Casa dal Miedi und Casa Ai Pascoli sind haustierfreundlich. Bitte geben Sie es bei der Buchung an."),
     ("Was kann man in Socchieve unternehmen?", "Wandern auf Wegen direkt ab den Dörfern, Mountainbiken auf der Strecke von Mediis, Rennradfahren über den Passo Rest, romanische Kunst in der Kirche San Martino. In einer halben Stunde erreichen Sie Sauris, die Friauler Dolomiten (UNESCO-Welterbe) und Forni di Sopra, im Winter auch zum Skifahren."),
-    ("Gibt es Sauna und Wellness?", "Ja: Die Sauna wird stundenweise für die ganze Gruppe gebucht (50 € pro Stunde, mindestens 1 Stunde), und das Waldbaden (Shinrin-yoku) mit Petra dauert rund zwei Stunden, für Gruppen bis 6 Personen zu 15 € pro Person, mit Treffpunkt an der Rezeption in Mediis."),
+    ("Gibt es Sauna und Wellness?", "Ja: Die Sauna wird stundenweise für die ganze Gruppe gebucht (20 € pro Stunde, mindestens 1 Stunde), und das Waldbaden (Shinrin-yoku) mit Petra dauert rund zwei Stunden, für Gruppen bis 6 Personen zu 15 € pro Person, mit Treffpunkt an der Rezeption in Mediis."),
     ("Wie buche ich?", "Online im offiziellen Buchungssystem von Col Gentile, mit Verfügbarkeit und Preisen in Echtzeit, oder per E-Mail an info@albergodiffusosocchieve.it bzw. telefonisch unter +39 0433 819934."),
 ]
 
@@ -822,11 +822,11 @@ SERVICES_EN = {
     "sauna": dict(
         n="Sauna",
         title="Sauna in Socchieve, Carnia · Albergo Diffuso Col Gentile",
-        desc="A sauna for your group at the Albergo Diffuso in Socchieve, Carnia: 50 € per hour for the whole booking, from 1 hour, after a day on the trails.",
+        desc="A sauna for your group at the Albergo Diffuso in Socchieve, Carnia: 20 € per hour for the whole booking, from 1 hour, after a day on the trails.",
         lead="Dry heat after a day on the trails, for as long as you choose.",
         text=["After a hike, a day on the bike or on the slopes of Forni di Sopra, the sauna is the best way to loosen your muscles and slow down.",
               "It is booked by the hour for the whole group: the price is for the booking, not per person. One hour minimum, then you decide how long to stay."],
-        facts=[("50 €", "per hour, for the group"), ("1 hour", "minimum"), ("1 hour ahead", "minimum notice to book"), ("Socchieve", "Albergo Diffuso")],
+        facts=[("20 €", "per hour, for the group"), ("1 hour", "minimum"), ("1 hour ahead", "minimum notice to book"), ("Socchieve", "Albergo Diffuso")],
         unit="per hour, total price"),
 }
 
@@ -846,11 +846,11 @@ SERVICES_DE = {
     "sauna": dict(
         n="Sauna",
         title="Sauna in Socchieve, Karnien · Albergo Diffuso Col Gentile",
-        desc="Sauna für Ihre Gruppe im Albergo Diffuso in Socchieve, Karnien: 50 € pro Stunde für die ganze Buchung, ab 1 Stunde, nach einem Tag auf den Wanderwegen.",
+        desc="Sauna für Ihre Gruppe im Albergo Diffuso in Socchieve, Karnien: 20 € pro Stunde für die ganze Buchung, ab 1 Stunde, nach einem Tag auf den Wanderwegen.",
         lead="Trockene Wärme nach einem Tag auf den Wanderwegen, so lange Sie möchten.",
         text=["Nach einer Wanderung, einem Tag auf dem Rad oder auf den Pisten von Forni di Sopra ist die Sauna der beste Weg, die Muskeln zu lockern und zur Ruhe zu kommen.",
               "Sie wird stundenweise für die ganze Gruppe gebucht: Der Preis gilt pro Buchung, nicht pro Person. Mindestens eine Stunde, danach bestimmen Sie, wie lange Sie bleiben."],
-        facts=[("50 €", "pro Stunde, für die Gruppe"), ("1 Stunde", "Minimum"), ("1 Std. vorher", "Mindestvorlauf für die Buchung"), ("Socchieve", "Albergo Diffuso")],
+        facts=[("20 €", "pro Stunde, für die Gruppe"), ("1 Stunde", "Minimum"), ("1 Std. vorher", "Mindestvorlauf für die Buchung"), ("Socchieve", "Albergo Diffuso")],
         unit="pro Stunde, Gesamtpreis"),
 }
 
@@ -945,7 +945,7 @@ LEGAL["en"]["terms"] = ("Wellness booking terms · Albergo Diffuso Socchieve", "
 {_NOTE_EN}
 <p>These terms apply to sauna and forest bathing bookings offered by the Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), Italy, VAT no. 02790180307. They form part of the <a href="{{booking}}">general booking terms</a>.</p>
 <h2>Prices and duration</h2>
-<p>The sauna costs <strong>50 € per hour for the whole group</strong>, with a minimum of one hour. Forest bathing costs <strong>15 € per person</strong> and lasts about two hours. Actual prices, dates and availability are shown before you confirm; the price accepted in the booking applies.</p>
+<p>The sauna costs <strong>20 € per hour for the whole group</strong>, with a minimum of one hour. Forest bathing costs <strong>15 € per person</strong> and lasts about two hours. Actual prices, dates and availability are shown before you confirm; the price accepted in the booking applies.</p>
 <h2>Guarantee card</h2>
 <p>Online booking may require a guarantee card through Welora. Any charges and applicable financial terms must be shown before you confirm. No additional penalty for late cancellation or no-show is set here unless a specific condition was communicated and accepted in the booking.</p>
 <h2>Changes, cancellations and no-shows</h2>
@@ -958,7 +958,7 @@ LEGAL["de"]["terms"] = ("Buchungsbedingungen Wellness · Albergo Diffuso Socchie
 {_NOTE_DE}
 <p>Diese Bedingungen gelten für Buchungen von Sauna und Waldbaden beim Albergo Diffuso Socchieve „Col Gentile“, Via Roma 20, Mediis, 33020 Socchieve (UD), Italien, USt-IdNr. 02790180307. Sie sind Teil der <a href="{{booking}}">allgemeinen Buchungsbedingungen</a>.</p>
 <h2>Preise und Dauer</h2>
-<p>Die Sauna kostet <strong>50 € pro Stunde für die ganze Gruppe</strong>, Mindestdauer eine Stunde. Das Waldbaden kostet <strong>15 € pro Person</strong> und dauert rund zwei Stunden. Tatsächliche Preise, Termine und Verfügbarkeit werden vor der Bestätigung angezeigt; es gilt der bei der Buchung akzeptierte Preis.</p>
+<p>Die Sauna kostet <strong>20 € pro Stunde für die ganze Gruppe</strong>, Mindestdauer eine Stunde. Das Waldbaden kostet <strong>15 € pro Person</strong> und dauert rund zwei Stunden. Tatsächliche Preise, Termine und Verfügbarkeit werden vor der Bestätigung angezeigt; es gilt der bei der Buchung akzeptierte Preis.</p>
 <h2>Kreditkarte als Garantie</h2>
 <p>Für die Online-Buchung kann über Welora eine Kreditkarte als Garantie verlangt werden. Mögliche Belastungen und die geltenden finanziellen Bedingungen müssen vor der Bestätigung angezeigt werden. Eine zusätzliche Gebühr für späte Stornierung oder Nichterscheinen wird hier nicht festgelegt, sofern keine besondere Bedingung bei der Buchung mitgeteilt und akzeptiert wurde.</p>
 <h2>Änderungen, Stornierungen und Nichterscheinen</h2>
@@ -983,7 +983,7 @@ LEGAL["en"]["booking-terms"] = ("Booking terms · Albergo Diffuso Socchieve", "B
 <h2>5. No-shows and guarantee card</h2>
 <p>If the guest does not arrive on the agreed date and time and has not cancelled within the deadline, the financial conditions of the specific booking apply. For Col Gentile, the rule on any deposit paid continues to apply, unless a different rate was agreed. <strong>No additional standard percentage penalty for no-shows is published</strong>: further charges to the guarantee card may only be made if the amount or the method of calculating the penalty was communicated before confirmation and accepted by the guest. Where required, the guarantee card is requested and handled within the booking system.</p>
 <h2>6. Sauna and forest bathing</h2>
-<p>The sauna costs <strong>50 € per hour for the group</strong>; forest bathing <strong>15 € per person</strong>. Online bookings may require a guarantee card through Welora. Changes, cancellations and no-shows are governed by the specific conditions stated and accepted during booking. Unless a penalty is explicitly communicated before confirmation, this page introduces none. See also the <a href="{{terms}}">detailed wellness terms</a>.</p>
+<p>The sauna costs <strong>20 € per hour for the group</strong>; forest bathing <strong>15 € per person</strong>. Online bookings may require a guarantee card through Welora. Changes, cancellations and no-shows are governed by the specific conditions stated and accepted during booking. Unless a penalty is explicitly communicated before confirmation, this page introduces none. See also the <a href="{{terms}}">detailed wellness terms</a>.</p>
 <h2>7. House rules</h2>
 <p>Every guest, including minors, must present a valid identity document for legal requirements. Unregistered persons may not stay overnight. Smoking is not allowed in the accommodation. Please respect quiet hours from 23:00 to 08:00 and from 14:00 to 16:00. The rules prohibit taking the property's linen outside the apartments and using appliances to cook or heat food in rooms that are not kitchens. Missing linen, damage or lost keys may be charged according to the actual damage and applicable law.</p>
 <h2>8. Assistance and privacy</h2>
@@ -1006,7 +1006,7 @@ LEGAL["de"]["booking-terms"] = ("Buchungsbedingungen · Albergo Diffuso Socchiev
 <h2>5. Nichterscheinen (No-Show) und Kreditkarte als Garantie</h2>
 <p>Erscheint der Gast nicht zum vereinbarten Datum und zur vereinbarten Uhrzeit und hat er nicht fristgerecht storniert, gelten die finanziellen Bedingungen der jeweiligen Buchung. Für Col Gentile bleibt die Regel zur geleisteten Anzahlung anwendbar, sofern kein anderer Tarif vereinbart wurde. <strong>Eine zusätzliche Standard-Prozentgebühr für Nichterscheinen ist nicht veröffentlicht</strong>: Weitere Belastungen der Garantiekarte sind nur möglich, wenn Betrag oder Berechnungsweise der Gebühr vor der Bestätigung mitgeteilt und vom Gast akzeptiert wurden. Sofern vorgesehen, wird die Garantiekarte im Buchungssystem abgefragt und verwaltet.</p>
 <h2>6. Sauna und Waldbaden</h2>
-<p>Die Sauna kostet <strong>50 € pro Stunde für die Gruppe</strong>, das Waldbaden <strong>15 € pro Person</strong>. Für Online-Buchungen kann über Welora eine Kreditkarte als Garantie verlangt werden. Änderungen, Stornierungen und Nichterscheinen richten sich nach den bei der Buchung angegebenen und akzeptierten besonderen Bedingungen. Wurde vor der Bestätigung keine Gebühr ausdrücklich mitgeteilt, legt diese Seite keine fest. Siehe auch die <a href="{{terms}}">ausführlichen Bedingungen für die Wellness-Angebote</a>.</p>
+<p>Die Sauna kostet <strong>20 € pro Stunde für die Gruppe</strong>, das Waldbaden <strong>15 € pro Person</strong>. Für Online-Buchungen kann über Welora eine Kreditkarte als Garantie verlangt werden. Änderungen, Stornierungen und Nichterscheinen richten sich nach den bei der Buchung angegebenen und akzeptierten besonderen Bedingungen. Wurde vor der Bestätigung keine Gebühr ausdrücklich mitgeteilt, legt diese Seite keine fest. Siehe auch die <a href="{{terms}}">ausführlichen Bedingungen für die Wellness-Angebote</a>.</p>
 <h2>7. Hausordnung</h2>
 <p>Jeder Gast, auch Minderjährige, muss für die gesetzlichen Meldepflichten ein gültiges Ausweisdokument vorlegen. Nicht angemeldete Personen dürfen nicht übernachten. In den Unterkünften ist Rauchen nicht gestattet. Bitte halten Sie die Ruhezeiten von 23:00 bis 08:00 Uhr und von 14:00 bis 16:00 Uhr ein. Die Hausordnung untersagt, die Wäsche der Unterkunft aus den Wohnungen mitzunehmen und in Räumen ohne Küche Geräte zum Kochen oder Erwärmen von Speisen zu benutzen. Fehlende Wäsche, Schäden oder verlorene Schlüssel können nach dem tatsächlichen Schaden und gemäß geltendem Recht berechnet werden.</p>
 <h2>8. Hilfe und Datenschutz</h2>

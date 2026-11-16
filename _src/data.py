@@ -268,12 +268,12 @@ SERVICES = [
          price=15, unit="a persona", guide="Petra"),
     dict(id="sauna", welora_id=3, n="Sauna", hero=("foto/sauna.jpg" if (__import__("pathlib").Path(__file__).parent / "foto" / "sauna.jpg").exists() else None),
          title="Sauna a Socchieve, in Carnia · Albergo Diffuso Col Gentile",
-         desc="Sauna per il tuo gruppo all'Albergo Diffuso di Socchieve, in Carnia: 50 € l'ora per tutta la prenotazione, da 1 ora in su, dopo una giornata sui sentieri.",
+         desc="Sauna per il tuo gruppo all'Albergo Diffuso di Socchieve, in Carnia: 20 € l'ora per tutta la prenotazione, da 1 ora in su, dopo una giornata sui sentieri.",
          lead="Il calore secco dopo una giornata sui sentieri, per l'ora che scegli.",
          text=["Dopo un'escursione, una giornata in bici o sulle piste di Forni di Sopra, la sauna è il modo migliore per sciogliere i muscoli e rallentare.",
                "Si prenota a ore per tutto il gruppo: il prezzo è unico per la prenotazione, non a persona. Minimo un'ora, poi scegli tu quanto restare."],
-         facts=[("50 €", "all'ora, per il gruppo"), ("1 ora", "minimo"), ("1 ora prima", "anticipo minimo per prenotare"), ("Socchieve", "Albergo Diffuso")],
-         price=50, unit="all'ora, prezzo complessivo"),
+         facts=[("20 €", "all'ora, per il gruppo"), ("1 ora", "minimo"), ("1 ora prima", "anticipo minimo per prenotare"), ("Socchieve", "Albergo Diffuso")],
+         price=20, unit="all'ora, prezzo complessivo"),
 ]
 
-FAQ.insert(6, ("Ci sono sauna e attività benessere?", "Sì: la sauna si prenota a ore per tutto il gruppo (50 € l'ora, minimo 1 ora) e il bagno di bosco (Shinrin-yoku) con Petra dura circa due ore, per gruppi fino a 6 persone a 15 € a persona, con ritrovo alla reception di Mediis."))
+FAQ.insert(6, ("Ci sono sauna e attività benessere?", "Sì: la sauna si prenota a ore per tutto il gruppo (20 € l'ora, minimo 1 ora) e il bagno di bosco (Shinrin-yoku) con Petra dura circa due ore, per gruppi fino a 6 persone a 15 € a persona, con ritrovo alla reception di Mediis."))

@@ -1133,7 +1133,7 @@ def build_services():
     items = {"@context": "https://schema.org", "@type": "ItemList", "name": t("Benessere all'Albergo Diffuso Socchieve"), "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "url": U + svc_url(s), "name": s["n"]} for i, s in enumerate(S)]}
     page("benessere", t("Benessere in Carnia: sauna e bagno di bosco a Socchieve"),
-         t("Sauna (50 € l'ora per il gruppo) e bagno di bosco Shinrin-yoku con guida (15 € a persona) all'Albergo Diffuso di Socchieve, in Carnia. Prenota direttamente."),
+         t("Sauna (20 € l'ora per il gruppo) e bagno di bosco Shinrin-yoku con guida (15 € a persona) all'Albergo Diffuso di Socchieve, in Carnia. Prenota direttamente."),
          body, active="benessere", image="PanoramaNonta1.jpg", preload=preload_for("PanoramaNonta1.jpg"),
          ld=[items, crumbs_ld(crumbs)] + [service_ld(s) for s in S], images=[abs_img("PanoramaNonta1.jpg")])
 
@@ -1223,7 +1223,7 @@ def build_legal():
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
 <p>Queste condizioni si riferiscono alle prenotazioni di sauna e bagno di bosco proposte dall’Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307. Sono parte delle <a href="/condizioni-prenotazione">condizioni generali di prenotazione</a>.</p>
 <h2>Prezzi e durata</h2>
-<p>La sauna è proposta a <strong>50 € l’ora per l’intero gruppo</strong>, con durata minima di un’ora. Il bagno di bosco è proposto a <strong>15 € a persona</strong>, con durata indicativa di circa due ore. Prezzi, date e disponibilità effettivi sono mostrati prima della conferma; si applica il prezzo accettato nella prenotazione.</p>
+<p>La sauna è proposta a <strong>20 € l’ora per l’intero gruppo</strong>, con durata minima di un’ora. Il bagno di bosco è proposto a <strong>15 € a persona</strong>, con durata indicativa di circa due ore. Prezzi, date e disponibilità effettivi sono mostrati prima della conferma; si applica il prezzo accettato nella prenotazione.</p>
 <h2>Carta a garanzia</h2>
 <p>La prenotazione online può richiedere una carta a garanzia tramite Welora. Gli eventuali addebiti e le condizioni economiche applicabili devono essere mostrati prima della conferma. Non viene qui stabilito un importo aggiuntivo di penale per cancellazione tardiva o mancata presentazione in assenza di una specifica condizione comunicata e accettata nella prenotazione.</p>
 <h2>Modifiche, cancellazioni e mancata presentazione</h2>
@@ -1250,7 +1250,7 @@ def build_legal():
 <h2>5. Mancata presentazione (no-show) e carta a garanzia</h2>
 <p>Se il cliente non si presenta nella data e nell’orario concordati e non ha cancellato nei termini, si applicano le condizioni economiche della specifica prenotazione. Per Col Gentile resta applicabile la regola sulla caparra eventualmente versata, salvo diversa tariffa concordata. <strong>Non è pubblicata una penale percentuale standard aggiuntiva per il no-show</strong>: ulteriori addebiti su carta a garanzia possono essere effettuati soltanto se l’importo o il criterio di calcolo della penale sono stati comunicati prima della conferma e accettati dal cliente. La carta a garanzia viene richiesta e gestita nell’ambiente del sistema di prenotazione, quando previsto.</p>
 <h2>6. Sauna e bagno di bosco</h2>
-<p>La sauna è proposta a <strong>50 € l’ora per il gruppo</strong>; il bagno di bosco a <strong>15 € a persona</strong>. Le prenotazioni online possono richiedere una carta a garanzia tramite Welora. Modifiche, cancellazioni e no-show sono disciplinati dalle condizioni specifiche indicate e accettate in fase di prenotazione. In assenza di una penale esplicitamente comunicata prima della conferma, questa pagina non ne introduce una. Consulta anche le <a href="/condizioni-servizi">condizioni dettagliate dei servizi</a>.</p>
+<p>La sauna è proposta a <strong>20 € l’ora per il gruppo</strong>; il bagno di bosco a <strong>15 € a persona</strong>. Le prenotazioni online possono richiedere una carta a garanzia tramite Welora. Modifiche, cancellazioni e no-show sono disciplinati dalle condizioni specifiche indicate e accettate in fase di prenotazione. In assenza di una penale esplicitamente comunicata prima della conferma, questa pagina non ne introduce una. Consulta anche le <a href="/condizioni-servizi">condizioni dettagliate dei servizi</a>.</p>
 <h2>7. Regole del soggiorno</h2>
 <p>Ogni ospite, inclusi i minori, deve presentare un documento di identità idoneo per gli adempimenti di legge. Non possono pernottare persone non registrate. Negli alloggi non è consentito fumare. Si richiede il rispetto della quiete nelle fasce orarie 23:00–08:00 e 14:00–16:00. Il regolamento vieta di portare la biancheria della struttura all’esterno degli appartamenti e di utilizzare apparecchi per cucinare o riscaldare cibi nelle camere non adibite a cucina. Biancheria mancante, danni o smarrimenti di chiavi possono comportare un addebito valutato in base al danno effettivo e secondo la normativa applicabile.</p>
 <h2>8. Assistenza e privacy</h2>
