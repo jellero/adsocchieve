@@ -188,7 +188,7 @@ def footer():
       <div><h4>I borghi</h4>{borghi}</div>
       <div><h4>Esperienze</h4>{exps}<a href="/it/benessere">Benessere: sauna e bagno di bosco</a><a href="/it/territorio">Il territorio</a><a href="/it/contact">Contatti e come arrivare</a><a href="/la-farie">La Farie</a></div>
     </div>
-    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · P.I. {SITE['vat']}</span><span class="foot-links"><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a>{CREDITS}</span></div>
+    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · P.I. {SITE['vat']}</span><span class="foot-links"><a href="/condizioni-prenotazione">Condizioni di prenotazione</a><a href="/privacy">Privacy</a><a href="/cookies">Cookie</a>{CREDITS}</span></div>
   </div>
 </footer>"""
 
@@ -793,7 +793,7 @@ def build_farie():
   {('<a class="btn btn-primary" href="#prenota">Prenota ' + I('arrow') + '</a>') if data.FARIE["welora"]["live"] else ('<a class="btn btn-primary" href="#scrivici">Chiedi disponibilità ' + I('arrow') + '</a>')}
 </div>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="/">Albergo Diffuso Socchieve</a><a href="/privacy">Privacy</a>{CREDITS}</span></div></div></footer>
+<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="/">Albergo Diffuso Socchieve</a><a href="/condizioni-prenotazione">Condizioni di prenotazione</a><a href="/privacy">Privacy</a>{CREDITS}</span></div></div></footer>
 </div>"""
     rules = "".join(f"<div><b>{k}</b><span>{v}</span></div>" for k, v in F["rules"])
     near = "".join(f"<li><b>{n}</b><span>{d}</span></li>" for n, d in F["near"])
@@ -1007,41 +1007,78 @@ def build_farie_extra():
 
 
 def build_legal():
-    privacy = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
-  <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Privacy</h1>
-  <p>Titolare del trattamento: {SITE['legal']}, {SITE['street']}, {SITE['locality']}, {SITE['zip']} Socchieve (UD), P.I. {SITE['vat']}, email <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>
-  <h2>Dati raccolti da questo sito</h2>
-  <p>Il sito non usa cookie di profilazione né strumenti di statistica e non contiene moduli di raccolta dati. I font e le immagini sono ospitati sul nostro server. Il server registra, come ogni sito web, dati tecnici di navigazione (indirizzo IP, data e ora, pagina richiesta) per motivi di sicurezza e funzionamento.</p>
-  <h2>Contatti e prenotazioni</h2>
-  <p>Se ci scrivi o ci telefoni, usiamo i tuoi dati solo per risponderti e gestire il soggiorno. Le prenotazioni online delle case Col Gentile avvengono sul sistema Slope; quelle di sauna, bagno di bosco e La Farie sul sistema Welora (portal.welora.it), che ricevono i dati che inserisci nei loro moduli e li trattano per gestire la prenotazione; la mappa della pagina contatti è fornita da OpenStreetMap; il tour virtuale carica la libreria Pannellum da cdnjs (Cloudflare) solo quando lo avvii.</p>
-  <h2>I tuoi diritti</h2>
-  <p>Puoi chiedere in ogni momento accesso, rettifica, cancellazione o limitazione dei tuoi dati scrivendo a {SITE['email']}, e proporre reclamo al Garante per la protezione dei dati personali.</p>
+    privacy = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
+<span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Privacy</h1>
+<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
+<p>La presente informativa riguarda il sito dell’Albergo Diffuso Socchieve “Col Gentile”, i moduli di contatto e le richieste collegate ai soggiorni e ai servizi. È resa ai sensi del Regolamento (UE) 2016/679 (GDPR).</p>
+<h2>1. Titolare del trattamento</h2>
+<p><strong>Zanier Lucio</strong> · Albergo Diffuso Socchieve “Col Gentile” · Via Roma 20, Mediis, 33020 Socchieve (UD) · P. IVA 02790180307. Email: <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a> · Telefono: <a href="tel:+390433819934">+39 0433 819934</a>.</p>
+<h2>2. Dati trattati</h2>
+<p>Nei moduli contatti possono essere richiesti nome e cognome, indirizzo email, telefono (facoltativo), messaggio e informazioni sulla struttura o il servizio a cui si riferisce la richiesta. Per prenotazioni e soggiorni possono essere trattati dati identificativi e di contatto, date, numero di ospiti, preferenze, informazioni necessarie alla prenotazione e agli adempimenti previsti dalla legge. I server possono registrare dati tecnici di accesso, tra cui indirizzo IP, data, ora e risorse richieste.</p>
+<h2>3. Finalità e basi giuridiche</h2>
+<p>I dati sono utilizzati per rispondere alle richieste e predisporre preventivi (misure precontrattuali), gestire prenotazioni, soggiorni e servizi acquistati (esecuzione del contratto), adempiere agli obblighi fiscali, amministrativi e di pubblica sicurezza (obbligo legale) e proteggere la sicurezza del sito e prevenire abusi o spam (legittimo interesse). Non sono previsti trattamenti promozionali mediante i moduli descritti, salvo specifica informazione separata.</p>
+<h2>4. Prenotazioni, pagamenti e carta a garanzia</h2>
+<p>Le prenotazioni degli alloggi Col Gentile sono collegate a <strong>Slope</strong>; quelle di La Farie, sauna e bagno di bosco a <strong>Welora</strong>. Quando si utilizza un sistema esterno di prenotazione o pagamento, i dati inseriti nel relativo ambiente sono trattati anche dai fornitori coinvolti secondo i rispettivi ruoli e informative. Il modulo contatti del sito non richiede il numero della carta di credito. Le condizioni della carta a garanzia e degli eventuali addebiti sono indicate nella procedura di prenotazione e nelle <a href="/condizioni-prenotazione">condizioni di prenotazione</a>.</p>
+<h2>5. Destinatari e strumenti esterni</h2>
+<p>I dati possono essere comunicati, nei limiti necessari, a fornitori di hosting e posta elettronica, servizi di prenotazione e pagamento, collaboratori autorizzati, consulenti e autorità nei casi previsti dalla legge. Il sito può collegare mappe OpenStreetMap, tour 360° con librerie esterne e altri contenuti o servizi di terzi. Quando tali risorse vengono caricate, i relativi fornitori possono ricevere dati tecnici di connessione.</p>
+<h2>6. Conservazione e sicurezza</h2>
+<p>Le richieste sono conservate per il tempo necessario a rispondere e a gestire gli eventuali rapporti successivi; i dati di prenotazione e quelli amministrativi per i periodi imposti dalle norme applicabili. Si adottano misure tecniche e organizzative adeguate a proteggere i dati personali.</p>
+<h2>7. Trasferimenti internazionali</h2>
+<p>L’uso di servizi esterni può comportare trasferimenti di dati al di fuori dello Spazio Economico Europeo. Quando presenti, tali trasferimenti devono avvenire secondo le garanzie previste dal GDPR.</p>
+<h2>8. Diritti dell’interessato</h2>
+<p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità o opposizione nei casi previsti dalla normativa e revocare eventuali consensi senza pregiudicare la liceità dei trattamenti precedenti. Per esercitare i diritti scrivi a <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>. Puoi proporre reclamo al Garante per la protezione dei dati personali.</p>
+<h2>9. Cookie e aggiornamenti</h2>
+<p>Per informazioni sui cookie e sui servizi integrati consulta la <a href="/cookies">Cookie Policy</a>. Questa informativa può essere aggiornata; la versione vigente è pubblicata su questa pagina.</p>
 </div></section>"""
-    page("/privacy", "Privacy · Albergo Diffuso Socchieve", "Informativa privacy del sito dell'Albergo Diffuso Socchieve Col Gentile.", privacy, solid=True)
-    cookies = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
-  <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Cookie</h1>
-  <p>Questo sito non installa cookie di profilazione né cookie di terze parti per statistiche o pubblicità, per questo non mostra banner di consenso.</p>
-  <p>I sistemi di prenotazione Slope (case Col Gentile) e Welora (sauna, bagno di bosco e La Farie, inserito nelle pagine), la mappa di OpenStreetMap nella pagina contatti hanno le proprie informative. Per domande scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p>
+    page("/privacy", "Privacy · Albergo Diffuso Socchieve", "Informativa privacy GDPR per ospiti, contatti, prenotazioni e servizi dell'Albergo Diffuso Socchieve.", privacy, solid=True)
+    cookies = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
+<span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Cookie</h1>
+<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
+<p>Il sito utilizza le risorse tecniche necessarie a visualizzare le pagine e a gestire le richieste. Non sono dichiarati sistemi di analisi o profilazione gestiti direttamente dal sito; tuttavia i servizi esterni integrati possono utilizzare cookie e tecnologie analoghe.</p>
+<h2>Servizi esterni</h2>
+<p>I sistemi di prenotazione <strong>Slope</strong> e <strong>Welora</strong> possono utilizzare propri cookie e strumenti tecnici nei rispettivi ambienti o widget. Altri componenti esterni, come la mappa OpenStreetMap e il tour virtuale, possono ricevere dati tecnici quando vengono caricati. Consulta le informative rese disponibili dai rispettivi fornitori per conoscere categorie, finalità, durata dei cookie e modalità di gestione delle preferenze.</p>
+<h2>Preferenze e contatti</h2>
+<p>Puoi gestire o eliminare i cookie attraverso le impostazioni del browser e, quando disponibili, attraverso i controlli presenti nei servizi esterni. Per richieste relative ai dati personali consulta l’<a href="/privacy">informativa privacy</a> o scrivi a <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
 </div></section>"""
-    page("/cookies", "Cookie · Albergo Diffuso Socchieve", "Informativa cookie del sito dell'Albergo Diffuso Socchieve Col Gentile.", cookies, solid=True)
-    terms = f"""<section class="d-body" style="padding-top:140px"><div class="wrap prose">
-  <span class="eyebrow">Benessere</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione dei servizi</h1>
-  <p>Valgono per le prenotazioni di sauna e bagno di bosco fatte online, via email o per telefono presso {SITE['legal']}, {SITE['street']}, {SITE['locality']}, {SITE['zip']} Socchieve (UD), P.I. {SITE['vat']}.</p>
-  <h2>Prezzi</h2>
-  <p>I prezzi sono in euro. Il prezzo mostrato al momento della prenotazione è quello definitivo: per il bagno di bosco è a persona, per la sauna è all'ora per tutto il gruppo.</p>
-  <h2>Carta di credito a garanzia</h2>
-  <p>Per prenotare online è necessaria una carta di credito, richiesta a garanzia della prenotazione: i dati della carta vengono inseriti e gestiti in modo sicuro dal sistema di prenotazione al momento della conferma. Eventuali addebiti, ad esempio in caso di mancata presentazione o di cancellazione tardiva, sono indicati prima di confermare.</p>
-  <h2>Conferma</h2>
-  <p>Dopo la prenotazione ricevi un'email di conferma con data, orario e numero di partecipanti. Il numero di partecipanti non può superare la capienza indicata per il servizio.</p>
-  <h2>Modifiche e cancellazioni</h2>
-  <p>Per cambiare orario, numero di persone o per cancellare, scrivi a <a href="mailto:{SITE['email']}">{SITE['email']}</a> o chiama il <a href="tel:{SITE['phone_href']}">{SITE['phone']}</a> il prima possibile: modifiche e cancellazioni vanno concordate con la struttura.</p>
-  <h2>Bagno di bosco</h2>
-  <p>È un'attività all'aperto su sentieri e terreno boschivo: servono abbigliamento e calzature adatte, come indicato nella pagina del servizio.</p>
-  <h2>Dati personali</h2>
-  <p>I dati della prenotazione sono trattati come descritto nell'<a href="/privacy">informativa privacy</a>.</p>
+    page("/cookies", "Cookie · Albergo Diffuso Socchieve", "Informativa sui cookie del sito e sui servizi esterni di prenotazione.", cookies, solid=True)
+    terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
+<span class="eyebrow">Benessere</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione dei servizi</h1>
+<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
+<p>Queste condizioni si riferiscono alle prenotazioni di sauna e bagno di bosco proposte dall’Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307. Sono parte delle <a href="/condizioni-prenotazione">condizioni generali di prenotazione</a>.</p>
+<h2>Prezzi e durata</h2>
+<p>La sauna è proposta a <strong>50 € l’ora per l’intero gruppo</strong>, con durata minima di un’ora. Il bagno di bosco è proposto a <strong>15 € a persona</strong>, con durata indicativa di circa due ore. Prezzi, date e disponibilità effettivi sono mostrati prima della conferma; si applica il prezzo accettato nella prenotazione.</p>
+<h2>Carta a garanzia</h2>
+<p>La prenotazione online può richiedere una carta a garanzia tramite Welora. Gli eventuali addebiti e le condizioni economiche applicabili devono essere mostrati prima della conferma. Non viene qui stabilito un importo aggiuntivo di penale per cancellazione tardiva o mancata presentazione in assenza di una specifica condizione comunicata e accettata nella prenotazione.</p>
+<h2>Modifiche, cancellazioni e mancata presentazione</h2>
+<p>Per modificare o annullare una prenotazione contatta tempestivamente la struttura all’indirizzo <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a> o al numero <a href="tel:+390433819934">+39 0433 819934</a>. In caso di mancata presentazione valgono soltanto le condizioni di penale rese note prima della conferma e accettate per quello specifico servizio; nessuna percentuale standard è indicata nel regolamento pubblico consultato.</p>
+<h2>Svolgimento dei servizi</h2>
+<p>Il bagno di bosco si svolge all’aperto su sentieri e terreno boschivo: sono necessari abbigliamento e calzature adatti. Per entrambi i servizi valgono la capienza, l’orario e le indicazioni comunicate nella conferma. Per la privacy consulta l’<a href="/privacy">informativa privacy</a>.</p>
 </div></section>"""
     page("/condizioni-servizi", "Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve",
-         "Condizioni per prenotare sauna e bagno di bosco all'Albergo Diffuso Socchieve: prezzi, carta di credito a garanzia, modifiche e cancellazioni.", terms, solid=True)
+         "Condizioni per prenotazioni sauna e bagno di bosco: prezzo, carta a garanzia, cancellazioni e mancata presentazione.", terms, solid=True)
+    booking_terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
+<span class="eyebrow">Informazioni contrattuali</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione</h1>
+<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
+<p>Le presenti condizioni riguardano i soggiorni presso l’Albergo Diffuso Socchieve “Col Gentile”, il bed &amp; breakfast La Farie e i servizi sauna e bagno di bosco. Gestore: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307 · <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
+<h2>1. Prezzi, disponibilità e conferma</h2>
+<p>Disponibilità, prezzo totale, eventuali supplementi, caparra, condizioni della tariffa e modalità di pagamento sono mostrati prima della conferma della prenotazione o comunicati nel preventivo accettato. La prenotazione è confermata alle condizioni riportate nella conferma inviata al cliente. Condizioni specifiche di una tariffa, espressamente comunicate e accettate prima della conferma, prevalgono sulle indicazioni generali di questa pagina.</p>
+<h2>2. Soggiorni negli alloggi Col Gentile</h2>
+<p>Secondo il <a href="https://www.albergodiffusosocchieve.it/it/alloggi" target="_blank" rel="noopener noreferrer">regolamento pubblicato sul precedente sito ufficiale</a>, il prezzo comprende l’uso dell’alloggio e la biancheria da bagno e da camera. Gli alloggi sono disponibili dall’orario delle 12:00 e devono essere liberati entro le 10:00 del giorno di partenza, salvo accordi o indicazioni specifiche della conferma. Il saldo è previsto preferibilmente all’arrivo; gli eventuali extra sono conteggiati alla partenza.</p>
+<h2>3. Caparra, cancellazione e partenza anticipata negli alloggi Col Gentile</h2>
+<p>Il regolamento pubblicato prevede che, in caso di disdetta, la <strong>caparra eventualmente versata non venga rimborsata</strong>; previo accordo con la direzione può essere consentito recuperarla in un’altra data a condizioni equivalenti. Per la partenza anticipata è previsto l’addebito del costo del solo alloggio per il periodo non usufruito, salvo diverso accordo. Se la tariffa prenotata presenta una diversa politica di cancellazione, vale quella comunicata e accettata durante la prenotazione.</p>
+<h2>4. La Farie</h2>
+<p>Per il bed &amp; breakfast La Farie la condizione indicata nella pagina di prenotazione è: <strong>cancellazione gratuita tramite il portale fino a 7 giorni prima dell’arrivo, entro le ore 18:00</strong>. Per cancellazioni successive, mancata presentazione, eventuali caparre o addebiti si applicano esclusivamente gli importi e le condizioni espressamente mostrati e accettati durante la prenotazione; la presente pagina non introduce una percentuale di penale ulteriore.</p>
+<h2>5. Mancata presentazione (no-show) e carta a garanzia</h2>
+<p>Se il cliente non si presenta nella data e nell’orario concordati e non ha cancellato nei termini, si applicano le condizioni economiche della specifica prenotazione. Per Col Gentile resta applicabile la regola sulla caparra eventualmente versata, salvo diversa tariffa concordata. <strong>Non è pubblicata una penale percentuale standard aggiuntiva per il no-show</strong>: ulteriori addebiti su carta a garanzia possono essere effettuati soltanto se l’importo o il criterio di calcolo della penale sono stati comunicati prima della conferma e accettati dal cliente. La carta a garanzia viene richiesta e gestita nell’ambiente del sistema di prenotazione, quando previsto.</p>
+<h2>6. Sauna e bagno di bosco</h2>
+<p>La sauna è proposta a <strong>50 € l’ora per il gruppo</strong>; il bagno di bosco a <strong>15 € a persona</strong>. Le prenotazioni online possono richiedere una carta a garanzia tramite Welora. Modifiche, cancellazioni e no-show sono disciplinati dalle condizioni specifiche indicate e accettate in fase di prenotazione. In assenza di una penale esplicitamente comunicata prima della conferma, questa pagina non ne introduce una. Consulta anche le <a href="/condizioni-servizi">condizioni dettagliate dei servizi</a>.</p>
+<h2>7. Regole del soggiorno</h2>
+<p>Ogni ospite, inclusi i minori, deve presentare un documento di identità idoneo per gli adempimenti di legge. Non possono pernottare persone non registrate. Negli alloggi non è consentito fumare. Si richiede il rispetto della quiete nelle fasce orarie 23:00–08:00 e 14:00–16:00. Eventuali danni o smarrimenti di chiavi sono valutati secondo l’entità del danno, nel rispetto della normativa applicabile.</p>
+<h2>8. Assistenza e privacy</h2>
+<p>Per cancellazioni, modifiche o chiarimenti contatta <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a> oppure <a href="tel:+390433819934">+39 0433 819934</a>. I dati personali sono trattati secondo l’<a href="/privacy">informativa privacy</a>.</p>
+</div></section>"""
+    page("/condizioni-prenotazione", "Condizioni di prenotazione · Albergo Diffuso Socchieve",
+         "Condizioni di prenotazione per soggiorni Col Gentile, La Farie, sauna e bagno di bosco: caparra, cancellazioni, no-show e carta a garanzia.", booking_terms, solid=True)
     err = f"""<section class="err"><div><span class="eyebrow">Errore 404</span><h1>Pagina <em>non trovata.</em></h1><p style="margin:20px auto 30px;max-width:460px;color:var(--muted)">Forse la pagina è stata spostata con il nuovo sito. Ecco da dove ripartire:</p>
   <div class="row" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-dark" href="/it/alloggi/">Le case</a><a class="btn btn-primary" href="/">Home</a></div></div></section>"""
     page("/404", "Pagina non trovata · Albergo Diffuso Socchieve", "La pagina richiesta non esiste.", err, solid=True, noindex=True)
