@@ -11,6 +11,7 @@ risultanti sono nel repository e si pubblicano su qualsiasi hosting statico
 | `_src/data.py` | **Tutti i contenuti** in italiano: case, borghi, esperienze, FAQ, distanze, contatti |
 | `_src/i18n.py` | **Traduzioni inglese e tedesco**: testi dell'interfaccia e contenuti di `data.py` |
 | `_src/site.css`, `_src/site.js` | Stile e comportamento (filtri, galleria, tour 360°, menu) |
+| `_src/consent.js` | Banner cookie e Google Analytics 4 (`G-WPJJCPTR36`), caricato solo dopo il consenso |
 | `_src/build.py` | Genera le pagine HTML, `sitemap.xml`, `robots.txt`, `_redirects`, icone |
 | `_src/fetch_assets.py` | Scarica le foto dal vecchio sito, le ottimizza in WebP e scarica i font |
 | `_src/serve.py` | Anteprima locale con URL senza `.html`, come sull'hosting |

@@ -312,7 +312,7 @@ def footer():
       <div><h4>{t('I borghi')}</h4>{borghi}</div>
       <div><h4>{t('Esperienze')}</h4>{exps}<a href="{P('benessere')}">{t('Benessere: sauna e bagno di bosco')}</a><a href="{P('territorio')}">{t('Il territorio')}</a><a href="{P('contact')}">{t('Contatti e come arrivare')}</a><a href="{P('farie')}">La Farie</a></div>
     </div>
-    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · {t('P.I.')} {SITE['vat']}</span><span class="foot-links"><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a><a href="{P('cookies')}">{t('Cookie')}</a>{credits()}</span></div>
+    <div class="foot-bottom"><span>© {datetime.date.today().year} {SITE['legal']} · {t('P.I.')} {SITE['vat']}</span><span class="foot-links"><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a><a href="{P('cookies')}">{t('Cookie')}</a><a href="#" data-cookie-settings>{t('Preferenze cookie')}</a>{credits()}</span></div>
   </div>
 </footer>"""
 
@@ -414,6 +414,7 @@ def page(key, title, desc, body, *, active="", image=None, ld=(), solid=False, n
 {content}
 {mbar}
 {lightbox()}
+<script src="/assets/consent.js?v={CONSENT_V}" defer></script>
 <script src="/assets/site.js?v={JS_V}" defer></script>
 </body>
 </html>
@@ -964,7 +965,7 @@ def build_farie():
   {lang_switch("lang lang-drawer")}
 </div>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="{P('home')}">Albergo Diffuso Socchieve</a><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a>{credits()}</span></div></div></footer>
+<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="{P('home')}">Albergo Diffuso Socchieve</a><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a><a href="{P('cookies')}">{t('Cookie')}</a><a href="#" data-cookie-settings>{t('Preferenze cookie')}</a>{credits()}</span></div></div></footer>
 </div>"""
     rules = "".join(f"<div><b>{k}</b><span>{v}</span></div>" for k, v in F["rules"])
     near = "".join(f"<li><b>{n}</b><span>{d}</span></li>" for n, d in F["near"])
@@ -1186,7 +1187,7 @@ def build_legal():
     pages = {}
     privacy = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Privacy</h1>
-<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
+<p><strong>Versione 1.1 · 16 novembre 2026</strong></p>
 <p>La presente informativa riguarda il sito dell’Albergo Diffuso Socchieve “Col Gentile”, i moduli di contatto e le richieste collegate ai soggiorni e ai servizi. È resa ai sensi del Regolamento (UE) 2016/679 (GDPR).</p>
 <h2>1. Titolare del trattamento</h2>
 <p><strong>Zanier Lucio</strong> · Albergo Diffuso Socchieve “Col Gentile” · Via Roma 20, Mediis, 33020 Socchieve (UD) · P. IVA 02790180307. Email: <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a> · Telefono: <a href="tel:+390433819934">+39 0433 819934</a>.</p>
@@ -1197,7 +1198,7 @@ def build_legal():
 <h2>4. Prenotazioni, pagamenti e carta a garanzia</h2>
 <p>Le prenotazioni degli alloggi Col Gentile sono collegate a <strong>Slope</strong>; quelle di La Farie, sauna e bagno di bosco a <strong>Welora</strong>. Quando si utilizza un sistema esterno di prenotazione o pagamento, i dati inseriti nel relativo ambiente sono trattati anche dai fornitori coinvolti secondo i rispettivi ruoli e informative. Il modulo contatti del sito non richiede il numero della carta di credito. Le condizioni della carta a garanzia e degli eventuali addebiti sono indicate nella procedura di prenotazione e nelle <a href="/condizioni-prenotazione">condizioni di prenotazione</a>.</p>
 <h2>5. Destinatari e strumenti esterni</h2>
-<p>I dati possono essere comunicati, nei limiti necessari, a fornitori di hosting e posta elettronica, servizi di prenotazione e pagamento, collaboratori autorizzati, consulenti e autorità nei casi previsti dalla legge. Il sito può collegare mappe OpenStreetMap, tour 360° con librerie esterne e altri contenuti o servizi di terzi. Quando tali risorse vengono caricate, i relativi fornitori possono ricevere dati tecnici di connessione.</p>
+<p>I dati possono essere comunicati, nei limiti necessari, a fornitori di hosting e posta elettronica, servizi di prenotazione e pagamento, collaboratori autorizzati, consulenti e autorità nei casi previsti dalla legge. Il sito può collegare mappe OpenStreetMap, tour 360° con librerie esterne e altri contenuti o servizi di terzi. Quando tali risorse vengono caricate, i relativi fornitori possono ricevere dati tecnici di connessione. Solo con il consenso espresso nel banner dei cookie il sito utilizza Google Analytics 4 (Google Ireland Limited) per statistiche aggregate sulle visite; il consenso si revoca in qualsiasi momento da «Preferenze cookie». Dettagli nella <a href="/cookies">Cookie Policy</a>.</p>
 <h2>6. Conservazione e sicurezza</h2>
 <p>Le richieste sono conservate per il tempo necessario a rispondere e a gestire gli eventuali rapporti successivi; i dati di prenotazione e quelli amministrativi per i periodi imposti dalle norme applicabili. Si adottano misure tecniche e organizzative adeguate a proteggere i dati personali.</p>
 <h2>7. Trasferimenti internazionali</h2>
@@ -1210,8 +1211,13 @@ def build_legal():
     pages["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "Informativa privacy GDPR per ospiti, contatti, prenotazioni e servizi dell'Albergo Diffuso Socchieve.", privacy)
     cookies = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Cookie</h1>
-<p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
-<p>Il sito utilizza le risorse tecniche necessarie a visualizzare le pagine e a gestire le richieste. Non sono dichiarati sistemi di analisi o profilazione gestiti direttamente dal sito; tuttavia i servizi esterni integrati possono utilizzare cookie e tecnologie analoghe.</p>
+<p><strong>Versione 1.1 · 16 novembre 2026</strong></p>
+<p>Il sito utilizza cookie e strumenti tecnici necessari a visualizzare le pagine, gestire le richieste e ricordare la tua scelta sui cookie. Solo con il tuo consenso utilizza anche Google Analytics per misurare in forma aggregata le visite.</p>
+<h2>Cookie tecnici</h2>
+<p>Sono necessari al funzionamento del sito e non richiedono consenso. La tua scelta sui cookie è salvata nella memoria locale del browser (chiave <code>adsocchieve-consent-v1</code>) finché non la cambi o non cancelli i dati del sito.</p>
+<h2>Google Analytics (statistiche, solo con consenso)</h2>
+<p>Se clicchi «Accetta» nel banner, il sito carica Google Analytics 4, fornito da Google Ireland Limited, per contare visite e pagine viste e capire come viene usato il sito. Vengono impostati i cookie <code>_ga</code> e <code>_ga_*</code>, con durata massima di 2 anni. I dati sono trattati da Google come responsabile del trattamento e possono essere trasferiti negli Stati Uniti con le garanzie previste dal GDPR. Non usiamo Google Analytics per pubblicità o profilazione. Se rifiuti, Google Analytics non viene caricato.</p>
+<p>Puoi cambiare idea in qualsiasi momento dal link <a href="#" data-cookie-settings>Preferenze cookie</a> in fondo a ogni pagina.</p>
 <h2>Servizi esterni</h2>
 <p>I sistemi di prenotazione <strong>Slope</strong> e <strong>Welora</strong> possono utilizzare propri cookie e strumenti tecnici nei rispettivi ambienti o widget. Altri componenti esterni, come la mappa OpenStreetMap e il tour virtuale, possono ricevere dati tecnici quando vengono caricati. Consulta le informative rese disponibili dai rispettivi fornitori per conoscere categorie, finalità, durata dei cookie e modalità di gestione delle preferenze.</p>
 <h2>Preferenze e contatti</h2>
@@ -1323,12 +1329,14 @@ def build_icons():
 
 
 def main():
-    global CSS_V, JS_V
+    global CSS_V, JS_V, CONSENT_V
     (ROOT / "assets").mkdir(exist_ok=True)
     css = (SRC / "fonts.css").read_text(encoding="utf-8").replace("url(/assets/fonts/", "url(fonts/") + "\n" + (SRC / "site.css").read_text(encoding="utf-8")
     (ROOT / "assets" / "site.css").write_text(css, encoding="utf-8")
     shutil.copy(SRC / "site.js", ROOT / "assets" / "site.js")
+    shutil.copy(SRC / "consent.js", ROOT / "assets" / "consent.js")
     CSS_V, JS_V = asset_ver(ROOT / "assets" / "site.css"), asset_ver(ROOT / "assets" / "site.js")
+    CONSENT_V = asset_ver(ROOT / "assets" / "consent.js")
     for lang in LANGS:
         localize(lang)
         build_home(); build_catalog()

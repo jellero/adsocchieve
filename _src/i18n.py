@@ -31,6 +31,7 @@ UI = {
     "Contatti e come arrivare": ("Contact and getting here", "Kontakt und Anreise"),
     "P.I.": ("VAT no.", "USt-IdNr."),
     "Cookie": ("Cookies", "Cookies"),
+    "Preferenze cookie": ("Cookie preferences", "Cookie-Einstellungen"),
     "Condizioni di prenotazione": ("Booking terms", "Buchungsbedingungen"),
     "Galleria fotografica": ("Photo gallery", "Fotogalerie"),
     "Chiudi galleria": ("Close gallery", "Galerie schließen"),
@@ -877,7 +878,7 @@ _VER_DE = "<p><strong>Version 1.0 · 16. November 2026</strong></p>"
 LEGAL = {"en": {}, "de": {}}
 
 LEGAL["en"]["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "GDPR privacy notice for guests, enquiries, bookings and services of the Albergo Diffuso Socchieve.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Privacy</h1>
-{_VER_EN}
+<p><strong>Version 1.1 · 16 November 2026</strong></p>
 {_NOTE_EN}
 <p>This notice covers the website of the Albergo Diffuso Socchieve “Col Gentile”, its contact forms and enquiries relating to stays and services. It is provided under Regulation (EU) 2016/679 (GDPR).</p>
 <h2>1. Data controller</h2>
@@ -889,7 +890,7 @@ LEGAL["en"]["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "GDPR privacy 
 <h2>4. Bookings, payments and guarantee card</h2>
 <p>Bookings for the Col Gentile houses go through <strong>Slope</strong>; bookings for La Farie, the sauna and forest bathing go through <strong>Welora</strong>. When you use an external booking or payment system, the data you enter there is also processed by the providers involved, according to their respective roles and privacy notices. The website's contact form does not ask for your credit card number. The terms of the guarantee card and of any charges are shown in the booking process and in the <a href="{{booking}}">booking terms</a>.</p>
 <h2>5. Recipients and external tools</h2>
-<p>Where necessary, data may be shared with hosting and email providers, booking and payment services, authorised staff, advisers and, where required by law, the authorities. The website may link to OpenStreetMap maps, 360° tours using external libraries and other third-party content or services. When these resources are loaded, their providers may receive technical connection data.</p>
+<p>Where necessary, data may be shared with hosting and email providers, booking and payment services, authorised staff, advisers and, where required by law, the authorities. The website may link to OpenStreetMap maps, 360° tours using external libraries and other third-party content or services. When these resources are loaded, their providers may receive technical connection data. Only with the consent given in the cookie banner does the website use Google Analytics 4 (Google Ireland Limited) for aggregate visit statistics; consent can be withdrawn at any time from “Cookie preferences”. Details in the <a href="{{cookies}}">Cookie Policy</a>.</p>
 <h2>6. Retention and security</h2>
 <p>Enquiries are kept for as long as needed to reply and to manage any subsequent relationship; booking and administrative data for the periods required by applicable law. Appropriate technical and organisational measures are in place to protect personal data.</p>
 <h2>7. International transfers</h2>
@@ -900,7 +901,7 @@ LEGAL["en"]["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "GDPR privacy 
 <p>For information on cookies and integrated services, see the <a href="{{cookies}}">Cookie Policy</a>. This notice may be updated; the current version is published on this page.</p>""" + _CLOSE)
 
 LEGAL["de"]["privacy"] = ("Datenschutz · Albergo Diffuso Socchieve", "Datenschutzerklärung nach DSGVO für Gäste, Anfragen, Buchungen und Angebote des Albergo Diffuso Socchieve.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Datenschutz</h1>
-{_VER_DE}
+<p><strong>Version 1.1 · 16. November 2026</strong></p>
 {_NOTE_DE}
 <p>Diese Erklärung betrifft die Website des Albergo Diffuso Socchieve „Col Gentile“, die Kontaktformulare und Anfragen zu Aufenthalten und Angeboten. Sie erfolgt gemäß der Verordnung (EU) 2016/679 (DSGVO).</p>
 <h2>1. Verantwortlicher</h2>
@@ -912,7 +913,7 @@ LEGAL["de"]["privacy"] = ("Datenschutz · Albergo Diffuso Socchieve", "Datenschu
 <h2>4. Buchungen, Zahlungen und Kreditkarte als Garantie</h2>
 <p>Buchungen der Häuser von Col Gentile laufen über <strong>Slope</strong>, Buchungen von La Farie, Sauna und Waldbaden über <strong>Welora</strong>. Wenn Sie ein externes Buchungs- oder Zahlungssystem nutzen, werden die dort eingegebenen Daten auch von den beteiligten Anbietern gemäß ihrer jeweiligen Rolle und Datenschutzhinweise verarbeitet. Das Kontaktformular der Website fragt keine Kreditkartennummer ab. Die Bedingungen der Kreditkartengarantie und möglicher Belastungen werden im Buchungsablauf und in den <a href="{{booking}}">Buchungsbedingungen</a> angegeben.</p>
 <h2>5. Empfänger und externe Dienste</h2>
-<p>Die Daten können, soweit nötig, an Hosting- und E-Mail-Anbieter, Buchungs- und Zahlungsdienste, befugte Mitarbeitende, Berater sowie in gesetzlich vorgesehenen Fällen an Behörden weitergegeben werden. Die Website kann OpenStreetMap-Karten, 360°-Rundgänge mit externen Bibliotheken und andere Inhalte oder Dienste Dritter einbinden. Wenn diese Ressourcen geladen werden, können deren Anbieter technische Verbindungsdaten erhalten.</p>
+<p>Die Daten können, soweit nötig, an Hosting- und E-Mail-Anbieter, Buchungs- und Zahlungsdienste, befugte Mitarbeitende, Berater sowie in gesetzlich vorgesehenen Fällen an Behörden weitergegeben werden. Die Website kann OpenStreetMap-Karten, 360°-Rundgänge mit externen Bibliotheken und andere Inhalte oder Dienste Dritter einbinden. Wenn diese Ressourcen geladen werden, können deren Anbieter technische Verbindungsdaten erhalten. Nur mit der im Cookie-Banner erteilten Einwilligung nutzt die Website Google Analytics 4 (Google Ireland Limited) für zusammengefasste Besuchsstatistiken; die Einwilligung kann jederzeit über „Cookie-Einstellungen“ widerrufen werden. Einzelheiten in den <a href="{{cookies}}">Cookie-Hinweisen</a>.</p>
 <h2>6. Speicherdauer und Sicherheit</h2>
 <p>Anfragen werden so lange gespeichert, wie es für die Antwort und eine eventuelle weitere Geschäftsbeziehung nötig ist; Buchungs- und Verwaltungsdaten für die gesetzlich vorgeschriebenen Fristen. Zum Schutz personenbezogener Daten werden angemessene technische und organisatorische Maßnahmen getroffen.</p>
 <h2>7. Internationale Übermittlungen</h2>
@@ -923,18 +924,28 @@ LEGAL["de"]["privacy"] = ("Datenschutz · Albergo Diffuso Socchieve", "Datenschu
 <p>Informationen zu Cookies und eingebundenen Diensten finden Sie in den <a href="{{cookies}}">Cookie-Hinweisen</a>. Diese Erklärung kann aktualisiert werden; die gültige Fassung ist auf dieser Seite veröffentlicht.</p>""" + _CLOSE)
 
 LEGAL["en"]["cookies"] = ("Cookies · Albergo Diffuso Socchieve", "Cookie policy for the website and the external booking services.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Cookies</h1>
-{_VER_EN}
+<p><strong>Version 1.1 · 16 November 2026</strong></p>
 {_NOTE_EN}
-<p>The website uses the technical resources needed to display its pages and handle enquiries. No analytics or profiling systems run directly by the website are declared; however, the integrated external services may use cookies and similar technologies.</p>
+<p>The website uses technical cookies and tools needed to display its pages, handle enquiries and remember your cookie choice. Only with your consent does it also use Google Analytics to measure visits in aggregate form.</p>
+<h2>Technical cookies</h2>
+<p>They are needed for the website to work and do not require consent. Your cookie choice is stored in your browser's local storage (key <code>adsocchieve-consent-v1</code>) until you change it or clear the site data.</p>
+<h2>Google Analytics (statistics, only with consent)</h2>
+<p>If you click “Accept” in the banner, the website loads Google Analytics 4, provided by Google Ireland Limited, to count visits and page views and understand how the site is used. The cookies <code>_ga</code> and <code>_ga_*</code> are set, lasting up to 2 years. Google processes the data as a processor and may transfer it to the United States with the safeguards provided for by the GDPR. We do not use Google Analytics for advertising or profiling. If you reject, Google Analytics is not loaded.</p>
+<p>You can change your mind at any time from the <a href="#" data-cookie-settings>Cookie preferences</a> link at the bottom of every page.</p>
 <h2>External services</h2>
 <p>The <strong>Slope</strong> and <strong>Welora</strong> booking systems may use their own cookies and technical tools within their environments or widgets. Other external components, such as the OpenStreetMap map and the virtual tour, may receive technical data when they are loaded. See the notices provided by these providers for the categories, purposes and duration of their cookies and how to manage your preferences.</p>
 <h2>Preferences and contact</h2>
 <p>You can manage or delete cookies in your browser settings and, where available, through the controls in the external services. For requests about personal data, see the <a href="{{privacy}}">privacy notice</a> or write to {_MAIL}.</p>""" + _CLOSE)
 
 LEGAL["de"]["cookies"] = ("Cookies · Albergo Diffuso Socchieve", "Cookie-Hinweise zur Website und zu den externen Buchungsdiensten.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Cookies</h1>
-{_VER_DE}
+<p><strong>Version 1.1 · 16. November 2026</strong></p>
 {_NOTE_DE}
-<p>Die Website nutzt die technischen Ressourcen, die zur Anzeige der Seiten und zur Bearbeitung von Anfragen nötig sind. Von der Website selbst betriebene Analyse- oder Profiling-Systeme sind nicht vorgesehen; die eingebundenen externen Dienste können jedoch Cookies und ähnliche Technologien verwenden.</p>
+<p>Die Website verwendet technische Cookies und Hilfsmittel, die zur Anzeige der Seiten, zur Bearbeitung von Anfragen und zum Speichern Ihrer Cookie-Auswahl nötig sind. Nur mit Ihrer Einwilligung nutzt sie außerdem Google Analytics, um Besuche in zusammengefasster Form zu messen.</p>
+<h2>Technische Cookies</h2>
+<p>Sie sind für den Betrieb der Website erforderlich und benötigen keine Einwilligung. Ihre Cookie-Auswahl wird im lokalen Speicher Ihres Browsers gespeichert (Schlüssel <code>adsocchieve-consent-v1</code>), bis Sie sie ändern oder die Website-Daten löschen.</p>
+<h2>Google Analytics (Statistik, nur mit Einwilligung)</h2>
+<p>Wenn Sie im Banner auf „Akzeptieren“ klicken, lädt die Website Google Analytics 4 von Google Ireland Limited, um Besuche und Seitenaufrufe zu zählen und die Nutzung der Website zu verstehen. Dabei werden die Cookies <code>_ga</code> und <code>_ga_*</code> mit einer Speicherdauer von bis zu 2 Jahren gesetzt. Google verarbeitet die Daten als Auftragsverarbeiter und kann sie mit den in der DSGVO vorgesehenen Garantien in die USA übermitteln. Wir nutzen Google Analytics nicht für Werbung oder Profiling. Wenn Sie ablehnen, wird Google Analytics nicht geladen.</p>
+<p>Sie können Ihre Entscheidung jederzeit über den Link <a href="#" data-cookie-settings>Cookie-Einstellungen</a> unten auf jeder Seite ändern.</p>
 <h2>Externe Dienste</h2>
 <p>Die Buchungssysteme <strong>Slope</strong> und <strong>Welora</strong> können in ihren Umgebungen oder Widgets eigene Cookies und technische Hilfsmittel verwenden. Andere externe Komponenten wie die OpenStreetMap-Karte und der virtuelle Rundgang können beim Laden technische Daten erhalten. Informationen zu Kategorien, Zwecken und Speicherdauer der Cookies sowie zur Verwaltung Ihrer Einstellungen finden Sie in den Hinweisen der jeweiligen Anbieter.</p>
 <h2>Einstellungen und Kontakt</h2>
