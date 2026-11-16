@@ -487,59 +487,6 @@ UI = {
     "Prenota sauna e bagno di bosco · Albergo Diffuso Socchieve": ("Book the sauna and forest bathing · Albergo Diffuso Socchieve", "Sauna und Waldbaden buchen · Albergo Diffuso Socchieve"),
     "Prenota online sauna e bagno di bosco all'Albergo Diffuso di Socchieve, in Carnia.": ("Book the sauna and forest bathing online at the Albergo Diffuso in Socchieve, Carnia.", "Sauna und Waldbaden online buchen im Albergo Diffuso in Socchieve, Karnien."),
 
-    # ------------------------------------------------------------ pagine legali
-    "Informativa": ("Information", "Information"),
-    "Titolare del trattamento: {owner}, email {mail}.": ("Data controller: {owner}, email {mail}.", "Verantwortlicher: {owner}, E-Mail {mail}."),
-    "Dati raccolti da questo sito": ("Data collected by this website", "Von dieser Website erhobene Daten"),
-    "Il sito non usa cookie di profilazione né strumenti di statistica. I font e le immagini sono ospitati sul nostro server. Il server registra, come ogni sito web, dati tecnici di navigazione (indirizzo IP, data e ora, pagina richiesta) per motivi di sicurezza e funzionamento.": (
-        "This website uses no profiling cookies and no analytics tools. Fonts and images are hosted on our own server. Like any website, the server logs technical browsing data (IP address, date and time, page requested) for security and operational reasons.",
-        "Diese Website verwendet keine Profiling-Cookies und keine Statistik-Tools. Schriften und Bilder liegen auf unserem eigenen Server. Wie jede Website protokolliert der Server technische Zugriffsdaten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite) aus Sicherheits- und Betriebsgründen."),
-    "Contatti e prenotazioni": ("Contact and bookings", "Kontakt und Buchungen"),
-    "Se ci scrivi, anche con il modulo di contatto, o ci telefoni, usiamo i tuoi dati solo per risponderti e gestire il soggiorno. Le prenotazioni online delle case Col Gentile avvengono sul sistema Slope; quelle di sauna, bagno di bosco e La Farie sul sistema Welora (portal.welora.it), che ricevono i dati che inserisci nei loro moduli e li trattano per gestire la prenotazione; la mappa della pagina contatti è fornita da OpenStreetMap; il tour virtuale carica la libreria Pannellum da cdnjs (Cloudflare) solo quando lo avvii.": (
-        "If you write to us, including through the contact form, or call us, we use your data only to reply and to manage your stay. Online bookings for the Col Gentile houses go through the Slope system; bookings for the sauna, forest bathing and La Farie go through the Welora system (portal.welora.it). Both receive the data you enter in their forms and process it to manage the booking. The map on the contact page is provided by OpenStreetMap; the virtual tour loads the Pannellum library from cdnjs (Cloudflare) only when you start it.",
-        "Wenn Sie uns schreiben, auch über das Kontaktformular, oder anrufen, verwenden wir Ihre Daten nur, um Ihnen zu antworten und Ihren Aufenthalt abzuwickeln. Online-Buchungen der Häuser von Col Gentile laufen über das System Slope, Buchungen von Sauna, Waldbaden und La Farie über das System Welora (portal.welora.it). Beide erhalten die Daten, die Sie in ihre Formulare eingeben, und verarbeiten sie zur Abwicklung der Buchung. Die Karte auf der Kontaktseite stammt von OpenStreetMap; der virtuelle Rundgang lädt die Bibliothek Pannellum von cdnjs (Cloudflare) erst, wenn Sie ihn starten."),
-    "I tuoi diritti": ("Your rights", "Ihre Rechte"),
-    "Puoi chiedere in ogni momento accesso, rettifica, cancellazione o limitazione dei tuoi dati scrivendo a {email}, e proporre reclamo al Garante per la protezione dei dati personali.": (
-        "You can ask at any time for access to, correction, erasure or restriction of your data by writing to {email}, and you can lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali).",
-        "Sie können jederzeit Auskunft, Berichtigung, Löschung oder Einschränkung Ihrer Daten verlangen, indem Sie an {email} schreiben, und Beschwerde bei der italienischen Datenschutzbehörde (Garante per la protezione dei dati personali) einlegen."),
-    "Privacy · Albergo Diffuso Socchieve": ("Privacy · Albergo Diffuso Socchieve", "Datenschutz · Albergo Diffuso Socchieve"),
-    "Informativa privacy del sito dell'Albergo Diffuso Socchieve Col Gentile.": ("Privacy policy of the Albergo Diffuso Socchieve Col Gentile website.", "Datenschutzerklärung der Website des Albergo Diffuso Socchieve Col Gentile."),
-    "Questo sito non installa cookie di profilazione né cookie di terze parti per statistiche o pubblicità, per questo non mostra banner di consenso.": (
-        "This website sets no profiling cookies and no third-party cookies for analytics or advertising, which is why it shows no consent banner.",
-        "Diese Website setzt weder Profiling-Cookies noch Cookies von Drittanbietern für Statistik oder Werbung und zeigt deshalb kein Cookie-Banner."),
-    "I sistemi di prenotazione Slope (case Col Gentile) e Welora (sauna, bagno di bosco e La Farie, inserito nelle pagine), la mappa di OpenStreetMap nella pagina contatti hanno le proprie informative. Per domande scrivi a {mail}.": (
-        "The Slope booking system (Col Gentile houses), the Welora booking system (sauna, forest bathing and La Farie, embedded in the pages) and the OpenStreetMap map on the contact page have their own policies. For questions, write to {mail}.",
-        "Das Buchungssystem Slope (Häuser von Col Gentile), das in die Seiten eingebundene Buchungssystem Welora (Sauna, Waldbaden und La Farie) und die OpenStreetMap-Karte auf der Kontaktseite haben eigene Datenschutzhinweise. Bei Fragen schreiben Sie an {mail}."),
-    "Cookie · Albergo Diffuso Socchieve": ("Cookies · Albergo Diffuso Socchieve", "Cookies · Albergo Diffuso Socchieve"),
-    "Informativa cookie del sito dell'Albergo Diffuso Socchieve Col Gentile.": ("Cookie policy of the Albergo Diffuso Socchieve Col Gentile website.", "Cookie-Hinweise der Website des Albergo Diffuso Socchieve Col Gentile."),
-    "Condizioni di prenotazione dei servizi": ("Booking terms for wellness services", "Buchungsbedingungen für die Wellness-Angebote"),
-    "Valgono per le prenotazioni di sauna e bagno di bosco fatte online, via email o per telefono presso {owner}.": (
-        "These apply to sauna and forest bathing bookings made online, by email or by phone with {owner}.",
-        "Sie gelten für Buchungen von Sauna und Waldbaden, die online, per E-Mail oder telefonisch bei {owner} vorgenommen werden."),
-    "Prezzi": ("Prices", "Preise"),
-    "I prezzi sono in euro. Il prezzo mostrato al momento della prenotazione è quello definitivo: per il bagno di bosco è a persona, per la sauna è all'ora per tutto il gruppo.": (
-        "Prices are in euros. The price shown at the time of booking is final: for forest bathing it is per person, for the sauna it is per hour for the whole group.",
-        "Die Preise verstehen sich in Euro. Der bei der Buchung angezeigte Preis ist endgültig: beim Waldbaden pro Person, bei der Sauna pro Stunde für die ganze Gruppe."),
-    "Carta di credito a garanzia": ("Credit card as a guarantee", "Kreditkarte als Garantie"),
-    "Per prenotare online è necessaria una carta di credito, richiesta a garanzia della prenotazione: i dati della carta vengono inseriti e gestiti in modo sicuro dal sistema di prenotazione al momento della conferma. Eventuali addebiti, ad esempio in caso di mancata presentazione o di cancellazione tardiva, sono indicati prima di confermare.": (
-        "Online booking requires a credit card as a guarantee for the booking: card details are entered and handled securely by the booking system when you confirm. Any charges, for example for a no-show or a late cancellation, are shown before you confirm.",
-        "Für die Online-Buchung ist eine Kreditkarte als Garantie erforderlich: Die Kartendaten werden bei der Bestätigung sicher vom Buchungssystem erfasst und verwaltet. Mögliche Gebühren, etwa bei Nichterscheinen oder später Stornierung, werden vor der Bestätigung angezeigt."),
-    "Conferma": ("Confirmation", "Bestätigung"),
-    "Dopo la prenotazione ricevi un'email di conferma con data, orario e numero di partecipanti. Il numero di partecipanti non può superare la capienza indicata per il servizio.": (
-        "After booking you receive a confirmation email with the date, time and number of participants. The number of participants cannot exceed the capacity stated for the service.",
-        "Nach der Buchung erhalten Sie eine Bestätigung per E-Mail mit Datum, Uhrzeit und Teilnehmerzahl. Die Teilnehmerzahl darf die für das Angebot angegebene Höchstzahl nicht überschreiten."),
-    "Modifiche e cancellazioni": ("Changes and cancellations", "Änderungen und Stornierungen"),
-    "Per cambiare orario, numero di persone o per cancellare, scrivi a {mail} o chiama il {tel} il prima possibile: modifiche e cancellazioni vanno concordate con la struttura.": (
-        "To change the time or the number of people, or to cancel, write to {mail} or call {tel} as soon as possible: changes and cancellations must be agreed with the property.",
-        "Um Uhrzeit oder Personenzahl zu ändern oder zu stornieren, schreiben Sie bitte so bald wie möglich an {mail} oder rufen Sie {tel} an: Änderungen und Stornierungen sind mit der Unterkunft abzustimmen."),
-    "Bagno di bosco": ("Forest bathing", "Waldbaden"),
-    "È un'attività all'aperto su sentieri e terreno boschivo: servono abbigliamento e calzature adatte, come indicato nella pagina del servizio.": (
-        "It is an outdoor activity on trails and woodland ground: suitable clothing and footwear are required, as described on the service page.",
-        "Es ist eine Aktivität im Freien auf Wegen und Waldboden: Geeignete Kleidung und Schuhe sind nötig, wie auf der Seite des Angebots beschrieben."),
-    "Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve": ("Booking terms for wellness services · Albergo Diffuso Socchieve", "Buchungsbedingungen Wellness · Albergo Diffuso Socchieve"),
-    "Condizioni per prenotare sauna e bagno di bosco all'Albergo Diffuso Socchieve: prezzi, carta di credito a garanzia, modifiche e cancellazioni.": (
-        "Terms for booking the sauna and forest bathing at the Albergo Diffuso Socchieve: prices, credit card guarantee, changes and cancellations.",
-        "Bedingungen für die Buchung von Sauna und Waldbaden im Albergo Diffuso Socchieve: Preise, Kreditkartengarantie, Änderungen und Stornierungen."),
 }
 
 
@@ -911,3 +858,156 @@ CONTENT = {
     "en": dict(stays=STAYS_EN, villages=VILLAGES_EN, exps=EXPS_EN, faq=FAQ_EN, farie=FARIE_EN, services=SERVICES_EN),
     "de": dict(stays=STAYS_DE, villages=VILLAGES_DE, exps=EXPS_DE, faq=FAQ_DE, farie=FARIE_DE, services=SERVICES_DE),
 }
+
+
+# ---------------------------------------------------------------- pagine legali (versione 1.0)
+# Traduzioni dei testi legali di build_legal(). Per ogni pagina: (title, description, html).
+# Segnaposto per i link: {privacy} {cookies} {booking} {terms} e {original} (la stessa pagina in italiano).
+# Se cambia il testo italiano, aggiornare anche qui e il numero di versione.
+_H1 = '<h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">'
+_OPEN = '<section class="d-body" style="padding-top:140px"><div class="wrap prose">\n'
+_CLOSE = "\n</div></section>"
+_MAIL = '<a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>'
+_TEL = '<a href="tel:+390433819934">+39 0433 819934</a>'
+_NOTE_EN = '<p><em>This is a translation provided for convenience. In case of any discrepancy, the <a href="{original}">Italian version</a> prevails.</em></p>'
+_NOTE_DE = '<p><em>Dies ist eine Übersetzung zu Ihrer Information. Bei Abweichungen gilt die <a href="{original}">italienische Fassung</a>.</em></p>'
+_VER_EN = "<p><strong>Version 1.0 · 16 November 2026</strong></p>"
+_VER_DE = "<p><strong>Version 1.0 · 16. November 2026</strong></p>"
+
+LEGAL = {"en": {}, "de": {}}
+
+LEGAL["en"]["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "GDPR privacy notice for guests, enquiries, bookings and services of the Albergo Diffuso Socchieve.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Privacy</h1>
+{_VER_EN}
+{_NOTE_EN}
+<p>This notice covers the website of the Albergo Diffuso Socchieve “Col Gentile”, its contact forms and enquiries relating to stays and services. It is provided under Regulation (EU) 2016/679 (GDPR).</p>
+<h2>1. Data controller</h2>
+<p><strong>Zanier Lucio</strong> · Albergo Diffuso Socchieve “Col Gentile” · Via Roma 20, Mediis, 33020 Socchieve (UD), Italy · VAT no. 02790180307. Email: {_MAIL} · Phone: {_TEL}.</p>
+<h2>2. Data processed</h2>
+<p>The contact forms may ask for your full name, email address, phone number (optional), message and details of the property or service your enquiry refers to. For bookings and stays we may process identification and contact details, dates, number of guests, preferences, and information needed for the booking and for legal obligations. The servers may log technical access data, including IP address, date, time and resources requested.</p>
+<h2>3. Purposes and legal bases</h2>
+<p>Data is used to answer enquiries and prepare quotes (pre-contractual measures), to manage bookings, stays and purchased services (performance of a contract), to comply with tax, administrative and public-security obligations (legal obligation), and to protect the security of the website and prevent abuse or spam (legitimate interest). The forms described here are not used for marketing, unless you receive separate specific information.</p>
+<h2>4. Bookings, payments and guarantee card</h2>
+<p>Bookings for the Col Gentile houses go through <strong>Slope</strong>; bookings for La Farie, the sauna and forest bathing go through <strong>Welora</strong>. When you use an external booking or payment system, the data you enter there is also processed by the providers involved, according to their respective roles and privacy notices. The website's contact form does not ask for your credit card number. The terms of the guarantee card and of any charges are shown in the booking process and in the <a href="{{booking}}">booking terms</a>.</p>
+<h2>5. Recipients and external tools</h2>
+<p>Where necessary, data may be shared with hosting and email providers, booking and payment services, authorised staff, advisers and, where required by law, the authorities. The website may link to OpenStreetMap maps, 360° tours using external libraries and other third-party content or services. When these resources are loaded, their providers may receive technical connection data.</p>
+<h2>6. Retention and security</h2>
+<p>Enquiries are kept for as long as needed to reply and to manage any subsequent relationship; booking and administrative data for the periods required by applicable law. Appropriate technical and organisational measures are in place to protect personal data.</p>
+<h2>7. International transfers</h2>
+<p>The use of external services may involve transfers of data outside the European Economic Area. Where they occur, such transfers must take place with the safeguards provided for by the GDPR.</p>
+<h2>8. Your rights</h2>
+<p>You can request access, rectification, erasure, restriction, portability or object to processing in the cases provided for by law, and you can withdraw any consent without affecting the lawfulness of earlier processing. To exercise your rights, write to {_MAIL}. You can lodge a complaint with the Italian Data Protection Authority (Garante per la protezione dei dati personali).</p>
+<h2>9. Cookies and updates</h2>
+<p>For information on cookies and integrated services, see the <a href="{{cookies}}">Cookie Policy</a>. This notice may be updated; the current version is published on this page.</p>""" + _CLOSE)
+
+LEGAL["de"]["privacy"] = ("Datenschutz · Albergo Diffuso Socchieve", "Datenschutzerklärung nach DSGVO für Gäste, Anfragen, Buchungen und Angebote des Albergo Diffuso Socchieve.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Datenschutz</h1>
+{_VER_DE}
+{_NOTE_DE}
+<p>Diese Erklärung betrifft die Website des Albergo Diffuso Socchieve „Col Gentile“, die Kontaktformulare und Anfragen zu Aufenthalten und Angeboten. Sie erfolgt gemäß der Verordnung (EU) 2016/679 (DSGVO).</p>
+<h2>1. Verantwortlicher</h2>
+<p><strong>Zanier Lucio</strong> · Albergo Diffuso Socchieve „Col Gentile“ · Via Roma 20, Mediis, 33020 Socchieve (UD), Italien · USt-IdNr. 02790180307. E-Mail: {_MAIL} · Telefon: {_TEL}.</p>
+<h2>2. Verarbeitete Daten</h2>
+<p>In den Kontaktformularen können Vor- und Nachname, E-Mail-Adresse, Telefonnummer (optional), Nachricht sowie Angaben zur Unterkunft oder zum Angebot abgefragt werden, auf die sich die Anfrage bezieht. Für Buchungen und Aufenthalte können Identifikations- und Kontaktdaten, Reisedaten, Anzahl der Gäste, Wünsche sowie Angaben verarbeitet werden, die für die Buchung und die gesetzlichen Pflichten nötig sind. Die Server können technische Zugriffsdaten protokollieren, darunter IP-Adresse, Datum, Uhrzeit und abgerufene Ressourcen.</p>
+<h2>3. Zwecke und Rechtsgrundlagen</h2>
+<p>Die Daten werden verwendet, um Anfragen zu beantworten und Angebote zu erstellen (vorvertragliche Maßnahmen), Buchungen, Aufenthalte und gebuchte Leistungen abzuwickeln (Vertragserfüllung), steuerliche, verwaltungsrechtliche und melderechtliche Pflichten zu erfüllen (rechtliche Verpflichtung) sowie die Sicherheit der Website zu schützen und Missbrauch oder Spam zu verhindern (berechtigtes Interesse). Über die beschriebenen Formulare findet keine Werbung statt, sofern nicht gesondert darüber informiert wird.</p>
+<h2>4. Buchungen, Zahlungen und Kreditkarte als Garantie</h2>
+<p>Buchungen der Häuser von Col Gentile laufen über <strong>Slope</strong>, Buchungen von La Farie, Sauna und Waldbaden über <strong>Welora</strong>. Wenn Sie ein externes Buchungs- oder Zahlungssystem nutzen, werden die dort eingegebenen Daten auch von den beteiligten Anbietern gemäß ihrer jeweiligen Rolle und Datenschutzhinweise verarbeitet. Das Kontaktformular der Website fragt keine Kreditkartennummer ab. Die Bedingungen der Kreditkartengarantie und möglicher Belastungen werden im Buchungsablauf und in den <a href="{{booking}}">Buchungsbedingungen</a> angegeben.</p>
+<h2>5. Empfänger und externe Dienste</h2>
+<p>Die Daten können, soweit nötig, an Hosting- und E-Mail-Anbieter, Buchungs- und Zahlungsdienste, befugte Mitarbeitende, Berater sowie in gesetzlich vorgesehenen Fällen an Behörden weitergegeben werden. Die Website kann OpenStreetMap-Karten, 360°-Rundgänge mit externen Bibliotheken und andere Inhalte oder Dienste Dritter einbinden. Wenn diese Ressourcen geladen werden, können deren Anbieter technische Verbindungsdaten erhalten.</p>
+<h2>6. Speicherdauer und Sicherheit</h2>
+<p>Anfragen werden so lange gespeichert, wie es für die Antwort und eine eventuelle weitere Geschäftsbeziehung nötig ist; Buchungs- und Verwaltungsdaten für die gesetzlich vorgeschriebenen Fristen. Zum Schutz personenbezogener Daten werden angemessene technische und organisatorische Maßnahmen getroffen.</p>
+<h2>7. Internationale Übermittlungen</h2>
+<p>Die Nutzung externer Dienste kann Datenübermittlungen außerhalb des Europäischen Wirtschaftsraums mit sich bringen. In diesem Fall müssen sie mit den in der DSGVO vorgesehenen Garantien erfolgen.</p>
+<h2>8. Ihre Rechte</h2>
+<p>Sie können in den gesetzlich vorgesehenen Fällen Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit verlangen oder der Verarbeitung widersprechen und erteilte Einwilligungen widerrufen, ohne dass die Rechtmäßigkeit der bisherigen Verarbeitung berührt wird. Schreiben Sie dazu an {_MAIL}. Sie können Beschwerde bei der italienischen Datenschutzbehörde (Garante per la protezione dei dati personali) einlegen.</p>
+<h2>9. Cookies und Aktualisierungen</h2>
+<p>Informationen zu Cookies und eingebundenen Diensten finden Sie in den <a href="{{cookies}}">Cookie-Hinweisen</a>. Diese Erklärung kann aktualisiert werden; die gültige Fassung ist auf dieser Seite veröffentlicht.</p>""" + _CLOSE)
+
+LEGAL["en"]["cookies"] = ("Cookies · Albergo Diffuso Socchieve", "Cookie policy for the website and the external booking services.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Cookies</h1>
+{_VER_EN}
+{_NOTE_EN}
+<p>The website uses the technical resources needed to display its pages and handle enquiries. No analytics or profiling systems run directly by the website are declared; however, the integrated external services may use cookies and similar technologies.</p>
+<h2>External services</h2>
+<p>The <strong>Slope</strong> and <strong>Welora</strong> booking systems may use their own cookies and technical tools within their environments or widgets. Other external components, such as the OpenStreetMap map and the virtual tour, may receive technical data when they are loaded. See the notices provided by these providers for the categories, purposes and duration of their cookies and how to manage your preferences.</p>
+<h2>Preferences and contact</h2>
+<p>You can manage or delete cookies in your browser settings and, where available, through the controls in the external services. For requests about personal data, see the <a href="{{privacy}}">privacy notice</a> or write to {_MAIL}.</p>""" + _CLOSE)
+
+LEGAL["de"]["cookies"] = ("Cookies · Albergo Diffuso Socchieve", "Cookie-Hinweise zur Website und zu den externen Buchungsdiensten.", _OPEN + f"""<span class="eyebrow">Information</span>{_H1}Cookies</h1>
+{_VER_DE}
+{_NOTE_DE}
+<p>Die Website nutzt die technischen Ressourcen, die zur Anzeige der Seiten und zur Bearbeitung von Anfragen nötig sind. Von der Website selbst betriebene Analyse- oder Profiling-Systeme sind nicht vorgesehen; die eingebundenen externen Dienste können jedoch Cookies und ähnliche Technologien verwenden.</p>
+<h2>Externe Dienste</h2>
+<p>Die Buchungssysteme <strong>Slope</strong> und <strong>Welora</strong> können in ihren Umgebungen oder Widgets eigene Cookies und technische Hilfsmittel verwenden. Andere externe Komponenten wie die OpenStreetMap-Karte und der virtuelle Rundgang können beim Laden technische Daten erhalten. Informationen zu Kategorien, Zwecken und Speicherdauer der Cookies sowie zur Verwaltung Ihrer Einstellungen finden Sie in den Hinweisen der jeweiligen Anbieter.</p>
+<h2>Einstellungen und Kontakt</h2>
+<p>Sie können Cookies in den Einstellungen Ihres Browsers und, sofern verfügbar, über die Steuerelemente der externen Dienste verwalten oder löschen. Für Anfragen zu personenbezogenen Daten lesen Sie die <a href="{{privacy}}">Datenschutzerklärung</a> oder schreiben Sie an {_MAIL}.</p>""" + _CLOSE)
+
+LEGAL["en"]["terms"] = ("Wellness booking terms · Albergo Diffuso Socchieve", "Terms for sauna and forest bathing bookings: price, guarantee card, cancellations and no-shows.", _OPEN + f"""<span class="eyebrow">Wellness</span>{_H1}Booking terms for wellness services</h1>
+{_VER_EN}
+{_NOTE_EN}
+<p>These terms apply to sauna and forest bathing bookings offered by the Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), Italy, VAT no. 02790180307. They form part of the <a href="{{booking}}">general booking terms</a>.</p>
+<h2>Prices and duration</h2>
+<p>The sauna costs <strong>50 € per hour for the whole group</strong>, with a minimum of one hour. Forest bathing costs <strong>15 € per person</strong> and lasts about two hours. Actual prices, dates and availability are shown before you confirm; the price accepted in the booking applies.</p>
+<h2>Guarantee card</h2>
+<p>Online booking may require a guarantee card through Welora. Any charges and applicable financial terms must be shown before you confirm. No additional penalty for late cancellation or no-show is set here unless a specific condition was communicated and accepted in the booking.</p>
+<h2>Changes, cancellations and no-shows</h2>
+<p>To change or cancel a booking, contact the property promptly at {_MAIL} or on {_TEL}. In the event of a no-show, only the penalty conditions communicated before confirmation and accepted for that specific service apply; the published rules consulted state no standard percentage.</p>
+<h2>How the services take place</h2>
+<p>Forest bathing takes place outdoors on trails and woodland ground: suitable clothing and footwear are required. For both services, the capacity, times and instructions given in the confirmation apply. For privacy, see the <a href="{{privacy}}">privacy notice</a>.</p>""" + _CLOSE)
+
+LEGAL["de"]["terms"] = ("Buchungsbedingungen Wellness · Albergo Diffuso Socchieve", "Bedingungen für Buchungen von Sauna und Waldbaden: Preis, Kreditkartengarantie, Stornierungen und Nichterscheinen.", _OPEN + f"""<span class="eyebrow">Wellness</span>{_H1}Buchungsbedingungen für die Wellness-Angebote</h1>
+{_VER_DE}
+{_NOTE_DE}
+<p>Diese Bedingungen gelten für Buchungen von Sauna und Waldbaden beim Albergo Diffuso Socchieve „Col Gentile“, Via Roma 20, Mediis, 33020 Socchieve (UD), Italien, USt-IdNr. 02790180307. Sie sind Teil der <a href="{{booking}}">allgemeinen Buchungsbedingungen</a>.</p>
+<h2>Preise und Dauer</h2>
+<p>Die Sauna kostet <strong>50 € pro Stunde für die ganze Gruppe</strong>, Mindestdauer eine Stunde. Das Waldbaden kostet <strong>15 € pro Person</strong> und dauert rund zwei Stunden. Tatsächliche Preise, Termine und Verfügbarkeit werden vor der Bestätigung angezeigt; es gilt der bei der Buchung akzeptierte Preis.</p>
+<h2>Kreditkarte als Garantie</h2>
+<p>Für die Online-Buchung kann über Welora eine Kreditkarte als Garantie verlangt werden. Mögliche Belastungen und die geltenden finanziellen Bedingungen müssen vor der Bestätigung angezeigt werden. Eine zusätzliche Gebühr für späte Stornierung oder Nichterscheinen wird hier nicht festgelegt, sofern keine besondere Bedingung bei der Buchung mitgeteilt und akzeptiert wurde.</p>
+<h2>Änderungen, Stornierungen und Nichterscheinen</h2>
+<p>Um eine Buchung zu ändern oder zu stornieren, wenden Sie sich bitte umgehend an die Unterkunft unter {_MAIL} oder {_TEL}. Bei Nichterscheinen gelten ausschließlich die vor der Bestätigung mitgeteilten und für dieses Angebot akzeptierten Gebührenbedingungen; in den eingesehenen veröffentlichten Regeln ist kein Standardprozentsatz angegeben.</p>
+<h2>Ablauf der Angebote</h2>
+<p>Das Waldbaden findet im Freien auf Wegen und Waldboden statt: Geeignete Kleidung und Schuhe sind erforderlich. Für beide Angebote gelten die in der Bestätigung mitgeteilte Höchstteilnehmerzahl, Uhrzeit und Hinweise. Zum Datenschutz lesen Sie die <a href="{{privacy}}">Datenschutzerklärung</a>.</p>""" + _CLOSE)
+
+LEGAL["en"]["booking-terms"] = ("Booking terms · Albergo Diffuso Socchieve", "Booking terms for stays at Col Gentile and La Farie, the sauna and forest bathing: deposit, cancellations, no-shows and guarantee card.", _OPEN + f"""<span class="eyebrow">Contract information</span>{_H1}Booking terms</h1>
+{_VER_EN}
+{_NOTE_EN}
+<p>These terms cover stays at the Albergo Diffuso Socchieve “Col Gentile”, the La Farie bed &amp; breakfast and the sauna and forest bathing services. Operator: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), Italy, VAT no. 02790180307 · {_MAIL}.</p>
+<h2>1. Prices, availability and confirmation</h2>
+<p>Availability, total price, any supplements, deposit, rate conditions and payment methods are shown before the booking is confirmed or stated in the accepted quote. The booking is confirmed on the terms set out in the confirmation sent to the guest. Specific rate conditions expressly communicated and accepted before confirmation take precedence over the general provisions on this page.</p>
+<h2>2. Stays in the Col Gentile houses</h2>
+<p>According to the rules on the official website of the Albergo Diffuso Socchieve, the price includes use of the accommodation and bed and bath linen. The accommodation is available from 12:00 and must be vacated by 10:00 on the day of departure, unless otherwise agreed or stated in the confirmation. Payment of the balance is preferably made on arrival; any extras are settled on departure.</p>
+<h3>Supplements and reductions for the Col Gentile houses</h3>
+<p>The official rules list the following supplements: pets, where allowed, 5 € one-off; baby cot, 5 € one-off; extra cleaning, 10 € for small apartments or 15 € for large apartments; extra bed linen, 4 €; extra towel, 1 € each. For stays of fewer than three nights they state a 30% surcharge, and for single use of an apartment a 50% increase on the rate. The reductions stated are: free up to age 3, 50% from 4 to 6 and 30% from 7 to 10. The actual amounts and conditions of the booking are those confirmed in the quote or rate summary before purchase.</p>
+<h2>3. Deposit, cancellation and early departure in the Col Gentile houses</h2>
+<p>The published rules state that, in case of cancellation, <strong>any deposit paid is not refunded</strong>; by agreement with the management it may be used for another date on equivalent terms. For early departure, the cost of the accommodation alone is charged for the unused period, unless otherwise agreed. If the booked rate has a different cancellation policy, the one communicated and accepted during booking applies.</p>
+<h2>4. La Farie</h2>
+<p>For the La Farie bed &amp; breakfast, the condition stated on the booking page is: <strong>free cancellation through the portal up to 7 days before arrival, by 18:00</strong>. For later cancellations, no-shows, any deposits or charges, only the amounts and conditions expressly shown and accepted during booking apply; this page introduces no further penalty percentage.</p>
+<h2>5. No-shows and guarantee card</h2>
+<p>If the guest does not arrive on the agreed date and time and has not cancelled within the deadline, the financial conditions of the specific booking apply. For Col Gentile, the rule on any deposit paid continues to apply, unless a different rate was agreed. <strong>No additional standard percentage penalty for no-shows is published</strong>: further charges to the guarantee card may only be made if the amount or the method of calculating the penalty was communicated before confirmation and accepted by the guest. Where required, the guarantee card is requested and handled within the booking system.</p>
+<h2>6. Sauna and forest bathing</h2>
+<p>The sauna costs <strong>50 € per hour for the group</strong>; forest bathing <strong>15 € per person</strong>. Online bookings may require a guarantee card through Welora. Changes, cancellations and no-shows are governed by the specific conditions stated and accepted during booking. Unless a penalty is explicitly communicated before confirmation, this page introduces none. See also the <a href="{{terms}}">detailed wellness terms</a>.</p>
+<h2>7. House rules</h2>
+<p>Every guest, including minors, must present a valid identity document for legal requirements. Unregistered persons may not stay overnight. Smoking is not allowed in the accommodation. Please respect quiet hours from 23:00 to 08:00 and from 14:00 to 16:00. The rules prohibit taking the property's linen outside the apartments and using appliances to cook or heat food in rooms that are not kitchens. Missing linen, damage or lost keys may be charged according to the actual damage and applicable law.</p>
+<h2>8. Assistance and privacy</h2>
+<p>For cancellations, changes or questions, contact {_MAIL} or {_TEL}. Personal data is processed in accordance with the <a href="{{privacy}}">privacy notice</a>.</p>""" + _CLOSE)
+
+LEGAL["de"]["booking-terms"] = ("Buchungsbedingungen · Albergo Diffuso Socchieve", "Buchungsbedingungen für Aufenthalte in Col Gentile und La Farie, Sauna und Waldbaden: Anzahlung, Stornierungen, Nichterscheinen und Kreditkartengarantie.", _OPEN + f"""<span class="eyebrow">Vertragsinformationen</span>{_H1}Buchungsbedingungen</h1>
+{_VER_DE}
+{_NOTE_DE}
+<p>Diese Bedingungen gelten für Aufenthalte im Albergo Diffuso Socchieve „Col Gentile“, im Bed &amp; Breakfast La Farie sowie für die Angebote Sauna und Waldbaden. Betreiber: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve „Col Gentile“, Via Roma 20, Mediis, 33020 Socchieve (UD), Italien, USt-IdNr. 02790180307 · {_MAIL}.</p>
+<h2>1. Preise, Verfügbarkeit und Bestätigung</h2>
+<p>Verfügbarkeit, Gesamtpreis, eventuelle Zuschläge, Anzahlung, Tarifbedingungen und Zahlungsweise werden vor der Buchungsbestätigung angezeigt oder im angenommenen Angebot mitgeteilt. Die Buchung gilt zu den Bedingungen, die in der an den Gast gesendeten Bestätigung stehen. Besondere Tarifbedingungen, die vor der Bestätigung ausdrücklich mitgeteilt und akzeptiert wurden, haben Vorrang vor den allgemeinen Angaben dieser Seite.</p>
+<h2>2. Aufenthalte in den Häusern von Col Gentile</h2>
+<p>Laut den Regeln auf der offiziellen Website des Albergo Diffuso Socchieve umfasst der Preis die Nutzung der Unterkunft sowie Bett- und Badwäsche. Die Unterkünfte stehen ab 12:00 Uhr zur Verfügung und müssen am Abreisetag bis 10:00 Uhr geräumt werden, sofern nicht anders vereinbart oder in der Bestätigung angegeben. Die Restzahlung erfolgt vorzugsweise bei Ankunft; Extras werden bei der Abreise abgerechnet.</p>
+<h3>Zuschläge und Ermäßigungen für die Häuser von Col Gentile</h3>
+<p>Die offiziellen Regeln nennen folgende Zuschläge: Haustiere, wo erlaubt, einmalig 5 €; Babybett einmalig 5 €; Zusatzreinigung 10 € für kleine bzw. 15 € für große Wohnungen; zusätzliche Bettwäsche 4 €; zusätzliches Handtuch 1 € pro Stück. Für Aufenthalte unter drei Nächten wird ein Aufschlag von 30 % angegeben, für die Einzelnutzung einer Wohnung ein Aufschlag von 50 % auf den Tarif. Die angegebenen Ermäßigungen sind: kostenlos bis 3 Jahre, 50 % von 4 bis 6 Jahren und 30 % von 7 bis 10 Jahren. Maßgeblich sind die Beträge und Bedingungen, die im Angebot oder in der Tarifübersicht vor dem Kauf bestätigt werden.</p>
+<h2>3. Anzahlung, Stornierung und vorzeitige Abreise in den Häusern von Col Gentile</h2>
+<p>Die veröffentlichten Regeln sehen vor, dass bei Stornierung <strong>eine geleistete Anzahlung nicht erstattet wird</strong>; nach Absprache mit der Leitung kann sie zu gleichwertigen Bedingungen für einen anderen Termin genutzt werden. Bei vorzeitiger Abreise werden für den nicht genutzten Zeitraum nur die Kosten der Unterkunft berechnet, sofern nicht anders vereinbart. Hat der gebuchte Tarif andere Stornobedingungen, gelten die bei der Buchung mitgeteilten und akzeptierten.</p>
+<h2>4. La Farie</h2>
+<p>Für das Bed &amp; Breakfast La Farie gilt laut Buchungsseite: <strong>kostenlose Stornierung über das Portal bis 7 Tage vor Anreise, bis 18:00 Uhr</strong>. Für spätere Stornierungen, Nichterscheinen, eventuelle Anzahlungen oder Belastungen gelten ausschließlich die bei der Buchung ausdrücklich angezeigten und akzeptierten Beträge und Bedingungen; diese Seite legt keinen zusätzlichen Gebührenprozentsatz fest.</p>
+<h2>5. Nichterscheinen (No-Show) und Kreditkarte als Garantie</h2>
+<p>Erscheint der Gast nicht zum vereinbarten Datum und zur vereinbarten Uhrzeit und hat er nicht fristgerecht storniert, gelten die finanziellen Bedingungen der jeweiligen Buchung. Für Col Gentile bleibt die Regel zur geleisteten Anzahlung anwendbar, sofern kein anderer Tarif vereinbart wurde. <strong>Eine zusätzliche Standard-Prozentgebühr für Nichterscheinen ist nicht veröffentlicht</strong>: Weitere Belastungen der Garantiekarte sind nur möglich, wenn Betrag oder Berechnungsweise der Gebühr vor der Bestätigung mitgeteilt und vom Gast akzeptiert wurden. Sofern vorgesehen, wird die Garantiekarte im Buchungssystem abgefragt und verwaltet.</p>
+<h2>6. Sauna und Waldbaden</h2>
+<p>Die Sauna kostet <strong>50 € pro Stunde für die Gruppe</strong>, das Waldbaden <strong>15 € pro Person</strong>. Für Online-Buchungen kann über Welora eine Kreditkarte als Garantie verlangt werden. Änderungen, Stornierungen und Nichterscheinen richten sich nach den bei der Buchung angegebenen und akzeptierten besonderen Bedingungen. Wurde vor der Bestätigung keine Gebühr ausdrücklich mitgeteilt, legt diese Seite keine fest. Siehe auch die <a href="{{terms}}">ausführlichen Bedingungen für die Wellness-Angebote</a>.</p>
+<h2>7. Hausordnung</h2>
+<p>Jeder Gast, auch Minderjährige, muss für die gesetzlichen Meldepflichten ein gültiges Ausweisdokument vorlegen. Nicht angemeldete Personen dürfen nicht übernachten. In den Unterkünften ist Rauchen nicht gestattet. Bitte halten Sie die Ruhezeiten von 23:00 bis 08:00 Uhr und von 14:00 bis 16:00 Uhr ein. Die Hausordnung untersagt, die Wäsche der Unterkunft aus den Wohnungen mitzunehmen und in Räumen ohne Küche Geräte zum Kochen oder Erwärmen von Speisen zu benutzen. Fehlende Wäsche, Schäden oder verlorene Schlüssel können nach dem tatsächlichen Schaden und gemäß geltendem Recht berechnet werden.</p>
+<h2>8. Hilfe und Datenschutz</h2>
+<p>Für Stornierungen, Änderungen oder Fragen wenden Sie sich an {_MAIL} oder {_TEL}. Personenbezogene Daten werden gemäß der <a href="{{privacy}}">Datenschutzerklärung</a> verarbeitet.</p>""" + _CLOSE)

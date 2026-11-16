@@ -71,14 +71,14 @@ ROUTES = {
     "farie": ("/la-farie", "/en/la-farie", "/de/la-farie"),
     "farie-results": (data.FARIE["welora"]["results"], "/en/la-farie-booking", "/de/la-farie-buchen"),
     "farie-cond": ("/la-farie-condizioni", "/en/la-farie-terms", "/de/la-farie-bedingungen"),
-    "privacy": ("/privacy", "/privacy", "/privacy"),
-    "cookies": ("/cookies", "/cookies", "/cookies"),
-    "terms": ("/condizioni-servizi", "/condizioni-servizi", "/condizioni-servizi"),
-    "booking-terms": ("/condizioni-prenotazione", "/condizioni-prenotazione", "/condizioni-prenotazione"),
+    "privacy": ("/privacy", "/en/privacy", "/de/datenschutz"),
+    "cookies": ("/cookies", "/en/cookies", "/de/cookies"),
+    "terms": ("/condizioni-servizi", "/en/service-terms", "/de/service-bedingungen"),
+    "booking-terms": ("/condizioni-prenotazione", "/en/booking-terms", "/de/buchungsbedingungen"),
     "404": ("/404", "/404", "/404"),
 }
 STAY_BASE = {"it": "/it/alloggi/", "en": "/en/accommodation/", "de": "/de/unterkuenfte/"}
-ONLY_IT = {"404", "privacy", "cookies", "terms", "booking-terms"}  # pagine solo in italiano
+ONLY_IT = {"404"}  # pagine solo in italiano
 
 
 def P(key, lang=None):
@@ -1181,8 +1181,9 @@ def build_farie_extra():
 
 
 def build_legal():
-    """Testi legali (versione 1.0): solo in italiano, la versione vincolante. Le pagine EN e DE
-    rimandano qui."""
+    """Testi legali (versione 1.0). L'italiano è il testo di riferimento; le traduzioni EN e DE sono in
+    i18n.LEGAL e rimandano all'originale."""
+    pages = {}
     privacy = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Privacy</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
@@ -1206,7 +1207,7 @@ def build_legal():
 <h2>9. Cookie e aggiornamenti</h2>
 <p>Per informazioni sui cookie e sui servizi integrati consulta la <a href="/cookies">Cookie Policy</a>. Questa informativa può essere aggiornata; la versione vigente è pubblicata su questa pagina.</p>
 </div></section>"""
-    page("privacy", "Privacy · Albergo Diffuso Socchieve", "Informativa privacy GDPR per ospiti, contatti, prenotazioni e servizi dell'Albergo Diffuso Socchieve.", privacy, solid=True)
+    pages["privacy"] = ("Privacy · Albergo Diffuso Socchieve", "Informativa privacy GDPR per ospiti, contatti, prenotazioni e servizi dell'Albergo Diffuso Socchieve.", privacy)
     cookies = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informativa</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Cookie</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
@@ -1216,7 +1217,7 @@ def build_legal():
 <h2>Preferenze e contatti</h2>
 <p>Puoi gestire o eliminare i cookie attraverso le impostazioni del browser e, quando disponibili, attraverso i controlli presenti nei servizi esterni. Per richieste relative ai dati personali consulta l’<a href="/privacy">informativa privacy</a> o scrivi a <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
 </div></section>"""
-    page("cookies", "Cookie · Albergo Diffuso Socchieve", "Informativa sui cookie del sito e sui servizi esterni di prenotazione.", cookies, solid=True)
+    pages["cookies"] = ("Cookie · Albergo Diffuso Socchieve", "Informativa sui cookie del sito e sui servizi esterni di prenotazione.", cookies)
     terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Benessere</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione dei servizi</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
@@ -1230,8 +1231,8 @@ def build_legal():
 <h2>Svolgimento dei servizi</h2>
 <p>Il bagno di bosco si svolge all’aperto su sentieri e terreno boschivo: sono necessari abbigliamento e calzature adatti. Per entrambi i servizi valgono la capienza, l’orario e le indicazioni comunicate nella conferma. Per la privacy consulta l’<a href="/privacy">informativa privacy</a>.</p>
 </div></section>"""
-    page("terms", "Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve",
-         "Condizioni per prenotazioni sauna e bagno di bosco: prezzo, carta a garanzia, cancellazioni e mancata presentazione.", terms, solid=True)
+    pages["terms"] = ("Condizioni di prenotazione dei servizi · Albergo Diffuso Socchieve",
+                      "Condizioni per prenotazioni sauna e bagno di bosco: prezzo, carta a garanzia, cancellazioni e mancata presentazione.", terms)
     booking_terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informazioni contrattuali</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
@@ -1255,8 +1256,13 @@ def build_legal():
 <h2>8. Assistenza e privacy</h2>
 <p>Per cancellazioni, modifiche o chiarimenti contatta <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a> oppure <a href="tel:+390433819934">+39 0433 819934</a>. I dati personali sono trattati secondo l’<a href="/privacy">informativa privacy</a>.</p>
 </div></section>"""
-    page("booking-terms", "Condizioni di prenotazione · Albergo Diffuso Socchieve",
-         "Condizioni di prenotazione per soggiorni Col Gentile, La Farie, sauna e bagno di bosco: caparra, cancellazioni, no-show e carta a garanzia.", booking_terms, solid=True)
+    pages["booking-terms"] = ("Condizioni di prenotazione · Albergo Diffuso Socchieve",
+                              "Condizioni di prenotazione per soggiorni Col Gentile, La Farie, sauna e bagno di bosco: caparra, cancellazioni, no-show e carta a garanzia.", booking_terms)
+    for key, (title, desc, body) in pages.items():
+        if LANG != "it":
+            title, desc, body = i18n.LEGAL[LANG][key]
+            body = body.format(privacy=P("privacy"), cookies=P("cookies"), booking=P("booking-terms"), terms=P("terms"), original=P(key, "it"))
+        page(key, title, desc, body, solid=True)
 
 
 def build_404():
@@ -1329,9 +1335,9 @@ def main():
         for s in STAYS: build_stay(s)
         for v in VILLAGES: build_village(v)
         for k, x in EXPS.items(): build_exp(k, x)
-        build_territorio(); build_contact(); build_farie(); build_farie_extra(); build_services()
+        build_territorio(); build_contact(); build_farie(); build_farie_extra(); build_services(); build_legal()
     localize("it")
-    build_legal(); build_404()
+    build_404()
     build_meta(); build_icons()
     print(f"OK: {len(PAGES)} pagine indicizzabili in {len(LANGS)} lingue, sitemap.xml, robots.txt, _redirects")
     if MISSING:

@@ -25,7 +25,10 @@ lingua. Non c'è reindirizzamento automatico in base alla lingua del browser: og
 così Google le indicizza tutte (tag `hreflang` in ogni pagina e nella sitemap).
 
 Quando si cambia un testo in `data.py` o in `build.py`, va aggiornata anche la traduzione in
-`_src/i18n.py`; se manca, `build.py` lo segnala alla fine e usa il testo italiano. Restano in
+`_src/i18n.py`; se manca, `build.py` lo segnala alla fine e usa il testo italiano.
+Le pagine legali (privacy, cookie, condizioni di prenotazione e dei servizi) sono tradotte in
+`i18n.LEGAL`: le traduzioni dichiarano che prevale il testo italiano. Se cambia un testo legale
+italiano, va aggiornata a mano anche la traduzione (qui `build.py` non può segnalarlo). Restano in
 italiano i widget di prenotazione Welora e Slope (i testi li gestiscono i loro sistemi).
 
 ## Modificare un testo o aggiungere una casa
