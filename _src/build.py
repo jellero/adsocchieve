@@ -800,7 +800,7 @@ def build_home():
         <p class="rv d2">{t("Dopo una giornata sui sentieri o in bici, la sauna scioglie i muscoli; nei boschi intorno ai borghi lo Shinrin-yoku con Petra ti insegna a rallentare. Si prenotano online con conferma immediata: serve una carta di credito a garanzia.")}</p></div>
         <div class="bento">{"".join(svc_card(s) for s in SERVICES)}</div>
         <div class="svc-seo rv">
-          <div><h3>{t('Sauna in Carnia')}</h3><p>{tf("Sauna a ore per tutto il gruppo, {p} € l'ora a prezzo unico, da un'ora in su: il modo migliore per chiudere un'escursione, un'uscita in mountain bike o una giornata sulle piste di Forni di Sopra.", p=SERVICES[1]["price"])} <a class="link" href="{svc_url(SERVICES[1])}">{t('Prezzi e orari')} {I("arrow")}</a></p></div>
+          <div><h3>{t('Sauna in Carnia')}</h3><p>{tf("Sauna a ore per tutto il gruppo, {p} € l'ora a prezzo unico, da due ore in su: il modo migliore per chiudere un'escursione, un'uscita in mountain bike o una giornata sulle piste di Forni di Sopra.", p=SERVICES[1]["price"])} <a class="link" href="{svc_url(SERVICES[1])}">{t('Prezzi e orari')} {I("arrow")}</a></p></div>
           <div><h3>{t('Bagno di bosco (Shinrin-yoku)')}</h3><p>{tf("Forest bathing guidato da Petra nei boschi di Socchieve: circa due ore di immersione lenta e sensoriale nella natura, gruppi fino a 6 persone, {p} € a persona, ritrovo alla reception di Mediis.", p=SERVICES[0]["price"])} <a class="link" href="{svc_url(SERVICES[0])}">{t('Come funziona')} {I("arrow")}</a></p></div>
         </div>
         {welora("search", None, t("Prenota il tuo momento di benessere"))}
@@ -1223,7 +1223,7 @@ def build_legal():
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
 <p>Queste condizioni si riferiscono alle prenotazioni di sauna e bagno di bosco proposte dall’Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307. Sono parte delle <a href="/condizioni-prenotazione">condizioni generali di prenotazione</a>.</p>
 <h2>Prezzi e durata</h2>
-<p>La sauna è proposta a <strong>20 € l’ora per l’intero gruppo</strong>, con durata minima di un’ora. Il bagno di bosco è proposto a <strong>15 € a persona</strong>, con durata indicativa di circa due ore. Prezzi, date e disponibilità effettivi sono mostrati prima della conferma; si applica il prezzo accettato nella prenotazione.</p>
+<p>La sauna è proposta a <strong>20 € l’ora per l’intero gruppo</strong>, con durata minima di due ore. Il bagno di bosco è proposto a <strong>15 € a persona</strong>, con durata indicativa di circa due ore. Prezzi, date e disponibilità effettivi sono mostrati prima della conferma; si applica il prezzo accettato nella prenotazione.</p>
 <h2>Carta a garanzia</h2>
 <p>La prenotazione online può richiedere una carta a garanzia tramite Welora. Gli eventuali addebiti e le condizioni economiche applicabili devono essere mostrati prima della conferma. Non viene qui stabilito un importo aggiuntivo di penale per cancellazione tardiva o mancata presentazione in assenza di una specifica condizione comunicata e accettata nella prenotazione.</p>
 <h2>Modifiche, cancellazioni e mancata presentazione</h2>
