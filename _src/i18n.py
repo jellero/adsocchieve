@@ -31,6 +31,7 @@ UI = {
     "Contatti e come arrivare": ("Contact and getting here", "Kontakt und Anreise"),
     "P.I.": ("VAT no.", "USt-IdNr."),
     "Cookie": ("Cookies", "Cookies"),
+    "Condizioni di prenotazione": ("Booking terms", "Buchungsbedingungen"),
     "Galleria fotografica": ("Photo gallery", "Fotogalerie"),
     "Chiudi galleria": ("Close gallery", "Galerie schließen"),
     "Foto precedente": ("Previous photo", "Vorheriges Foto"),

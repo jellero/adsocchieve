@@ -64,3 +64,10 @@ Il modulo è presente in homepage, in `/it/contact` e in `/la-farie`. La chiamat
 **Server richiesto:** hosting Apache/Nginx con PHP e invio mail correttamente configurato. GitHub Pages e l'apertura locale via `file://` non possono eseguire PHP. Testare su un server locale con `php -S localhost:8000`, preferibilmente con SMTP configurato in hosting. L'invio tramite `mail()` dipende dal servizio di posta del server; una risposta positiva significa che il server ha accettato la richiesta di consegna, non garantisce la ricezione.
 
 Per La Farie configurare la variabile di ambiente `FARIE_CONTACT_EMAIL` se la ricezione deve andare a una casella distinta; in assenza del parametro le richieste sono etichettate "La Farie" ma recapitate a `info@albergodiffusosocchieve.it`. Non pubblicare finché non sono verificati destinatari, recapiti, informativa privacy e posta in uscita.
+
+## Link richiesti da Welora
+
+- Condizioni di prenotazione: `https://albergodiffusosocchieve.it/condizioni-prenotazione` (versione 1.0)
+- Informativa privacy: `https://albergodiffusosocchieve.it/privacy` (versione 1.0)
+- Le condizioni riprendono le regole pubbliche del precedente sito ufficiale e quelle già presenti nel progetto per La Farie e servizi.
+- **Da completare in Welora prima di attivare l'addebito della penale:** importo/percentuale e termine della penale no-show specifica di ciascuna struttura o servizio, che non risultano definiti nelle fonti pubbliche. Pubblicare qui gli stessi valori approvati.
