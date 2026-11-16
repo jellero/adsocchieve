@@ -1,6 +1,16 @@
 (() => {
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  /* testi nella lingua della pagina (<html lang>) */
+  const TXT = {
+    it: { one: " residenza", many: " residenze", photo: "Foto", tourLoading: "Caricamento del tour…", tourError: "Impossibile caricare il tour. Riprova.",
+          sending: "Invio in corso…", failed: "Invio non riuscito. Riprova più tardi.", sent: "Messaggio inviato correttamente.", network: "Errore di connessione. Riprova." },
+    en: { one: " house", many: " houses", photo: "Photo", tourLoading: "Loading the tour…", tourError: "The tour could not be loaded. Please try again.",
+          sending: "Sending…", failed: "Sending failed. Please try again later.", sent: "Message sent.", network: "Connection error. Please try again." },
+    de: { one: " Haus", many: " Häuser", photo: "Foto", tourLoading: "Rundgang wird geladen…", tourError: "Der Rundgang konnte nicht geladen werden. Bitte erneut versuchen.",
+          sending: "Wird gesendet…", failed: "Senden fehlgeschlagen. Bitte später erneut versuchen.", sent: "Nachricht gesendet.", network: "Verbindungsfehler. Bitte erneut versuchen." },
+  };
+  const T = TXT[(document.documentElement.lang || "it").slice(0, 2)] || TXT.it;
 
   /* header e menu mobile */
   const hdr = $("[data-hdr]");
@@ -41,7 +51,7 @@
         if (c.classList.contains("feature")) { c.style.gridColumn = filtered ? "auto" : ""; c.style.flexDirection = filtered ? "column" : ""; }
         if (ok) n++;
       });
-      const label = n + (n === 1 ? " residenza" : " residenze");
+      const label = n + (n === 1 ? T.one : T.many);
       if (count) count.textContent = label;
       if (countM) countM.textContent = label;
       if (empty) empty.style.display = n ? "none" : "block";
@@ -75,7 +85,7 @@
     };
     const open = (l, i) => {
       list = l;
-      lbThumbs.innerHTML = l.length > 1 ? l.map((s, k) => `<button data-lb-go="${k}" aria-label="Foto ${k + 1}"><img loading="lazy" src="${s}" alt=""></button>`).join("") : "";
+      lbThumbs.innerHTML = l.length > 1 ? l.map((s, k) => `<button data-lb-go="${k}" aria-label="${T.photo} ${k + 1}"><img loading="lazy" src="${s}" alt=""></button>`).join("") : "";
       $$(".lb-nav", lb).forEach((b) => (b.style.visibility = l.length > 1 ? "" : "hidden"));
       lb.showModal ? lb.showModal() : lb.setAttribute("open", "");
       show(i);
@@ -115,8 +125,8 @@
     const boot = async (i) => {
       current = i; mark(i);
       if (viewer) return viewer.loadScene("p" + i);
-      start.querySelector("span").textContent = "Caricamento del tour…";
-      try { await loadPnlm(); } catch { start.querySelector("span").textContent = "Impossibile caricare il tour. Riprova."; return; }
+      start.querySelector("span").textContent = T.tourLoading;
+      try { await loadPnlm(); } catch { start.querySelector("span").textContent = T.tourError; return; }
       const box = document.createElement("div"); stage.append(box);
       const scenes = {};
       panos.forEach((p, k) => (scenes["p" + k] = { type: "equirectangular", panorama: p, hfov: 110, autoRotate: -2 }));
@@ -142,7 +152,7 @@
       if (!form.reportValidity() || button.disabled) return;
       button.disabled = true;
       form.setAttribute("aria-busy", "true");
-      setStatus("Invio in corso…", "sending");
+      setStatus(T.sending, "sending");
       try {
         const response = await fetch(form.action, {
           method: "POST",
@@ -152,12 +162,12 @@
         });
         const data = await response.json().catch(() => ({}));
         if (!response.ok || data.success !== true) {
-          throw new Error(typeof data.message === "string" ? data.message : "Invio non riuscito. Riprova più tardi.");
+          throw new Error(typeof data.message === "string" ? data.message : T.failed);
         }
         form.reset();
-        setStatus(data.message || "Messaggio inviato correttamente.", "success");
+        setStatus(data.message || T.sent, "success");
       } catch (error) {
-        setStatus(error instanceof Error ? error.message : "Errore di connessione. Riprova.", "error");
+        setStatus(error instanceof Error ? error.message : T.network, "error");
       } finally {
         button.disabled = false;
         form.removeAttribute("aria-busy");

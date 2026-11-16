@@ -8,12 +8,25 @@ risultanti sono nel repository e si pubblicano su qualsiasi hosting statico
 
 | Percorso | Cosa contiene |
 |---|---|
-| `_src/data.py` | **Tutti i contenuti**: case, borghi, esperienze, FAQ, distanze, contatti |
+| `_src/data.py` | **Tutti i contenuti** in italiano: case, borghi, esperienze, FAQ, distanze, contatti |
+| `_src/i18n.py` | **Traduzioni inglese e tedesco**: testi dell'interfaccia e contenuti di `data.py` |
 | `_src/site.css`, `_src/site.js` | Stile e comportamento (filtri, galleria, tour 360°, menu) |
 | `_src/build.py` | Genera le pagine HTML, `sitemap.xml`, `robots.txt`, `_redirects`, icone |
 | `_src/fetch_assets.py` | Scarica le foto dal vecchio sito, le ottimizza in WebP e scarica i font |
 | `_src/serve.py` | Anteprima locale con URL senza `.html`, come sull'hosting |
-| `index.html`, `it/…`, `img/`, `assets/` | **Sito generato**: da pubblicare così com'è |
+| `index.html`, `it/…`, `en/…`, `de/…`, `img/`, `assets/` | **Sito generato**: da pubblicare così com'è |
+
+## Lingue: italiano, inglese, tedesco
+
+Il sito è generato in tre lingue: italiano agli URL di sempre (`/`, `/it/…`), inglese sotto `/en/`
+(es. `/en/accommodation/casa-vanda`) e tedesco sotto `/de/` (es. `/de/unterkuenfte/casa-vanda`).
+In alto a destra (e nel menu mobile) il selettore **IT · EN · DE** porta alla stessa pagina nell'altra
+lingua. Non c'è reindirizzamento automatico in base alla lingua del browser: ogni lingua ha i suoi URL,
+così Google le indicizza tutte (tag `hreflang` in ogni pagina e nella sitemap).
+
+Quando si cambia un testo in `data.py` o in `build.py`, va aggiornata anche la traduzione in
+`_src/i18n.py`; se manca, `build.py` lo segnala alla fine e usa il testo italiano. Restano in
+italiano i widget di prenotazione Welora e Slope (i testi li gestiscono i loro sistemi).
 
 ## Modificare un testo o aggiungere una casa
 
@@ -31,7 +44,7 @@ python _src/serve.py          # anteprima su http://localhost:8000
 - `sitemap.xml` con le immagini, `robots.txt`, pagina 404, favicon e manifest.
 - Foto in WebP ottimizzate con `srcset`, dimensioni esplicite (niente salti di layout), hero precaricata, font in locale (anche per il GDPR), nessun JavaScript necessario per leggere i contenuti.
 - Tour virtuali 360° di Casa Vanda, Casa Ernesto da Rosuline e Casa dal Miedi (Pannellum, caricato solo al clic).
-- `_redirects` (Netlify/Cloudflare Pages) che porta le vecchie pagine `/en/…` e `/fr/…` alle pagine italiane finché non ci sono le traduzioni.
+- `_redirects` (Netlify/Cloudflare Pages) che porta le vecchie pagine `/en/…` e `/fr/…` alle nuove pagine in inglese.
 
 ## Da fare prima della messa online
 
@@ -40,7 +53,7 @@ python _src/serve.py          # anteprima su http://localhost:8000
 3. **Profilo dell'attività su Google** (Google Business Profile): stesso nome, indirizzo e telefono del sito, foto, link al sito e al booking. È la leva più forte per le ricerche “dove dormire in Carnia”.
 4. Far verificare i testi di **privacy e cookie**.
 5. Verificare i dati: posti letto di Casa Ernesto da Rosuline (21 sulla casa intera, 17 sommando le unità), “animali ammessi” (dedotto dall'icona del vecchio sito), CIN di Casa Ai Pascoli (mancante).
-6. **Traduzioni EN/DE/FR**: il vecchio sito aveva inglese e francese; il tedesco è il mercato estero principale della Carnia.
+6. **Traduzioni**: inglese e tedesco sono fatti; farli rileggere da un madrelingua prima della messa online. Il francese del vecchio sito non c'è: `/fr/…` rimanda all'inglese.
 
 ## Form contatti AJAX PHP
 Il modulo è presente in homepage, in `/it/contact` e in `/la-farie`. La chiamata AJAX arriva al file `/contatti.php`. Il modulo:
