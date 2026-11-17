@@ -235,7 +235,7 @@ FARIE = dict(
     g=[f"https://cf.bstatic.com/xdata/images/hotel/max1280x900/{i.split('|')[0]}.jpg?k={i.split('|')[1]}&o=" for i in _FARIE_IDS],
     intro=["La Farie è un bed & breakfast ricavato in una casa tipica carnica ristrutturata, nel borgo di Lungis, a 554 metri di quota: quiete, vista sulle montagne e il ritmo lento di un paese vero.",
            "Le camere hanno terrazza o balcone, bagno privato con bidet e asciugacapelli, TV a schermo piatto e Wi-Fi gratuito. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
-           "La Farie è gestita direttamente dall'Albergo Diffuso Socchieve “Col Gentile”: stessa casa, stessa quiete, con la reception di Mediis a due passi per informazioni, consigli su sentieri e itinerari e per qualsiasi necessità durante il soggiorno."],
+           "La Farie è gestita dall'Albergo Diffuso Socchieve “Col Gentile”. Per informazioni sulla struttura e consigli sui luoghi da visitare in Carnia, puoi rivolgerti alla reception di Mediis."],
     am=["Colazione italiana dolce e salata", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazza o balcone", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
     rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "entro le 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "non ammessi"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
     # Camere e piani tariffari dalla configurazione Welora di La Farie (struttura 8)
