@@ -822,7 +822,7 @@ def build_home():
       <div class="wrap">
         <span class="eyebrow light rv">{t("Bed &amp; Breakfast a Lungis · gestito dall'Albergo Diffuso")}</span>
         <h2 class="rv d1">La Farie.</h2>
-        <p class="rv d2">{t("Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, ora gestito direttamente dall'Albergo Diffuso Socchieve.")}</p>
+        <p class="rv d2">{t("Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, gestito direttamente dall'Albergo Diffuso Socchieve.")}</p>
         <a class="btn btn-light rv d3" href="{P('farie')}">{t('Scopri La Farie')} {I('arrow')}</a>
       </div>
     </section>
@@ -902,6 +902,7 @@ def build_contact():
   <div class="contact-cards rv">
     <a href="tel:{SITE['phone_href']}"><span>{t('Telefono')}</span><b>{SITE['phone']}</b></a>
     <a href="tel:{SITE['mobile_href']}"><span>{t('Cellulare')}</span><b>{SITE['mobile']}</b></a>
+    <a href="https://wa.me/{SITE['mobile_href'].lstrip('+')}" target="_blank" rel="noopener"><span>WhatsApp</span><b>{SITE['mobile']}</b></a>
     <a href="mailto:{SITE['email']}"><span>Email</span><b>{SITE['email']}</b></a>
   </div>
   <div class="loc-grid" style="margin-top:clamp(48px,6vw,80px)">
@@ -1003,7 +1004,7 @@ def build_farie():
       <div><span class="eyebrow rv">{t('Info utili')}</span><h2 class="rv d1">{t('Prima di <em>arrivare.</em>')}</h2>
         <div class="routes rv" style="margin-top:24px">{rules}</div></div>
       <div><span class="eyebrow rv">{t('Dove siamo')}</span><h2 class="rv d1">{t('A Lungis, nella <em>Carnia più vera.</em>')}</h2>
-        <p class="rv d2">{tf("{addr}, frazione di Lungis, comune di Socchieve (UD), a 554 metri di quota. A due passi l'agriturismo In Già, il bar alimentari Al Cervo e i sentieri dell'Anello delle Frazioni.", addr=F['addr'])}</p>
+        <p class="rv d2">{tf("{addr}, frazione di Lungis, comune di Socchieve (UD), a 554 metri di quota. A due passi l'agriturismo In Già, il bar e ristorante Al Cervo e i sentieri dell'Anello delle Frazioni.", addr=F['addr'])}</p>
         <ul class="dist rv" style="margin-top:24px;grid-template-columns:repeat(2,1fr)">{near}</ul>
         <p class="rv" style="margin-top:24px"><a class="link" href="{P('vill:lungis')}">{t('Scopri il borgo di Lungis')} {I('arrow')}</a></p></div>
     </div></section>
@@ -1011,13 +1012,13 @@ def build_farie():
       <span class="eyebrow rv">La Farie · Lungis</span>
       <h2 class="rv d1">{t('Il tuo B&amp;B <em>in Carnia.</em>')}</h2>
       <p class="rv d2">{t('Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.')}</p>
-      <div class="row rv d3">{book_btn}<a class="btn btn-dark" href="#scrivici">{t('Scrivici')}</a><a class="btn btn-dark" href="{P('home')}">{t('Scopri anche Col Gentile')}</a></div>
+      <div class="row rv d3">{book_btn}<a class="btn btn-dark" href="#scrivici">{t('Scrivici')}</a><a class="btn btn-dark" href="https://wa.me/{SITE['mobile_href'].lstrip('+')}" target="_blank" rel="noopener">WhatsApp · {SITE['mobile']}</a><a class="btn btn-dark" href="{P('home')}">{t('Scopri anche Col Gentile')}</a></div>
     </div></section>"""
     ld = {"@context": "https://schema.org", "@type": "BedAndBreakfast", "@id": U + "/la-farie#bnb", "name": "La Farie",
           "description": " ".join(F["intro"]), "url": U + P("farie"), "image": [abs_img(g) for g in F["g"][:8] if g in PH],
           "address": address(F["addr"], "Lungis, Socchieve"),
           "geo": {"@type": "GeoCoordinates", "latitude": F["geo"][0], "longitude": F["geo"][1]},
-          "checkinTime": "15:00", "checkoutTime": "10:00", "petsAllowed": True, "smokingAllowed": False,
+          "checkinTime": "15:00", "checkoutTime": "10:00", "petsAllowed": False, "smokingAllowed": False,
           "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": a, "value": True} for a in F["am"]],
           "sameAs": [F["booking"]], "email": SITE["email"], "telephone": SITE["phone"], "parentOrganization": {"@id": LODGING_ID}}
     crumbs = [home_crumb(), ("La Farie", P("farie"))]
