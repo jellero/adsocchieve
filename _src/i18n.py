@@ -783,7 +783,7 @@ FAQ_DE = [
 FARIE_EN = dict(
     intro=["La Farie is a bed & breakfast in a restored traditional Carnic house in the village of Lungis, at 554 metres: peace and quiet, mountain views and the slow pace of a real village.",
            "The rooms have a terrace or balcony, a private bathroom with bidet, hairdryer, a flat-screen TV and free Wi-Fi. The house has a garden, a shared lounge and free private parking.",
-           "La Farie is run directly by the Albergo Diffuso Socchieve “Col Gentile”: the same house, the same peace, with the Mediis reception close by for information, advice on trails and routes and anything you need during your stay."],
+           "La Farie is managed by the Albergo Diffuso Socchieve “Col Gentile”. For information about the property and suggestions on places to visit in Carnia, please contact the reception in Mediis."],
     am=["Italian-style sweet and savoury breakfast", "Free Wi-Fi", "Free private parking", "Terrace or balcony", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
     rules=[("Check-in", "from 15:00 to 18:00"), ("Check-out", "by 10:00"), ("Children", "welcome at any age, free cot up to 2 years"), ("Extra bed", "on request, 40 € per night"), ("Pets", "not allowed"), ("Smoking", "not allowed"), ("Parties and events", "not allowed")],
     rooms=[("Campanula", "Double room with bathroom and terrace", 2), ("Salvia", "Double room with terrace", 2),
@@ -797,7 +797,7 @@ FARIE_EN = dict(
 FARIE_DE = dict(
     intro=["La Farie ist ein Bed & Breakfast in einem restaurierten, typisch karnischen Haus im Dorf Lungis, auf 554 Metern Höhe: Ruhe, Blick auf die Berge und der langsame Rhythmus eines echten Dorfes.",
            "Die Zimmer haben Terrasse oder Balkon, ein eigenes Bad mit Bidet, Haartrockner, Flachbild-TV und kostenloses WLAN. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
-           "La Farie wird direkt vom Albergo Diffuso Socchieve „Col Gentile“ geführt: dasselbe Haus, dieselbe Ruhe, mit der Rezeption in Mediis ganz in der Nähe für Informationen, Tipps zu Wegen und Touren und alles, was Sie während Ihres Aufenthalts brauchen."],
+           "La Farie wird vom Albergo Diffuso Socchieve „Col Gentile“ geführt. Für Informationen zur Unterkunft und Tipps zu Ausflugszielen in Karnien wenden Sie sich bitte an die Rezeption in Mediis."],
     am=["Italienisches Frühstück mit süßen und herzhaften Speisen", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse oder Balkon", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
     rules=[("Anreise", "von 15:00 bis 18:00 Uhr"), ("Abreise", "bis 10:00 Uhr"), ("Kinder", "in jedem Alter willkommen, Babybett bis 2 Jahre kostenlos"), ("Zustellbett", "auf Anfrage, 40 € pro Nacht"), ("Haustiere", "nicht gestattet"), ("Rauchen", "nicht gestattet"), ("Partys und Veranstaltungen", "nicht gestattet")],
     rooms=[("Campanula", "Doppelzimmer mit Bad und Terrasse", 2), ("Salvia", "Doppelzimmer mit Terrasse", 2),
