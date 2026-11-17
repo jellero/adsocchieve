@@ -38,9 +38,9 @@ DISTANCES = [
 VILLA = ("Villa Vanda, riconosciuta dal Comune di Socchieve come edificio di valore storico, risale alla seconda metà "
          "del Settecento: architettura tipicamente carnica, archi in pietra e ballatoi lignei (linde) da cui si apre un "
          "bellissimo panorama. Si trova a Viaso, frazione tranquilla, soleggiata e immersa nel verde, dove la vita scorre "
-         "lenta con i ritmi della natura. Gli ospiti hanno a disposizione una piccola corte con giardino e posti auto "
-         "riservati accanto all'ingresso.")
-VANDA_AM = ["TV", "Riscaldamento", "Posto auto", "Giardino comune", "Wi-Fi", "Animali ammessi"]
+         "lenta con i ritmi della natura. Gli ospiti hanno a disposizione una piccola corte con giardino. I tre posti auto "
+         "sono condivisi fra i cinque appartamenti e non sono riservati.")
+VANDA_AM = ["TV", "Riscaldamento", "Parcheggio condiviso (posti limitati)", "Giardino comune", "Wi-Fi", "Animali ammessi"]
 ERN_AM = ["TV", "Lavastoviglie", "Microonde", "Wi-Fi", "Giardino comune", "Riscaldamento", "Animali ammessi"]
 ERN_ADDR = "Borgo Niccolò Paganini 4, Lungis"
 VANDA_ADDR = "Via San Giovanni 38, Viaso"
@@ -57,7 +57,7 @@ STAYS = [
     dict(id="casa-ernesto-da-rosuline", n="Casa Ernesto da Rosuline", b="Lungis", beds=21, stars=3, kind="House", label="Casa per gruppi",
          addr=ERN_ADDR, card="Q30A3509%20copia.jpg",
          short="Tutta la casa di Lungis con le sue quattro unità abitative: la soluzione per gruppi numerosi in Carnia.",
-         text=["La casa di Lungis riunisce quattro unità abitative arredate in maniera sobria e funzionale: il monolocale al piano terra e tre appartamenti ai piani superiori, con terrazzi affacciati sul borgo e sulle montagne.", "Prenotandola intera è ideale per gruppi numerosi, famiglie allargate, squadre sportive e associazioni. Dal paese parte l'Anello delle Frazioni, e il bar alimentari e l'agriturismo sono a pochi passi."],
+         text=["La casa di Lungis riunisce quattro unità abitative arredate in maniera sobria e funzionale: il monolocale al piano terra e tre appartamenti ai piani superiori, con terrazzi affacciati sul borgo e sulle montagne.", "Prenotandola intera è ideale per gruppi numerosi, famiglie allargate, squadre sportive e associazioni. Dal paese parte l'Anello delle Frazioni, e il bar e ristorante Al Cervo e l'agriturismo sono a pochi passi."],
          am=ERN_AM, units=["ernesto-da-rosuline-terra-0", "ernesto-da-rosuline-1", "ernesto-da-rosuline-2", "ernesto-da-rosuline-3"],
          pano=["SAM_101_0062.jpg", "SAM_101_0067.jpg", "SAM_101_0069.jpg", "SAM_101_0072.jpg", "SAM_101_0074.jpg", "SAM_101_0076.jpg", "SAM_101_0078.jpg", "SAM_101_0079.jpg", "SAM_101_0081.jpg", "SAM_101_0083.jpg", "SAM_101_0085.jpg", "SAM_101_0086.jpg"],
          g=["casa%20ernesto.jpg", "Q30A9844.jpg", "Q30A9845.jpg", "Q30A9850.jpg", "Q30A9852.jpg", "ErnRosuline2-cucina.jpg", "Q30A9856.jpg", "Q30A9859.jpg", "Q30A9866.jpg", "Q30A9893.jpg", "ErnRosuline2-terrazzo.jpg", "ErnRosuline3-cucina.jpg", "Q30A9920.jpg", "Q30A9899.jpg", "Q30A9908.jpg", "ErnRosuline4-vista.jpg", "ErnRosuline4-cucina.jpg", "Q30A9980.jpg", "Q30A9921.jpg", "Q30A9926.jpg", "Q30A9954.jpg", "ErnRosuline-bagno.jpg"]),
@@ -141,12 +141,12 @@ VILLAGES = [
          locali=["Ristorante La Baita"], sentieri=["Anello delle Frazioni", "Anello di Fondas", "Flamias"]),
     dict(id="lungis", n="Lungis", geo=(46.41045, 12.82382), card="LungisCartolina.jpg", hero=["PanoramaLungis3.jpg", "PanoramaLungis.jpg", "PanoramaLungis2.jpg"],
          f=dict(ab="130", q="554", se="2", lo="2"),
-         t="Come la vicina Feltrone, Lungis è attraversata da numerosi sentieri, tra cui il percorso di mountain bike che congiunge tutte le frazioni del comune. In paese ci sono l'agriturismo In Già e il bar alimentari Al Cervo, e da qui parte l'Anello delle Frazioni.",
-         locali=["Agriturismo In Già", "Bar alimentari e tabacchi Al Cervo · tel. 0433 80007"], sentieri=["Anello delle Frazioni"]),
+         t="Come la vicina Feltrone, Lungis è attraversata da numerosi sentieri, tra cui il percorso di mountain bike che congiunge tutte le frazioni del comune. In paese ci sono l'agriturismo In Già e il bar e ristorante Al Cervo, e da qui parte l'Anello delle Frazioni.",
+         locali=["Agriturismo In Già", "Bar e ristorante Al Cervo · tel. 0433 80007"], sentieri=["Anello delle Frazioni"]),
     dict(id="feltrone-e-dilignidis", n="Feltrone", geo=(46.4188, 12.83482), card="dilignidis%20e%20feltrone_0.jpg", hero=["Panoramica-feltrone-montagne.jpg", "PanoramicaFeltrone1.jpg", "PanoramicaFeltrone2.jpg"],
          f=dict(ab="32", q="769", se="5", lo="a Lungis"),
          t="La frazione più alta del comune. Feltrone è attraversata da molti sentieri, ma il più importante è la via che sale al Col Gentile e prosegue fino a Prato Carnico, in Val Pesarina: il sentiero CAI 235 attraversa luoghi incontaminati di straordinaria bellezza come la Forca di Pani. Con 1350 metri di dislivello e 23 km, circa 7 ore di cammino, è adatto a camminatori allenati. Alla reception si può organizzare il rientro in pulmino.",
-         locali=["Agriturismo In Già a Lungis (2 km)", "Bar alimentari Al Cervo a Lungis (2 km)"], sentieri=["Col Gentile · CAI 235", "Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"]),
+         locali=["Agriturismo In Già a Lungis (2 km)", "Bar e ristorante Al Cervo a Lungis (2 km)"], sentieri=["Col Gentile · CAI 235", "Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"]),
     dict(id="mediis", n="Mediis", geo=(46.40358, 12.82309), card="mediis.jpg", hero=["Mediispanoramica.jpg", "mediis_fontana3.jpg"],
          f=dict(ab="130", q="486", se="2", lo="1"),
          t="Da Mediis parte l'omonimo circuito di mountain bike e passa il noto Anello delle Frazioni. Il paese, che un tempo contese a Socchieve il titolo di capoluogo, è centrale rispetto a quasi tutte le frazioni e domina il corso del Lumiei che si getta nel Tagliamento. Qui si trova la reception dell'albergo diffuso.",
@@ -154,7 +154,7 @@ VILLAGES = [
     dict(id="dilignidis", n="Dilignidis", geo=(46.41365, 12.83344), card="CartolinaDilignidis.jpg", hero=["CartolinaDilignidis.jpg"],
          f=None, near="Feltrone",
          t="Vicinissima a Feltrone, Dilignidis ne condivide sentieri e servizi: è attraversata dall'Anello delle Frazioni e dal percorso di mountain bike di Mediis. Non ci sono residenze dell'albergo diffuso: le più vicine sono a Feltrone, a pochi minuti a piedi.",
-         locali=["Agriturismo In Già a Lungis (2 km)", "Bar alimentari Al Cervo a Lungis (2 km)"], sentieri=["Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"]),
+         locali=["Agriturismo In Già a Lungis (2 km)", "Bar e ristorante Al Cervo a Lungis (2 km)"], sentieri=["Monte Nolia", "Feltrone · Rio Negrona", "Anello delle Frazioni", "Anello di Fondas"]),
     dict(id="nonta", n="Nonta", geo=(46.39851, 12.83837), card="NontaCopertina.jpg", hero=["PanoramaNonta1.jpg", "PanoramaNonta2.jpg", "PanoramaNonta3.jpg"],
          f=dict(ab="23", q="449", se="1", lo="1"),
          t="Nonta stupisce per essere piccola e inafferrabile, proprio come doveva esserlo il suo castello. La strada da Mediis a Socchieve riesce solo a lambirla e, anche percorrendo via San Maurizio, si ha la sensazione che il borgo resti impenetrabile: come il suo lago, c'è ma non si vede. In compenso l'Osteria di Nonta, che si dice risalga al Seicento, è celebre in tutta la zona per la cucina tipica carnica.",
@@ -234,10 +234,10 @@ FARIE = dict(
     manager="Albergo Diffuso Socchieve “Col Gentile”",
     g=[f"https://cf.bstatic.com/xdata/images/hotel/max1280x900/{i.split('|')[0]}.jpg?k={i.split('|')[1]}&o=" for i in _FARIE_IDS],
     intro=["La Farie è un bed & breakfast ricavato in una casa tipica carnica ristrutturata, nel borgo di Lungis, a 554 metri di quota: quiete, vista sulle montagne e il ritmo lento di un paese vero.",
-           "Le camere hanno terrazza o balcone, bagno privato con bidet, asciugacapelli e pantofole, TV a schermo piatto e Wi-Fi gratuito. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
-           "Da oggi La Farie è gestita direttamente dall'Albergo Diffuso Socchieve “Col Gentile”: stessa casa, stessa quiete, con la reception di Mediis a due passi per informazioni, consigli su sentieri e itinerari e per qualsiasi necessità durante il soggiorno."],
-    am=["Colazione italiana o à la carte", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazza o balcone", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
-    rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "dalle 08:00 alle 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "ammessi su richiesta, può esserci un supplemento"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
+           "Le camere hanno terrazza o balcone, bagno privato con bidet e asciugacapelli, TV a schermo piatto e Wi-Fi gratuito. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
+           "La Farie è gestita direttamente dall'Albergo Diffuso Socchieve “Col Gentile”: stessa casa, stessa quiete, con la reception di Mediis a due passi per informazioni, consigli su sentieri e itinerari e per qualsiasi necessità durante il soggiorno."],
+    am=["Colazione italiana dolce e salata", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazza o balcone", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
+    rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "entro le 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "non ammessi"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
     # Camere e piani tariffari dalla configurazione Welora di La Farie (struttura 8)
     rooms=[("Campanula", "Camera matrimoniale con bagno e terrazza", 2), ("Salvia", "Camera matrimoniale con terrazzo", 2),
            ("Tarassacco", "Camera matrimoniale con bagno", 2), ("Centaurea", "Camera matrimoniale con bagno", 4),
