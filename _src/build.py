@@ -305,7 +305,7 @@ def footer():
         <a href="{P('home')}" class="logo" style="color:var(--bone)"><svg class="logo-mark" aria-hidden="true"><use href="#i-mark"/></svg><span><b>Col Gentile</b><small>Albergo Diffuso Socchieve</small></span></a>
         <p class="big">{t('La porta delle Dolomiti Friulane.')}</p>
         <p>{SITE['street']}, {SITE['locality']}<br>{SITE['zip']} Socchieve (UD) · Friuli Venezia Giulia</p>
-        <a href="mailto:{SITE['email']}">{SITE['email']}</a><a href="tel:{SITE['phone_href']}">{SITE['phone']}</a><a href="tel:{SITE['mobile_href']}">{SITE['mobile']}</a>
+        <a href="mailto:{SITE['email']}">{SITE['email']}</a><a href="tel:{SITE['phone_href']}">{SITE['phone']}</a><a href="tel:{SITE['mobile_href']}">{SITE['mobile']}</a><a href="https://wa.me/{SITE['mobile_href'].lstrip('+')}" target="_blank" rel="noopener">WhatsApp</a>
         <div class="partners">{pic("logoborghi%20autentici%20d%27Italia.jpg", "Borghi Autentici d'Italia", "120px")}</div>
       </div>
       <div><h4>{t('Le case')}</h4>{case}<a href="{P('catalog')}">{t('Tutte le case')} →</a></div>
