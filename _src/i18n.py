@@ -165,6 +165,7 @@ UI = {
     "Terrazze panoramiche": ("Panoramic terraces", "Panoramaterrassen"),
     "Terrazzo": ("Terrace", "Terrasse"),
     "Parcheggio": ("Parking", "Parkplatz"),
+    "Parcheggio condiviso (posti limitati)": ("Shared parking (limited spaces)", "Gemeinsamer Parkplatz (begrenzte Plätze)"),
     "Giardino": ("Garden", "Garten"),
 
     # ------------------------------------------------------------ pagina borgo
@@ -283,9 +284,9 @@ UI = {
         "Zwischen den Friauler und den Pesariner Dolomiten, an der SS52 von Tolmezzo nach Forni di Sopra. Fahrstrecken ab der Rezeption in Mediis."),
     "Come arrivare e contatti": ("Getting here and contact", "Anreise und Kontakt"),
     "Bed &amp; Breakfast a Lungis · gestito dall'Albergo Diffuso": ("Bed &amp; Breakfast in Lungis · run by the Albergo Diffuso", "Bed &amp; Breakfast in Lungis · geführt vom Albergo Diffuso"),
-    "Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, ora gestito direttamente dall'Albergo Diffuso Socchieve.": (
-        "A bed &amp; breakfast in a restored Carnic house in the village of Lungis, now run directly by the Albergo Diffuso Socchieve.",
-        "Ein Bed &amp; Breakfast in einem restaurierten karnischen Haus im Dorf Lungis, jetzt direkt vom Albergo Diffuso Socchieve geführt."),
+    "Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, gestito direttamente dall'Albergo Diffuso Socchieve.": (
+        "A bed &amp; breakfast in a restored Carnic house in the village of Lungis, run directly by the Albergo Diffuso Socchieve.",
+        "Ein Bed &amp; Breakfast in einem restaurierten karnischen Haus im Dorf Lungis, direkt vom Albergo Diffuso Socchieve geführt."),
     "Scopri La Farie": ("Discover La Farie", "La Farie entdecken"),
     "Domande frequenti": ("Frequently asked questions", "Häufige Fragen"),
     "Prima di <em>partire.</em>": ("Before <em>you go.</em>", "Vor der <em>Abreise.</em>"),
@@ -407,9 +408,9 @@ UI = {
     "Prima di <em>arrivare.</em>": ("Before <em>you arrive.</em>", "Vor der <em>Ankunft.</em>"),
     "Dove siamo": ("Where we are", "Lage"),
     "A Lungis, nella <em>Carnia più vera.</em>": ("In Lungis, in the <em>real Carnia.</em>", "In Lungis, im <em>echten Karnien.</em>"),
-    "{addr}, frazione di Lungis, comune di Socchieve (UD), a 554 metri di quota. A due passi l'agriturismo In Già, il bar alimentari Al Cervo e i sentieri dell'Anello delle Frazioni.": (
-        "{addr}, in the hamlet of Lungis, municipality of Socchieve (UD), at 554 metres above sea level. A short walk to the In Già farm restaurant, the Al Cervo bar and grocery, and the trails of the Anello delle Frazioni.",
-        "{addr}, Ortsteil Lungis, Gemeinde Socchieve (UD), auf 554 Metern Höhe. Nur ein paar Schritte zum Agriturismo In Già, zur Bar mit Lebensmittelladen Al Cervo und zu den Wegen des Anello delle Frazioni."),
+    "{addr}, frazione di Lungis, comune di Socchieve (UD), a 554 metri di quota. A due passi l'agriturismo In Già, il bar e ristorante Al Cervo e i sentieri dell'Anello delle Frazioni.": (
+        "{addr}, in the hamlet of Lungis, municipality of Socchieve (UD), at 554 metres above sea level. A short walk to the In Già farm restaurant, the Al Cervo bar and restaurant, and the trails of the Anello delle Frazioni.",
+        "{addr}, Ortsteil Lungis, Gemeinde Socchieve (UD), auf 554 Metern Höhe. Nur ein paar Schritte zum Agriturismo In Già, zur Bar und zum Restaurant Al Cervo und zu den Wegen des Anello delle Frazioni."),
     "Scopri il borgo di Lungis": ("Discover the village of Lungis", "Das Dorf Lungis entdecken"),
     "Il tuo B&amp;B <em>in Carnia.</em>": ("Your B&amp;B <em>in Carnia.</em>", "Ihr B&amp;B <em>in Karnien.</em>"),
     "Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.": (
@@ -495,11 +496,11 @@ UI = {
 VILLA_EN = ("Villa Vanda, recognised by the Municipality of Socchieve as a building of historic value, dates from the second half of "
             "the 18th century: typical Carnic architecture, stone arches and wooden galleries (linde) that open onto a beautiful view. "
             "It stands in Viaso, a quiet, sunny hamlet surrounded by greenery, where life follows the slow rhythm of nature. Guests "
-            "have a small courtyard with a garden and reserved parking spaces next to the entrance.")
+            "have a small courtyard with a garden. Three parking spaces are shared by the five apartments and are not reserved.")
 VILLA_DE = ("Die Villa Vanda, von der Gemeinde Socchieve als historisch wertvolles Gebäude anerkannt, stammt aus der zweiten Hälfte des "
             "18. Jahrhunderts: typisch karnische Architektur, Steinbögen und hölzerne Laubengänge (linde), von denen sich ein herrlicher "
             "Blick öffnet. Sie liegt in Viaso, einem ruhigen, sonnigen Ortsteil im Grünen, wo das Leben im langsamen Takt der Natur "
-            "verläuft. Den Gästen stehen ein kleiner Innenhof mit Garten und reservierte Parkplätze direkt am Eingang zur Verfügung.")
+            "verläuft. Den Gästen steht ein kleiner Innenhof mit Garten zur Verfügung. Drei Parkplätze werden von den fünf Wohnungen gemeinsam genutzt und sind nicht reserviert.")
 
 STAYS_EN = {
     "casa-vanda": dict(
@@ -606,18 +607,18 @@ VILLAGES_EN = {
         t="Viaso sits where the trails linking the hamlets of the municipality meet, and it surprises with how well it stays hidden while being so close to Socchieve. The mountain-bike route runs through it and, with the La Baita restaurant, it is a safe harbour for lovers of food and wine tourism.",
         locali=["La Baita restaurant"]),
     "lungis": dict(
-        t="Like nearby Feltrone, Lungis is crossed by many trails, including the mountain-bike route that links all the hamlets of the municipality. The village has the In Già farm restaurant and the Al Cervo bar and grocery, and it is the starting point of the Anello delle Frazioni.",
-        locali=["In Già farm restaurant (agriturismo)", "Al Cervo bar, grocery and tobacconist · tel. 0433 80007"]),
+        t="Like nearby Feltrone, Lungis is crossed by many trails, including the mountain-bike route that links all the hamlets of the municipality. The village has the In Già farm restaurant and the Al Cervo bar and restaurant, and it is the starting point of the Anello delle Frazioni.",
+        locali=["In Già farm restaurant (agriturismo)", "Al Cervo bar and restaurant · tel. 0433 80007"]),
     "feltrone-e-dilignidis": dict(
         f=dict(lo="in Lungis"),
         t="The highest hamlet of the municipality. Many trails cross Feltrone, but the most important is the route that climbs to the Col Gentile and continues to Prato Carnico in Val Pesarina: CAI trail 235 passes through unspoilt places of extraordinary beauty such as the Forca di Pani. With 1,350 metres of ascent over 23 km – about 7 hours on foot – it is for fit walkers. The reception can arrange a minibus back.",
-        locali=["In Già farm restaurant in Lungis (2 km)", "Al Cervo bar and grocery in Lungis (2 km)"]),
+        locali=["In Già farm restaurant in Lungis (2 km)", "Al Cervo bar and restaurant in Lungis (2 km)"]),
     "mediis": dict(
         t="The Mediis mountain-bike circuit starts here and the well-known Anello delle Frazioni passes through. The village, which once vied with Socchieve to be the main town, is central to almost all the hamlets and overlooks the Lumiei as it flows into the Tagliamento. This is where the albergo diffuso reception is.",
         locali=["Bar alla Posta · via Roma 10 · tel. 0433 80072 · SAF bus tickets and petrol station"]),
     "dilignidis": dict(
         t="Very close to Feltrone, Dilignidis shares its trails and services: the Anello delle Frazioni and the Mediis mountain-bike route both cross it. There are no albergo diffuso houses here: the nearest are in Feltrone, a few minutes' walk away.",
-        locali=["In Già farm restaurant in Lungis (2 km)", "Al Cervo bar and grocery in Lungis (2 km)"]),
+        locali=["In Già farm restaurant in Lungis (2 km)", "Al Cervo bar and restaurant in Lungis (2 km)"]),
     "nonta": dict(
         t="Nonta is small and elusive, just as its castle must once have been. The road from Mediis to Socchieve only skirts it and, even along via San Maurizio, the village seems impenetrable: like its lake, it is there but you can't see it. On the other hand, the Osteria di Nonta, said to date back to the 17th century, is famous throughout the area for its traditional Carnic cooking.",
         locali=["Osteria di Nonta · tel. 0433 80596"]),
@@ -635,18 +636,18 @@ VILLAGES_DE = {
         t="Viaso liegt dort, wo sich die Wege zwischen den Ortsteilen der Gemeinde kreuzen, und überrascht damit, wie gut es verborgen bleibt, obwohl es ganz nah bei Socchieve liegt. Die Mountainbike-Strecke führt hindurch, und mit dem Restaurant La Baita ist es ein sicherer Hafen für Genießer.",
         locali=["Restaurant La Baita"]),
     "lungis": dict(
-        t="Wie das benachbarte Feltrone wird Lungis von vielen Wegen durchzogen, darunter die Mountainbike-Strecke, die alle Ortsteile der Gemeinde verbindet. Im Dorf gibt es den Agriturismo In Già und die Bar mit Lebensmittelladen Al Cervo, und hier beginnt der Rundweg Anello delle Frazioni.",
-        locali=["Agriturismo In Già", "Bar, Lebensmittel und Tabak Al Cervo · Tel. 0433 80007"]),
+        t="Wie das benachbarte Feltrone wird Lungis von vielen Wegen durchzogen, darunter die Mountainbike-Strecke, die alle Ortsteile der Gemeinde verbindet. Im Dorf gibt es den Agriturismo In Già und die Bar und Restaurant Al Cervo, und hier beginnt der Rundweg Anello delle Frazioni.",
+        locali=["Agriturismo In Già", "Bar und Restaurant Al Cervo · Tel. 0433 80007"]),
     "feltrone-e-dilignidis": dict(
         f=dict(lo="in Lungis"),
         t="Der höchste Ortsteil der Gemeinde. Durch Feltrone führen viele Wege, doch der wichtigste steigt zum Col Gentile auf und führt weiter bis Prato Carnico im Val Pesarina: Der CAI-Weg 235 durchquert unberührte Orte von außergewöhnlicher Schönheit wie die Forca di Pani. Mit 1350 Höhenmetern auf 23 km – rund 7 Stunden Gehzeit – ist er für trainierte Wanderer geeignet. Die Rückfahrt im Kleinbus lässt sich an der Rezeption organisieren.",
-        locali=["Agriturismo In Già in Lungis (2 km)", "Bar mit Lebensmittelladen Al Cervo in Lungis (2 km)"]),
+        locali=["Agriturismo In Già in Lungis (2 km)", "Bar und Restaurant Al Cervo in Lungis (2 km)"]),
     "mediis": dict(
         t="In Mediis beginnt der gleichnamige Mountainbike-Rundkurs, und auch der bekannte Anello delle Frazioni führt hier vorbei. Das Dorf, das Socchieve einst den Rang als Hauptort streitig machte, liegt zentral zu fast allen Ortsteilen und überblickt den Lauf des Lumiei, der hier in den Tagliamento mündet. Hier befindet sich die Rezeption des Albergo Diffuso.",
         locali=["Bar alla Posta · via Roma 10 · Tel. 0433 80072 · SAF-Busfahrkarten und Tankstelle"]),
     "dilignidis": dict(
         t="Ganz nah bei Feltrone teilt Dilignidis dessen Wege und Einrichtungen: Der Anello delle Frazioni und die Mountainbike-Strecke von Mediis führen hindurch. Häuser des Albergo Diffuso gibt es hier nicht; die nächsten liegen wenige Gehminuten entfernt in Feltrone.",
-        locali=["Agriturismo In Già in Lungis (2 km)", "Bar mit Lebensmittelladen Al Cervo in Lungis (2 km)"]),
+        locali=["Agriturismo In Già in Lungis (2 km)", "Bar und Restaurant Al Cervo in Lungis (2 km)"]),
     "nonta": dict(
         t="Nonta ist klein und schwer zu fassen, so wie es einst seine Burg gewesen sein muss. Die Straße von Mediis nach Socchieve streift es nur, und selbst auf der via San Maurizio wirkt das Dorf unzugänglich: Wie sein See ist es da, aber man sieht es nicht. Dafür ist die Osteria di Nonta, die angeblich aus dem 17. Jahrhundert stammt, in der ganzen Gegend für ihre traditionelle karnische Küche bekannt.",
         locali=["Osteria di Nonta · Tel. 0433 80596"]),
@@ -781,10 +782,10 @@ FAQ_DE = [
 
 FARIE_EN = dict(
     intro=["La Farie is a bed & breakfast in a restored traditional Carnic house in the village of Lungis, at 554 metres: peace and quiet, mountain views and the slow pace of a real village.",
-           "The rooms have a terrace or balcony, a private bathroom with bidet, hairdryer and slippers, a flat-screen TV and free Wi-Fi. The house has a garden, a shared lounge and free private parking.",
-           "La Farie is now run directly by the Albergo Diffuso Socchieve “Col Gentile”: the same house, the same peace, with the Mediis reception close by for information, advice on trails and routes and anything you need during your stay."],
-    am=["Italian or à la carte breakfast", "Free Wi-Fi", "Free private parking", "Terrace or balcony", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
-    rules=[("Check-in", "from 15:00 to 18:00"), ("Check-out", "from 08:00 to 10:00"), ("Children", "welcome at any age, free cot up to 2 years"), ("Extra bed", "on request, 40 € per night"), ("Pets", "allowed on request, a supplement may apply"), ("Smoking", "not allowed"), ("Parties and events", "not allowed")],
+           "The rooms have a terrace or balcony, a private bathroom with bidet, hairdryer, a flat-screen TV and free Wi-Fi. The house has a garden, a shared lounge and free private parking.",
+           "La Farie is run directly by the Albergo Diffuso Socchieve “Col Gentile”: the same house, the same peace, with the Mediis reception close by for information, advice on trails and routes and anything you need during your stay."],
+    am=["Italian-style sweet and savoury breakfast", "Free Wi-Fi", "Free private parking", "Terrace or balcony", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
+    rules=[("Check-in", "from 15:00 to 18:00"), ("Check-out", "by 10:00"), ("Children", "welcome at any age, free cot up to 2 years"), ("Extra bed", "on request, 40 € per night"), ("Pets", "not allowed"), ("Smoking", "not allowed"), ("Parties and events", "not allowed")],
     rooms=[("Campanula", "Double room with bathroom and terrace", 2), ("Salvia", "Double room with terrace", 2),
            ("Tarassacco", "Double room with bathroom", 2), ("Centaurea", "Double room with bathroom", 4),
            ("Stella Alpina", "Apartment with a double bedroom and a single sofa bed", 3)],
@@ -795,10 +796,10 @@ FARIE_EN = dict(
 
 FARIE_DE = dict(
     intro=["La Farie ist ein Bed & Breakfast in einem restaurierten, typisch karnischen Haus im Dorf Lungis, auf 554 Metern Höhe: Ruhe, Blick auf die Berge und der langsame Rhythmus eines echten Dorfes.",
-           "Die Zimmer haben Terrasse oder Balkon, ein eigenes Bad mit Bidet, Haartrockner und Hausschuhen, Flachbild-TV und kostenloses WLAN. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
-           "La Farie wird jetzt direkt vom Albergo Diffuso Socchieve „Col Gentile“ geführt: dasselbe Haus, dieselbe Ruhe, mit der Rezeption in Mediis ganz in der Nähe für Informationen, Tipps zu Wegen und Touren und alles, was Sie während Ihres Aufenthalts brauchen."],
-    am=["Italienisches Frühstück oder à la carte", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse oder Balkon", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
-    rules=[("Anreise", "von 15:00 bis 18:00 Uhr"), ("Abreise", "von 08:00 bis 10:00 Uhr"), ("Kinder", "in jedem Alter willkommen, Babybett bis 2 Jahre kostenlos"), ("Zustellbett", "auf Anfrage, 40 € pro Nacht"), ("Haustiere", "auf Anfrage erlaubt, ggf. gegen Aufpreis"), ("Rauchen", "nicht gestattet"), ("Partys und Veranstaltungen", "nicht gestattet")],
+           "Die Zimmer haben Terrasse oder Balkon, ein eigenes Bad mit Bidet, Haartrockner, Flachbild-TV und kostenloses WLAN. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
+           "La Farie wird direkt vom Albergo Diffuso Socchieve „Col Gentile“ geführt: dasselbe Haus, dieselbe Ruhe, mit der Rezeption in Mediis ganz in der Nähe für Informationen, Tipps zu Wegen und Touren und alles, was Sie während Ihres Aufenthalts brauchen."],
+    am=["Italienisches Frühstück mit süßen und herzhaften Speisen", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse oder Balkon", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
+    rules=[("Anreise", "von 15:00 bis 18:00 Uhr"), ("Abreise", "bis 10:00 Uhr"), ("Kinder", "in jedem Alter willkommen, Babybett bis 2 Jahre kostenlos"), ("Zustellbett", "auf Anfrage, 40 € pro Nacht"), ("Haustiere", "nicht gestattet"), ("Rauchen", "nicht gestattet"), ("Partys und Veranstaltungen", "nicht gestattet")],
     rooms=[("Campanula", "Doppelzimmer mit Bad und Terrasse", 2), ("Salvia", "Doppelzimmer mit Terrasse", 2),
            ("Tarassacco", "Doppelzimmer mit Bad", 2), ("Centaurea", "Doppelzimmer mit Bad", 4),
            ("Stella Alpina", "Wohnung mit Doppelzimmer und Einzel-Schlafsofa", 3)],
