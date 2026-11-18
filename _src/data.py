@@ -234,11 +234,13 @@ FARIE = dict(
     manager="Albergo Diffuso Socchieve “Col Gentile”",
     g=[f"https://cf.bstatic.com/xdata/images/hotel/max1280x900/{i.split('|')[0]}.jpg?k={i.split('|')[1]}&o=" for i in _FARIE_IDS],
     intro=["La Farie è un affittacamere ricavato in una casa tipica carnica ristrutturata, nel borgo di Lungis, a 554 metri di quota: quiete, vista sulle montagne e il ritmo lento di un paese vero.",
-           "Le camere hanno terrazza o balcone, bagno privato con bidet e asciugacapelli, TV a schermo piatto e Wi-Fi gratuito. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
+           "Le quattro camere hanno bagno privato con bidet e asciugacapelli, TV a schermo piatto e Wi-Fi gratuito. Due camere dispongono di terrazzo. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
            "La Farie è gestita dall'Albergo Diffuso Socchieve “Col Gentile”. Per informazioni sulla struttura e consigli sui luoghi da visitare in Carnia, puoi rivolgerti alla reception di Mediis."],
-    am=["Colazione italiana dolce e salata", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazza o balcone", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
+    am=["Colazione italiana dolce e salata", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazzo in due camere", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
     rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "entro le 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "non ammessi"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
-    # Camere e piani tariffari dalla configurazione Welora di La Farie (struttura 8)
+    # Quattro camere (Campanula, Salvia, Tarassacco, Centaurea) e una unità distinta
+    # classificata come appartamento (Stella Alpina) nella configurazione Welora.
+    # La disponibilità effettiva delle unità va verificata nel pannello Welora.
     rooms=[("Campanula", "Camera matrimoniale con bagno e terrazza", 2), ("Salvia", "Camera matrimoniale con terrazzo", 2),
            ("Tarassacco", "Camera matrimoniale con bagno", 2), ("Centaurea", "Camera matrimoniale con bagno", 4),
            ("Stella Alpina", "Appartamento con camera matrimoniale e divano letto singolo", 3)],
