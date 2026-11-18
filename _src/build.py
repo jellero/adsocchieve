@@ -733,10 +733,10 @@ def build_home():
     body = f"""<section class="hero">
       <div class="hero-media">{pic("Slide1Socchieve.jpg", t("Strada tra i prati verso le montagne della Carnia, a Socchieve"), "100vw", eager=True)}</div>
       <div class="wrap hero-in">
-        <a class="hero-farie-card" href="{P('farie')}" aria-label="{t('Scopri La Farie, bed & breakfast a Lungis')}">
+        <a class="hero-farie-card" href="{P('farie')}" aria-label="{t('Scopri La Farie, affittacamere a Lungis')}">
           {pic(FARIE['g'][0], t("La Farie a Lungis: casa in pietra con balconi in legno"), "110px")}
           <span class="hero-farie-body">
-            <span class="hero-farie-kicker">{t('Bed & breakfast · Lungis')}</span>
+            <span class="hero-farie-kicker">{t('affittacamere · Lungis')}</span>
             <strong>La Farie</strong>
             <span class="hero-farie-short">{t('Camere con bagno privato e giardino')}</span>
             <span class="hero-farie-link">{t('Scopri le camere')} {I('arrow')}</span>
@@ -744,7 +744,7 @@ def build_home():
         </a>
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Albergo diffuso a Socchieve · Carnia')}</span>{t('Vivi la Carnia <em>da paesano.</em>')}</h1>
         <div class="hero-row">
-          <p>{t("Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.")}</p>
+          <p>{t("Case e appartamenti vacanza nei borghi di Socchieve e La Farie, affittacamere a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.")}</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="{P('catalog')}">{t('Scopri le case')} {I('arrow')}</a>
             <a class="btn btn-ghost" href="{P('benessere')}">{t('Sauna e bagno di bosco')}</a>
@@ -764,8 +764,8 @@ def build_home():
         </div>
         <div class="farie-highlight-copy rv d1">
           <span class="eyebrow">{t("Un'altra ospitalità in Carnia")}</span>
-          <h2 id="farie-highlight-title">{t("La Farie, <em>bed &amp; breakfast a Lungis.</em>")}</h2>
-          <p>{t("A Lungis, nel comune di Socchieve, La Farie è un bed & breakfast in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.")}</p>
+          <h2 id="farie-highlight-title">{t("La Farie, <em>affittacamere a Lungis.</em>")}</h2>
+          <p>{t("A Lungis, nel comune di Socchieve, La Farie è un affittacamere in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.")}</p>
           <ul class="farie-highlight-amenities">
             <li>{t("Colazione disponibile")}</li>
             <li>{t("Giardino")}</li>
@@ -872,7 +872,7 @@ def build_home():
     website = {"@context": "https://schema.org", "@type": "WebSite", "@id": U + "/#website", "name": SITE["name"], "url": U + P("home"), "inLanguage": {"it": "it-IT", "en": "en", "de": "de"}[LANG], "publisher": {"@id": LODGING_ID}}
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     page("home", t("Albergo Diffuso Socchieve · Case vacanza in Carnia e Dolomiti"),
-         tf("Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, bed & breakfast a Lungis. Prenotazione diretta.", n=n_stays),
+         tf("Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, affittacamere a Lungis. Prenotazione diretta.", n=n_stays),
          body, image="Slide1Socchieve.jpg", preload=preload_for("Slide1Socchieve.jpg"), ld=[lodging_ld(), website, faq_ld] + [service_ld(x) for x in SERVICES],
          images=[og_img("Slide1Socchieve.jpg")] + [abs_img(s["card"]) for s in STAYS])
 
@@ -978,7 +978,7 @@ def build_farie():
 <div id="farie">
 <header class="hdr" data-hdr>
   <div class="wrap bar">
-    <a href="{P('farie')}" class="logo" aria-label="{t('La Farie, bed and breakfast a Lungis')}"><span><b>La Farie</b><small>{t('Bed &amp; Breakfast · Lungis, Carnia')}</small></span></a>
+    <a href="{P('farie')}" class="logo" aria-label="{t('La Farie, affittacamere a Lungis')}"><span><b>La Farie</b><small>{t('affittacamere · Lungis, Carnia')}</small></span></a>
     <nav class="menu" aria-label="La Farie">{fnav}</nav>
     <div class="hdr-cta">{lang_switch()}{book_btn}<button class="burger" aria-label="{t('Apri menu')}" data-open><span></span></button></div>
   </div>
@@ -990,14 +990,14 @@ def build_farie():
   {lang_switch("lang lang-drawer")}
 </div>
 <main id="main">{body}</main>
-<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · Bed &amp; Breakfast · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="{P('home')}">Albergo Diffuso Socchieve</a><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a><a href="{P('cookies')}">{t('Cookie')}</a><a href="#" data-cookie-settings>{t('Preferenze cookie')}</a>{credits()}</span></div></div></footer>
+<footer class="foot"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border:0;padding-top:0"><span>La Farie · affittacamere · {F['addr']}, Lungis · 33020 Socchieve (UD)</span><span class="foot-links"><a href="{P('home')}">Albergo Diffuso Socchieve</a><a href="{P('booking-terms')}">{t('Condizioni di prenotazione')}</a><a href="{P('privacy')}">Privacy</a><a href="{P('cookies')}">{t('Cookie')}</a><a href="#" data-cookie-settings>{t('Preferenze cookie')}</a>{credits()}</span></div></div></footer>
 </div>"""
     rules = "".join(f"<div><b>{k}</b><span>{v}</span></div>" for k, v in F["rules"])
     near = "".join(f"<li><b>{n}</b><span>{d}</span></li>" for n, d in F["near"])
     body = f"""<section class="hero" id="la-farie">
-      <div class="hero-media">{pic(F['g'][0], t("La Farie, bed and breakfast in una casa carnica a Lungis"), "100vw", eager=True)}</div>
+      <div class="hero-media">{pic(F['g'][0], t("La Farie, affittacamere in una casa carnica a Lungis"), "100vw", eager=True)}</div>
       <div class="wrap hero-in">
-        <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Bed &amp; Breakfast a Lungis · Carnia')}</span>{t('La Farie. <em>Sentirsi a casa.</em>')}</h1>
+        <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('affittacamere a Lungis · Carnia')}</span>{t('La Farie. <em>Sentirsi a casa.</em>')}</h1>
         <div class="hero-row">
           <p>{t("Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.")}</p>
           <div class="hero-actions">{'' if live else book_btn}<a class="btn btn-ghost" href="#farie-camere">{t('Le camere')}</a><a class="btn btn-ghost" href="#farie-foto">{t('Foto')}</a></div>
@@ -1013,7 +1013,7 @@ def build_farie():
       </div></div></section>
     <section class="sec" id="farie-foto" style="padding-top:0"><div class="wrap">
       <span class="eyebrow rv">{t('Foto')}</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{tf('{c} foto di <em>La Farie</em>', c=len(F['g']))}</h2>
-      <div class="rv">{gallery(F['g'], t("La Farie, bed and breakfast a Lungis"), max_shown=9)}</div>
+      <div class="rv">{gallery(F['g'], t("La Farie, affittacamere a Lungis"), max_shown=9)}</div>
     </div></section>
     <section class="sec" id="farie-camere" style="padding-top:0"><div class="wrap">
       <span class="eyebrow rv">{t('Le camere')}</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{t('Cinque camere, <em>un appartamento.</em>')}</h2>
@@ -1034,11 +1034,11 @@ def build_farie():
     </div></section>
     <section class="cta"><div class="wrap">
       <span class="eyebrow rv">La Farie · Lungis</span>
-      <h2 class="rv d1">{t('Il tuo B&amp;B <em>in Carnia.</em>')}</h2>
+      <h2 class="rv d1">{t('Il tuo affittacamere <em>in Carnia.</em>')}</h2>
       <p class="rv d2">{t('Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.')}</p>
       <div class="row rv d3">{book_btn}<a class="btn btn-dark" href="#scrivici">{t('Scrivici')}</a><a class="btn btn-dark" href="https://wa.me/{SITE['mobile_href'].lstrip('+')}" target="_blank" rel="noopener">WhatsApp · {SITE['mobile']}</a><a class="btn btn-dark" href="{P('home')}">{t('Scopri anche Col Gentile')}</a></div>
     </div></section>"""
-    ld = {"@context": "https://schema.org", "@type": "BedAndBreakfast", "@id": U + "/la-farie#bnb", "name": "La Farie",
+    ld = {"@context": "https://schema.org", "@type": "affittacamere", "@id": U + "/la-farie#affittacamere", "name": "La Farie",
           "description": " ".join(F["intro"]), "url": U + P("farie"), "image": [abs_img(g) for g in F["g"][:8] if g in PH],
           "address": address(F["addr"], "Lungis, Socchieve"),
           "geo": {"@type": "GeoCoordinates", "latitude": F["geo"][0], "longitude": F["geo"][1]},
@@ -1046,8 +1046,8 @@ def build_farie():
           "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": a, "value": True} for a in F["am"]],
           "sameAs": [F["booking"]], "email": SITE["email"], "telephone": SITE["phone"], "parentOrganization": {"@id": LODGING_ID}}
     crumbs = [home_crumb(), ("La Farie", P("farie"))]
-    page("farie", t("La Farie · Bed & Breakfast a Lungis, Socchieve (Carnia)"),
-         t("B&B in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito."),
+    page("farie", t("La Farie · affittacamere a Lungis, Socchieve (Carnia)"),
+         t("affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito."),
          body, image=F["g"][0], preload=preload_for(F["g"][0]), wrapper=wrap, ld=[ld, crumbs_ld(crumbs)],
          images=[abs_img(g) for g in F["g"] if g in PH])
 
@@ -1189,7 +1189,7 @@ def build_farie_extra():
   <h1 style="font-size:clamp(40px,6vw,80px);line-height:1;margin:10px 0 28px">{t('Prenota <em>La Farie</em>')}</h1>
   {inner}
 </div></section>"""
-    page("farie-results", t("Prenota La Farie · Bed & Breakfast a Lungis"), t("Disponibilità e prenotazione diretta delle camere di La Farie, B&B a Lungis (Socchieve)."), res,
+    page("farie-results", t("Prenota La Farie · affittacamere a Lungis"), t("Disponibilità e prenotazione diretta delle camere di La Farie, affittacamere a Lungis (Socchieve)."), res,
          solid=True, noindex=True)
     F = FARIE
     plans = t(" e ").join(f"“{x}”" for x in F["plans"])
@@ -1203,7 +1203,7 @@ def build_farie_extra():
   <h2>{t('Contatti')}</h2><p><a href="mailto:{SITE['email']}">{SITE['email']}</a> · <a href="tel:{SITE['phone_href']}">{SITE['phone']}</a></p>
   <h2>{t('Dati personali')}</h2><p>{tf("I dati della prenotazione sono trattati come descritto nell'<a href=\"{href}\">informativa privacy</a>.", href=P('privacy'))}</p>
 </div></section>"""
-    page("farie-cond", t("Condizioni di soggiorno · La Farie, Lungis"), t("Condizioni di prenotazione e cancellazione delle camere di La Farie, B&B a Lungis gestito dall'Albergo Diffuso Socchieve."), cond, solid=True)
+    page("farie-cond", t("Condizioni di soggiorno · La Farie, Lungis"), t("Condizioni di prenotazione e cancellazione delle camere di La Farie, affittacamere a Lungis gestito dall'Albergo Diffuso Socchieve."), cond, solid=True)
 
 
 def build_legal():
@@ -1267,7 +1267,7 @@ def build_legal():
     booking_terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informazioni contrattuali</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
-<p>Le presenti condizioni riguardano i soggiorni presso l’Albergo Diffuso Socchieve “Col Gentile”, il bed &amp; breakfast La Farie e i servizi sauna e bagno di bosco. Gestore: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307 · <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
+<p>Le presenti condizioni riguardano i soggiorni presso l’Albergo Diffuso Socchieve “Col Gentile”, il affittacamere La Farie e i servizi sauna e bagno di bosco. Gestore: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307 · <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
 <h2>1. Prezzi, disponibilità e conferma</h2>
 <p>Disponibilità, prezzo totale, eventuali supplementi, caparra, condizioni della tariffa e modalità di pagamento sono mostrati prima della conferma della prenotazione o comunicati nel preventivo accettato. La prenotazione è confermata alle condizioni riportate nella conferma inviata al cliente. Condizioni specifiche di una tariffa, espressamente comunicate e accettate prima della conferma, prevalgono sulle indicazioni generali di questa pagina.</p>
 <h2>2. Soggiorni negli alloggi Col Gentile</h2>
@@ -1277,7 +1277,7 @@ def build_legal():
 <h2>3. Caparra, cancellazione e partenza anticipata negli alloggi Col Gentile</h2>
 <p>Il regolamento pubblicato prevede che, in caso di disdetta, la <strong>caparra eventualmente versata non venga rimborsata</strong>; previo accordo con la direzione può essere consentito recuperarla in un’altra data a condizioni equivalenti. Per la partenza anticipata è previsto l’addebito del costo del solo alloggio per il periodo non usufruito, salvo diverso accordo. Se la tariffa prenotata presenta una diversa politica di cancellazione, vale quella comunicata e accettata durante la prenotazione.</p>
 <h2>4. La Farie</h2>
-<p>Per il bed &amp; breakfast La Farie la condizione indicata nella pagina di prenotazione è: <strong>cancellazione gratuita tramite il portale fino a 7 giorni prima dell’arrivo, entro le ore 18:00</strong>. Per cancellazioni successive, mancata presentazione, eventuali caparre o addebiti si applicano esclusivamente gli importi e le condizioni espressamente mostrati e accettati durante la prenotazione; la presente pagina non introduce una percentuale di penale ulteriore.</p>
+<p>Per il affittacamere La Farie la condizione indicata nella pagina di prenotazione è: <strong>cancellazione gratuita tramite il portale fino a 7 giorni prima dell’arrivo, entro le ore 18:00</strong>. Per cancellazioni successive, mancata presentazione, eventuali caparre o addebiti si applicano esclusivamente gli importi e le condizioni espressamente mostrati e accettati durante la prenotazione; la presente pagina non introduce una percentuale di penale ulteriore.</p>
 <h2>5. Mancata presentazione (no-show) e carta a garanzia</h2>
 <p>Se il cliente non si presenta nella data e nell’orario concordati e non ha cancellato nei termini, si applicano le condizioni economiche della specifica prenotazione. Per Col Gentile resta applicabile la regola sulla caparra eventualmente versata, salvo diversa tariffa concordata. <strong>Non è pubblicata una penale percentuale standard aggiuntiva per il no-show</strong>: ulteriori addebiti su carta a garanzia possono essere effettuati soltanto se l’importo o il criterio di calcolo della penale sono stati comunicati prima della conferma e accettati dal cliente. La carta a garanzia viene richiesta e gestita nell’ambiente del sistema di prenotazione, quando previsto.</p>
 <h2>6. Sauna e bagno di bosco</h2>
