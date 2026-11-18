@@ -9,31 +9,31 @@ quelli rimasti senza traduzione."""
 
 UI = {
     # ------------------------------------------------------------ homepage: La Farie
-    "Scopri La Farie, bed & breakfast a Lungis": ("Discover La Farie, bed and breakfast in Lungis", "La Farie entdecken, Bed & Breakfast in Lungis"),
-    "Bed & breakfast · Lungis": ("Bed & breakfast · Lungis", "Bed & Breakfast · Lungis"),
+    "Scopri La Farie, affittacamere a Lungis": ("Discover La Farie, guesthouse in Lungis", "La Farie entdecken, Gästehaus in Lungis"),
+    "Affittacamere · Lungis": ("Guesthouse · Lungis", "Gästehaus · Lungis"),
     "Camere con bagno privato e giardino": ("Rooms with private bathrooms and a garden", "Zimmer mit eigenem Bad und Garten"),
     "Scopri le camere": ("Explore the rooms", "Zimmer entdecken"),
-    "Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.": (
-        "Holiday houses and apartments in the villages of Socchieve, plus La Farie, a B&B in Lungis. Authentic stays in Carnia, near the Friulian Dolomites.",
-        "Ferienhäuser und Ferienwohnungen in den Dörfern von Socchieve sowie La Farie, ein B&B in Lungis. Authentisch übernachten in Karnien, nahe den Friauler Dolomiten."),
+    "Case e appartamenti vacanza nei borghi di Socchieve e La Farie, affittacamere a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.": (
+        "Holiday houses and apartments in the villages of Socchieve, plus La Farie, a guesthouse in Lungis. Authentic stays in Carnia, near the Friulian Dolomites.",
+        "Ferienhäuser und Ferienwohnungen in den Dörfern von Socchieve sowie La Farie, ein Gästehaus in Lungis. Authentisch übernachten in Karnien, nahe den Friauler Dolomiten."),
     "La Farie a Lungis: casa in pietra con balconi in legno": (
         "La Farie in Lungis: stone house with wooden balconies",
         "La Farie in Lungis: Steinhaus mit Holzbalkonen"),
     "Un'altra ospitalità in Carnia": ("Another way to stay in Carnia", "Eine andere Art, in Karnien zu wohnen"),
-    "La Farie, <em>bed &amp; breakfast a Lungis.</em>": (
-        "La Farie, <em>bed &amp; breakfast in Lungis.</em>",
-        "La Farie, <em>Bed &amp; Breakfast in Lungis.</em>"),
-    "A Lungis, nel comune di Socchieve, La Farie è un bed & breakfast in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.": (
-        "In Lungis, near Socchieve, La Farie is a bed and breakfast in a restored traditional Carnic house. Rooms with private bathrooms, a garden and breakfast available: a different way to stay from the Col Gentile holiday homes, run by the same Albergo Diffuso Socchieve.",
-        "In Lungis bei Socchieve ist La Farie ein Bed & Breakfast in einem restaurierten karnischen Haus. Zimmer mit eigenem Bad, Garten und Frühstücksangebot: eine Alternative zu den Ferienwohnungen von Col Gentile, geführt vom selben Albergo Diffuso Socchieve."),
+    "La Farie, <em>affittacamere a Lungis.</em>": (
+        "La Farie, <em>guesthouse in Lungis.</em>",
+        "La Farie, <em>Gästehaus in Lungis.</em>"),
+    "A Lungis, nel comune di Socchieve, La Farie è un affittacamere in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.": (
+        "In Lungis, near Socchieve, La Farie is a guesthouse in a restored traditional Carnic house. Rooms with private bathrooms, a garden and breakfast available: a different way to stay from the Col Gentile holiday homes, run by the same Albergo Diffuso Socchieve.",
+        "In Lungis bei Socchieve ist La Farie ein Gästehaus in einem restaurierten karnischen Haus. Zimmer mit eigenem Bad, Garten und Frühstücksangebot: eine Alternative zu den Ferienwohnungen von Col Gentile, geführt vom selben Albergo Diffuso Socchieve."),
     "Colazione disponibile": ("Breakfast available", "Frühstück verfügbar"),
     "Giardino": ("Garden", "Garten"),
     "Parcheggio privato gratuito": ("Free private parking", "Kostenlose Privatparkplätze"),
     "Scopri camere e servizi": ("Explore rooms and amenities", "Zimmer und Ausstattung entdecken"),
     "Disponibilità La Farie": ("La Farie availability", "Verfügbarkeit La Farie"),
-    "Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, bed & breakfast a Lungis. Prenotazione diretta.": (
-        "Holiday homes and apartments in Socchieve, Carnia: {n} places to stay across the villages, plus La Farie bed and breakfast in Lungis. Book direct.",
-        "Ferienhäuser und Ferienwohnungen in Socchieve, Karnien: {n} Unterkünfte in den Dörfern und La Farie Bed & Breakfast in Lungis. Direkt buchen."),
+    "Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, affittacamere a Lungis. Prenotazione diretta.": (
+        "Holiday homes and apartments in Socchieve, Carnia: {n} places to stay across the villages, plus La Farie guesthouse in Lungis. Book direct.",
+        "Ferienhäuser und Ferienwohnungen in Socchieve, Karnien: {n} Unterkünfte in den Dörfern und La Farie Gästehaus in Lungis. Direkt buchen."),
 
     # ------------------------------------------------------------ navigazione e layout
     "Le case": ("The houses", "Die Häuser"),
@@ -310,10 +310,10 @@ UI = {
         "Between the Friulian and Pesarina Dolomites, along the SS52 road from Tolmezzo to Forni di Sopra. Driving distances from the Mediis reception.",
         "Zwischen den Friauler und den Pesariner Dolomiten, an der SS52 von Tolmezzo nach Forni di Sopra. Fahrstrecken ab der Rezeption in Mediis."),
     "Come arrivare e contatti": ("Getting here and contact", "Anreise und Kontakt"),
-    "Bed &amp; Breakfast a Lungis · gestito dall'Albergo Diffuso": ("Bed &amp; Breakfast in Lungis · run by the Albergo Diffuso", "Bed &amp; Breakfast in Lungis · geführt vom Albergo Diffuso"),
-    "Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, gestito direttamente dall'Albergo Diffuso Socchieve.": (
-        "A bed &amp; breakfast in a restored Carnic house in the village of Lungis, run directly by the Albergo Diffuso Socchieve.",
-        "Ein Bed &amp; Breakfast in einem restaurierten karnischen Haus im Dorf Lungis, direkt vom Albergo Diffuso Socchieve geführt."),
+    "Affittacamere a Lungis · gestito dall'Albergo Diffuso": ("Guesthouse in Lungis · run by the Albergo Diffuso", "Gästehaus in Lungis · geführt vom Albergo Diffuso"),
+    "Un affittacamere in una casa carnica ristrutturata nel borgo di Lungis, gestito direttamente dall'Albergo Diffuso Socchieve.": (
+        "A guesthouse in a restored Carnic house in the village of Lungis, run directly by the Albergo Diffuso Socchieve.",
+        "Ein Gästehaus in einem restaurierten karnischen Haus im Dorf Lungis, direkt vom Albergo Diffuso Socchieve geführt."),
     "Scopri La Farie": ("Discover La Farie", "La Farie entdecken"),
     "Domande frequenti": ("Frequently asked questions", "Häufige Fragen"),
     "Prima di <em>partire.</em>": ("Before <em>you go.</em>", "Vor der <em>Abreise.</em>"),
@@ -412,10 +412,10 @@ UI = {
     "Prenotazione diretta · conferma via email": ("Direct booking · confirmation by email", "Direktbuchung · Bestätigung per E-Mail"),
     "La casa": ("The house", "Das Haus"),
     "Info utili": ("Useful info", "Gut zu wissen"),
-    "La Farie, bed and breakfast a Lungis": ("La Farie, bed and breakfast in Lungis", "La Farie, Bed and Breakfast in Lungis"),
-    "Bed &amp; Breakfast · Lungis, Carnia": ("Bed &amp; Breakfast · Lungis, Carnia", "Bed &amp; Breakfast · Lungis, Karnien"),
-    "La Farie, bed and breakfast in una casa carnica a Lungis": ("La Farie, bed and breakfast in a Carnic house in Lungis", "La Farie, Bed and Breakfast in einem karnischen Haus in Lungis"),
-    "Bed &amp; Breakfast a Lungis · Carnia": ("Bed &amp; Breakfast in Lungis · Carnia", "Bed &amp; Breakfast in Lungis · Karnien"),
+    "La Farie, affittacamere a Lungis": ("La Farie, guesthouse in Lungis", "La Farie, Gästehaus in Lungis"),
+    "Affittacamere · Lungis, Carnia": ("Guesthouse · Lungis, Carnia", "Gästehaus · Lungis, Karnien"),
+    "La Farie, affittacamere in una casa carnica a Lungis": ("La Farie, guesthouse in a Carnic house in Lungis", "La Farie, Gästehaus in einem karnischen Haus in Lungis"),
+    "Affittacamere a Lungis · Carnia": ("Guesthouse in Lungis · Carnia", "Gästehaus in Lungis · Karnien"),
     "La Farie. <em>Sentirsi a casa.</em>": ("La Farie. <em>Feel at home.</em>", "La Farie. <em>Wie zu Hause.</em>"),
     "Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.": (
         "A restored traditional Carnic house in the village of Lungis, with rooms with a terrace or balcony, a garden and the peace of the mountains. Run by the Albergo Diffuso Socchieve.",
@@ -439,18 +439,18 @@ UI = {
         "{addr}, in the hamlet of Lungis, municipality of Socchieve (UD), at 554 metres above sea level. A short walk to the In Già farm restaurant, the Al Cervo bar and restaurant, and the trails of the Anello delle Frazioni.",
         "{addr}, Ortsteil Lungis, Gemeinde Socchieve (UD), auf 554 Metern Höhe. Nur ein paar Schritte zum Agriturismo In Già, zur Bar und zum Restaurant Al Cervo und zu den Wegen des Anello delle Frazioni."),
     "Scopri il borgo di Lungis": ("Discover the village of Lungis", "Das Dorf Lungis entdecken"),
-    "Il tuo B&amp;B <em>in Carnia.</em>": ("Your B&amp;B <em>in Carnia.</em>", "Ihr B&amp;B <em>in Karnien.</em>"),
+    "Il tuo affittacamere <em>in Carnia.</em>": ("Your guesthouse <em>in Carnia.</em>", "Ihr Gästehaus <em>in Karnien.</em>"),
     "Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.": (
         "Pick your dates and book direct: instant confirmation by email. Questions? Write to us.",
         "Wählen Sie Ihre Daten und buchen Sie direkt: sofortige Bestätigung per E-Mail. Fragen? Schreiben Sie uns."),
     "Scopri anche Col Gentile": ("Discover Col Gentile too", "Auch Col Gentile entdecken"),
-    "La Farie · Bed & Breakfast a Lungis, Socchieve (Carnia)": ("La Farie · Bed & Breakfast in Lungis, Socchieve (Carnia)", "La Farie · Bed & Breakfast in Lungis, Socchieve (Karnien)"),
-    "B&B in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito.": (
-        "B&B in a restored Carnic house in Lungis, Socchieve (Carnia), run by the Albergo Diffuso Socchieve: rooms with a terrace, garden, Wi-Fi and free parking.",
-        "B&B in einem restaurierten karnischen Haus in Lungis, Socchieve (Karnien), geführt vom Albergo Diffuso Socchieve: Zimmer mit Terrasse, Garten, WLAN und kostenlosem Parkplatz."),
+    "La Farie · affittacamere a Lungis, Socchieve (Carnia)": ("La Farie · guesthouse in Lungis, Socchieve (Carnia)", "La Farie · Gästehaus in Lungis, Socchieve (Karnien)"),
+    "Affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito.": (
+        "Guesthouse in a restored Carnic house in Lungis, Socchieve (Carnia), run by the Albergo Diffuso Socchieve: rooms with a terrace, garden, Wi-Fi and free parking.",
+        "Gästehaus in einem restaurierten karnischen Haus in Lungis, Socchieve (Karnien), geführt vom Albergo Diffuso Socchieve: Zimmer mit Terrasse, Garten, WLAN und kostenlosem Parkplatz."),
     "Prenota <em>La Farie</em>": ("Book <em>La Farie</em>", "<em>La Farie</em> buchen"),
-    "Prenota La Farie · Bed & Breakfast a Lungis": ("Book La Farie · Bed & Breakfast in Lungis", "La Farie buchen · Bed & Breakfast in Lungis"),
-    "Disponibilità e prenotazione diretta delle camere di La Farie, B&B a Lungis (Socchieve).": ("Availability and direct booking for the rooms of La Farie, a B&B in Lungis (Socchieve).", "Verfügbarkeit und Direktbuchung der Zimmer von La Farie, B&B in Lungis (Socchieve)."),
+    "Prenota La Farie · affittacamere a Lungis": ("Book La Farie · guesthouse in Lungis", "La Farie buchen · Gästehaus in Lungis"),
+    "Disponibilità e prenotazione diretta delle camere di La Farie, affittacamere a Lungis (Socchieve).": ("Availability and direct booking for the rooms of La Farie, a guesthouse in Lungis (Socchieve).", "Verfügbarkeit und Direktbuchung der Zimmer von La Farie, Gästehaus in Lungis (Socchieve)."),
     "La prenotazione online sarà disponibile a breve.": ("Online booking will be available soon.", "Die Online-Buchung ist bald verfügbar."),
     "Scrivici a": ("Write to us at", "Schreiben Sie uns an"),
     "o chiama il": ("or call", "oder rufen Sie an:"),
@@ -470,9 +470,9 @@ UI = {
         "Booking data is processed as described in the <a href=\"{href}\">privacy policy</a>.",
         "Die Buchungsdaten werden wie in der <a href=\"{href}\">Datenschutzerklärung</a> beschrieben verarbeitet."),
     "Condizioni di soggiorno · La Farie, Lungis": ("Terms of stay · La Farie, Lungis", "Aufenthaltsbedingungen · La Farie, Lungis"),
-    "Condizioni di prenotazione e cancellazione delle camere di La Farie, B&B a Lungis gestito dall'Albergo Diffuso Socchieve.": (
-        "Booking and cancellation terms for the rooms of La Farie, a B&B in Lungis run by the Albergo Diffuso Socchieve.",
-        "Buchungs- und Stornierungsbedingungen für die Zimmer von La Farie, B&B in Lungis, geführt vom Albergo Diffuso Socchieve."),
+    "Condizioni di prenotazione e cancellazione delle camere di La Farie, affittacamere a Lungis gestito dall'Albergo Diffuso Socchieve.": (
+        "Booking and cancellation terms for the rooms of La Farie, a guesthouse in Lungis run by the Albergo Diffuso Socchieve.",
+        "Buchungs- und Stornierungsbedingungen für die Zimmer von La Farie, Gästehaus in Lungis, geführt vom Albergo Diffuso Socchieve."),
 
     # ------------------------------------------------------------ benessere
     "Conferma immediata via email · carta di credito richiesta a garanzia · preferisci parlarci?": (
@@ -808,7 +808,7 @@ FAQ_DE = [
 ]
 
 FARIE_EN = dict(
-    intro=["La Farie is a bed & breakfast in a restored traditional Carnic house in the village of Lungis, at 554 metres: peace and quiet, mountain views and the slow pace of a real village.",
+    intro=["La Farie is a guesthouse in a restored traditional Carnic house in the village of Lungis, at 554 metres: peace and quiet, mountain views and the slow pace of a real village.",
            "The rooms have a terrace or balcony, a private bathroom with bidet, hairdryer, a flat-screen TV and free Wi-Fi. The house has a garden, a shared lounge and free private parking.",
            "La Farie is managed by the Albergo Diffuso Socchieve “Col Gentile”. For information about the property and suggestions on places to visit in Carnia, please contact the reception in Mediis."],
     am=["Italian-style sweet and savoury breakfast", "Free Wi-Fi", "Free private parking", "Terrace or balcony", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
@@ -822,7 +822,7 @@ FARIE_EN = dict(
 )
 
 FARIE_DE = dict(
-    intro=["La Farie ist ein Bed & Breakfast in einem restaurierten, typisch karnischen Haus im Dorf Lungis, auf 554 Metern Höhe: Ruhe, Blick auf die Berge und der langsame Rhythmus eines echten Dorfes.",
+    intro=["La Farie ist ein Gästehaus in einem restaurierten, typisch karnischen Haus im Dorf Lungis, auf 554 Metern Höhe: Ruhe, Blick auf die Berge und der langsame Rhythmus eines echten Dorfes.",
            "Die Zimmer haben Terrasse oder Balkon, ein eigenes Bad mit Bidet, Haartrockner, Flachbild-TV und kostenloses WLAN. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
            "La Farie wird vom Albergo Diffuso Socchieve „Col Gentile“ geführt. Für Informationen zur Unterkunft und Tipps zu Ausflugszielen in Karnien wenden Sie sich bitte an die Rezeption in Mediis."],
     am=["Italienisches Frühstück mit süßen und herzhaften Speisen", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse oder Balkon", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
@@ -1008,7 +1008,7 @@ LEGAL["de"]["terms"] = ("Buchungsbedingungen Wellness · Albergo Diffuso Socchie
 LEGAL["en"]["booking-terms"] = ("Booking terms · Albergo Diffuso Socchieve", "Booking terms for stays at Col Gentile and La Farie, the sauna and forest bathing: deposit, cancellations, no-shows and guarantee card.", _OPEN + f"""<span class="eyebrow">Contract information</span>{_H1}Booking terms</h1>
 {_VER_EN}
 {_NOTE_EN}
-<p>These terms cover stays at the Albergo Diffuso Socchieve “Col Gentile”, the La Farie bed &amp; breakfast and the sauna and forest bathing services. Operator: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), Italy, VAT no. 02790180307 · {_MAIL}.</p>
+<p>These terms cover stays at the Albergo Diffuso Socchieve “Col Gentile”, the La Farie Gästehaus and the sauna and forest bathing services. Operator: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), Italy, VAT no. 02790180307 · {_MAIL}.</p>
 <h2>1. Prices, availability and confirmation</h2>
 <p>Availability, total price, any supplements, deposit, rate conditions and payment methods are shown before the booking is confirmed or stated in the accepted quote. The booking is confirmed on the terms set out in the confirmation sent to the guest. Specific rate conditions expressly communicated and accepted before confirmation take precedence over the general provisions on this page.</p>
 <h2>2. Stays in the Col Gentile houses</h2>
@@ -1018,7 +1018,7 @@ LEGAL["en"]["booking-terms"] = ("Booking terms · Albergo Diffuso Socchieve", "B
 <h2>3. Deposit, cancellation and early departure in the Col Gentile houses</h2>
 <p>The published rules state that, in case of cancellation, <strong>any deposit paid is not refunded</strong>; by agreement with the management it may be used for another date on equivalent terms. For early departure, the cost of the accommodation alone is charged for the unused period, unless otherwise agreed. If the booked rate has a different cancellation policy, the one communicated and accepted during booking applies.</p>
 <h2>4. La Farie</h2>
-<p>For the La Farie bed &amp; breakfast, the condition stated on the booking page is: <strong>free cancellation through the portal up to 7 days before arrival, by 18:00</strong>. For later cancellations, no-shows, any deposits or charges, only the amounts and conditions expressly shown and accepted during booking apply; this page introduces no further penalty percentage.</p>
+<p>For the La Farie Gästehaus, the condition stated on the booking page is: <strong>free cancellation through the portal up to 7 days before arrival, by 18:00</strong>. For later cancellations, no-shows, any deposits or charges, only the amounts and conditions expressly shown and accepted during booking apply; this page introduces no further penalty percentage.</p>
 <h2>5. No-shows and guarantee card</h2>
 <p>If the guest does not arrive on the agreed date and time and has not cancelled within the deadline, the financial conditions of the specific booking apply. For Col Gentile, the rule on any deposit paid continues to apply, unless a different rate was agreed. <strong>No additional standard percentage penalty for no-shows is published</strong>: further charges to the guarantee card may only be made if the amount or the method of calculating the penalty was communicated before confirmation and accepted by the guest. Where required, the guarantee card is requested and handled within the booking system.</p>
 <h2>6. Sauna and forest bathing</h2>
@@ -1031,7 +1031,7 @@ LEGAL["en"]["booking-terms"] = ("Booking terms · Albergo Diffuso Socchieve", "B
 LEGAL["de"]["booking-terms"] = ("Buchungsbedingungen · Albergo Diffuso Socchieve", "Buchungsbedingungen für Aufenthalte in Col Gentile und La Farie, Sauna und Waldbaden: Anzahlung, Stornierungen, Nichterscheinen und Kreditkartengarantie.", _OPEN + f"""<span class="eyebrow">Vertragsinformationen</span>{_H1}Buchungsbedingungen</h1>
 {_VER_DE}
 {_NOTE_DE}
-<p>Diese Bedingungen gelten für Aufenthalte im Albergo Diffuso Socchieve „Col Gentile“, im Bed &amp; Breakfast La Farie sowie für die Angebote Sauna und Waldbaden. Betreiber: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve „Col Gentile“, Via Roma 20, Mediis, 33020 Socchieve (UD), Italien, USt-IdNr. 02790180307 · {_MAIL}.</p>
+<p>Diese Bedingungen gelten für Aufenthalte im Albergo Diffuso Socchieve „Col Gentile“, im Gästehaus La Farie sowie für die Angebote Sauna und Waldbaden. Betreiber: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve „Col Gentile“, Via Roma 20, Mediis, 33020 Socchieve (UD), Italien, USt-IdNr. 02790180307 · {_MAIL}.</p>
 <h2>1. Preise, Verfügbarkeit und Bestätigung</h2>
 <p>Verfügbarkeit, Gesamtpreis, eventuelle Zuschläge, Anzahlung, Tarifbedingungen und Zahlungsweise werden vor der Buchungsbestätigung angezeigt oder im angenommenen Angebot mitgeteilt. Die Buchung gilt zu den Bedingungen, die in der an den Gast gesendeten Bestätigung stehen. Besondere Tarifbedingungen, die vor der Bestätigung ausdrücklich mitgeteilt und akzeptiert wurden, haben Vorrang vor den allgemeinen Angaben dieser Seite.</p>
 <h2>2. Aufenthalte in den Häusern von Col Gentile</h2>
@@ -1041,7 +1041,7 @@ LEGAL["de"]["booking-terms"] = ("Buchungsbedingungen · Albergo Diffuso Socchiev
 <h2>3. Anzahlung, Stornierung und vorzeitige Abreise in den Häusern von Col Gentile</h2>
 <p>Die veröffentlichten Regeln sehen vor, dass bei Stornierung <strong>eine geleistete Anzahlung nicht erstattet wird</strong>; nach Absprache mit der Leitung kann sie zu gleichwertigen Bedingungen für einen anderen Termin genutzt werden. Bei vorzeitiger Abreise werden für den nicht genutzten Zeitraum nur die Kosten der Unterkunft berechnet, sofern nicht anders vereinbart. Hat der gebuchte Tarif andere Stornobedingungen, gelten die bei der Buchung mitgeteilten und akzeptierten.</p>
 <h2>4. La Farie</h2>
-<p>Für das Bed &amp; Breakfast La Farie gilt laut Buchungsseite: <strong>kostenlose Stornierung über das Portal bis 7 Tage vor Anreise, bis 18:00 Uhr</strong>. Für spätere Stornierungen, Nichterscheinen, eventuelle Anzahlungen oder Belastungen gelten ausschließlich die bei der Buchung ausdrücklich angezeigten und akzeptierten Beträge und Bedingungen; diese Seite legt keinen zusätzlichen Gebührenprozentsatz fest.</p>
+<p>Für das Gästehaus La Farie gilt laut Buchungsseite: <strong>kostenlose Stornierung über das Portal bis 7 Tage vor Anreise, bis 18:00 Uhr</strong>. Für spätere Stornierungen, Nichterscheinen, eventuelle Anzahlungen oder Belastungen gelten ausschließlich die bei der Buchung ausdrücklich angezeigten und akzeptierten Beträge und Bedingungen; diese Seite legt keinen zusätzlichen Gebührenprozentsatz fest.</p>
 <h2>5. Nichterscheinen (No-Show) und Kreditkarte als Garantie</h2>
 <p>Erscheint der Gast nicht zum vereinbarten Datum und zur vereinbarten Uhrzeit und hat er nicht fristgerecht storniert, gelten die finanziellen Bedingungen der jeweiligen Buchung. Für Col Gentile bleibt die Regel zur geleisteten Anzahlung anwendbar, sofern kein anderer Tarif vereinbart wurde. <strong>Eine zusätzliche Standard-Prozentgebühr für Nichterscheinen ist nicht veröffentlicht</strong>: Weitere Belastungen der Garantiekarte sind nur möglich, wenn Betrag oder Berechnungsweise der Gebühr vor der Bestätigung mitgeteilt und vom Gast akzeptiert wurden. Sofern vorgesehen, wird die Garantiekarte im Buchungssystem abgefragt und verwaltet.</p>
 <h2>6. Sauna und Waldbaden</h2>
