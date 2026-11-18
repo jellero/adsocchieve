@@ -417,15 +417,15 @@ UI = {
     "La Farie, affittacamere in una casa carnica a Lungis": ("La Farie, guesthouse in a Carnic house in Lungis", "La Farie, Gästehaus in einem karnischen Haus in Lungis"),
     "Affittacamere a Lungis · Carnia": ("Guesthouse in Lungis · Carnia", "Gästehaus in Lungis · Karnien"),
     "La Farie. <em>Sentirsi a casa.</em>": ("La Farie. <em>Feel at home.</em>", "La Farie. <em>Wie zu Hause.</em>"),
-    "Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.": (
-        "A restored traditional Carnic house in the village of Lungis, with rooms with a terrace or balcony, a garden and the peace of the mountains. Run by the Albergo Diffuso Socchieve.",
-        "Ein restauriertes, typisch karnisches Haus im Dorf Lungis, mit Zimmern mit Terrasse oder Balkon, Garten und der Ruhe der Berge. Geführt vom Albergo Diffuso Socchieve."),
+    "Una casa tipica carnica ristrutturata nel borgo di Lungis, con quattro camere, alcune con terrazzo, un giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.": (
+        "A restored traditional Carnic house in the village of Lungis, with four rooms, some with a terrace, a garden and the peace of the mountains. Run by the Albergo Diffuso Socchieve.",
+        "Ein restauriertes, typisch karnisches Haus im Dorf Lungis, mit vier Zimmern, einige davon mit Terrasse, einem Garten und der Ruhe der Berge. Geführt vom Albergo Diffuso Socchieve."),
     "Le camere": ("The rooms", "Die Zimmer"),
     "Parcheggio gratuito": ("Free parking", "Kostenloses Parken"),
     "Gestione <b>Albergo Diffuso Socchieve</b>": ("Run by <b>Albergo Diffuso Socchieve</b>", "Geführt vom <b>Albergo Diffuso Socchieve</b>"),
     "Una casa carnica, <em>la quiete di Lungis.</em>": ("A Carnic house, <em>the peace of Lungis.</em>", "Ein karnisches Haus, <em>die Ruhe von Lungis.</em>"),
     "{c} foto di <em>La Farie</em>": ("{c} photos of <em>La Farie</em>", "{c} Fotos von <em>La Farie</em>"),
-    "Cinque camere, <em>un appartamento.</em>": ("Four rooms, <em>one apartment.</em>", "Vier Zimmer, <em>eine Wohnung.</em>"),
+    "Quattro camere e <em>un appartamento.</em>": ("Four rooms and <em>one apartment.</em>", "Vier Zimmer und <em>eine Ferienwohnung.</em>"),
     "fino a {m} ospite": ("up to {m} guest", "bis zu {m} Gast"),
     "fino a {m} ospiti": ("up to {m} guests", "bis zu {m} Gäste"),
     " o ": (" or ", " oder "),
@@ -445,9 +445,9 @@ UI = {
         "Wählen Sie Ihre Daten und buchen Sie direkt: sofortige Bestätigung per E-Mail. Fragen? Schreiben Sie uns."),
     "Scopri anche Col Gentile": ("Discover Col Gentile too", "Auch Col Gentile entdecken"),
     "La Farie · affittacamere a Lungis, Socchieve (Carnia)": ("La Farie · guesthouse in Lungis, Socchieve (Carnia)", "La Farie · Gästehaus in Lungis, Socchieve (Karnien)"),
-    "Affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito.": (
-        "Guesthouse in a restored Carnic house in Lungis, Socchieve (Carnia), run by the Albergo Diffuso Socchieve: rooms with a terrace, garden, Wi-Fi and free parking.",
-        "Gästehaus in einem restaurierten karnischen Haus in Lungis, Socchieve (Karnien), geführt vom Albergo Diffuso Socchieve: Zimmer mit Terrasse, Garten, WLAN und kostenlosem Parkplatz."),
+    "Affittacamere La Farie a Lungis, Socchieve (Carnia): quattro camere, di cui due con terrazzo, giardino, Wi-Fi e parcheggio gratuito.": (
+        "La Farie guesthouse in Lungis, Socchieve (Carnia): four rooms, two with a terrace, garden, Wi-Fi and free private parking.",
+        "Gästehaus La Farie in Lungis, Socchieve (Karnien): vier Zimmer, zwei mit Terrasse, Garten, WLAN und kostenloser Privatparkplatz."),
     "Prenota <em>La Farie</em>": ("Book <em>La Farie</em>", "<em>La Farie</em> buchen"),
     "Prenota La Farie · affittacamere a Lungis": ("Book La Farie · guesthouse in Lungis", "La Farie buchen · Gästehaus in Lungis"),
     "Disponibilità e prenotazione diretta delle camere di La Farie, affittacamere a Lungis (Socchieve).": ("Availability and direct booking for the rooms of La Farie, a guesthouse in Lungis (Socchieve).", "Verfügbarkeit und Direktbuchung der Zimmer von La Farie, Gästehaus in Lungis (Socchieve)."),
@@ -809,9 +809,9 @@ FAQ_DE = [
 
 FARIE_EN = dict(
     intro=["La Farie is a guesthouse in a restored traditional Carnic house in the village of Lungis, at 554 metres: peace and quiet, mountain views and the slow pace of a real village.",
-           "The rooms have a terrace or balcony, a private bathroom with bidet, hairdryer, a flat-screen TV and free Wi-Fi. The house has a garden, a shared lounge and free private parking.",
+           "The four rooms have private bathrooms with bidet and hairdryer, a flat-screen TV and free Wi-Fi. Two rooms have a terrace. The house has a garden, a shared lounge and free private parking.",
            "La Farie is managed by the Albergo Diffuso Socchieve “Col Gentile”. For information about the property and suggestions on places to visit in Carnia, please contact the reception in Mediis."],
-    am=["Italian-style sweet and savoury breakfast", "Free Wi-Fi", "Free private parking", "Terrace or balcony", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
+    am=["Italian-style sweet and savoury breakfast", "Free Wi-Fi", "Free private parking", "Terrace in two rooms", "Private bathroom", "Flat-screen TV", "Garden", "Shared lounge", "Kettle", "Non-smoking rooms"],
     rules=[("Check-in", "from 15:00 to 18:00"), ("Check-out", "by 10:00"), ("Children", "welcome at any age, free cot up to 2 years"), ("Extra bed", "on request, 40 € per night"), ("Pets", "not allowed"), ("Smoking", "not allowed"), ("Parties and events", "not allowed")],
     rooms=[("Campanula", "Double room with bathroom and terrace", 2), ("Salvia", "Double room with terrace", 2),
            ("Tarassacco", "Double room with bathroom", 2), ("Centaurea", "Double room with bathroom", 4),
@@ -823,9 +823,9 @@ FARIE_EN = dict(
 
 FARIE_DE = dict(
     intro=["La Farie ist ein Gästehaus in einem restaurierten, typisch karnischen Haus im Dorf Lungis, auf 554 Metern Höhe: Ruhe, Blick auf die Berge und der langsame Rhythmus eines echten Dorfes.",
-           "Die Zimmer haben Terrasse oder Balkon, ein eigenes Bad mit Bidet, Haartrockner, Flachbild-TV und kostenloses WLAN. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
+           "Die vier Zimmer haben ein eigenes Bad mit Bidet und Haartrockner, Flachbild-TV und kostenloses WLAN. Zwei Zimmer haben eine Terrasse. Zum Haus gehören ein Garten, ein Gemeinschaftsraum und ein kostenloser Privatparkplatz.",
            "La Farie wird vom Albergo Diffuso Socchieve „Col Gentile“ geführt. Für Informationen zur Unterkunft und Tipps zu Ausflugszielen in Karnien wenden Sie sich bitte an die Rezeption in Mediis."],
-    am=["Italienisches Frühstück mit süßen und herzhaften Speisen", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse oder Balkon", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
+    am=["Italienisches Frühstück mit süßen und herzhaften Speisen", "Kostenloses WLAN", "Kostenloser Privatparkplatz", "Terrasse in zwei Zimmern", "Eigenes Bad", "Flachbild-TV", "Garten", "Gemeinschaftsraum", "Wasserkocher", "Nichtraucherzimmer"],
     rules=[("Anreise", "von 15:00 bis 18:00 Uhr"), ("Abreise", "bis 10:00 Uhr"), ("Kinder", "in jedem Alter willkommen, Babybett bis 2 Jahre kostenlos"), ("Zustellbett", "auf Anfrage, 40 € pro Nacht"), ("Haustiere", "nicht gestattet"), ("Rauchen", "nicht gestattet"), ("Partys und Veranstaltungen", "nicht gestattet")],
     rooms=[("Campanula", "Doppelzimmer mit Bad und Terrasse", 2), ("Salvia", "Doppelzimmer mit Terrasse", 2),
            ("Tarassacco", "Doppelzimmer mit Bad", 2), ("Centaurea", "Doppelzimmer mit Bad", 4),
