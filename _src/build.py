@@ -378,6 +378,7 @@ def page(key, title, desc, body, *, active="", image=None, ld=(), solid=False, n
     alternates = ""
     if key not in ONLY_IT and not noindex:
         alternates = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{U + P(key, l)}">' for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{U + P(key, "it")}">'
+    home_style = '<link rel="stylesheet" href="/assets/home-farie.css?v=1">' if key == "home" else ""
     og_alt = "".join(f'<meta property="og:locale:alternate" content="{OG_LOCALE[l]}">' for l in LANGS if l != LANG and key not in ONLY_IT)
     doc = f"""<!doctype html>
 <html lang="{LANG}">
@@ -407,6 +408,7 @@ def page(key, title, desc, body, *, active="", image=None, ld=(), solid=False, n
 <link rel="preload" href="/assets/fonts/inter-tight-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 {pre}
 <link rel="stylesheet" href="/assets/site.css?v={CSS_V}">
+{home_style}
 {head_ld}
 </head>
 <body>
@@ -733,10 +735,10 @@ def build_home():
       <div class="wrap hero-in">
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Albergo diffuso a Socchieve · Carnia')}</span>{t('Vivi la Carnia <em>da paesano.</em>')}</h1>
         <div class="hero-row">
-          <p>{t("Case e appartamenti vacanza nei borghi di Socchieve, con i servizi di un albergo. A 18 km da Sauris e mezz'ora dalle Dolomiti Friulane.")}</p>
+          <p>{t("Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.")}</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="{P('catalog')}">{t('Scopri le case')} {I('arrow')}</a>
-            <a class="btn btn-ghost" href="{P('benessere')}">{t('Sauna e bagno di bosco')}</a>
+            <a class="btn btn-ghost" href="{P('farie')}">{t('Scopri La Farie')}</a>
           </div>
         </div>
         <div class="hero-meta"><span><b>{n_stays}</b> {t('alloggi')}</span><span><b>8</b> {t('borghi')}</span><span>{t('Dolomiti Friulane · <b>Patrimonio UNESCO</b>')}</span></div>
@@ -744,6 +746,29 @@ def build_home():
       <span class="scroll-cue" aria-hidden="true">{t('Scorri')}</span>
     </section>
     <div class="marquee" aria-hidden="true"><div class="marquee-track">{marquee}</div></div>
+
+    <section class="sec farie-highlight" id="la-farie-in-carnia" aria-labelledby="farie-highlight-title">
+      <div class="wrap farie-highlight-grid">
+        <div class="farie-highlight-photo rv">
+          {pic(FARIE['g'][0], t("La Farie a Lungis: casa in pietra con balconi in legno"), "(max-width:820px) 100vw, 52vw")}
+          <span class="farie-highlight-caption">Lungis · Socchieve</span>
+        </div>
+        <div class="farie-highlight-copy rv d1">
+          <span class="eyebrow">{t("Un'altra ospitalità in Carnia")}</span>
+          <h2 id="farie-highlight-title">{t("La Farie, <em>bed &amp; breakfast a Lungis.</em>")}</h2>
+          <p>{t("A Lungis, nel comune di Socchieve, La Farie è un bed & breakfast in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.")}</p>
+          <ul class="farie-highlight-amenities">
+            <li>{t("Colazione disponibile")}</li>
+            <li>{t("Giardino")}</li>
+            <li>{t("Parcheggio privato gratuito")}</li>
+          </ul>
+          <div class="farie-highlight-actions">
+            <a class="btn btn-primary" href="{P('farie')}">{t('Scopri camere e servizi')} {I('arrow')}</a>
+            <a class="link" href="{P('farie')}#prenota">{t('Disponibilità La Farie')} {I('arrow')}</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="sec" id="albergo-diffuso">
       <div class="wrap intro-grid">
@@ -817,16 +842,6 @@ def build_home():
       </div>
     </section>
 
-    <section class="farie-teaser">
-      {pic("LungisCartolina.jpg", tf("Il borgo di {n}", n="Lungis"), "100vw")}
-      <div class="wrap">
-        <span class="eyebrow light rv">{t("Bed &amp; Breakfast a Lungis · gestito dall'Albergo Diffuso")}</span>
-        <h2 class="rv d1">La Farie.</h2>
-        <p class="rv d2">{t("Un bed &amp; breakfast in una casa carnica ristrutturata nel borgo di Lungis, gestito direttamente dall'Albergo Diffuso Socchieve.")}</p>
-        <a class="btn btn-light rv d3" href="{P('farie')}">{t('Scopri La Farie')} {I('arrow')}</a>
-      </div>
-    </section>
-
     <section class="sec" id="domande">
       <div class="wrap">
         <div class="sec-head"><div><span class="eyebrow rv">{t('Domande frequenti')}</span><h2 class="rv d1">{t('Prima di <em>partire.</em>')}</h2></div></div>
@@ -848,7 +863,7 @@ def build_home():
     website = {"@context": "https://schema.org", "@type": "WebSite", "@id": U + "/#website", "name": SITE["name"], "url": U + P("home"), "inLanguage": {"it": "it-IT", "en": "en", "de": "de"}[LANG], "publisher": {"@id": LODGING_ID}}
     faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in FAQ]}
     page("home", t("Albergo Diffuso Socchieve · Case vacanza in Carnia e Dolomiti"),
-         tf("Case e appartamenti vacanza nei borghi di Socchieve, in Carnia: {n} alloggi da 2 a 21 posti, a 18 km da Sauris e 30 minuti dalle Dolomiti Friulane. Prenotazione diretta.", n=n_stays),
+         tf("Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, bed & breakfast a Lungis. Prenotazione diretta.", n=n_stays),
          body, image="Slide1Socchieve.jpg", preload=preload_for("Slide1Socchieve.jpg"), ld=[lodging_ld(), website, faq_ld] + [service_ld(x) for x in SERVICES],
          images=[og_img("Slide1Socchieve.jpg")] + [abs_img(s["card"]) for s in STAYS])
 
@@ -1334,6 +1349,7 @@ def main():
     (ROOT / "assets").mkdir(exist_ok=True)
     css = (SRC / "fonts.css").read_text(encoding="utf-8").replace("url(/assets/fonts/", "url(fonts/") + "\n" + (SRC / "site.css").read_text(encoding="utf-8")
     (ROOT / "assets" / "site.css").write_text(css, encoding="utf-8")
+    shutil.copy(SRC / "home-farie.css", ROOT / "assets" / "home-farie.css")
     shutil.copy(SRC / "site.js", ROOT / "assets" / "site.js")
     shutil.copy(SRC / "consent.js", ROOT / "assets" / "consent.js")
     CSS_V, JS_V = asset_ver(ROOT / "assets" / "site.css"), asset_ver(ROOT / "assets" / "site.js")
