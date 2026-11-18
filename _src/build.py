@@ -999,7 +999,7 @@ def build_farie():
       <div class="wrap hero-in">
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Affittacamere a Lungis · Carnia')}</span>{t('La Farie. <em>Sentirsi a casa.</em>')}</h1>
         <div class="hero-row">
-          <p>{t("Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.")}</p>
+          <p>{t("Una casa tipica carnica ristrutturata nel borgo di Lungis, con quattro camere, alcune con terrazzo, un giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.")}</p>
           <div class="hero-actions">{'' if live else book_btn}<a class="btn btn-ghost" href="#farie-camere">{t('Le camere')}</a><a class="btn btn-ghost" href="#farie-foto">{t('Foto')}</a></div>
         </div>
         <div class="hero-meta"><span>Lungis · <b>554 m</b></span><span>Wi-Fi · <b>{t('Parcheggio gratuito')}</b></span><span>{t('Gestione <b>Albergo Diffuso Socchieve</b>')}</span></div>
@@ -1016,7 +1016,7 @@ def build_farie():
       <div class="rv">{gallery(F['g'], t("La Farie, affittacamere a Lungis"), max_shown=9)}</div>
     </div></section>
     <section class="sec" id="farie-camere" style="padding-top:0"><div class="wrap">
-      <span class="eyebrow rv">{t('Le camere')}</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{t('Cinque camere, <em>un appartamento.</em>')}</h2>
+      <span class="eyebrow rv">{t('Le camere')}</span><h2 class="rv d1" style="font-size:clamp(36px,4.6vw,64px);line-height:1;margin:16px 0 28px">{t('Quattro camere e <em>un appartamento.</em>')}</h2>
       <div class="rooms rv">{"".join(f'<div class="room"><b>{e(n)}</b><span>{e(d)}</span><small>{tf("fino a {m} ospite", m=m) if m == 1 else tf("fino a {m} ospiti", m=m)}</small></div>' for n, d, m in F["rooms"])}</div>
       <p class="rv" style="margin-top:18px;color:var(--fa-muted)">{tf('Tariffe: {plans}.', plans=low(t(" o ").join(F["plans"])))} {e(F["cancel"])}</p>
     </div></section>
@@ -1047,7 +1047,7 @@ def build_farie():
           "sameAs": [F["booking"]], "email": SITE["email"], "telephone": SITE["phone"], "parentOrganization": {"@id": LODGING_ID}}
     crumbs = [home_crumb(), ("La Farie", P("farie"))]
     page("farie", t("La Farie · affittacamere a Lungis, Socchieve (Carnia)"),
-         t("Affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito."),
+         t("Affittacamere La Farie a Lungis, Socchieve (Carnia): quattro camere, di cui due con terrazzo, giardino, Wi-Fi e parcheggio gratuito."),
          body, image=F["g"][0], preload=preload_for(F["g"][0]), wrapper=wrap, ld=[ld, crumbs_ld(crumbs)],
          images=[abs_img(g) for g in F["g"] if g in PH])
 
