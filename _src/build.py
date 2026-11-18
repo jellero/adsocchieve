@@ -733,12 +733,21 @@ def build_home():
     body = f"""<section class="hero">
       <div class="hero-media">{pic("Slide1Socchieve.jpg", t("Strada tra i prati verso le montagne della Carnia, a Socchieve"), "100vw", eager=True)}</div>
       <div class="wrap hero-in">
+        <a class="hero-farie-card" href="{P('farie')}" aria-label="{t('Scopri La Farie, bed & breakfast a Lungis')}">
+          {pic(FARIE['g'][0], t("La Farie a Lungis: casa in pietra con balconi in legno"), "110px")}
+          <span class="hero-farie-body">
+            <span class="hero-farie-kicker">{t('Bed & breakfast · Lungis')}</span>
+            <strong>La Farie</strong>
+            <span class="hero-farie-short">{t('Camere con bagno privato e giardino')}</span>
+            <span class="hero-farie-link">{t('Scopri le camere')} {I('arrow')}</span>
+          </span>
+        </a>
         <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Albergo diffuso a Socchieve · Carnia')}</span>{t('Vivi la Carnia <em>da paesano.</em>')}</h1>
         <div class="hero-row">
           <p>{t("Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.")}</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="{P('catalog')}">{t('Scopri le case')} {I('arrow')}</a>
-            <a class="btn btn-ghost" href="{P('farie')}">{t('Scopri La Farie')}</a>
+            <a class="btn btn-ghost" href="{P('benessere')}">{t('Sauna e bagno di bosco')}</a>
           </div>
         </div>
         <div class="hero-meta"><span><b>{n_stays}</b> {t('alloggi')}</span><span><b>8</b> {t('borghi')}</span><span>{t('Dolomiti Friulane · <b>Patrimonio UNESCO</b>')}</span></div>
