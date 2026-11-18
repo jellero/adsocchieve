@@ -1,0 +1,26 @@
+/* La Farie: presentazione dedicata nella homepage, senza cambiare i CSS globali. */
+.farie-highlight{background:#f2e9dd;overflow:hidden}
+.farie-highlight-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(30px,5.5vw,88px);align-items:center}
+.farie-highlight-photo{position:relative;border-radius:var(--r);overflow:hidden;box-shadow:0 30px 65px -42px rgba(43,28,20,.55)}
+.farie-highlight-photo img{display:block;width:100%;aspect-ratio:5/4;object-fit:cover;object-position:center}
+.farie-highlight-caption{position:absolute;left:clamp(14px,2vw,24px);bottom:clamp(14px,2vw,24px);padding:10px 15px;border-radius:999px;background:rgba(22,36,30,.86);color:#fff;font:600 12px/1.2 var(--sans);letter-spacing:.06em}
+.farie-highlight-copy h2{font-size:clamp(42px,5vw,76px);line-height:1.05;letter-spacing:-.04em;margin:20px 0 24px}
+.farie-highlight-copy h2 em{display:block;color:var(--larch-2)}
+.farie-highlight-copy>p{font-size:clamp(16px,1.45vw,18px);color:#445148;max-width:550px;line-height:1.72}
+.farie-highlight-amenities{display:flex;gap:9px;flex-wrap:wrap;list-style:none;margin:27px 0 34px;padding:0}
+.farie-highlight-amenities li{padding:9px 13px;border:1px solid rgba(27,38,32,.17);border-radius:999px;font:500 13px/1.35 var(--sans);color:var(--forest);background:rgba(255,255,255,.37)}
+.farie-highlight-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.farie-highlight-actions .link{font-size:14px}
+@media (max-width:820px){
+ .farie-highlight-grid{grid-template-columns:1fr;gap:32px}
+ .farie-highlight-photo img{aspect-ratio:4/3}
+ .farie-highlight-copy h2{font-size:clamp(38px,8.5vw,62px);margin:15px 0 18px}
+ .farie-highlight-amenities{margin:23px 0 27px}
+}
+@media (max-width:480px){
+ .farie-highlight{padding:54px 0 64px}
+ .farie-highlight-photo img{aspect-ratio:5/4}
+ .farie-highlight-actions{align-items:stretch;flex-direction:column;gap:16px}
+ .farie-highlight-actions .btn{justify-content:center}
+ .farie-highlight-actions .link{align-self:center}
+}
