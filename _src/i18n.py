@@ -8,6 +8,29 @@ Se si cambia un testo italiano in build.py o se ne aggiunge uno, build.py elenca
 quelli rimasti senza traduzione."""
 
 UI = {
+    # ------------------------------------------------------------ homepage: La Farie
+    "Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.": (
+        "Holiday houses and apartments in the villages of Socchieve, plus La Farie, a B&B in Lungis. Authentic stays in Carnia, near the Friulian Dolomites.",
+        "Ferienhäuser und Ferienwohnungen in den Dörfern von Socchieve sowie La Farie, ein B&B in Lungis. Authentisch übernachten in Karnien, nahe den Friauler Dolomiten."),
+    "La Farie a Lungis: casa in pietra con balconi in legno": (
+        "La Farie in Lungis: stone house with wooden balconies",
+        "La Farie in Lungis: Steinhaus mit Holzbalkonen"),
+    "Un'altra ospitalità in Carnia": ("Another way to stay in Carnia", "Eine andere Art, in Karnien zu wohnen"),
+    "La Farie, <em>bed &amp; breakfast a Lungis.</em>": (
+        "La Farie, <em>bed &amp; breakfast in Lungis.</em>",
+        "La Farie, <em>Bed &amp; Breakfast in Lungis.</em>"),
+    "A Lungis, nel comune di Socchieve, La Farie è un bed & breakfast in una casa carnica ristrutturata. Camere con bagno privato, giardino e colazione disponibile: un'alternativa alle case vacanza Col Gentile, gestita dallo stesso Albergo Diffuso Socchieve.": (
+        "In Lungis, near Socchieve, La Farie is a bed and breakfast in a restored traditional Carnic house. Rooms with private bathrooms, a garden and breakfast available: a different way to stay from the Col Gentile holiday homes, run by the same Albergo Diffuso Socchieve.",
+        "In Lungis bei Socchieve ist La Farie ein Bed & Breakfast in einem restaurierten karnischen Haus. Zimmer mit eigenem Bad, Garten und Frühstücksangebot: eine Alternative zu den Ferienwohnungen von Col Gentile, geführt vom selben Albergo Diffuso Socchieve."),
+    "Colazione disponibile": ("Breakfast available", "Frühstück verfügbar"),
+    "Giardino": ("Garden", "Garten"),
+    "Parcheggio privato gratuito": ("Free private parking", "Kostenlose Privatparkplätze"),
+    "Scopri camere e servizi": ("Explore rooms and amenities", "Zimmer und Ausstattung entdecken"),
+    "Disponibilità La Farie": ("La Farie availability", "Verfügbarkeit La Farie"),
+    "Case e appartamenti vacanza a Socchieve, in Carnia: {n} alloggi nei borghi e La Farie, bed & breakfast a Lungis. Prenotazione diretta.": (
+        "Holiday homes and apartments in Socchieve, Carnia: {n} places to stay across the villages, plus La Farie bed and breakfast in Lungis. Book direct.",
+        "Ferienhäuser und Ferienwohnungen in Socchieve, Karnien: {n} Unterkünfte in den Dörfern und La Farie Bed & Breakfast in Lungis. Direkt buchen."),
+
     # ------------------------------------------------------------ navigazione e layout
     "Le case": ("The houses", "Die Häuser"),
     "I borghi": ("The villages", "Die Dörfer"),
