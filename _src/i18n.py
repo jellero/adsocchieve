@@ -9,6 +9,10 @@ quelli rimasti senza traduzione."""
 
 UI = {
     # ------------------------------------------------------------ homepage: La Farie
+    "Scopri La Farie, bed & breakfast a Lungis": ("Discover La Farie, bed and breakfast in Lungis", "La Farie entdecken, Bed & Breakfast in Lungis"),
+    "Bed & breakfast · Lungis": ("Bed & breakfast · Lungis", "Bed & Breakfast · Lungis"),
+    "Camere con bagno privato e giardino": ("Rooms with private bathrooms and a garden", "Zimmer mit eigenem Bad und Garten"),
+    "Scopri le camere": ("Explore the rooms", "Zimmer entdecken"),
     "Case e appartamenti vacanza nei borghi di Socchieve e La Farie, B&B a Lungis. Ospitalità autentica in Carnia, vicino alle Dolomiti Friulane.": (
         "Holiday houses and apartments in the villages of Socchieve, plus La Farie, a B&B in Lungis. Authentic stays in Carnia, near the Friulian Dolomites.",
         "Ferienhäuser und Ferienwohnungen in den Dörfern von Socchieve sowie La Farie, ein B&B in Lungis. Authentisch übernachten in Karnien, nahe den Friauler Dolomiten."),
