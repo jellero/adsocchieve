@@ -378,7 +378,7 @@ def page(key, title, desc, body, *, active="", image=None, ld=(), solid=False, n
     alternates = ""
     if key not in ONLY_IT and not noindex:
         alternates = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{U + P(key, l)}">' for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{U + P(key, "it")}">'
-    home_style = '<link rel="stylesheet" href="/assets/home-farie.css?v=1">' if key == "home" else ""
+    home_style = '<link rel="stylesheet" href="/assets/home-farie.css?v=2">' if key == "home" else ""
     og_alt = "".join(f'<meta property="og:locale:alternate" content="{OG_LOCALE[l]}">' for l in LANGS if l != LANG and key not in ONLY_IT)
     doc = f"""<!doctype html>
 <html lang="{LANG}">
