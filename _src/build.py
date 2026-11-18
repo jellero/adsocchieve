@@ -736,7 +736,7 @@ def build_home():
         <a class="hero-farie-card" href="{P('farie')}" aria-label="{t('Scopri La Farie, affittacamere a Lungis')}">
           {pic(FARIE['g'][0], t("La Farie a Lungis: casa in pietra con balconi in legno"), "110px")}
           <span class="hero-farie-body">
-            <span class="hero-farie-kicker">{t('affittacamere · Lungis')}</span>
+            <span class="hero-farie-kicker">{t('Affittacamere · Lungis')}</span>
             <strong>La Farie</strong>
             <span class="hero-farie-short">{t('Camere con bagno privato e giardino')}</span>
             <span class="hero-farie-link">{t('Scopri le camere')} {I('arrow')}</span>
@@ -978,7 +978,7 @@ def build_farie():
 <div id="farie">
 <header class="hdr" data-hdr>
   <div class="wrap bar">
-    <a href="{P('farie')}" class="logo" aria-label="{t('La Farie, affittacamere a Lungis')}"><span><b>La Farie</b><small>{t('affittacamere · Lungis, Carnia')}</small></span></a>
+    <a href="{P('farie')}" class="logo" aria-label="{t('La Farie, affittacamere a Lungis')}"><span><b>La Farie</b><small>{t('Affittacamere · Lungis, Carnia')}</small></span></a>
     <nav class="menu" aria-label="La Farie">{fnav}</nav>
     <div class="hdr-cta">{lang_switch()}{book_btn}<button class="burger" aria-label="{t('Apri menu')}" data-open><span></span></button></div>
   </div>
@@ -997,7 +997,7 @@ def build_farie():
     body = f"""<section class="hero" id="la-farie">
       <div class="hero-media">{pic(F['g'][0], t("La Farie, affittacamere in una casa carnica a Lungis"), "100vw", eager=True)}</div>
       <div class="wrap hero-in">
-        <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('affittacamere a Lungis · Carnia')}</span>{t('La Farie. <em>Sentirsi a casa.</em>')}</h1>
+        <h1><span class="eyebrow light" style="display:flex;margin-bottom:22px">{t('Affittacamere a Lungis · Carnia')}</span>{t('La Farie. <em>Sentirsi a casa.</em>')}</h1>
         <div class="hero-row">
           <p>{t("Una casa tipica carnica ristrutturata nel borgo di Lungis, con camere con terrazza o balcone, giardino e la quiete delle montagne. Gestita dall'Albergo Diffuso Socchieve.")}</p>
           <div class="hero-actions">{'' if live else book_btn}<a class="btn btn-ghost" href="#farie-camere">{t('Le camere')}</a><a class="btn btn-ghost" href="#farie-foto">{t('Foto')}</a></div>
@@ -1038,7 +1038,7 @@ def build_farie():
       <p class="rv d2">{t('Scegli le date e prenota direttamente: conferma immediata via email. Hai domande? Scrivici.')}</p>
       <div class="row rv d3">{book_btn}<a class="btn btn-dark" href="#scrivici">{t('Scrivici')}</a><a class="btn btn-dark" href="https://wa.me/{SITE['mobile_href'].lstrip('+')}" target="_blank" rel="noopener">WhatsApp · {SITE['mobile']}</a><a class="btn btn-dark" href="{P('home')}">{t('Scopri anche Col Gentile')}</a></div>
     </div></section>"""
-    ld = {"@context": "https://schema.org", "@type": "affittacamere", "@id": U + "/la-farie#affittacamere", "name": "La Farie",
+    ld = {"@context": "https://schema.org", "@type": "LodgingBusiness", "@id": U + "/la-farie#affittacamere", "name": "La Farie",
           "description": " ".join(F["intro"]), "url": U + P("farie"), "image": [abs_img(g) for g in F["g"][:8] if g in PH],
           "address": address(F["addr"], "Lungis, Socchieve"),
           "geo": {"@type": "GeoCoordinates", "latitude": F["geo"][0], "longitude": F["geo"][1]},
@@ -1047,7 +1047,7 @@ def build_farie():
           "sameAs": [F["booking"]], "email": SITE["email"], "telephone": SITE["phone"], "parentOrganization": {"@id": LODGING_ID}}
     crumbs = [home_crumb(), ("La Farie", P("farie"))]
     page("farie", t("La Farie · affittacamere a Lungis, Socchieve (Carnia)"),
-         t("affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito."),
+         t("Affittacamere in una casa carnica ristrutturata a Lungis, Socchieve (Carnia), gestito dall'Albergo Diffuso Socchieve: camere con terrazza, giardino, Wi-Fi e parcheggio gratuito."),
          body, image=F["g"][0], preload=preload_for(F["g"][0]), wrapper=wrap, ld=[ld, crumbs_ld(crumbs)],
          images=[abs_img(g) for g in F["g"] if g in PH])
 
@@ -1267,7 +1267,7 @@ def build_legal():
     booking_terms = """<section class="d-body" style="padding-top:140px"><div class="wrap prose">
 <span class="eyebrow">Informazioni contrattuali</span><h1 style="font-size:clamp(40px,6vw,72px);margin:16px 0 24px">Condizioni di prenotazione</h1>
 <p><strong>Versione 1.0 · 16 novembre 2026</strong></p>
-<p>Le presenti condizioni riguardano i soggiorni presso l’Albergo Diffuso Socchieve “Col Gentile”, il affittacamere La Farie e i servizi sauna e bagno di bosco. Gestore: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307 · <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
+<p>Le presenti condizioni riguardano i soggiorni presso l’Albergo Diffuso Socchieve “Col Gentile”, l'affittacamere La Farie e i servizi sauna e bagno di bosco. Gestore: <strong>Zanier Lucio</strong>, Albergo Diffuso Socchieve “Col Gentile”, Via Roma 20, Mediis, 33020 Socchieve (UD), P. IVA 02790180307 · <a href="mailto:info@albergodiffusosocchieve.it">info@albergodiffusosocchieve.it</a>.</p>
 <h2>1. Prezzi, disponibilità e conferma</h2>
 <p>Disponibilità, prezzo totale, eventuali supplementi, caparra, condizioni della tariffa e modalità di pagamento sono mostrati prima della conferma della prenotazione o comunicati nel preventivo accettato. La prenotazione è confermata alle condizioni riportate nella conferma inviata al cliente. Condizioni specifiche di una tariffa, espressamente comunicate e accettate prima della conferma, prevalgono sulle indicazioni generali di questa pagina.</p>
 <h2>2. Soggiorni negli alloggi Col Gentile</h2>
@@ -1277,7 +1277,7 @@ def build_legal():
 <h2>3. Caparra, cancellazione e partenza anticipata negli alloggi Col Gentile</h2>
 <p>Il regolamento pubblicato prevede che, in caso di disdetta, la <strong>caparra eventualmente versata non venga rimborsata</strong>; previo accordo con la direzione può essere consentito recuperarla in un’altra data a condizioni equivalenti. Per la partenza anticipata è previsto l’addebito del costo del solo alloggio per il periodo non usufruito, salvo diverso accordo. Se la tariffa prenotata presenta una diversa politica di cancellazione, vale quella comunicata e accettata durante la prenotazione.</p>
 <h2>4. La Farie</h2>
-<p>Per il affittacamere La Farie la condizione indicata nella pagina di prenotazione è: <strong>cancellazione gratuita tramite il portale fino a 7 giorni prima dell’arrivo, entro le ore 18:00</strong>. Per cancellazioni successive, mancata presentazione, eventuali caparre o addebiti si applicano esclusivamente gli importi e le condizioni espressamente mostrati e accettati durante la prenotazione; la presente pagina non introduce una percentuale di penale ulteriore.</p>
+<p>Per l'affittacamere La Farie la condizione indicata nella pagina di prenotazione è: <strong>cancellazione gratuita tramite il portale fino a 7 giorni prima dell’arrivo, entro le ore 18:00</strong>. Per cancellazioni successive, mancata presentazione, eventuali caparre o addebiti si applicano esclusivamente gli importi e le condizioni espressamente mostrati e accettati durante la prenotazione; la presente pagina non introduce una percentuale di penale ulteriore.</p>
 <h2>5. Mancata presentazione (no-show) e carta a garanzia</h2>
 <p>Se il cliente non si presenta nella data e nell’orario concordati e non ha cancellato nei termini, si applicano le condizioni economiche della specifica prenotazione. Per Col Gentile resta applicabile la regola sulla caparra eventualmente versata, salvo diversa tariffa concordata. <strong>Non è pubblicata una penale percentuale standard aggiuntiva per il no-show</strong>: ulteriori addebiti su carta a garanzia possono essere effettuati soltanto se l’importo o il criterio di calcolo della penale sono stati comunicati prima della conferma e accettati dal cliente. La carta a garanzia viene richiesta e gestita nell’ambiente del sistema di prenotazione, quando previsto.</p>
 <h2>6. Sauna e bagno di bosco</h2>
