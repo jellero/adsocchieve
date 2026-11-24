@@ -237,7 +237,7 @@ FARIE = dict(
            "Le quattro camere hanno bagno privato con bidet e asciugacapelli, TV a schermo piatto e Wi-Fi gratuito. Due camere dispongono di terrazzo. La casa ha un giardino, una sala comune e il parcheggio privato gratuito.",
            "La Farie è gestita dall'Albergo Diffuso Socchieve “Col Gentile”. Per informazioni sulla struttura e consigli sui luoghi da visitare in Carnia, puoi rivolgerti alla reception di Mediis."],
     am=["Colazione italiana dolce e salata", "Wi-Fi gratuito", "Parcheggio privato gratuito", "Terrazzo in due camere", "Bagno privato", "TV a schermo piatto", "Giardino", "Sala comune", "Bollitore", "Camere non fumatori"],
-    rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "entro le 10:00"), ("Bambini", "benvenuti a ogni età, culla gratuita fino a 2 anni"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "non ammessi"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
+    rules=[("Arrivo", "dalle 15:00 alle 18:00"), ("Partenza", "entro le 10:00"), ("Bambini", "benvenuti a ogni età, culla per bambini fino a 2 anni disponibile su richiesta, 5 € una tantum"), ("Letto aggiuntivo", "su richiesta, 40 € a notte"), ("Animali", "non ammessi"), ("Fumo", "non consentito"), ("Feste ed eventi", "non consentiti")],
     # Quattro camere (Campanula, Salvia, Tarassacco, Centaurea) e una unità distinta
     # classificata come appartamento (Stella Alpina) nella configurazione Welora.
     # La disponibilità effettiva delle unità va verificata nel pannello Welora.
